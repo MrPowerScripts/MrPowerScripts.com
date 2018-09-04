@@ -16,3 +16,15 @@
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="twitter:title" content="{{ page.title }}" />
     {% endif %}
+
+    {% if page.image %}
+    <meta content="/images/posts/{{ page.image }}" property="og:image">
+    {% else %}
+    <meta content="/images/mpslogo.png" property="og:image">
+    {% endif %}
+
+    {% if page.tags %}
+        {% for tag in page.tags %}
+    <meta content="{{ tag }}" property="article:tag">
+        {% endfor %}
+    {% endif %}
