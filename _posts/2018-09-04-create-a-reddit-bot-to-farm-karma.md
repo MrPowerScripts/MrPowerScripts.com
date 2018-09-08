@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Create a Reddit bot that gets you all the karma. It's easy as py(thon)
+date: 2018-09-04 21:10:45+00
 tags: [python, Reddit, machine learning, Markov chains]
 ---
 

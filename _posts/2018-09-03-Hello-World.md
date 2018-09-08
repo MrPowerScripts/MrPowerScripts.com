@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Blog blog blog blog
+date: 2018-09-03 21:10:45+00
 tags: [blog, my cool new blog, blogging is fun, I have no idea how tags work]
 ---
 
