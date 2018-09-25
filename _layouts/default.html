@@ -19,7 +19,7 @@
   <body>
     <div class="wrapper-masthead">
       <div class="container">
-        <header class="masthead clearfix">
+        <header class="masthead">
           <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
           <div class="site-info">
@@ -31,7 +31,12 @@
             <a href="{{ site.baseurl }}/">Blog</a>
             <a href="{{ site.baseurl }}/about">About</a>
           </nav>
+
         </header>
+        <div class="meta-links">
+            {% include svg-icons.html %}
+        </div>
+        {% include share-bar.html %}
       </div>
     </div>
 
@@ -41,6 +46,7 @@
 
     <div class="wrapper-footer">
       <div class="container">
+        {% include share-bar.html %}
         <footer class="footer">
           {% include svg-icons.html %}
         </footer>
