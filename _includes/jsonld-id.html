@@ -1,0 +1,24 @@
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "{{ site.name }}",
+        "description": "{{ page.excerpt }}",
+        "disambiguatingDescription": "{{ site.description-long }}",
+        "image": [
+            {% if page.ogimagenull %}
+
+            {% elsif page.ogimage %}
+                "{{page.ogimage}}"
+            {% elsif page.image %}
+                "{{page.image}}"
+            {% else %}
+                {{ site.avatar }}
+            {% endif %}
+        ],
+        "givenName": "",
+        "familyName": "",
+        "alternateName": "{{ site.name }}",
+        "publishingPrinciples": "{{ site.url }}/about/"
+    }
+</script>

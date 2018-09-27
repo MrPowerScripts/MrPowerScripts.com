@@ -1,0 +1,57 @@
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "{{ page.title }}",
+        "description": "{{ page.excerpt }}",
+        "image": [
+            {% if page.ogimagenull %}
+
+            {% elsif page.ogimage %}
+                "{{page.ogimage}}"
+            {% elsif page.image %}
+                "{{page.image}}"
+            {% else %}
+                "{{ site.avatar }}"
+            {% endif %}
+        ],
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
+        },
+        "datePublished": "{{page.date}}",
+        "dateModified": "{% if page.modified %}{{page.modified}}{% else %}{{page.date}}{% endif %}",
+        "isAccessibleForFree": "True",
+        "isPartOf": {
+            "@type": ["CreativeWork", "Product", "Blog"],
+            "name": "{{ site.name }}",
+            "productID": "{{ site.name }}"
+        },
+        "license": "http://creativecommons.org/licenses/by-sa/4.0/",
+        "author": {
+            "@type": "Person",
+            "name": "{{ site.name }}",
+            "description": "{{ site.description-long }}",
+            "sameAs": "{{ site.url }}/about",
+            "image": {
+                "@type": "ImageObject",
+                "url": "{{ site.avatar }}"
+            },
+            "givenName": "",
+            "familyName": "",
+            "alternateName": "{{ site.name }}",
+            "publishingPrinciples": "{{ site.url }}/about/"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "{{ site.name }}",
+            "description": "{{ site.description-long }}",
+            "sameAs": "{{ site.url }}",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "{{ site.avatar }}"
+            },
+            "publishingPrinciples": "{{ site.url }}/about/"
+        }
+    }
+</script>

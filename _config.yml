@@ -3,10 +3,11 @@
 #
 
 # Name of your site (displayed in the header)
-name: MrPowerScripts.com
+name: MrPowerScripts
 
 # Short bio or description (displayed in the header)
 description: Learn. Code. Grow.
+description-long: MrPowerScripts is here to help you automate your life so you have more time for automating your life
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars2.githubusercontent.com/u/1307942?s=400&v=4
