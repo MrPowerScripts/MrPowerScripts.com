@@ -12,7 +12,7 @@
             {% elsif page.image %}
                 "{{page.image}}"
             {% else %}
-                "{{ site.url}}{{ site.avatar }}"
+                "{{ site.avatar }}"
             {% endif %}
         ],
         "mainEntityOfPage": {
@@ -35,7 +35,7 @@
             "sameAs": "{{ site.url }}/about",
             "image": {
                 "@type": "ImageObject",
-                "url": "{{ site.url}}{{ site.avatar }}"
+                "url": "{{ site.avatar }}"
             },
             "givenName": "",
             "familyName": "",
@@ -49,7 +49,7 @@
             "sameAs": "{{ site.url }}",
             "logo": {
                 "@type": "ImageObject",
-                "url": "{{ site.url}}{{ site.avatar }}"
+                "url": "{{ site.avatar }}"
             },
             "publishingPrinciples": "{{ site.url }}/about/"
         }
