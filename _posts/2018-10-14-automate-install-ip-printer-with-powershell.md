@@ -1,0 +1,27 @@
+---
+layout: post
+title: Automate Installing IP Printers With Powershell
+date: 2018-10-14 11:00:45+00
+tags: [mrpowerscripts, PowerShell, install IP printer, install direct IP printer, install printer PowerShell, installing a printer, printer installation ]
+description-long: One of my favorite ways of saving time as a systems administrator was automating the installation of printers. You don't need Powershell for it. I often times did with simple batch scripts. PowerShell is all the rage in the world of Windows these days, so that's why the video examples use it. Learning how to automate printer installations really saved me a lot of time in previous jobs, but it wasn't always easy changing a culture of manual effort. Sometimes you have to wait for the right opportunity.
+---
+
+{% include youtubePlayer.html id="E2x6NG72tn4" %}
+One of my favorite ways of saving time as a systems administrator was automating the installation of printers. You don't need Powershell for it. I often times did with simple batch scripts. PowerShell is all the rage in the world of Windows these days, so that's why the video examples use it. Learning how to automate printer installations really saved me a lot of time in previous jobs, but it wasn't always easy changing a culture of manual effort. Sometimes you have to wait for the right opportunity.
+
+I was working at a commercial bank as a customer support slash junior systems admin for the company. Their support team didn't automate anything. I had previously come from work cultures where we did our very best to automate ourselves out of a job. It was frustrating, but I saw an awesome opportunity to make the lives of my team easier and improve the support experience. There was one problem with my plan. Nobody wanted to change their ways. Wait, what? This is CLEARLY a better way of doing things? How could they not embrace this?
+
+I had to let it go for a long time. We continued to manually VNC into peoples computers if they needed a printer to be (re)installed. I hated it. so. much. The tides turned when a big office project came into focus. We needed to rename all of the network printer names and IP addresse for all the printers in the office. Two giant floors of people needed all the printers on their computers updated to use the new naming conventions. We were instructed to do this by hand for each user in the office as the printer names and IP addresses were updated. There were so many frustrating questions that ran through my head which had no great answer.
+
+How the hell are we supposed to know which users will be impacted by the change? There was no way to tell who had what installed on their machines. We were supposed to make assumptions. How long is it going to take to update each person's machine? Some people had four or five printers installed. I would have to go back and forth referencing a document to install the printers for every single person. That is a significant disruption in the users workday, and collectively, a huge pain in the ass for me and my team. 
+
+We spent the first-day interrupting people before I decided to write up a script that would do all this work for us. I initially received a lot of pushback against it. A senior colleague on the team instructed me not to use it when I showed him because it hadn't been approved by management. So, I went to our manager. He was also initially against the idea. He said no when I showed him what it does.
+
+I was so upset. I went back to my desk dejected getting ready to interrupt more peoples day. "uh, how long is this going to take?". "Can you do it after I leave?". No, I want to get out of here at 5 pm as well Brad. I guess our manager saw the light in the end. I'm not sure what changed his mind but he later came to me and asked if I thought it was ready to be used in live action. Hell yeah, it's automation time!
+
+The script was simple. We had an excel document that had the old computer names and their new name/IP combo. I took that data and embedded it within a PowerShell script. When you ran the script it would check to see if you had any of the old names on your computer. If it found an old name it would uninstall it and then install the corresponding new name/IP. Combined with a batch script sitting on a file server it was possible to click a link in an email to run the script and update all of the computers on that computer. It generated a little report on the computer so we could inspect what happened if someone reported issues.
+
+This changed the whole game. This was a project that was expected to take over a week. It would have taken many hours of productivity away from our team and others in the company. In the end, we were able to send out an email with a link to click and users could attempt the conversion at their convenience. How beautiful is that? 
+
+It wasn't the first time I tried to change "how we do things here", but it was one of the most satisfying. I was given significant freedom to script solutions to daily problems after that. People would come to me asking if scripting some problem was possible. It encouraged others on the team to take some classes on PowerShell, and think differently about how we solve problems in the office. Watching the culture change was wonderful. I enjoyed working there a lot more after that. It might not always be the right time to change things, but you can always keep your eyes open for those opportunities.
+
