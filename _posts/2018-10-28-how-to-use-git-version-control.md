@@ -7,7 +7,7 @@ description-long: When I first started scripting my development flow when someth
 ---
 
 {% include youtubePlayer.html id="NwQ0M-pyeHQ" %}
-When I first started scripting my development flow when something like this: Create a script and save it as a file. Make some adjustments I want to test and save it in a new file. Make more adjustments and save it as a new file. Rinse, repeat. I would end up with a folder full of different file versions with different names that all were effectively the same script. If you're doing things this way then STOP. Watch the video above and save yourself. After learning to use git I was vastly more effective in terms of speed and organization of my code.
+When I first started scripting, my development flow went something like this: Create a script and save it as a file. Make some adjustments I want to test and save it in a new file. Make more adjustments and save it as a new file. Rinse, repeat. I would end up with a folder full of different file versions with different names that all were effectively the same script. If you're doing things this way then STOP. Watch the video above and save yourself. After learning to use git I was vastly more effective in terms of speed and organization of my code.
 
 I first encountered git when I join a remote development team. Many people were working on the same code base and my existing practices definitely weren't viable. They taught me how to use git in my first few weeks. It was a huge challenge. There are so many commands and weird words I'd never used in the process of developing. What is a branch? What the heck does master mean? What's the point of a SHA? It all seemed really daunting for me. 
 
