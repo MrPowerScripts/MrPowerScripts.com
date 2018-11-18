@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Faster ReactJS development with Create-React-App and Heroku
-date: 2018-11-18 09:00:45+00
+date: 2018-11-18 07:00:45+00
 tags: [mrpowerscripts, git, create-react-app, reactjs, learn react, react and Heroku, Heroku buildpack, create-react-app and heroku]
 description-long: 
 ---
