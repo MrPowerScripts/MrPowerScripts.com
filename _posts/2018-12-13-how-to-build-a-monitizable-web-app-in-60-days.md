@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to build a monetizable web app in 60 days
-date: 2018-12-13 14:06:45+00
+date: 2018-12-13 12:06:45+00
 tags: [mrpowerscripts, serverless, monetizable web app in 60 days, AWS Lambda, Lob.com, SparkPost, GitHub Pages, Stripe]
 description-long: Well, 63 days if we're going by the latest commit in the repo. But that's close enough! Do you have any side projects? I have tons of them. I have side projects that are waiting on side-side projects for the side project that will (fingers crossed) make them even more awesome (when they're finished (if ever)). Do you have any side projects that make money? Ah, now THAT is a much rarer sighting. I've personally never had a side project that was capable of generating money on its own. I suppose the Youtube channel does, but it's nothing to write home about. Every once in a while we're sitting at our desk thinking we could be doing something better with our time, and changing the world with code! And I've had that moment many times myself. I have an idea. I get started on it. It turns out to be way harder than I thought. It doesn't just happen to individuals. It happens to companies as well. 
 ---
