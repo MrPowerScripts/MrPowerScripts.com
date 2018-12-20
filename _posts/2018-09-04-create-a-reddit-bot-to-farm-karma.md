@@ -2,7 +2,7 @@
 layout: post
 title: Create a Reddit bot that gets you all the karma. It's easy as py(thon)
 date: 2018-09-04 21:10:45+00
-tags: [python, Reddit, machine learning, Markov chains]
+tags: [python, Reddit, machine learning, Markov chains, create a reddit bot, reddit karma farming, make a reddit bot, reddit bot, how to karma farm reddit, reddit karma farming bot]
 description-long: I made a video a while ago about a small bot I made for Reddit. The goal of making the bot was to figure out a way to farm karma on Reddit. Earning the sites social currency (karma) without having to actually do any real work. Think of it as a digital reality show star. I managed to put together a very simple bot that had surprisingly successful results. It didn't take much code thanks to some python libraries that did most of the work. The bot would repost old threads from a year ago to earn post karma and used a Markov chain based learning algorithm to generate somewhat relevant replies to comments. It wasn't perfect, but it worked well enough far longer than I thought it would. You can see in the first video how one of the bot iterations was able to farm up a significant karma count in just a few days.
 ---
 
@@ -10,11 +10,11 @@ description-long: I made a video a while ago about a small bot I made for Reddit
 
 Karma on Reddit matters. It allows you to open new features on the site, and is considered by many as a sign of credibility/contribution to the communities (or subreddits). Which makes having older accounts with high karma counts and activity very attractive to people who want to do fun, nefarious, or profitable activities.
 
-I also made a technical video that covered the code which made it all happen.
+I also made a technical video that covered the code which made it all happen. It's shows how easy it is to create a reddit bot. See if your bot can learn well enough to farm karma.
 
-{% include youtubePlayer.html id="KgWsqKkDEtI" %} 
+{% include youtubePlayer.html id="KgWsqKkDEtI" %}
 
-It turned out to be a much simpler project than I thought it would be. The bot had a lot of people replying it its comments as if it was a real person. Which I found quite amusing. The bot was eventually found out because everything about its footprint seemed VERY mechanical. Comments were sent out every 10 minutes exactly. Posts were reposted from exactly one year ago. It was obvious when looking at the user profile there was something driving this account like clockwork. 
+It turned out to be a much simpler project than I thought it would be. The bot had a lot of people replying it its comments as if it was a real person. Which I found quite amusing. The bot was eventually found out because everything about its footprint seemed VERY mechanical. Comments were sent out every 10 minutes exactly. Posts were reposted from exactly one year ago. It was obvious when looking at the user profile there was something driving this account like clockwork.
 
 
 I didn't set out to create the perfect bot, and the code definietly reflects that. There's a lot of room for improvment that could have allowed the bot to live a longer life. For instance, I could have randomized the date when I stole old posts to repost them rather than doing it exactly one year ago. Also, randomizing the comments and simulating some period of activity. Maybe decreasing postings significantly during a period of time to simulate the bot is "at work". Unless I wanted to simulate the bot having an office job. In which case I would increase the activity during that period. The bots comments seemed to become wildly ridiculous strings of random text when they returned back too large. Shorter responses from the bot often times seemed to be more relevant to the comment it was attempting to reply to. I could have had it cycle through creating responses and discard anything longer than a fixed character count. This is one of the key clues that led to the end of the bot. People saw it posting large paragraphs of nonsense and began checking the post history to make sure this account wasn't having a stroke. Some noticed the pattern of postings and then made it their job to report every single comment from the bot, and make comments indicating that the posts were coming from a bot. Eventually, the account was banned entirely. With some adjustments I think there's a chance the bot could have lived a long life on Reddit before anyone was keen to the fact it was really a cold dead machine looking for validation on the internet. Like reality show stars.
