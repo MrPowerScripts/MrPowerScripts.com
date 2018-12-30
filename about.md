@@ -6,8 +6,9 @@ jsonld: jsonld-id
 excerpt: MrPowerScripts is here to help you automate your life so you have more time for automating your life
 ---
 
-I've been working in IT for over a decade, and i'm here to help share everything i've learned.
+Techy blog from a guy trying to automate everything in front of me.
 
-### Contact me
+# Contact me
 
 [playingwithpowershell@gmail.com](mailto:playingwithpowershell@gmail.com)
+[Discord](https://discord.gg/uEBWZKq)
