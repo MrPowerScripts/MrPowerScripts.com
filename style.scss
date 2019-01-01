@@ -264,6 +264,14 @@ nav {
     font-style: italic;
   }
 
+.post-menu-bar {
+  opacity: 0;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
   .comments {
     margin-top: 10px;
   }
