@@ -7,7 +7,12 @@ name: MrPowerScripts
 
 # Short bio or description (displayed in the header)
 description: Learn. Code. Grow.
-description-long: MrPowerScripts is here to help you automate your life so you have more time for automating your life
+description-long: | 
+  MrPowerScripts is here to help you automate your life so you have more time for automating your life. 
+  My youtube channel started as a way for me to share stuff I was learning about Powershell. That was in 2012, and 
+  since then the channel and grown in many different ways as my career and skills have envolved. My new goal with the channel
+  is to try and automate it entirely. I'll be sharing a lot about that journey of automation while continuing 
+  other porjects and sharing them here on my blog as well as youtube. Join my on Discord if you have any questions.
 
 
 
