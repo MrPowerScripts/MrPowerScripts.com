@@ -231,7 +231,7 @@ nav {
     margin-left: 20px;
     color: $darkGray;
     text-align: right;
-    font-weight: 300;
+    font-weight: bold;
     letter-spacing: 1px;
 
     @include mobile {
@@ -353,6 +353,10 @@ footer {
   width: 100%;
   top: 0;
   left: 0;
+}
+
+.power-chev {
+  color: red;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
