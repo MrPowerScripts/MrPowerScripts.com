@@ -8,6 +8,9 @@ description-long: I made a video a while ago about a small bot I made for Reddit
 
 {% include youtubePlayer.html id="8DrOERA5FGc" %} I made a video a while ago about a small bot I made for Reddit. The goal of making the bot was to figure out a way to farm karma on Reddit. Earning the sites social currency (karma) without having to actually do any real work. Think of it as a digital reality show star. I managed to put together a very simple bot that had surprisingly successful results. It didn't take much code thanks to some python libraries that did most of the work. The bot would repost old threads from a year ago to earn post karma and used a Markov chain based learning algorithm to generate somewhat relevant replies to comments. It wasn't perfect, but it worked well enough far longer than I thought it would. You can see in the first video how one of the bot iterations was able to farm up a significant karma count in just a few days.
 
+**2019 UPDATE** Check out the 2.0 version of this bot in the video below!
+{% include youtubePlayer.html id="CCMGHepPBso" %}
+
 Karma on Reddit matters. It allows you to open new features on the site, and is considered by many as a sign of credibility/contribution to the communities (or subreddits). Which makes having older accounts with high karma counts and activity very attractive to people who want to do fun, nefarious, or profitable activities.
 
 I also made a technical video that covered the code which made it all happen. It's shows how easy it is to create a reddit bot. See if your bot can learn well enough to farm karma.
