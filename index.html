@@ -2,17 +2,32 @@
 layout: default
 ---
 
+
+
 <div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
-
-      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+    {% for post in paginator.posts %}
+      <article class="post">
+  
+        <h2>
+            <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+        </h2>
+  
+        <div class="entry">
+            {{ post.excerpt }}
+        </div>
+        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      </article>
+    {% endfor %}
+  
+    <div class="pagination">
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}" class="previous">&laquo; Previous</a>
+      {% endif %}
+  
+      <span class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}" class="next">Next &raquo;</a>
+      {% endif %}
+    </div>
+  </div>
