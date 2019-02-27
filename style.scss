@@ -20,7 +20,7 @@ html {
 body {
 	background: $white;
   font: 18px/1.4 $helvetica;
-  color: $darkGray;
+  color: $black;
   line-height: 1.5;
 }
 
@@ -290,8 +290,8 @@ nav {
     width: 100%;
     padding: 5px;
     color: white;
-    border: solid #686894 2px;
-    background-color: #194F69;
+    border: solid #8aa7ec 2px;
+    background-color: #8aa7ec;
     border-radius: 5px;
     float: right;
   }
@@ -304,11 +304,17 @@ nav {
   background-color: $lightGray;
 }
 
+.next, .previous {
+  color: darkred;
+}
+
 footer {
   padding: 20px 0;
+  position: absolute;
+  left: 0px;
+  width: 100%;
   text-align: center;
-  background-image: linear-gradient(to right bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
-}
+  background-image: linear-gradient(to left top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);}
 
 .youtube-video {
   background-color: #000;
