@@ -6,8 +6,7 @@ tags: [mrpowerscripts, flat ethernet cable review, flat ethernet cables are the 
 description-long: I purchased a flat internet cable recently and there's no going back. The days of large bulky internet cables are gone! Welcome the sleek look of flat ethernet cables. I had some concerns about how well a flat cable would do given the conditions I needed it for, but the one I bought has turned out to be tough enough for the job.
 ---
 
-{% include youtubePlayer.html id="hXkbS7Cq_RI" %}
-I purchased a flat internet cable recently and there's no going back. The days of large bulky internet cables are gone! Welcome the sleek look of flat ethernet cables. I had some concerns about how well a flat cable would do given the conditions I needed it for, but the one I bought has turned out to be tough enough for the job.
+I purchased a flat internet cable recently and there's no going back. The days of large bulky internet cables are gone! Welcome the sleek look of flat ethernet cables. I had some concerns about how well a flat cable would do given the conditions I needed it for, but the one I bought has turned out to be tough enough for the job. {% include youtubePlayer.html id="hXkbS7Cq_RI" %}
 
 The walls in the place I'm living in are concrete, so I can't easily get a wired connection anywhere through the walls to my router. I'm convinced I would bring the whole building down if I tried any demolition. Thankfully, (or not depending on how you want to look at it) the door to my room has enough room for something slim to fit through. Like, a flat ethernet cable! Now I have a wired connection from the router right outside the room to my laptop. Instead of getting ~20Mb down I can achieve my full 200Mb down speed and the best uploads possible.
 

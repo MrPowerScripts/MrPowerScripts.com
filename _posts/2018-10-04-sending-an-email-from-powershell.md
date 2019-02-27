@@ -6,8 +6,7 @@ tags: [mrpowerscripts, sending email, send email PowerShell, send email from Pow
 description-long: I made this video about sending an email from Powershell about five years ago. I didn't think much of it at the time, but I used my actual email address in the example of the video. This resulted in people copy/pasting the example including my email and sending me all of their test emails. I've really loved it!
 ---
 
-{% include youtubePlayer.html id="gxHdAic6im8" %}
-I made this video about sending an email from Powershell about five years ago. I didn't think much of it at the time, but I used my actual email address in the example of the video. This resulted in people copy/pasting the example including my email and sending me all of their test emails. I've really loved it!
+I made this video about sending an email from Powershell about five years ago. I didn't think much of it at the time, but I used my actual email address in the example of the video. This resulted in people copy/pasting the example including my email and sending me all of their test emails. I've really loved it! {% include youtubePlayer.html id="gxHdAic6im8" %}
 
 You never think that something as simple as sending an email from Powershell could be interesting to so many people. I didn't think so at the time. Since that video has existed I've received "test" emails from people all over the world working at lots of different companies. Big and small. Governments and non-profits. It's hard to imagine how sharing something so simple can impact so many people. If you want to bug me as well here's the code itself:
 

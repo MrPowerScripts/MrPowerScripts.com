@@ -6,8 +6,7 @@ tags: [mrpowerscripts, clean windows 10 Powershell, Powershell remove apps windo
 description-long: Well, this is really cool to see! I had a fellow scripter drop into the Discord channel asking some questions about one of my videos. Windows restore points with Powershell - super exciting content. I wasn't very helpful, but they did show me what they were working on. Some really cool Powershell scripts for windows 10 to remove apps and services.
 ---
 
-{% include youtubePlayer.html id="XMK3ZAazprM" %}
-Well, this is really cool to see! I had a fellow scripter drop into the [Discord channel](https://bit.ly/mrps-discord) asking some questions about one of my videos. Windows restore points with Powershell - super exciting content. I wasn't very helpful, but they did show me what they were working on. Some really cool Powershell scripts for windows 10 to remove apps and services.
+Well, this is really cool to see! I had a fellow scripter drop into the [Discord channel](https://bit.ly/mrps-discord) asking some questions about one of my videos. Windows restore points with Powershell - super exciting content. I wasn't very helpful, but they did show me what they were working on. Some really cool Powershell scripts for windows 10 to remove apps and services. {% include youtubePlayer.html id="XMK3ZAazprM" %}
 
 It was actually interesting to peek into the world of PowerShell on Windows 10 looking at the code. Oh Windows, you bloated monstrosity. I was just praising Microsoft [on twitter](https://bit.ly/mrps-twitter) for all of the recent good karma they've earned. All of my development work is done with an open source Microsoft IDE. How crazy is that? VSCode is amazing! Of course, I also push all my code up to GitHub. Now owned by Microsoft.
 
