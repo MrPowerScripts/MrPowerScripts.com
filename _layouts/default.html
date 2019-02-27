@@ -36,14 +36,14 @@
           <nav>
             <a href="{{ site.baseurl }}/">Blog</a>
             <a href="{{ site.baseurl }}/about">About</a>
-            <a href="{{ site.baseurl }}/power-up" class="power-up"><b class="power-chev">&lt;</b>Power Up<b class="power-chev">&gt;</b></a>
+            <a href="{{ site.baseurl }}/power-up" class="power-up"><b class="power-chev">&lt; </b>Power Up<b class="power-chev"> &gt;</b></a>
           </nav>
 
         </header>
-        <div class="meta-links">
-            {% include svg-icons.html %}
-        </div>
-        {% include share-bar.html %}
+        <!-- <div class="meta-links">
+            {% include meta-links.html %}
+        </div> -->
+        <!-- {% include share-bar.html %} let's hide this until it looks pretty-->
       </div>
     </div>
 
@@ -53,9 +53,9 @@
 
     <div class="wrapper-footer">
       <div class="container">
-        {% include share-bar.html %}
+        <!-- {% include share-bar.html %} -->
         <footer class="footer">
-          {% include svg-icons.html %}
+          {% include meta-links.html %}
         </footer>
       </div>
     </div>

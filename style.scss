@@ -21,6 +21,7 @@ body {
 	background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
+  line-height: 1.5;
 }
 
 .container {
@@ -36,12 +37,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   color: black;
 
-  line-height: 1.7;
+  line-height: 2;
   margin: 1em 0 15px;
   padding: 0;
 
   @include mobile {
-    line-height: 1.4;
+    line-height: 2;
   }
 }
 
@@ -70,11 +71,11 @@ p {
 }
 
 a {
-  color: $blue;
+  color: $white;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: purple;
   }
 }
 
@@ -153,7 +154,8 @@ img {
 
 .wrapper-masthead {
   margin-bottom: 10px;
-}
+  background-image: linear-gradient(to right bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);  
+  }
 
 .masthead {
   padding: 20px 0;
@@ -161,6 +163,7 @@ img {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  color: white;
 
   @include mobile {
     text-align: center;
@@ -196,17 +199,17 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: $white;
   cursor: pointer;
   font-family: $helveticaNeue;
-  font-weight: 300;
+  font-weight: bold;
   font-size: 28px;
   letter-spacing: 1px;
 }
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
+  color: $white;
   font-size: 16px;
 
   @include mobile {
@@ -229,14 +232,14 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: $white;
     text-align: right;
     font-weight: bold;
     letter-spacing: 1px;
 
     @include mobile {
       margin: 0 10px;
-      color: $blue;
+      color: $white;
     }
   }
 }
@@ -265,6 +268,9 @@ nav {
     font-style: italic;
   }
 
+  .entry {
+    line-height: 3;
+  }
 .post-menu-bar {
   opacity: 0;
 
@@ -281,6 +287,7 @@ nav {
     text-transform: uppercase;
     font-family: sans-serif;
     font-size: 20px;
+    width: 100%;
     padding: 5px;
     color: white;
     border: solid #686894 2px;
@@ -300,6 +307,7 @@ nav {
 footer {
   padding: 20px 0;
   text-align: center;
+  background-image: linear-gradient(to right bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
 }
 
 .youtube-video {
