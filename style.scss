@@ -267,7 +267,7 @@ nav {
 
     @include mobile {
       margin: 0 10px;
-      color: $white;
+      color: lightcoral;
     }
   }
 }
@@ -276,10 +276,20 @@ nav {
 // .main
 //
 
+#main {
+  z-index: 1;
+}
+
 .posts > .post {
   padding-bottom: 3em;
+  padding-top: 2em;
   border-bottom: 1px solid $lightGray;
+
+  &:first-child {
+    padding-top: 0px;
+  }
 }
+
 
 .posts > .post:last-child {
   padding-bottom: 1em;
@@ -418,4 +428,4 @@ footer {
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
-@import "svg-icons";
+@import "starfield"; // https://codepen.io/saransh/pen/BKJun copy/paste job but this is sooooo cool
