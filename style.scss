@@ -94,7 +94,7 @@ p {
 }
 
 a {
-  color: $white;
+  color: lightcoral;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
@@ -231,6 +231,7 @@ img {
 
   a {
     color: white;
+    border-color: white;
   }
 }
 
@@ -304,10 +305,13 @@ nav {
   }
 
 .post-menu-bar {
-  display: none;
 
-  &:hover {
-    display: flex;
+  .edit-button {
+    opacity: 0;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 
@@ -338,7 +342,7 @@ nav {
 }
 
 .next, .previous {
-  color: darkred;
+  color: lightcoral;
 }
 
 footer {
@@ -347,7 +351,12 @@ footer {
   left: 0px;
   width: 100%;
   text-align: center;
-  background-image: linear-gradient(to left top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);}
+  background-image: linear-gradient(to left top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+
+  a {
+    color: white;
+  }
+}
 
 .youtube-video {
   background-color: #000;

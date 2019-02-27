@@ -10,5 +10,5 @@ Techy blog from a guy trying to automate everything in front of me.
 
 # Contact me
 
-[playingwithpowershell@gmail.com](mailto:playingwithpowershell@gmail.com)
+[playingwithpowershell@gmail.com](mailto:playingwithpowershell@gmail.com)  
 [Discord](https://discord.gg/uEBWZKq)

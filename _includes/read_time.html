@@ -1,0 +1,13 @@
+<span class="reading-time" title="Estimated read time">
+  {% assign words = {{include.text}} | number_of_words %}
+  {% if words < 360 %}
+  ⌛1 min
+  {% else %}
+  ⌛{{ words | divided_by: 200 }} mins
+  {% endif %}
+</span>
+
+<!-- 
+Genius https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/ 
+Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-blog-posts/
+-->
