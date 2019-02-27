@@ -188,6 +188,10 @@ img {
   justify-content: space-between;
   color: white;
 
+  a {
+    color: white;
+  }
+
   @include mobile {
     text-align: center;
   }
