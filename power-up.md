@@ -10,9 +10,7 @@ Any donation on **[Patreon](https://bit.ly/mrps-patreon)** gives you an instant 
 - First access to exclusive scripts, docker images, and other tools to automate your life.
 - Feel good knowing you helped someone else.
 
-## Other ways to support
-
-Commitment is scary. Want to support my channel without a monthly commitment? Check out some of these offers!
+## Other ways to support my channel
 
 ### Follow on Social
 
