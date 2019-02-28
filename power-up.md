@@ -9,3 +9,37 @@ Any donation on **[Patreon](https://bit.ly/mrps-patreon)** gives you an instant 
 - **Powered Up**  **[Discord](https://bit.ly/mrps-discord)** role that allows you to submit motions and vote on content decisions using the latest emoji-vote technology! 🔥 💩
 - First access to exclusive scripts, docker images, and other tools to automate your life.
 - Feel good knowing you helped someone else.
+
+## Other ways to support
+
+Commitment is scary. Want to support my channel without a monthly commitment? Check out some of these offers!
+
+### Buy cool stuff
+
+- Looking for some new gadgets to play with? Check out <a target="_blank" href="https://www.amazon.com/b?_encoding=UTF8&tag=mrpowerscript-20&linkCode=ur2&linkId=3d88ae58f7f718c680d17870ab493664&camp=1789&creative=9325&node=172456">the latest in tech</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=mrpowerscript-20&l=ur2&o=1" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />!
+
+### Try out some great services FOR FREE
+
+- [Free trial of Amazon Prime](https://amzn.to/2EEL8mt) - Instantly watch thousands of movies and TV episodes. Borrow Kindle books. Get unlimited FREE two-day shipping (no minimum order size). Already have Amazon Prime? Share that love by [Gifting Amazon Prime to someone](https://amzn.to/2VrE3uY). Prime members can also get a free trial of [Amazon Prime Music](https://amzn.to/2BWlHL0). Students can enjoy a membership to [Amazon Prime Student](https://amzn.to/2VrEg1e) as well.
+
+- [Free trial of Audible with two FREE audio books](https://amzn.to/2ECBwZ7) - The world's largest selection of digital audiobooks and spoken word content.
+
+[//]: # (End Date: Dec 30, 2020 at 05:00 PM PST)
+- [Free trial of Twitch Prime](https://amzn.to/2EAQdfd) - Take your Twitch experience to the next level and watch your favorite streams pwn noobs using Twitch Prime
+
+[//]: # (End Date: Dec 30, 2022 at 04:00 PM PST)
+- [Kindle Unlimited Membership](https://amzn.to/2VtbpJZ) - Unlimited reading from over 1 million ebooks. Unlimited listening to thousands of audiobooks.
+
+[//]: # (End Date: Dec 30, 2019 at 04:00 PM PST)
+- [Amazon Music Unlimited Free Trial](https://amzn.to/2SxbGJZ) - Love music? Of course you do! Listen to tens of millions of songs on any device anywhere.
+
+[//]: # (End Date: Dec 30, 2020 at 05:00 PM PST)
+- [Free trial of Amazon Prime Pantry](https://amzn.to/2GNNPnT) - Save yourself a trip to the store, and enjoy access to exclusive selection of low-priced items in everyday sizes with Prime Pantry.
+
+[//]: # (End Date: Dec 30, 2020 at 04:00 PM PST)
+- [Free trial of Amazon FreeTime](https://amzn.to/2XtAZ3d) - The trial includes unlimited access to more than 16,000 kid-friendly books, videos and apps as well as parental controls to help create a unique experience for each child.
+
+[//]: # (End Date: Dec 30, 2020 at 05:00 PM PST)
+- [Free trial of Amazon Fresh](https://amzn.to/2SxS8F8) - Get your groceries delivered right to your door
+
+- [Create an Amazon Business account](https://amzn.to/2XsZg9K) - It is the Amazon you love, for work. Make workplace procurement easier with convenient delivery options, simplified purchasing workflows, multiple payment options, and a competitive marketplace with business-only pricing and quantity discounts.
