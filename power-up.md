@@ -17,6 +17,7 @@ Any donation on **[Patreon](https://bit.ly/mrps-patreon)** gives you an instant 
 - [Subscribe to my YouTube channel](https://bit.ly/mrps-yt-sub)
 - [Follow on Twitter](https://bit.ly/mrps-twitter)
 - [Join me on Discord](https://bit.ly/mrps-discord)
+- [Subscribe to my Mailing List](https://bit.ly/mrps-mail-list). I promise not to send you junk. Only cool stuff!
 
 ### Buy cool stuff
 
