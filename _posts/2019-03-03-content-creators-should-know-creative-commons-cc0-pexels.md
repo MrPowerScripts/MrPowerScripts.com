@@ -1,0 +1,17 @@
+---
+layout: post
+title: Every Content Creator Should Know This - Creative Commons CC0 License & Pexels.com
+date: 2019-03-03 09:00:45+00
+tags: [mrpowerscripts, creative commons, creativecommons.org, pexels, pexels.com, cc0 license]
+description-long: Creating content all by yourself is really hard, so it's helpful to use art, music, and other assets to help you share your message. If you want to monetize your content you need to be especially careful. If the content you create utilizes the copyrighted works of others then you might be in for a world of pain. Thankfully Creative Commons has been around for a few years helping content creators by creating content licenses. These licenses are easy for content creators to understand, and help them share their works for others to use in various ways. One license is incredibly useful for content creators to know about, which is the CC0 license
+---
+
+Creating content all by yourself is really hard, so it's helpful to use art, music, and other assets to help you share your message. If you want to monetize your content you need to be especially careful. If the content you create utilizes the copyrighted works of others then you might be in for a world of pain. Thankfully Creative Commons has been around for a few years helping content creators by creating content licenses. These licenses are easy for content creators to understand, and help them share their works for others to use in various ways. One license is incredibly useful for content creators to know about, which is the CC0 license
+
+The CC0 license allows a content creator to revoke all copyrights to the content they've created. Thus allowing anyone to use that content in their own private or commercial projects. Need a happy person to include in your marketing ad? It's difficult and time-consuming to hire a model and snap the pictures yourself. It can also be expensive to buy stock photography. Especially if you have little to no budget. Thankfully there's a lot of places that already exist where you can find CCO license photos or other kinds of content.
+
+My favorite place to find CC0 license content is [pexels.com](https://pexels.com). They have been around for a few years now, and their collections are always growing. They have all types of high-quality photography available under the CC0 license, so you can use them safely in your own projects without fear of violating someone elses copyrights. Pexels has also added a video site, which can be found at [Pexels video](https://video.pexels.com). The Pexels video collection isn't as large since it is a recent edition, but it will continue to grow over time.
+
+I've also contributed to Pexels by submitting over a hundred of my own photos for people to use. I log in every once in a while to check out the stats and see the download counter go up. I wish there was a way for me to know how my images were being used. It would be cool to see a picture I took modified and used for a magazine, or a brochure. In any case, I'm happy others are able to find some use for them instead of letting them sit on a hard drive somewhere never to be looked at again.
+
+If you have your own photography or videos you think others might find useful consider uploading them to Pexels. Sure, one day you might sell that random photo of a sunflower for a million dollars. It's tempting to hold onto the copyrights. You might have some others worth sharing though. Sharing is caring.
