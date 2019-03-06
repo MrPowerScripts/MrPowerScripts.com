@@ -8,7 +8,7 @@ description-long: If you're familiar with docker then you've probably used Docke
 
 If you're familiar with docker then you've probably used DockerHub. Dockerhub is AWESOME. I absolutely love (most) of it and what it does. DockerHub is simply a docker container registry. It's a place where you can store, pull, and share docker containers. {% include youtubePlayer.html id="gvaRfAqCfGY" %} It's not the only container registry. Google has their own container registry where you can upload your images. Microsoft and Amazon also have docker container registries. All of that is great, but what if you want to host your won docker images in a private registry. Those registries I mentioned have support for private accounts, but I'm going to reveal how you can host your own private container registry that you control.
 
-Want to automate this whole configuration process? I have a script that will set all of this up in 10 minutes! With some extra configuration that is very useful for a first install. Donate anything to [my Patreon](https://bit.ly/mrps-patreon) and [join my Discord Server](https://bit.ly/mrps-discord) to receive immediate access and skip reading the rest of this blog.
+Want to automate this whole configuration process? I have a script that will set all of this up in 10 minutes! With some extra configuration that is very useful for a first install. You can [find a link to the script here](https://bit.ly/mrps-docker-registry). Enjoy!
 
 Two requirements:
 
@@ -29,4 +29,4 @@ This [blog post](https://www.objectif-libre.com/en/blog/2018/06/11/self-hosting-
 
 After modifying the `docker-compose.yml` from the blog article to use my own SSL certificate, and extra little config changes here and there to improve the experience, the Portus server is live!
 
-Now I'm able to `docker login` into my own secure private Docker registry where I can manage and share access to images. I didn't want to go through all that configuration twice. It took me an entire day to figure everything out. I wrote a script that does all the configuration automatically. Including creating the SSL certificate, and launching Portus with basic configuration to start using it immediately. Donate anything to [my Patreon](https://bit.ly/mrps-patreon) and [join my Discord Server](https://bit.ly/mrps-discord) to access the script and host your own secure private Docker registry in less than 10 minutes on Digital Ocean.
+Now I'm able to `docker login` into my own secure private Docker registry where I can manage and share access to images.
