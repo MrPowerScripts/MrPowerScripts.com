@@ -30,3 +30,17 @@
     } );
   }
 })();
+  
+function selectRandom() {
+  fetch(window.location.origin+"/api.json")
+  .then(res => res.json())
+  .then((out) => {
+    var randomURL = out[Math.floor(Math.random()*out.length)];
+    window.location.href = window.location.origin + randomURL.url;
+  })
+  .catch(err => { throw err });
+
+}
+
+
+
