@@ -319,6 +319,13 @@ nav {
   }
 
 .post-menu-bar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+
+  span {
+    margin-right: 2vw;
+  }
 
   .edit-button {
     opacity: 0;

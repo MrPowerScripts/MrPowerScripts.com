@@ -9,7 +9,11 @@ layout: default
         <h2>
             <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
         </h2>
-        {% include read_time.html text=post.content %}
+        <div class="post-menu-bar">
+          <span>👤{{ post.author }}</span>
+          <span>📅 {{ post.date | date: "%B %d, %Y" }}</span>
+          {% include read_time.html text=post.content %}
+        </div>
         <div class="entry">
             {{ post.excerpt }}
         </div>

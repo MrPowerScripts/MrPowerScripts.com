@@ -14,12 +14,16 @@ description-long: |
   is to try and automate it entirely. I'll be sharing a lot about that journey of automation while continuing 
   other porjects and sharing them here on my blog as well as youtube. Join my on Discord if you have any questions.
 
-
-
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars2.githubusercontent.com/u/1307942?s=400&v=4
 
-author: MrPowerScripts
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts" # previously `page` in Jekyll 2.2.
+    values:
+      author: "MrPowerScripts"
 
 #
 # Flags below are optional
