@@ -8,7 +8,28 @@ description-long: If you're familiar with docker then you've probably used Docke
 
 If you're familiar with docker then you've probably used DockerHub. Dockerhub is AWESOME. I absolutely love (most) of it and what it does. DockerHub is simply a docker container registry. It's a place where you can store, pull, and share docker containers. {% include youtubePlayer.html id="gvaRfAqCfGY" %} It's not the only container registry. Google has their own container registry where you can upload your images. Microsoft and Amazon also have docker container registries. All of that is great, but what if you want to host your won docker images in a private registry. Those registries I mentioned have support for private accounts, but I'm going to reveal how you can host your own private container registry that you control.
 
-Want to automate this whole configuration process? I have a script that will set all of this up in 10 minutes! With some extra configuration that is very useful for a first install. You can [find a link to the script here](https://bit.ly/mrps-docker-registry). Enjoy!
+Want to automate this whole configuration process? I have a script that will set all of this up in 10 minutes! With some extra configuration that is very useful for a first install. You can [find a link to the script here](https://bit.ly/mrps-docker-registry) or at the bottom of the page. Enjoy!
+
+Two requirements:
+
+- A domain name
+- A server
+
+The server is simple. I used at $10 Ubuntu 18.10 droplet on Digital Ocean configured with SSH access. Though it should work for 18.04 as well. When you can SSH into your server you're ready for the next step
+
+I'm sure you want to login to your docker registry using the docker client locally - as you do with DockerHub. In order for that to happen, there must be a secured connection between you and the registry (your server). Else docker will throw a fit and require all kinds of hacks to get things working.
+
+So, you're going to need an SSL certificate from a trusted certifitate authority. We're going to use [LetsEncrypt](https://letsencrypt.org) because it's free and can be automated. I used [this blog post](https://www.humankode.com/ssl/how-to-set-up-free-ssl-certificates-from-lets-encrypt-using-docker-and-nginx) to get my SSL cert on the server.  It explains everything you'll need to make sure your domain is configured properly for secured connections.
+
+Once you have your domain configured properly and the SSL certificate is on the server you can start configuring the registry. Docker themselves maintains and releases [a docker image](https://hub.docker.com/_/registry/) that is a Docker registry. Yea, they put a docker container registry in a docker container. But there's one problem. There's no GUI. There's no access control. It's not that exciting by itself. If only there was some open source project built off this registry container that had all the cool bells and whistles included. Oh, right, there is. [Portus](https://github.com/SUSE/Portus).
+
+Portus is amazing. I'll go over the Portus UI in the video, but it does basically everything you could want it to do. You can create accounts, teams, and namespaces. You can add access controls to make images private, private to logged in users, or public for anyone on the internet to use. The UI is very clean and well organized.
+
+This [blog post](https://www.objectif-libre.com/en/blog/2018/06/11/self-hosting-a-secure-docker-registry-with-portus/) put me in the right direction to configure Portus and get it running. Thankfully they have a `docker-compose.yml` file that can be used which spins up all the services.
+
+After modifying the `docker-compose.yml` from the blog article to use my own SSL certificate, and extra little config changes here and there to improve the experience, the Portus server is live!
+
+Now I'm able to `docker login` into my own secure private Docker registry where I can manage and share access to images.
 
 ```bash
 #!/bin/bash
@@ -31,22 +52,22 @@ Want to automate this whole configuration process? I have a script that will set
 # THis script is intended to be run on ubuntu 18.04 or 18.10. You must run it from the home directory (~).
 # I was able to run the box fine on a $10 droplet from digital ocean.
 # It will provision the enviroment, install an ssl cert from letsencrypt, and start the Portus registry service.
-# You can login to your new docker registry at https://${your_domain}:3000. 
+# You can login to your new docker registry at https://${your_domain}:3000.
 # You WILL NOT be able to connect through http. You must prefix your URL with HTTPS.
 # You will be asked to create an admin account on first visit. If you have any issues join my Discord server.
 
-# After you have the server set up you can create other user account, or use the admin account. 
+# After you have the server set up you can create other user account, or use the admin account.
 # You will be able to login to your private registry using the docker client by pointing it to your domain.
 # ex. docker login forestfiles.com
 
 # From here you can interact with your private registry to push and pull images as you would on DockerHub.
 
 # =====!!!!!!! IMPORTANT !!!!!!!=====
-# Make sure to set these values. 
+# Make sure to set these values.
 # If your server is on a subdomain (sub.forestfiles.com) that's fine
 # The domain must be set up with a properly configured A Record that points to the server IP.
-# You cannot use an IP address with this configuration. You must have a domain name. 
-DOMAIN="forestfiles.com" 
+# You cannot use an IP address with this configuration. You must have a domain name.
+DOMAIN="forestfiles.com"
 EMAIL="email@gmail.com"
 
 if [ "$DOMAIN" == "forestfiles.com" ]; then
@@ -74,7 +95,7 @@ if [ "$UBUNTU" == 1804 ]; then
     "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
     $(lsb_release -cs) \
     stable" -y
-  sudo apt-get update -y 
+  sudo apt-get update -y
   sudo apt-get install docker-ce -y
 elif [ "$UBUNTU" == 1810 ]; then
   # Install docker 18.10 - this is before they had a release for this version. hack required
@@ -139,7 +160,7 @@ services:
       # NGinx is serving the assets instead of Puma. If you want to change this,
       # uncomment this line.
       - RAILS_SERVE_STATIC_FILES=true
-      
+
       # Other Config
       #- PORTUS_SIGNUP_ENABLED=false
       - PORTUS_ANONYMOUS_BROWSING_ENABLED=false
@@ -357,24 +378,3 @@ docker-compose up -d --force-recreate
 #  extfile.cnf -CAkey secrets/rootca.key -CAcreateserial \
 #  -out secrets/portus.crt -days 500 -sha256
 ```
-
-Two requirements:
-
-- A domain name
-- A server
-
-The server is simple. I used at $10 Ubuntu 18.10 droplet on Digital Ocean configured with SSH access. Though it should work for 18.04 as well. When you can SSH into your server you're ready for the next step
-
-I'm sure you want to login to your docker registry using the docker client locally - as you do with DockerHub. In order for that to happen, there must be a secured connection between you and the registry (your server). Else docker will throw a fit and require all kinds of hacks to get things working.
-
-So, you're going to need an SSL certificate from a trusted certifitate authority. We're going to use [LetsEncrypt](https://letsencrypt.org) because it's free and can be automated. I used [this blog post](https://www.humankode.com/ssl/how-to-set-up-free-ssl-certificates-from-lets-encrypt-using-docker-and-nginx) to get my SSL cert on the server.  It explains everything you'll need to make sure your domain is configured properly for secured connections.
-
-Once you have your domain configured properly and the SSL certificate is on the server you can start configuring the registry. Docker themselves maintains and releases [a docker image](https://hub.docker.com/_/registry/) that is a Docker registry. Yea, they put a docker container registry in a docker container. But there's one problem. There's no GUI. There's no access control. It's not that exciting by itself. If only there was some open source project built off this registry container that had all the cool bells and whistles included. Oh, right, there is. [Portus](https://github.com/SUSE/Portus).
-
-Portus is amazing. I'll go over the Portus UI in the video, but it does basically everything you could want it to do. You can create accounts, teams, and namespaces. You can add access controls to make images private, private to logged in users, or public for anyone on the internet to use. The UI is very clean and well organized.
-
-This [blog post](https://www.objectif-libre.com/en/blog/2018/06/11/self-hosting-a-secure-docker-registry-with-portus/) put me in the right direction to configure Portus and get it running. Thankfully they have a `docker-compose.yml` file that can be used which spins up all the services.
-
-After modifying the `docker-compose.yml` from the blog article to use my own SSL certificate, and extra little config changes here and there to improve the experience, the Portus server is live!
-
-Now I'm able to `docker login` into my own secure private Docker registry where I can manage and share access to images.
