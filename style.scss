@@ -100,7 +100,7 @@ a {
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    border-bottom: 4px solid white;
+    font-weight: bold;
   }
 }
 
@@ -234,10 +234,15 @@ img {
   font-weight: bold;
   font-size: 28px;
   letter-spacing: 1px;
+  border-color: white;
 
   a {
     color: white;
     border-color: white;
+
+    &:hover {
+      border-bottom: 3px solid white;
+    }
   }
 }
 
@@ -270,6 +275,10 @@ nav {
     text-align: right;
     font-weight: bold;
     letter-spacing: 1px;
+
+    &:hover {
+      border-bottom: 1px solid white;
+    }
 
     @include mobile {
       margin: 0 10px;
@@ -365,6 +374,15 @@ nav {
 
 .next, .previous {
   color: lightcoral;
+}
+
+.suggested-posts {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.suggested-post {
+  margin-bottom: 1vh;
 }
 
 footer {
