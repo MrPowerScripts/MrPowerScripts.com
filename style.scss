@@ -12,7 +12,7 @@
 
 // fonts
 @font-face {
-  font-display: auto;
+  font-display: fallback;
 
   font-family: 'Montserrat Bold';
   src: url('fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
