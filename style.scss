@@ -30,7 +30,7 @@ html {
 }
 
 body {
-	background: $white;
+  background: $white;
   font: 18px/1.4 $helvetica;
   font-family: 'Open Sans', sans-serif !important;
   color: $black;
@@ -98,7 +98,7 @@ p {
 a {
   color: lightcoral;
   text-decoration: none;
-	cursor: pointer;
+  cursor: pointer;
   &:hover, &:active {
     font-weight: bold;
   }
@@ -305,7 +305,6 @@ nav {
   }
 }
 
-
 .posts > .post:last-child {
   padding-bottom: 1em;
   border-bottom: none;
@@ -453,6 +452,13 @@ footer {
 
 .power-chev {
   color: red;
+}
+
+#active-motions {
+  height: 0px;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 4s ease-in;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS

@@ -1,0 +1,42 @@
+<div id="active-motions" class="active-motions">
+  <h3>Active Discord Votes</h3>
+  <div class="active-motion-list" id="active-motion-list"></div>
+</div>
+
+<script>
+function isMRPS(messageID) {
+  if (parseInt(messageID) === 510819339411390474) {
+    // console.log('motion is mine')
+    return true
+  } else {
+    // console.log('motion is not mine')
+    return false
+  }
+}
+
+window.addEventListener('load', function() {
+  fetch("http://dr.mrpowerscripts.com:8888/motionsData.json")
+  .then(res => res.json())
+  .then(out => {
+    window.motions = out.motions
+    var motions = out.motions.filter(i => isMRPS(i.author)).slice(0, 3)
+    // console.log(motions)
+    
+    var activeMotionList = document.getElementById("active-motion-list")
+
+    for (var i = 0; i < motions.length; i++) {
+      var motion = document.createElement('a')
+
+      motion.href = `https://discordapp.com/channels/510821302773219331/534510417448402965/${motions[i].msg}`
+      motion.target = '_blank'
+      motion.innerHTML = `⚈ ${motions[i].text}`
+      activeMotionList.appendChild(motion);
+    }
+
+    if (motions.length) {
+      document.getElementById("active-motions").style.height = "100%"
+      document.getElementById("active-motions").style.opacity = "1"
+    }
+  })
+}, false);
+</script>
