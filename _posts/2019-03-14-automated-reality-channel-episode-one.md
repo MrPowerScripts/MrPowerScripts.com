@@ -7,7 +7,7 @@ description-long: IT WORKS. IT. FREAKING. WORKS. I wrote a few months ago about 
 ---
 
 IT WORKS. IT. FREAKING. WORKS. [I wrote a few months ago about this idea to automate my youtube channel]({% post_url 2018-12-12-help-me-automate-my-youtube-channel %}). Now, at the time the idea wasn't really well defined. I decided I wanted to do something and then I had to figure out how I was going to do it. I should have [shut up and built it first]({% post_url 2019-02-16-nobody-gives-a-damn-about-your-idea %}), but I was too excited and prematurely let the idea out. It happens to everyone. Over time though I crafted a more well-defined concept. You can see the whole evolution in this playlist in fact.
-<iframe type="text/html" width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLqpaLALjc1lyekGkzAltr50RD3RD3kA4d&modestbranding=1&enablejsapi=1" frameborder="0"></iframe>
+{% include youtubePlayer.html id="videoseries?list=PLqpaLALjc1lyekGkzAltr50RD3RD3kA4d&modestbranding=1&enablejsapi=1" %}
 Well, I finally put together something I would consider a prototype. Despite many hiccups, lingering issues, and generally losing faith in the idea I managed to put together the scaffolding for a working project. This is how it all works.
 
 It all starts with a yaml file to describe the video that should be created. Here's the file for the first episode.

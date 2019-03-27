@@ -4,7 +4,6 @@
 (function() {
   var youtube = document.querySelectorAll( ".youtube-video" );
 
-
   for (var i = 0; i < youtube.length; i++) {
     // thumbnail image source.
     // var source = "https://img.youtube.com/vi/"+ youtube[i].dataset.embed +"/sddefault.jpg"; 
@@ -18,7 +17,7 @@
     }( i ) );
 
     youtube[i].addEventListener( "click", function() {
- 
+
       var iframe = document.createElement( "iframe" );
   
           iframe.setAttribute( "frameborder", "0" );
@@ -51,10 +50,3 @@ function selectRandom() {
     .catch(err => { throw err });
   }
 }
-
-
-
-
-
-
-
