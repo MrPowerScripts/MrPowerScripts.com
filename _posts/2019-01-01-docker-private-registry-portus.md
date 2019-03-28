@@ -8,7 +8,7 @@ description-long: If you're familiar with docker then you've probably used Docke
 
 If you're familiar with docker then you've probably used DockerHub. Dockerhub is AWESOME. I absolutely love (most of) it and what it does. DockerHub is simply a docker container registry. It's a place where you can store, pull, and share docker containers. {% include youtubePlayer.html id="gvaRfAqCfGY" %} It's not the only container registry. Google has their own container registry where you can upload your images. Microsoft and Amazon also have docker container registries. All of that is great, but what if you want to host your won docker images in a private registry. Those registries I mentioned have support for private accounts, but I'm going to reveal how you can host your own private container registry that you control.
 
-Want to automate this whole configuration process? I have a script that will set all of this up in 10 minutes! With some extra configuration that is very useful for a first install. You can [find a link to the script here](https://bit.ly/mrps-docker-registry) or at the bottom of the page. Enjoy!
+Want to automate this whole configuration process? I have a script that will set all of this up in 10 minutes! With some extra configuration that is very useful for a first install. You can [find a link to the script here](http://bit.ly/mrps-portus-registry) or at the bottom of the page. Enjoy!
 
 Two requirements:
 
