@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## Power Up with MrPowerScripts
+# Power Up with MrPowerScripts
 
 Any donation on **[Patreon](https://bit.ly/mrps-patreon)** gives you the **Powered Up**  **[Discord](https://bit.ly/mrps-discord)** role on Discord
 
@@ -14,6 +14,10 @@ Any donation on **[Patreon](https://bit.ly/mrps-patreon)** gives you the **Power
 - [Follow on Twitter](https://bit.ly/mrps-twitter)
 - [Join me on Discord](https://bit.ly/mrps-discord)
 - [Subscribe to my Mailing List](https://bit.ly/mrps-mail-list). I promise not to send you junk. Only cool stuff!
+
+### Become a support on my Anchor Podcast
+
+[https://anchor.fm/mrpowerscripts](https://anchor.fm/mrpowerscripts)
 
 ### Who doesn't have a podcast these days
 
