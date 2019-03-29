@@ -2,14 +2,13 @@
 layout: default
 ---
 
-# Find me on all your favorite podcast platforms!
+# Find me on all your favorite podcast platforms
 
 <iframe src="https://anchor.fm/mrpowerscripts/embed" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
 
 ## Anchor
 
-[https://anchor.fm/mrpowerscripts](https://anchor.fm/mrpowerscripts
-)
+[https://anchor.fm/mrpowerscripts](https://anchor.fm/mrpowerscripts)
 
 ## Google Podcast
 
