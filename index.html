@@ -22,6 +22,8 @@ layout: default
       </article>
     {% endfor %}
   
+    {% include supporter-cta.html %}
+    <hr>
     <div class="pagination">
       {% if paginator.previous_page %}
         <a href="{{ paginator.previous_page_path }}" class="previous">&laquo; Previous</a>
