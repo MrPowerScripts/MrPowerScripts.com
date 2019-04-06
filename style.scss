@@ -12,7 +12,7 @@
 
 // fonts
 @font-face {
-  font-display: fallback;
+  font-display: swap;
 
   font-family: 'Montserrat Bold';
   src: url('fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
@@ -31,7 +31,6 @@ html {
 
 body {
   background: $white;
-  font: 18px/1.4 $helvetica;
   font-family: 'Open Sans', sans-serif !important;
   color: $black;
   line-height: 1.5;
