@@ -7,6 +7,7 @@ description-long: I mention pretty often that I've worked for a lot of companies
 ---
 
 I mention pretty often that I've worked for a lot of companies big and small. Most of them have been amazing experiences, but not all of them have been pleasant. The worst experience by far still bothers the shit out of me to this today. There were so many wrong things happening it upsets me I stuck around as long as I did. A month and a half. What a weird experience from start to end. I found this advert looking for someone to do part-time IT work on Craigslist,  and it all went downhill from there.
+
 <iframe src="https://anchor.fm/mrpowerscripts/embed/episodes/My-worst-experience-working-for-a-company-e3ih3l" id="iframe-resize" frameborder="0" scrolling="no"></iframe>
 
 I was working for myself at the time as a freelance IT guy, which was a lot of fun for a while. I went to lots of peoples homes and helped them with their computer issues. Still, I was getting tired of driving all over the place as well as all the other hassles of freelance life. I wanted to find something more consistent and local. So a part-time IT job seemed like a nice way to receive some consistent income without having to run around all over the map.
