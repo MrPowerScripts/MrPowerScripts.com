@@ -3,7 +3,7 @@ version: 2.1
 executors:
   default:
     docker:
-      - images: circleci/node
+      - image: circleci/node
 
 jobs:
   clear-cache:
