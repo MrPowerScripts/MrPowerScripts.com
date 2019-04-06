@@ -1,0 +1,22 @@
+version: 2.1
+
+executors:
+  default:
+    docker:
+      - images: circleci/node
+
+jobs:
+  clear-cache:
+    executor: default
+    steps:
+      - run: |
+          curl -X POST "https://api.cloudflare.com/client/v4/zones/$CF_ZONE/purge_cache" \
+              -H "X-Auth-Email: $CF_EMAIL" \
+              -H "X-Auth-Key: $CF_KEY" \
+              -H "Content-Type: application/json" \
+              --data '{"purge_everything":true}'
+
+workflows:
+  clear-cache:
+    jobs:
+      - clear-cache
