@@ -10,13 +10,17 @@ layout: default
 
 [https://anchor.fm/mrpowerscripts](https://anchor.fm/mrpowerscripts)
 
-## Google Podcast
+## Apple Podcasts
 
-[https://www.google.com/podcasts?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy85YmY5NTI0L3BvZGNhc3QvcnNz](https://www.google.com/podcasts?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy85YmY5NTI0L3BvZGNhc3QvcnNz)
+[https://itunes.apple.com/us/podcast/mrpowerscripts/id1457693510](https://itunes.apple.com/us/podcast/mrpowerscripts/id1457693510)
 
 ## Spotify
 
 [https://open.spotify.com/show/6ZHVQMExJpZvknvOyesoNB](https://open.spotify.com/show/6ZHVQMExJpZvknvOyesoNB)
+
+## Google Podcasts
+
+[https://www.google.com/podcasts?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy85YmY5NTI0L3BvZGNhc3QvcnNz](https://www.google.com/podcasts?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy85YmY5NTI0L3BvZGNhc3QvcnNz)
 
 ## Breaker
 
