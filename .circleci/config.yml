@@ -3,7 +3,7 @@ version: 2.1
 executors:
   default:
     docker:
-      - image: circleci/ruby
+      - image: jekyll/jekyll
 
 jobs:
   clear-cache:
@@ -16,8 +16,8 @@ jobs:
       - run: git fetch origin $BRNACH
       - run: rm -rf $DIRECTORY
       - run: git worktree add ../$DIRECTORY $BRNACH
-      - run: sudo gem install jekyll bundler
-      - run: bundler install
+      # - run: sudo gem install jekyll bundler
+      # - run: bundler install
       - run: jekyll build
       - run: |
             cd $DIRECTORY &&
