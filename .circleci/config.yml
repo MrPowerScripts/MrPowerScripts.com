@@ -18,7 +18,7 @@ jobs:
             jekyll build
           }
 
-          git fetch gh-pages
+          git fetch origin gh-pages
 
           echo -e "\033[0;32mDeleting old content...\033[0m"
           rm -rf $directory
