@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Automate Installing IP Printers With Powershell – MrPowerScripts – Learn. Code. Grow.</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+    <link rel="canonical" href="https://mrpowerscripts.com/automate-install-ip-printer-with-powershell/">
+
+    
+    <meta name="description" content="One of my favorite ways of saving time as a systems administrator was automating the installation of printers. You don't need Powershell for it. I often times did with simple batch scripts. PowerShell is all the rage in the world of Windows these days, so that's why the video examples use it. Learning how to automate printer installations really saved me a lot of time in previous jobs, but it wasn't always easy changing a culture of manual effort. Sometimes you have to wait for the right opportunity." />
+    <meta property="og:description" content="One of my favorite ways of saving time as a systems administrator was automating the installation of printers. You don't need Powershell for it. I often times did with simple batch scripts. PowerShell is all the rage in the world of Windows these days, so that's why the video examples use it. Learning how to automate printer installations really saved me a lot of time in previous jobs, but it wasn't always easy changing a culture of manual effort. Sometimes you have to wait for the right opportunity." />
+    
+    <meta name="author" content="MrPowerScripts" />
+
+    
+    <meta property="og:title" content="Automate Installing IP Printers With Powershell" />
+    <meta property="twitter:title" content="Automate Installing IP Printers With Powershell" />
+    
+
+    
+    <meta content="/images/mpslogo.png" property="og:image">
+    
+
+    
+        
+    <meta content="mrpowerscripts" property="article:tag">
+        
+    <meta content="PowerShell" property="article:tag">
+        
+    <meta content="install IP printer" property="article:tag">
+        
+    <meta content="install direct IP printer" property="article:tag">
+        
+    <meta content="install printer PowerShell" property="article:tag">
+        
+    <meta content="installing a printer" property="article:tag">
+        
+    <meta content="printer installation" property="article:tag">
+        
+    <meta content="automate printer installation" property="article:tag">
+        
+    <meta content="powershell printer install" property="article:tag">
+        
+    <meta content="install printer powershell" property="article:tag">
+        
+    
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/images/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/images/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/images/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/images/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/images/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/images/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/images/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/images/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+<link rel="manifest" href="/images/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/images/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="MrPowerScripts - Learn. Code. Grow." href="/feed.xml" />
+
+
+    <meta name="google-site-verification" content="prYTc9sgHOxJOubz6hLVkkfpea2I82I0UfoePeJ_FEg" />
+    <meta name="msvalidate.01" content="5518FAB6C86578E1F5002CD56C1B5F24" />
+    <meta name="yandex-verification" content="4539896b000a5ed9" />
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+
+    
+    
+        <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Automate Installing IP Printers With Powershell",
+        "description": "One of my favorite ways of saving time as a systems administrator was automating the installation of printers. You don't need Powershell for it. I often times did with simple batch scripts. PowerShell is all the rage in the world of Windows these days, so that's why the video examples use it. Learning how to automate printer installations really saved me a lot of time in previous jobs, but it wasn't always easy changing a culture of manual effort. Sometimes you have to wait for the right opportunity.",
+        "image": [
+            
+                "https://mrpowerscripts.com/images/twilightyellow.png"
+            
+        ],
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://mrpowerscripts.com/automate-install-ip-printer-with-powershell/"
+        },
+        "datePublished": "2018-10-14 12:00:45 +0100",
+        "dateModified": "2018-10-14 12:00:45 +0100",
+        "isAccessibleForFree": "True",
+        "isPartOf": {
+            "@type": ["CreativeWork", "Product", "Blog"],
+            "name": "MrPowerScripts",
+            "productID": ""
+        },
+        "license": "http://creativecommons.org/licenses/by-sa/4.0/",
+        "author": {
+            "@type": "Person",
+            "name": "MrPowerScripts",
+            "description": "MrPowerScripts is here to help you automate your life so you have more time for automating your life. 
+My youtube channel started as a way for me to share stuff I was learning about Powershell. That was in 2012, and 
+since then the channel and grown in many different ways as my career and skills have envolved. My new goal with the channel
+is to try and automate it entirely. I'll be sharing a lot about that journey of automation while continuing 
+other porjects and sharing them here on my blog as well as youtube. Join my on Discord if you have any questions.
+",
+            "sameAs": "https://mrpowerscripts.com/about",
+            "image": {
+                "@type": "ImageObject",
+                "url": "https://mrpowerscripts.com/images/twilightyellow.png"
+            },
+            "givenName": "",
+            "familyName": "",
+            "alternateName": "MrPowerScripts",
+            "publishingPrinciples": "https://mrpowerscripts.com/about/"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "MrPowerScripts",
+            "description": "MrPowerScripts is here to help you automate your life so you have more time for automating your life. 
+My youtube channel started as a way for me to share stuff I was learning about Powershell. That was in 2012, and 
+since then the channel and grown in many different ways as my career and skills have envolved. My new goal with the channel
+is to try and automate it entirely. I'll be sharing a lot about that journey of automation while continuing 
+other porjects and sharing them here on my blog as well as youtube. Join my on Discord if you have any questions.
+",
+            "sameAs": "https://mrpowerscripts.com",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://mrpowerscripts.com/images/twilightyellow.png"
+            },
+            "publishingPrinciples": "https://mrpowerscripts.com/about/"
+        }
+    }
+</script>
+    
+      
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div id='stars'></div>
+      <div id='stars2'></div>
+      <div id='stars3'></div>
+      <div class="container">
+        <header class="masthead">
+          <a href="/" class="site-avatar"><img src="https://mrpowerscripts.com/images/twilightyellow.png" alt="site avatar" /></a>
+
+          <div class="site-info">
+            <h2 class="site-name"><a href="/">MrPowerScripts</a></h2>
+            <p class="site-description">Learn. Code. Grow.</p>
+          </div>
+
+          <nav>
+            <a onclick="selectRandom()">Random</a>
+            <!-- <a href="/podcast">Podcast</a> -->
+            <a href="http://bit.ly/mrps-discord">Discord</a>
+            <!-- <a href="/about">About</a> -->
+            <a href="/power-up" class="power-up">Power Up</a>
+          </nav>
+
+        </header>
+        <!-- <div class="meta-links">
+            
+<a href="mailto:playingwithpowershell@gmail.com">e-mail</a> |
+
+
+<a href="https://github.com/mrpowerscripts">github</a> |
+
+
+
+<a href="/feed.xml">rss</a> |
+<a href="https://www.twitter.com/mrpowerscripts">twitter</a> |
+
+<a href="https://youtube.com/user/mrpowerscripts">youtube</a> |
+
+<a href="https://discord.gg/uEBWZKq">discord</a> |
+<a href="https://patreon.com/mrpowerscripts">patreon</a>
+
+<style>
+.meta-links {
+    display: flex;
+    color: white;
+    justify-content: space-around;
+}
+
+.meta-links a {
+  color: white;
+  padding: 0px 0px;
+}
+
+.meta-links a:hover {
+  color:purple;
+}
+</style>
+        </div> -->
+        <!-- 
+<div id="share-bar">
+
+  <h4>Share this:</h4>
+
+  <div class="share-buttons">
+      <a  href="https://www.facebook.com/sharer/sharer.php?u=https://mrpowerscripts.com/automate-install-ip-printer-with-powershell/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Facebook" >
+          <i class="fa fa-facebook-official share-button"> facebook</i>
+      </a>
+
+      <a  href="https://twitter.com/intent/tweet?text=Automate Installing IP Printers With Powershell&url=https://mrpowerscripts.com/automate-install-ip-printer-with-powershell/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Twitter" >
+          <i class="fa fa-twitter share-button"> twitter</i>
+      </a>
+
+      <a  href="http://www.tumblr.com/share/link?url=https://mrpowerscripts.com/automate-install-ip-printer-with-powershell/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Tumblr" >
+          <i class="fa fa-tumblr share-button"> tumblr</i>
+      </a>
+
+      <a  href="http://www.reddit.com/submit?url=https://mrpowerscripts.com/automate-install-ip-printer-with-powershell/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Reddit" >
+          <i class="fa fa-reddit-alien share-button"> reddit</i>
+      </a>
+
+      <a  href="https://www.linkedin.com/shareArticle?mini=true&url=https://mrpowerscripts.com/automate-install-ip-printer-with-powershell/&title=Automate Installing IP Printers With Powershell&summary=&source="
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on LinkedIn" >
+          <i class="fa fa-linkedin share-button"> linkedin</i>
+      </a>
+
+      <a  href="mailto:?subject=Automate Installing IP Printers With Powershell&amp;body=Check out this site https://mrpowerscripts.com/automate-install-ip-printer-with-powershell/"
+          title="Share via Email" >
+          <i class="fa fa-envelope share-button"> email</i>
+      </a>
+  </div>
+
+</div> let's hide this until it looks pretty-->
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <!-- <div id="active-motions" class="active-motions">
+  <h3>Active Discord Votes</h3>
+  <div class="active-motion-list" id="active-motion-list"></div>
+</div>
+
+<script>
+function isMRPS(messageID) {
+  if (parseInt(messageID) === 510819339411390474) {
+    // console.log('motion is mine')
+    return true
+  } else {
+    // console.log('motion is not mine')
+    return false
+  }
+}
+
+window.addEventListener('load', function() {
+  fetch("http://dr.mrpowerscripts.com:8888/motionsData.json")
+  .then(res => res.json())
+  .then(out => {
+    window.motions = out.motions
+    var motions = out.motions.filter(i => isMRPS(i.author)).slice(0, 3)
+    // console.log(motions)
+    
+    var activeMotionList = document.getElementById("active-motion-list")
+
+    for (var i = 0; i < motions.length; i++) {
+      var motion = document.createElement('a')
+
+      motion.href = `https://discordapp.com/channels/510821302773219331/534510417448402965/${motions[i].msg}`
+      motion.target = '_blank'
+      motion.innerHTML = `⚈ ${motions[i].text}`
+      activeMotionList.appendChild(motion);
+    }
+
+    if (motions.length) {
+      document.getElementById("active-motions").style.height = "100%"
+      document.getElementById("active-motions").style.opacity = "1"
+    }
+  })
+}, false);
+</script> -->
+<article class="post">
+  <h1>Automate Installing IP Printers With Powershell</h1>
+  <div class="post-menu-bar">
+    <span>👤MrPowerScripts</span>
+    <span>📅 October 14, 2018</span>
+    <span class="reading-time" title="Estimated read time">
+  
+  
+  ⌛4 mins
+  
+</span>
+
+<!-- 
+Genius https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/ 
+Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-blog-posts/
+-->
+
+    <a class="edit-button" href="/tree/master/_posts/2018-10-14-automate-install-ip-printer-with-powershell.md">Edit</a>
+  </div>
+  <hr>
+  <div class="entry">
+    <p>One of my favorite ways of saving time as a systems administrator was automating the installation of printers. You don’t need Powershell for it. I often times did with simple batch scripts. PowerShell is all the rage in the world of Windows these days, so that’s why the video examples use it. <!-- (1) video wrapper --></p>
+<div class="youtube-video" data-embed="E2x6NG72tn4"> 
+ 
+    <!-- (2) the "play" button -->
+    <div class="play-button"></div> 
+     
+</div>
+<p>Learning how to automate printer installations really saved me a lot of time in previous jobs, but it wasn’t always easy changing a culture of manual effort. Sometimes you have to wait for the right opportunity.</p>
+
+<p>I was working at a commercial bank as a customer support slash junior systems admin for the company. Their support team didn’t automate anything. I had previously come from work cultures where we did our very best to automate ourselves out of a job. It was frustrating, but I saw an awesome opportunity to make the lives of my team easier and improve the support experience. There was one problem with my plan. Nobody wanted to change their ways. Wait, what? This is CLEARLY a better way of doing things? How could they not embrace this?</p>
+
+<p>I had to let it go for a long time. We continued to manually VNC into peoples computers if they needed a printer to be (re)installed. I hated it. so. much. The tides turned when a big office project came into focus. We needed to rename all of the network printer names and IP addresse for all the printers in the office. Two giant floors of people needed all the printers on their computers updated to use the new naming conventions. We were instructed to do this by hand for each user in the office as the printer names and IP addresses were updated. There were so many frustrating questions that ran through my head which had no great answer.</p>
+
+<p>How the hell are we supposed to know which users will be impacted by the change? There was no way to tell who had what installed on their machines. We were supposed to make assumptions. How long is it going to take to update each person’s machine? Some people had four or five printers installed. I would have to go back and forth referencing a document to install the printers for every single person. That is a significant disruption in the users workday, and collectively, a huge pain in the ass for me and my team.</p>
+
+<p>We spent the first-day interrupting people before I decided to write up a script that would do all this work for us. I initially received a lot of pushback against it. A senior colleague on the team instructed me not to use it when I showed him because it hadn’t been approved by management. So, I went to our manager. He was also initially against the idea. He said no when I showed him what it does.</p>
+
+<p>I was so upset. I went back to my desk dejected getting ready to interrupt more peoples day. “uh, how long is this going to take?”. “Can you do it after I leave?”. No, I want to get out of here at 5 pm as well Brad. I guess our manager saw the light in the end. I’m not sure what changed his mind but he later came to me and asked if I thought it was ready to be used in live action. Hell yeah, it’s automation time!</p>
+
+<p>The script was simple. We had an excel document that had the old computer names and their new name/IP combo. I took that data and embedded it within a PowerShell script. When you ran the script it would check to see if you had any of the old names on your computer. If it found an old name it would uninstall it and then install the corresponding new name/IP. Combined with a batch script sitting on a file server it was possible to click a link in an email to run the script and update all of the computers on that computer. It generated a little report on the computer so we could inspect what happened if someone reported issues.</p>
+
+<p>This changed the whole game. This was a project that was expected to take over a week. It would have taken many hours of productivity away from our team and others in the company. In the end, we were able to send out an email with a link to click and users could attempt the conversion at their convenience. How beautiful is that?</p>
+
+<p>It wasn’t the first time I tried to change “how we do things here”, but it was one of the most satisfying. I was given significant freedom to script solutions to daily problems after that. People would come to me asking if scripting some problem was possible. It encouraged others on the team to take some classes on PowerShell, and think differently about how we solve problems in the office. Watching the culture change was wonderful. I enjoyed working there a lot more after that. It might not always be the right time to change things, but you can always keep your eyes open for those opportunities.</p>
+
+  </div>
+
+  <div class="date">
+    Written on October 14, 2018
+  </div>
+  <hr>
+  <div>
+  If you enjoy the content <a href="/power-up">check out ways you can support me</a>. Looking for the latest toys in tech? <a target="_blank" href="https://www.amazon.com/b?_encoding=UTF8&tag=mrpowerscript-20&linkCode=ur2&linkId=3d88ae58f7f718c680d17870ab493664&camp=1789&creative=9325&node=172456">Say no more</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=mrpowerscript-20&l=ur2&o=1" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />! You could even send someone a cute postcard with <a href="https://sendpostmoji.com" target="_blank">SendPostMoji.com</a>.
+</div>
+
+  <div id="suggested" class="suggested" hidden>
+    <h4>Suggested posts for you</h4>
+    <div class="suggested-posts">
+      <a href="" class="suggested-post" id="suggested-1"></a>
+      <a href="" class="suggested-post" id="suggested-2"></a>
+      <a href="" class="suggested-post" id="suggested-3"></a>
+      <a href="" class="suggested-post" id="suggested-4"></a>
+      <a href="" class="suggested-post" id="suggested-5"></a>
+    </div>
+  </div>
+</article>
+
+<script>
+
+window.addEventListener('load', function() {
+  fetch(window.location.origin+"/api.json")
+  .then(res => res.json())
+  .then(out => {
+    var posts = out.sort(() => .5 - Math.random()).slice(0,5)
+    let i
+    for (i=0; i < posts.length; i++) {
+      document.getElementById(`suggested-${i + 1}`).text = posts[i].title
+      document.getElementById(`suggested-${i + 1}`).href = posts[i].url
+    }
+
+    document.getElementById("suggested").hidden = false
+  })
+  .catch(error => console.error(error))
+}, false);
+</script>
+
+
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <!-- 
+<div id="share-bar">
+
+  <h4>Share this:</h4>
+
+  <div class="share-buttons">
+      <a  href="https://www.facebook.com/sharer/sharer.php?u=https://mrpowerscripts.com/automate-install-ip-printer-with-powershell/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Facebook" >
+          <i class="fa fa-facebook-official share-button"> facebook</i>
+      </a>
+
+      <a  href="https://twitter.com/intent/tweet?text=Automate Installing IP Printers With Powershell&url=https://mrpowerscripts.com/automate-install-ip-printer-with-powershell/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Twitter" >
+          <i class="fa fa-twitter share-button"> twitter</i>
+      </a>
+
+      <a  href="http://www.tumblr.com/share/link?url=https://mrpowerscripts.com/automate-install-ip-printer-with-powershell/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Tumblr" >
+          <i class="fa fa-tumblr share-button"> tumblr</i>
+      </a>
+
+      <a  href="http://www.reddit.com/submit?url=https://mrpowerscripts.com/automate-install-ip-printer-with-powershell/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Reddit" >
+          <i class="fa fa-reddit-alien share-button"> reddit</i>
+      </a>
+
+      <a  href="https://www.linkedin.com/shareArticle?mini=true&url=https://mrpowerscripts.com/automate-install-ip-printer-with-powershell/&title=Automate Installing IP Printers With Powershell&summary=&source="
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on LinkedIn" >
+          <i class="fa fa-linkedin share-button"> linkedin</i>
+      </a>
+
+      <a  href="mailto:?subject=Automate Installing IP Printers With Powershell&amp;body=Check out this site https://mrpowerscripts.com/automate-install-ip-printer-with-powershell/"
+          title="Share via Email" >
+          <i class="fa fa-envelope share-button"> email</i>
+      </a>
+  </div>
+
+</div> -->
+        <footer class="footer">
+          
+<a href="mailto:playingwithpowershell@gmail.com">e-mail</a> |
+
+
+<a href="https://github.com/mrpowerscripts">github</a> |
+
+
+
+<a href="/feed.xml">rss</a> |
+<a href="https://www.twitter.com/mrpowerscripts">twitter</a> |
+
+<a href="https://youtube.com/user/mrpowerscripts">youtube</a> |
+
+<a href="https://discord.gg/uEBWZKq">discord</a> |
+<a href="https://patreon.com/mrpowerscripts">patreon</a>
+
+<style>
+.meta-links {
+    display: flex;
+    color: white;
+    justify-content: space-around;
+}
+
+.meta-links a {
+  color: white;
+  padding: 0px 0px;
+}
+
+.meta-links a:hover {
+  color:purple;
+}
+</style>
+        </footer>
+      </div>
+    </div>
+
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121890486-1"></script>
+<script>
+  if (document.location.hostname.search("mrpowerscripts.com") !== -1) {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-121890486-1');
+}
+</script>
+
+
+<script type="text/javascript">var _kmq = _kmq || [];
+  var _kmk = _kmk || 'a59a911fe1083dcbd2bc1717206ab09add1eea6a';
+  function _kms(u){
+    setTimeout(function(){
+      var d = document, f = d.getElementsByTagName('script')[0],
+      s = d.createElement('script');
+      s.type = 'text/javascript'; s.async = true; s.src = u;
+      f.parentNode.insertBefore(s, f);
+    }, 1);
+  }
+  _kms('//i.kissmetrics.com/i.js');
+  _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
+  </script>
+
+
+
+
+    <script src="/scripts.js" ></script>
+  </body>
+</html>
