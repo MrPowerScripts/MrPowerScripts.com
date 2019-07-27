@@ -8,7 +8,6 @@ executors:
 jobs:
   clear-cache:
     executor: default
-    working_directory: ~/site 
     steps:
       - checkout
       - add_ssh_keys:
