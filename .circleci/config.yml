@@ -3,7 +3,7 @@ version: 2.1
 executors:
   default:
     docker:
-      - image: circleci/node
+      - image: circleci/ruby
 
 jobs:
   clear-cache:
@@ -11,11 +11,12 @@ jobs:
     steps:
       - checkout
       - run: |
-        echo 'export DIRECTORY="_site"' >> $BASH_ENV
-        echo 'export DIRECTORY="gh-pages"' >> $BASH_ENV
+          echo 'export DIRECTORY="_site"' >> $BASH_ENV
+          echo 'export DIRECTORY="gh-pages"' >> $BASH_ENV
       - run: git fetch origin $BRNACH
       - run: rm -rf $DIRECTORY
       - run: git worktree add ../$DIRECTORY $BRNACH
+      - run: sudo gem install jekyll
       - run: jekyll build
       - run: |
           cd $DIRECTORY &&
