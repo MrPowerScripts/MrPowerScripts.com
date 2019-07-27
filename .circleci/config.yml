@@ -11,18 +11,18 @@ jobs:
     steps:
       - checkout
       - run: |
-          echo 'export DIRECTORY="_site"' >> $BASH_ENV
-          echo 'export DIRECTORY="gh-pages"' >> $BASH_ENV
+            echo 'export DIRECTORY="_site"' >> "$BASH_ENV"
+            echo 'export DIRECTORY="gh-pages"' >> "$BASH_ENV"
       - run: git fetch origin $BRNACH
       - run: rm -rf $DIRECTORY
       - run: git worktree add ../$DIRECTORY $BRNACH
       - run: sudo gem install jekyll
       - run: jekyll build
       - run: |
-          cd $DIRECTORY &&
-          git add --all &&
-          git commit -m "Deploy updates" &&
-          git push origin $BRNACH
+            cd $DIRECTORY &&
+            git add --all &&
+            git commit -m "Deploy updates" &&
+            git push origin $BRNACH
 
       - run: |
           set -e
