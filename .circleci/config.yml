@@ -19,13 +19,13 @@ jobs:
             jekyll build
           }
 
-          git fetch origin gh-pages
+          git fetch origin $BRNACH
 
           echo -e "\033[0;32mDeleting old content...\033[0m"
           rm -rf $DIRECTORY
 
           echo -e "\033[0;32mChecking out $BRNACH....\033[0m"
-          git worktree add $DIRECTORY $BRNACH
+          git worktree add ../$DIRECTORY $BRNACH
 
           echo -e "\033[0;32mGenerating site...\033[0m"
           build_command
