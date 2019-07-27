@@ -85,6 +85,8 @@ kramdown:
     css_class: 'highlight'
 
 collections:
+  posts:
+    output: true
   reviews:
     output: true
     permalink: /reviews/:title/
