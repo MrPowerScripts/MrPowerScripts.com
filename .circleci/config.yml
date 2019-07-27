@@ -35,10 +35,11 @@ jobs:
             git config --global user.name "MrPowerCI"
 
       - run: bundle exec jekyll build
-      - run: cd $DIRECTORY
-      - run: git add -A
-      - run: git commit -m "Deploy updates" 
-      - run: git push origin gh-pages -f
+      - run: |
+          cd $DIRECTORY
+          git add -A
+          git commit -m "Deploy updates" 
+          git push origin gh-pages -f
 
       - run: |
           set -e
