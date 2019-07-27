@@ -22,7 +22,7 @@ jobs:
             echo $BRANCH
       - run: git fetch origin $BRANCH
       - run: rm -rf $DIRECTORY
-      - run: git worktree add ../$DIRECTORY $BRANCH
+      - run: git worktree add $DIRECTORY $BRANCH
       - restore_cache:
           keys:
             - -v1-{{ checksum "Gemfile.lock" }}
@@ -35,7 +35,7 @@ jobs:
             git config --global user.email "playingwithpowershell@gmail.com"
             git config --global user.name "MrPowerCI"
 
-      - run: bundle exec jekyll build ./project
+      - run: bundle exec jekyll build
       - run: cd $DIRECTORY
       - run: git add -A
       - run: git commit -m "Deploy updates" 
