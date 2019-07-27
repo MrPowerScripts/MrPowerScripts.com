@@ -97,6 +97,7 @@ pagination:
   per_page: 10
   permalink: "/page-:num/"
   sort_field: 'date'
+  collection: 'posts'
   sort_reverse: true
   trail: 
     before: 2
