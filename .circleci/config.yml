@@ -8,33 +8,20 @@ executors:
 jobs:
   clear-cache:
     executor: default
-    environment:
-      DIRECTORY: _site
-      BRNACH: gh-pages
     steps:
       - checkout
       - run: |
-          #!/bin/bash
-          build_command() {
-            jekyll build
-          }
-
-          git fetch origin $BRNACH
-
-          echo -e "\033[0;32mDeleting old content...\033[0m"
-          rm -rf $DIRECTORY
-
-          echo -e "\033[0;32mChecking out $BRNACH....\033[0m"
-          git worktree add ../$DIRECTORY $BRNACH
-
-          echo -e "\033[0;32mGenerating site...\033[0m"
-          build_command
-
-          echo -e "\033[0;32mDeploying $BRNACH branch...\033[0m"
+        echo 'export DIRECTORY="_site"' >> $BASH_ENV
+        echo 'export DIRECTORY="gh-pages"' >> $BASH_ENV
+      - run: git fetch origin $BRNACH
+      - run: rm -rf $DIRECTORY
+      - run: git worktree add ../$DIRECTORY $BRNACH
+      - run: jekyll build
+      - run: |
           cd $DIRECTORY &&
-            git add --all &&
-            git commit -m "Deploy updates" &&
-            git push origin $BRNACH
+          git add --all &&
+          git commit -m "Deploy updates" &&
+          git push origin $BRNACH
 
       - run: |
           set -e
