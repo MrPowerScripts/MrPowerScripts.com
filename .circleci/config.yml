@@ -13,9 +13,9 @@ jobs:
       - run: |
             echo 'export DIRECTORY="_site"' >> "$BASH_ENV"
             echo 'export BRANCH="gh-pages"' >> "$BASH_ENV"
-      - run: git fetch origin $BRNACH
+      - run: git fetch origin $BRANCH
       - run: rm -rf $DIRECTORY
-      - run: git worktree add ../$DIRECTORY $BRNACH
+      - run: git worktree add ../$DIRECTORY $BRANCH
       - restore_cache:
           keys:
             - -v1-{{ checksum "Gemfile.lock" }}
@@ -33,7 +33,7 @@ jobs:
             cd $DIRECTORY &&
             git add --all &&
             git commit -m "Deploy updates" &&
-            git push origin $BRNACH
+            git push origin $BRANCH
 
       - run: |
           set -e
