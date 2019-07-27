@@ -12,7 +12,7 @@ jobs:
       - checkout
       - run: |
             echo 'export DIRECTORY="_site"' >> "$BASH_ENV"
-            echo 'export DIRECTORY="gh-pages"' >> "$BASH_ENV"
+            echo 'export BRANCH="gh-pages"' >> "$BASH_ENV"
       - run: git fetch origin $BRNACH
       - run: rm -rf $DIRECTORY
       - run: git worktree add ../$DIRECTORY $BRNACH
