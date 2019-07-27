@@ -30,13 +30,12 @@ jobs:
           key: -v1-{{ checksum "Gemfile.lock" }}
           paths:
             - "vendor/bundle"
-      - run: bundle exec jekyll build
-      
       - run: |
             git config --global user.email "playingwithpowershell@gmail.com"
             git config --global user.name "MrPowerCI"
 
       - run: cd $DIRECTORY
+      - run: bundle exec jekyll build
       - run: git add --all 
       - run: git commit -m "Deploy updates" 
       - run: git push origin $BRANCH
