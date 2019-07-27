@@ -9,6 +9,7 @@ jobs:
   clear-cache:
     executor: default
     steps:
+      - checkout
       - run: |
           #!/bin/bash
           directory=_site
