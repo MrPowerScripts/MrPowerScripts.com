@@ -2,11 +2,12 @@
 layout: default
 pagination:
   enabled: true
+  collection: reviews
 ---
 
 <!-- {% include discord-votes.html %} -->
 <div class="posts">
-    {% for post in paginator.posts %}
+    {% for post in site.reviews %}
       <article class="post">
   
         <h2>
