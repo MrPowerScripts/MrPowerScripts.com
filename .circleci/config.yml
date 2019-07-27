@@ -10,6 +10,9 @@ jobs:
     executor: default
     steps:
       - checkout
+      - add_ssh_keys:
+          fingerprints:
+            - ee:96:96:59:fd:85:ed:00:5f:ca:e6:df:58:8f:05:71
       - run: |
             echo 'export DIRECTORY="_site"' >> "$BASH_ENV"
             echo 'export BRANCH="gh-pages"' >> "$BASH_ENV"
