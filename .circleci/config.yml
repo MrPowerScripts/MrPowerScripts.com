@@ -18,10 +18,10 @@ jobs:
       - run: git worktree add ../$DIRECTORY $BRNACH
       - restore_cache:
           keys:
-            - -v1-{{ checksum Gemfile.lock }}
+            - -v1-{{ checksum "Gemfile.lock" }}
       - run: bundler install --path vendor/bundle
       - save_cache:
-          key: -v1-{{ checksum Gemfile.lock }}
+          key: -v1-{{ checksum "Gemfile.lock" }}
           paths:
             - "vendor/bundle"
       - run: jekyll build
