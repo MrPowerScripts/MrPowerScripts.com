@@ -34,11 +34,11 @@ jobs:
             git config --global user.email "playingwithpowershell@gmail.com"
             git config --global user.name "MrPowerCI"
 
-      - run: cd $DIRECTORY
       - run: bundle exec jekyll build
+      - run: cd $DIRECTORY
       - run: git add --all 
       - run: git commit -m "Deploy updates" 
-      - run: git push origin $BRANCH
+      - run: git push origin gh-pages -f
 
       - run: |
           set -e
