@@ -1,4 +1,6 @@
 #!/bin/bash
+#http://sangsoonam.github.io/2019/02/08/using-git-worktree-to-deploy-github-pages.html
+
 directory=_site
 branch=gh-pages
 build_command() {

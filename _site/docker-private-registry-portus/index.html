@@ -382,7 +382,7 @@ Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-bl
 </span><span class="k">fi</span>
 
 <span class="c"># We'll use this later</span>
-<span class="nv">UBUNTU</span><span class="o">=</span><span class="k">$(</span> lsb_release <span class="nt">-r</span> | <span class="nb">awk</span> <span class="s1">'{ print $2 }'</span> | <span class="nb">sed</span> <span class="s1">'s/[.]//'</span> <span class="k">)</span>
+<span class="nv">UBUNTU</span><span class="o">=</span><span class="si">$(</span> lsb_release <span class="nt">-r</span> | <span class="nb">awk</span> <span class="s1">'{ print $2 }'</span> | <span class="nb">sed</span> <span class="s1">'s/[.]//'</span> <span class="si">)</span>
 <span class="nb">sudo </span>apt-get update <span class="o">&amp;&amp;</span> <span class="nb">sudo </span>apt-get <span class="nb">install </span>jq <span class="nt">-y</span>
 
 
@@ -396,7 +396,7 @@ Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-bl
   curl <span class="nt">-fsSL</span> https://download.docker.com/linux/ubuntu/gpg | <span class="nb">sudo </span>apt-key add -
   <span class="nb">sudo </span>add-apt-repository <span class="se">\</span>
     <span class="s2">"deb [arch=amd64] https://download.docker.com/linux/ubuntu </span><span class="se">\</span><span class="s2">
-    </span><span class="k">$(</span>lsb_release <span class="nt">-cs</span><span class="k">)</span><span class="s2"> </span><span class="se">\</span><span class="s2">
+    </span><span class="si">$(</span>lsb_release <span class="nt">-cs</span><span class="si">)</span><span class="s2"> </span><span class="se">\</span><span class="s2">
     stable"</span> <span class="nt">-y</span>
   <span class="nb">sudo </span>apt-get update <span class="nt">-y</span>
   <span class="nb">sudo </span>apt-get <span class="nb">install </span>docker-ce <span class="nt">-y</span>
@@ -412,7 +412,7 @@ Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-bl
 </span><span class="k">fi</span>
 
 <span class="c"># Install docker compose</span>
-<span class="nb">sudo </span>curl <span class="nt">-L</span> <span class="s2">"https://github.com/docker/compose/releases/download/1.21.2/docker-compose-</span><span class="k">$(</span><span class="nb">uname</span> <span class="nt">-s</span><span class="k">)</span><span class="s2">-</span><span class="k">$(</span><span class="nb">uname</span> <span class="nt">-m</span><span class="k">)</span><span class="s2">"</span> <span class="nt">-o</span> /usr/local/bin/docker-compose
+<span class="nb">sudo </span>curl <span class="nt">-L</span> <span class="s2">"https://github.com/docker/compose/releases/download/1.21.2/docker-compose-</span><span class="si">$(</span><span class="nb">uname</span> <span class="nt">-s</span><span class="si">)</span><span class="s2">-</span><span class="si">$(</span><span class="nb">uname</span> <span class="nt">-m</span><span class="si">)</span><span class="s2">"</span> <span class="nt">-o</span> /usr/local/bin/docker-compose
 <span class="nb">sudo chmod</span> +x /usr/local/bin/docker-compose
 
 <span class="c"># Install Portus</span>
