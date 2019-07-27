@@ -24,7 +24,7 @@ jobs:
           key: -v1-{{ checksum "Gemfile.lock" }}
           paths:
             - "vendor/bundle"
-      - run: buncle exec jekyll build
+      - run: bundle exec jekyll build
       
       - run: |
             git config --global user.email "playingwithpowershell@gmail.com"
