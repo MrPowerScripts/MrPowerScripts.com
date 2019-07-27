@@ -16,7 +16,8 @@ jobs:
       - run: git fetch origin $BRNACH
       - run: rm -rf $DIRECTORY
       - run: git worktree add ../$DIRECTORY $BRNACH
-      - run: sudo gem install jekyll
+      - run: sudo gem install jekyll bundler
+      - run: bundler install
       - run: jekyll build
       - run: |
             cd $DIRECTORY &&
