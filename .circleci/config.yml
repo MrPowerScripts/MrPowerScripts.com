@@ -20,6 +20,9 @@ jobs:
       - run: bundler install
       - run: jekyll build
       - run: |
+            git config --global user.email "playingwithpowershell@gmail.com"
+            git config --global user.name "MrPowerCI"
+
             cd $DIRECTORY &&
             git add --all &&
             git commit -m "Deploy updates" &&
