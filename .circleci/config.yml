@@ -36,7 +36,7 @@ jobs:
 
       - run: bundle exec jekyll build
       - run: cd $DIRECTORY
-      - run: git add --all 
+      - run: git add -A
       - run: git commit -m "Deploy updates" 
       - run: git push origin gh-pages -f
 
