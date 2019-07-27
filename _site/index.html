@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>MrPowerScripts – Learn. Code. Grow.</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+    <link rel="canonical" href="http://localhost:4000/">
+
+    
+    <meta name="description" content="Learn. Code. Grow.">
+    <meta property="og:description" content="Learn. Code. Grow." />
+    
+    <meta name="author" content="MrPowerScripts" />
+
+    
+
+    
+    <meta content="/images/mpslogo.png" property="og:image">
+    
+
+    
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/images/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/images/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/images/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/images/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/images/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/images/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/images/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/images/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+<link rel="manifest" href="/images/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/images/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="MrPowerScripts - Learn. Code. Grow." href="/feed.xml" />
+
+
+    <meta name="google-site-verification" content="prYTc9sgHOxJOubz6hLVkkfpea2I82I0UfoePeJ_FEg" />
+    <meta name="msvalidate.01" content="5518FAB6C86578E1F5002CD56C1B5F24" />
+    <meta name="yandex-verification" content="4539896b000a5ed9" />
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+
+    
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Blog",
+        "url": "http://localhost:4000",
+        "headline": "",
+        "about": "Learn. Code. Grow.",
+        "image": [
+            "https://mrpowerscripts.com/images/twilightyellow.png"
+        ],
+        "isAccessibleForFree": "True",
+        "isPartOf": {
+            "@type": [],
+            "name": "",
+            "productID": ""
+        },
+        "discussionUrl": "",
+        "author": {
+            "@type": "Person",
+            "name": "MrPowerScripts",
+            "description": "MrPowerScripts is here to help you automate your life so you have more time for automating your life. 
+My youtube channel started as a way for me to share stuff I was learning about Powershell. That was in 2012, and 
+since then the channel and grown in many different ways as my career and skills have envolved. My new goal with the channel
+is to try and automate it entirely. I'll be sharing a lot about that journey of automation while continuing 
+other porjects and sharing them here on my blog as well as youtube. Join my on Discord if you have any questions.
+",
+            "sameAs": "http://localhost:4000/about/",
+            "image": {
+                "@type": "ImageObject",
+                "url": "https://mrpowerscripts.com/images/twilightyellow.png"
+            },
+            "givenName": "",
+            "familyName": "",
+            "alternateName": "MrPowerScripts",
+            "publishingPrinciples": "http://localhost:4000/about/"
+        },
+        "editor": {
+            "@type": "Person",
+            "name": "MrPowerScripts",
+            "description": "MrPowerScripts is here to help you automate your life so you have more time for automating your life. 
+My youtube channel started as a way for me to share stuff I was learning about Powershell. That was in 2012, and 
+since then the channel and grown in many different ways as my career and skills have envolved. My new goal with the channel
+is to try and automate it entirely. I'll be sharing a lot about that journey of automation while continuing 
+other porjects and sharing them here on my blog as well as youtube. Join my on Discord if you have any questions.
+",
+            "sameAs": "http://localhost:4000/about",
+            "image": {
+                "@type": "ImageObject",
+                "url": "https://mrpowerscripts.com/images/twilightyellow.png"
+            },
+            "givenName": "",
+            "familyName": "",
+            "alternateName": "MrPowerScripts",
+            "publishingPrinciples": "http://localhost:4000/about"
+        },
+        "inLanguage": "en-US",
+        "license": "http://creativecommons.org/licenses/by-sa/4.0/",
+        "additionalType": "CreativeWork",
+        "alternateName": "",
+        "publisher": {
+            "@type": "Organization",
+            "name": "MrPowerScripts",
+            "description": "MrPowerScripts is here to help you automate your life so you have more time for automating your life. 
+My youtube channel started as a way for me to share stuff I was learning about Powershell. That was in 2012, and 
+since then the channel and grown in many different ways as my career and skills have envolved. My new goal with the channel
+is to try and automate it entirely. I'll be sharing a lot about that journey of automation while continuing 
+other porjects and sharing them here on my blog as well as youtube. Join my on Discord if you have any questions.
+",
+            "sameAs": "http://localhost:4000",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://mrpowerscripts.com/images/twilightyellow.png"
+            },
+            "publishingPrinciples": "http://localhost:4000/about/"
+        }
+    }
+</script>
+  
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div id='stars'></div>
+      <div id='stars2'></div>
+      <div id='stars3'></div>
+      <div class="container">
+        <header class="masthead">
+          <a href="/" class="site-avatar"><img src="https://mrpowerscripts.com/images/twilightyellow.png" alt="site avatar" /></a>
+
+          <div class="site-info">
+            <h2 class="site-name"><a href="/">MrPowerScripts</a></h2>
+            <p class="site-description">Learn. Code. Grow.</p>
+          </div>
+
+          <nav>
+            <a onclick="selectRandom()">Random</a>
+            <!-- <a href="/podcast">Podcast</a> -->
+            <a href="http://bit.ly/mrps-discord">Discord</a>
+            <!-- <a href="/about">About</a> -->
+            <a href="/power-up" class="power-up">Power Up</a>
+          </nav>
+
+        </header>
+        <!-- <div class="meta-links">
+            
+<a href="mailto:playingwithpowershell@gmail.com">e-mail</a> |
+
+
+<a href="https://github.com/mrpowerscripts">github</a> |
+
+
+
+<a href="/feed.xml">rss</a> |
+<a href="https://www.twitter.com/mrpowerscripts">twitter</a> |
+
+<a href="https://youtube.com/user/mrpowerscripts">youtube</a> |
+
+<a href="https://discord.gg/uEBWZKq">discord</a> |
+<a href="https://patreon.com/mrpowerscripts">patreon</a>
+
+<style>
+.meta-links {
+    display: flex;
+    color: white;
+    justify-content: space-around;
+}
+
+.meta-links a {
+  color: white;
+  padding: 0px 0px;
+}
+
+.meta-links a:hover {
+  color:purple;
+}
+</style>
+        </div> -->
+        <!-- 
+<div id="share-bar">
+
+  <h4>Share this:</h4>
+
+  <div class="share-buttons">
+      <a  href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/index.html"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Facebook" >
+          <i class="fa fa-facebook-official share-button"> facebook</i>
+      </a>
+
+      <a  href="https://twitter.com/intent/tweet?text=&url=http://localhost:4000/index.html"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Twitter" >
+          <i class="fa fa-twitter share-button"> twitter</i>
+      </a>
+
+      <a  href="http://www.tumblr.com/share/link?url=http://localhost:4000/index.html"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Tumblr" >
+          <i class="fa fa-tumblr share-button"> tumblr</i>
+      </a>
+
+      <a  href="http://www.reddit.com/submit?url=http://localhost:4000/index.html"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Reddit" >
+          <i class="fa fa-reddit-alien share-button"> reddit</i>
+      </a>
+
+      <a  href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/index.html&title=&summary=&source="
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on LinkedIn" >
+          <i class="fa fa-linkedin share-button"> linkedin</i>
+      </a>
+
+      <a  href="mailto:?subject=&amp;body=Check out this site http://localhost:4000/index.html"
+          title="Share via Email" >
+          <i class="fa fa-envelope share-button"> email</i>
+      </a>
+  </div>
+
+</div> let's hide this until it looks pretty-->
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <!-- <div id="active-motions" class="active-motions">
+  <h3>Active Discord Votes</h3>
+  <div class="active-motion-list" id="active-motion-list"></div>
+</div>
+
+<script>
+function isMRPS(messageID) {
+  if (parseInt(messageID) === 510819339411390474) {
+    // console.log('motion is mine')
+    return true
+  } else {
+    // console.log('motion is not mine')
+    return false
+  }
+}
+
+window.addEventListener('load', function() {
+  fetch("http://dr.mrpowerscripts.com:8888/motionsData.json")
+  .then(res => res.json())
+  .then(out => {
+    window.motions = out.motions
+    var motions = out.motions.filter(i => isMRPS(i.author)).slice(0, 3)
+    // console.log(motions)
+    
+    var activeMotionList = document.getElementById("active-motion-list")
+
+    for (var i = 0; i < motions.length; i++) {
+      var motion = document.createElement('a')
+
+      motion.href = `https://discordapp.com/channels/510821302773219331/534510417448402965/${motions[i].msg}`
+      motion.target = '_blank'
+      motion.innerHTML = `⚈ ${motions[i].text}`
+      activeMotionList.appendChild(motion);
+    }
+
+    if (motions.length) {
+      document.getElementById("active-motions").style.height = "100%"
+      document.getElementById("active-motions").style.opacity = "1"
+    }
+  })
+}, false);
+</script> -->
+<div class="posts">
+    
+      <article class="post">
+  
+        <h2>
+            <a href="/faster-github-pages-with-cloudflare-circleci/">How I made the MrPowerScripts.com website FAST on GitHub pages with Cloudflare and CircleCI</a>
+        </h2>
+        <div class="post-menu-bar">
+          <span>👤MrPowerScripts</span>
+          <span>📅 April 06, 2019</span>
+          <span class="reading-time" title="Estimated read time">
+  
+  
+  ⌛3 mins
+  
+</span>
+
+<!-- 
+Genius https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/ 
+Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-blog-posts/
+-->
+
+        </div>
+        <div class="entry">
+            <p>The performance of my website recently tanked. On Google PageSpeed Insights I had a ~99 rating. I looked at it recently and it TANKED down to 44. 44! The whole point of this blog was to <a href="https://www.youtube.com/watch?v=5YsFoEY7Ulo&amp;list=PLqpaLALjc1lwz6nHCgsP98xYX_Ykawh3J">journey into learning more about SEO</a>. One of the most important metrics for Google Page rank and general SEO ranking is the speed of your website. 44 was unacceptable. I needed to change some things FAST to make the website FAST. I even have the charts to show how much faster it is. Wait until you see the results!</p>
+
+
+        </div>
+        <a href="/faster-github-pages-with-cloudflare-circleci/" class="read-more">Read More</a>
+      </article>
+    
+      <article class="post">
+  
+        <h2>
+            <a href="/CircleCI-nick-young-meme/">CircleCI Nick Young meme for your overconfident developers</a>
+        </h2>
+        <div class="post-menu-bar">
+          <span>👤MrPowerScripts</span>
+          <span>📅 March 30, 2019</span>
+          <span class="reading-time" title="Estimated read time">
+  
+  
+  ⌛1 min
+  
+</span>
+
+<!-- 
+Genius https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/ 
+Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-blog-posts/
+-->
+
+        </div>
+        <div class="entry">
+            <p>Do you have overconfident devs on your team pushing up code and calling it a day? Only to find out their jobs failed on CircleCI? Now you have something to send them to let them know it isn’t time to celebrate until the job is green! Check out the full post for the video with sound and the giphy.</p>
+
+
+        </div>
+        <a href="/CircleCI-nick-young-meme/" class="read-more">Read More</a>
+      </article>
+    
+      <article class="post">
+  
+        <h2>
+            <a href="/microsoft-excel-automation-powershell/">Microsoft Excel Automation with Powershell</a>
+        </h2>
+        <div class="post-menu-bar">
+          <span>👤MrPowerScripts</span>
+          <span>📅 March 24, 2019</span>
+          <span class="reading-time" title="Estimated read time">
+  
+  
+  ⌛3 mins
+  
+</span>
+
+<!-- 
+Genius https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/ 
+Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-blog-posts/
+-->
+
+        </div>
+        <div class="entry">
+            <p>Do you want to take your Excel skills to the next level? Did you know that you don’t need Excel to work with Excel files? Sometimes doing things programmatically is a bit easier than pointing and clicking. Or maybe you need to process a lot of files really fast, over and over again. Powershell automation with Microsoft Excel is possible! <!-- (1) video wrapper --></p>
+<div class="youtube-video" data-embed="3blgg3QfJP8"> 
+ 
+    <!-- (2) the "play" button -->
+    <div class="play-button"></div> 
+     
+</div>
+<p>In this video you’ll see how you can update Excel workbooks and worksheets with a Powershell script.</p>
+
+
+        </div>
+        <a href="/microsoft-excel-automation-powershell/" class="read-more">Read More</a>
+      </article>
+    
+      <article class="post">
+  
+        <h2>
+            <a href="/automated-reality-channel-episode-one/">Automated Reality Channel Episode One Released!</a>
+        </h2>
+        <div class="post-menu-bar">
+          <span>👤MrPowerScripts</span>
+          <span>📅 March 14, 2019</span>
+          <span class="reading-time" title="Estimated read time">
+  
+  
+  ⌛3 mins
+  
+</span>
+
+<!-- 
+Genius https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/ 
+Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-blog-posts/
+-->
+
+        </div>
+        <div class="entry">
+            <p>IT WORKS. IT. FREAKING. WORKS. <a href="/help-me-automate-my-youtube-channel/">I wrote a few months ago about this idea to automate my youtube channel</a>. Now, at the time the idea wasn’t really well defined. I decided I wanted to do something and then I had to figure out how I was going to do it. I should have <a href="/nobody-gives-a-damn-about-your-idea/">shut up and built it first</a>, but I was too excited and prematurely let the idea out. It happens to everyone. Over time though I crafted a more well-defined concept. You can see the whole evolution in this playlist in fact.
+<!-- (1) video wrapper --></p>
+<div class="youtube-video" data-embed="videoseries?list=PLqpaLALjc1lyekGkzAltr50RD3RD3kA4d&amp;modestbranding=1&amp;enablejsapi=1"> 
+ 
+    <!-- (2) the "play" button -->
+    <div class="play-button"></div> 
+     
+</div>
+<p>Well, I finally put together something I would consider a prototype. Despite many hiccups, lingering issues, and generally losing faith in the idea I managed to put together the scaffolding for a working project. This is how it all works.</p>
+
+
+        </div>
+        <a href="/automated-reality-channel-episode-one/" class="read-more">Read More</a>
+      </article>
+    
+      <article class="post">
+  
+        <h2>
+            <a href="/reduce-memory-use-gradle-kotlin/">Reduce memory usage of Gradle and Kotlin for Android development DevOps</a>
+        </h2>
+        <div class="post-menu-bar">
+          <span>👤MrPowerScripts</span>
+          <span>📅 March 10, 2019</span>
+          <span class="reading-time" title="Estimated read time">
+  
+  
+  ⌛1 min
+  
+</span>
+
+<!-- 
+Genius https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/ 
+Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-blog-posts/
+-->
+
+        </div>
+        <div class="entry">
+            <p>When you’re building your android project locally your machines probably have a lot of horsepower. When you’re running in a DevOps workflow such as continuous integration and delivery you may not have as many resources. This can cause your builds to run out of memory. Here are some quick tips to help reduce the memory usage of your Gradle and Kotlin builds for Android development.</p>
+
+
+        </div>
+        <a href="/reduce-memory-use-gradle-kotlin/" class="read-more">Read More</a>
+      </article>
+    
+      <article class="post">
+  
+        <h2>
+            <a href="/content-creators-should-know-creative-commons-cc0-pexels/">Every Content Creator Should Know This - Creative Commons CC0 License & Pexels.com</a>
+        </h2>
+        <div class="post-menu-bar">
+          <span>👤MrPowerScripts</span>
+          <span>📅 March 03, 2019</span>
+          <span class="reading-time" title="Estimated read time">
+  
+  
+  ⌛2 mins
+  
+</span>
+
+<!-- 
+Genius https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/ 
+Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-blog-posts/
+-->
+
+        </div>
+        <div class="entry">
+            <p>Creating content all by yourself is really hard, so it’s helpful to use art, music, and other assets to help you share your message. If you want to monetize your content you need to be especially careful. If the content you create utilizes the copyrighted works of others then you might be in for a world of pain. Thankfully Creative Commons has been around for a few years helping content creators by creating content licenses. <!-- (1) video wrapper --></p>
+<div class="youtube-video" data-embed="J_qTrc_fV-Y"> 
+ 
+    <!-- (2) the "play" button -->
+    <div class="play-button"></div> 
+     
+</div>
+<p>These licenses are easy for content creators to understand, and help them share their works for others to use in various ways. One license is incredibly useful for content creators to know about, which is the CC0 license</p>
+
+
+        </div>
+        <a href="/content-creators-should-know-creative-commons-cc0-pexels/" class="read-more">Read More</a>
+      </article>
+    
+      <article class="post">
+  
+        <h2>
+            <a href="/making-mrpowerscripts-website-pretty/">Making MrPowerScripts.com pretty</a>
+        </h2>
+        <div class="post-menu-bar">
+          <span>👤MrPowerScripts</span>
+          <span>📅 February 27, 2019</span>
+          <span class="reading-time" title="Estimated read time">
+  
+  
+  ⌛5 mins
+  
+</span>
+
+<!-- 
+Genius https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/ 
+Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-blog-posts/
+-->
+
+        </div>
+        <div class="entry">
+            <p>I’m not a designer. I have a terrible sense of design really. Though I feel like it has improved considerably over the years. Hopefully, that trend continues. And while I believe through hard work anyone can become great at what they put their mind to some people simply have an innate advantage. That’s okay because collaboration is what makes every project great. I don’t know anyone who built something great by themselves. The Great Pyramid of Giza?  The internet? Kim Kardashian’s butt? All of these took the efforts of many to achieve their notoriety. People have always built off the efforts or inspirations of others.</p>
+
+
+        </div>
+        <a href="/making-mrpowerscripts-website-pretty/" class="read-more">Read More</a>
+      </article>
+    
+      <article class="post">
+  
+        <h2>
+            <a href="/my-worst-experience-working-for-a-company/">My worst experience working for a company</a>
+        </h2>
+        <div class="post-menu-bar">
+          <span>👤MrPowerScripts</span>
+          <span>📅 February 18, 2019</span>
+          <span class="reading-time" title="Estimated read time">
+  
+  
+  ⌛12 mins
+  
+</span>
+
+<!-- 
+Genius https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/ 
+Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-blog-posts/
+-->
+
+        </div>
+        <div class="entry">
+            <p>I mention pretty often that I’ve worked for a lot of companies big and small. Most of them have been amazing experiences, but not all of them have been pleasant. The worst experience by far still bothers the shit out of me to this today. There were so many wrong things happening it upsets me I stuck around as long as I did. A month and a half. What a weird experience from start to end. I found this advert looking for someone to do part-time IT work on Craigslist,  and it all went downhill from there.</p>
+
+
+        </div>
+        <a href="/my-worst-experience-working-for-a-company/" class="read-more">Read More</a>
+      </article>
+    
+      <article class="post">
+  
+        <h2>
+            <a href="/nobody-gives-a-damn-about-your-idea/">Nobody gives a damn about your idea</a>
+        </h2>
+        <div class="post-menu-bar">
+          <span>👤MrPowerScripts</span>
+          <span>📅 February 16, 2019</span>
+          <span class="reading-time" title="Estimated read time">
+  
+  
+  ⌛9 mins
+  
+</span>
+
+<!-- 
+Genius https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/ 
+Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-blog-posts/
+-->
+
+        </div>
+        <div class="entry">
+            <p>Really. They’ll pretend they do if they like you, but that’s the best you’re gonna get. Everyone has ideas. If a snowflake fell every time someone had a great idea we’d all be buried up to our necks in snow. And ya know what? That snow would be way more useful than the ideas that produced it. A snowperson, snow angels, snowballs - there’s a lot of fun to be had in the snow. Your ideas, however, aren’t worth a damn. And nobody cares about them.</p>
+
+
+        </div>
+        <a href="/nobody-gives-a-damn-about-your-idea/" class="read-more">Read More</a>
+      </article>
+    
+      <article class="post">
+  
+        <h2>
+            <a href="/how-I-hacked-my-uber-rating/">How I hacked my Uber rating</a>
+        </h2>
+        <div class="post-menu-bar">
+          <span>👤MrPowerScripts</span>
+          <span>📅 February 03, 2019</span>
+          <span class="reading-time" title="Estimated read time">
+  
+  
+  ⌛9 mins
+  
+</span>
+
+<!-- 
+Genius https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/ 
+Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-blog-posts/
+-->
+
+        </div>
+        <div class="entry">
+            <p>Uber ratings are a weird concept. You spend a short period of time with someone who is whisking you around the city. You might have a chat with them, or maybe you prefer to have a quiet ride. Sometimes they’ll even offer you treats, or refreshments if you’re lucky! Then, in the end, you judge each other based on a 5-star rating. No pressure. Your Uber rating is intended to give drivers some vague insight into the person they’ll be picking up, but it also has some advantages as well.</p>
+
+
+        </div>
+        <a href="/how-I-hacked-my-uber-rating/" class="read-more">Read More</a>
+      </article>
+    
+  
+    <div>
+  If you enjoy the content <a href="/power-up">check out ways you can support me</a>. Looking for the latest toys in tech? <a target="_blank" href="https://www.amazon.com/b?_encoding=UTF8&tag=mrpowerscript-20&linkCode=ur2&linkId=3d88ae58f7f718c680d17870ab493664&camp=1789&creative=9325&node=172456">Say no more</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=mrpowerscript-20&l=ur2&o=1" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />! You could even send someone a cute postcard with <a href="https://sendpostmoji.com" target="_blank">SendPostMoji.com</a>.
+</div>
+    <hr>
+    <div class="pagination">
+      
+  
+      <span class="page_number">Page: 1 of 4</span>
+  
+      
+        <a href="/page-2/" class="next">Next &raquo;</a>
+      
+    </div>
+  </div>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <!-- 
+<div id="share-bar">
+
+  <h4>Share this:</h4>
+
+  <div class="share-buttons">
+      <a  href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/index.html"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Facebook" >
+          <i class="fa fa-facebook-official share-button"> facebook</i>
+      </a>
+
+      <a  href="https://twitter.com/intent/tweet?text=&url=http://localhost:4000/index.html"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Twitter" >
+          <i class="fa fa-twitter share-button"> twitter</i>
+      </a>
+
+      <a  href="http://www.tumblr.com/share/link?url=http://localhost:4000/index.html"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Tumblr" >
+          <i class="fa fa-tumblr share-button"> tumblr</i>
+      </a>
+
+      <a  href="http://www.reddit.com/submit?url=http://localhost:4000/index.html"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Reddit" >
+          <i class="fa fa-reddit-alien share-button"> reddit</i>
+      </a>
+
+      <a  href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/index.html&title=&summary=&source="
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on LinkedIn" >
+          <i class="fa fa-linkedin share-button"> linkedin</i>
+      </a>
+
+      <a  href="mailto:?subject=&amp;body=Check out this site http://localhost:4000/index.html"
+          title="Share via Email" >
+          <i class="fa fa-envelope share-button"> email</i>
+      </a>
+  </div>
+
+</div> -->
+        <footer class="footer">
+          
+<a href="mailto:playingwithpowershell@gmail.com">e-mail</a> |
+
+
+<a href="https://github.com/mrpowerscripts">github</a> |
+
+
+
+<a href="/feed.xml">rss</a> |
+<a href="https://www.twitter.com/mrpowerscripts">twitter</a> |
+
+<a href="https://youtube.com/user/mrpowerscripts">youtube</a> |
+
+<a href="https://discord.gg/uEBWZKq">discord</a> |
+<a href="https://patreon.com/mrpowerscripts">patreon</a>
+
+<style>
+.meta-links {
+    display: flex;
+    color: white;
+    justify-content: space-around;
+}
+
+.meta-links a {
+  color: white;
+  padding: 0px 0px;
+}
+
+.meta-links a:hover {
+  color:purple;
+}
+</style>
+        </footer>
+      </div>
+    </div>
+
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121890486-1"></script>
+<script>
+  if (document.location.hostname.search("mrpowerscripts.com") !== -1) {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-121890486-1');
+}
+</script>
+
+
+<script type="text/javascript">var _kmq = _kmq || [];
+  var _kmk = _kmk || 'a59a911fe1083dcbd2bc1717206ab09add1eea6a';
+  function _kms(u){
+    setTimeout(function(){
+      var d = document, f = d.getElementsByTagName('script')[0],
+      s = d.createElement('script');
+      s.type = 'text/javascript'; s.async = true; s.src = u;
+      f.parentNode.insertBefore(s, f);
+    }, 1);
+  }
+  _kms('//i.kissmetrics.com/i.js');
+  _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
+  </script>
+
+
+
+
+    <script src="/scripts.js" ></script>
+  </body>
+</html>

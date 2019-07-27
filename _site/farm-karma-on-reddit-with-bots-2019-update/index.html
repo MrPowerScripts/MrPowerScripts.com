@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Farm karma on Reddit with bots 2019 update – MrPowerScripts – Learn. Code. Grow.</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+    <link rel="canonical" href="http://localhost:4000/farm-karma-on-reddit-with-bots-2019-update/">
+
+    
+    <meta name="description" content="Back in July of 2017, I noticed Reddit became much more - political. Lots of very specific political subreddits with various leanings and few subscribers were getting posts pushed up pretty high on Reddit. It seemed a bit strange, but it wasn't all that much different from the previous election cycle. The difference though was in the four years since Obama won his second term Reddit's user base exploded. The number of subreddits doubled. There was more communities, more people, and more discussions. So it's not surprising that many new political subreddits would pop up as well. Which is awesome. It's good that more people are involved and aware of how politics work, and that we have the internet to share that information. Can you imagine trying to understand all the nuances to an election a hundred years ago? You cast your vote, and then things happen, and you wake up one day to a newspaper telling you who is running the country. How did that even happen? How were people capable of making informed decisions?" />
+    <meta property="og:description" content="Back in July of 2017, I noticed Reddit became much more - political. Lots of very specific political subreddits with various leanings and few subscribers were getting posts pushed up pretty high on Reddit. It seemed a bit strange, but it wasn't all that much different from the previous election cycle. The difference though was in the four years since Obama won his second term Reddit's user base exploded. The number of subreddits doubled. There was more communities, more people, and more discussions. So it's not surprising that many new political subreddits would pop up as well. Which is awesome. It's good that more people are involved and aware of how politics work, and that we have the internet to share that information. Can you imagine trying to understand all the nuances to an election a hundred years ago? You cast your vote, and then things happen, and you wake up one day to a newspaper telling you who is running the country. How did that even happen? How were people capable of making informed decisions?" />
+    
+    <meta name="author" content="MrPowerScripts" />
+
+    
+    <meta property="og:title" content="Farm karma on Reddit with bots 2019 update" />
+    <meta property="twitter:title" content="Farm karma on Reddit with bots 2019 update" />
+    
+
+    
+    <meta content="/images/mpslogo.png" property="og:image">
+    
+
+    
+        
+    <meta content="python" property="article:tag">
+        
+    <meta content="Reddit" property="article:tag">
+        
+    <meta content="machine learning" property="article:tag">
+        
+    <meta content="Markov chains" property="article:tag">
+        
+    <meta content="create a Reddit bot" property="article:tag">
+        
+    <meta content="Reddit karma farming" property="article:tag">
+        
+    <meta content="make a Reddit bot" property="article:tag">
+        
+    <meta content="Reddit bot" property="article:tag">
+        
+    <meta content="how to karma farm Reddit" property="article:tag">
+        
+    <meta content="Reddit karma farming bots" property="article:tag">
+        
+    <meta content="farm karma with bots" property="article:tag">
+        
+    <meta content="karma farming Reddit" property="article:tag">
+        
+    <meta content="farm karma reddit" property="article:tag">
+        
+    
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/images/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/images/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/images/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/images/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/images/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/images/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/images/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/images/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+<link rel="manifest" href="/images/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/images/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="MrPowerScripts - Learn. Code. Grow." href="/feed.xml" />
+
+
+    <meta name="google-site-verification" content="prYTc9sgHOxJOubz6hLVkkfpea2I82I0UfoePeJ_FEg" />
+    <meta name="msvalidate.01" content="5518FAB6C86578E1F5002CD56C1B5F24" />
+    <meta name="yandex-verification" content="4539896b000a5ed9" />
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+
+    
+    
+        <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Farm karma on Reddit with bots 2019 update",
+        "description": "Back in July of 2017, I noticed Reddit became much more - political. Lots of very specific political subreddits with various leanings and few subscribers were getting posts pushed up pretty high on Reddit. It seemed a bit strange, but it wasn't all that much different from the previous election cycle. The difference though was in the four years since Obama won his second term Reddit's user base exploded. The number of subreddits doubled. There was more communities, more people, and more discussions. So it's not surprising that many new political subreddits would pop up as well. Which is awesome. It's good that more people are involved and aware of how politics work, and that we have the internet to share that information. Can you imagine trying to understand all the nuances to an election a hundred years ago? You cast your vote, and then things happen, and you wake up one day to a newspaper telling you who is running the country. How did that even happen? How were people capable of making informed decisions?",
+        "image": [
+            
+                "https://mrpowerscripts.com/images/twilightyellow.png"
+            
+        ],
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http://localhost:4000/farm-karma-on-reddit-with-bots-2019-update/"
+        },
+        "datePublished": "2019-01-27 09:06:45 +0000",
+        "dateModified": "2019-01-27 09:06:45 +0000",
+        "isAccessibleForFree": "True",
+        "isPartOf": {
+            "@type": ["CreativeWork", "Product", "Blog"],
+            "name": "MrPowerScripts",
+            "productID": ""
+        },
+        "license": "http://creativecommons.org/licenses/by-sa/4.0/",
+        "author": {
+            "@type": "Person",
+            "name": "MrPowerScripts",
+            "description": "MrPowerScripts is here to help you automate your life so you have more time for automating your life. 
+My youtube channel started as a way for me to share stuff I was learning about Powershell. That was in 2012, and 
+since then the channel and grown in many different ways as my career and skills have envolved. My new goal with the channel
+is to try and automate it entirely. I'll be sharing a lot about that journey of automation while continuing 
+other porjects and sharing them here on my blog as well as youtube. Join my on Discord if you have any questions.
+",
+            "sameAs": "http://localhost:4000/about",
+            "image": {
+                "@type": "ImageObject",
+                "url": "https://mrpowerscripts.com/images/twilightyellow.png"
+            },
+            "givenName": "",
+            "familyName": "",
+            "alternateName": "MrPowerScripts",
+            "publishingPrinciples": "http://localhost:4000/about/"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "MrPowerScripts",
+            "description": "MrPowerScripts is here to help you automate your life so you have more time for automating your life. 
+My youtube channel started as a way for me to share stuff I was learning about Powershell. That was in 2012, and 
+since then the channel and grown in many different ways as my career and skills have envolved. My new goal with the channel
+is to try and automate it entirely. I'll be sharing a lot about that journey of automation while continuing 
+other porjects and sharing them here on my blog as well as youtube. Join my on Discord if you have any questions.
+",
+            "sameAs": "http://localhost:4000",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://mrpowerscripts.com/images/twilightyellow.png"
+            },
+            "publishingPrinciples": "http://localhost:4000/about/"
+        }
+    }
+</script>
+    
+      
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div id='stars'></div>
+      <div id='stars2'></div>
+      <div id='stars3'></div>
+      <div class="container">
+        <header class="masthead">
+          <a href="/" class="site-avatar"><img src="https://mrpowerscripts.com/images/twilightyellow.png" alt="site avatar" /></a>
+
+          <div class="site-info">
+            <h2 class="site-name"><a href="/">MrPowerScripts</a></h2>
+            <p class="site-description">Learn. Code. Grow.</p>
+          </div>
+
+          <nav>
+            <a onclick="selectRandom()">Random</a>
+            <!-- <a href="/podcast">Podcast</a> -->
+            <a href="http://bit.ly/mrps-discord">Discord</a>
+            <!-- <a href="/about">About</a> -->
+            <a href="/power-up" class="power-up">Power Up</a>
+          </nav>
+
+        </header>
+        <!-- <div class="meta-links">
+            
+<a href="mailto:playingwithpowershell@gmail.com">e-mail</a> |
+
+
+<a href="https://github.com/mrpowerscripts">github</a> |
+
+
+
+<a href="/feed.xml">rss</a> |
+<a href="https://www.twitter.com/mrpowerscripts">twitter</a> |
+
+<a href="https://youtube.com/user/mrpowerscripts">youtube</a> |
+
+<a href="https://discord.gg/uEBWZKq">discord</a> |
+<a href="https://patreon.com/mrpowerscripts">patreon</a>
+
+<style>
+.meta-links {
+    display: flex;
+    color: white;
+    justify-content: space-around;
+}
+
+.meta-links a {
+  color: white;
+  padding: 0px 0px;
+}
+
+.meta-links a:hover {
+  color:purple;
+}
+</style>
+        </div> -->
+        <!-- 
+<div id="share-bar">
+
+  <h4>Share this:</h4>
+
+  <div class="share-buttons">
+      <a  href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/farm-karma-on-reddit-with-bots-2019-update/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Facebook" >
+          <i class="fa fa-facebook-official share-button"> facebook</i>
+      </a>
+
+      <a  href="https://twitter.com/intent/tweet?text=Farm karma on Reddit with bots 2019 update&url=http://localhost:4000/farm-karma-on-reddit-with-bots-2019-update/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Twitter" >
+          <i class="fa fa-twitter share-button"> twitter</i>
+      </a>
+
+      <a  href="http://www.tumblr.com/share/link?url=http://localhost:4000/farm-karma-on-reddit-with-bots-2019-update/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Tumblr" >
+          <i class="fa fa-tumblr share-button"> tumblr</i>
+      </a>
+
+      <a  href="http://www.reddit.com/submit?url=http://localhost:4000/farm-karma-on-reddit-with-bots-2019-update/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Reddit" >
+          <i class="fa fa-reddit-alien share-button"> reddit</i>
+      </a>
+
+      <a  href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/farm-karma-on-reddit-with-bots-2019-update/&title=Farm karma on Reddit with bots 2019 update&summary=&source="
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on LinkedIn" >
+          <i class="fa fa-linkedin share-button"> linkedin</i>
+      </a>
+
+      <a  href="mailto:?subject=Farm karma on Reddit with bots 2019 update&amp;body=Check out this site http://localhost:4000/farm-karma-on-reddit-with-bots-2019-update/"
+          title="Share via Email" >
+          <i class="fa fa-envelope share-button"> email</i>
+      </a>
+  </div>
+
+</div> let's hide this until it looks pretty-->
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <!-- <div id="active-motions" class="active-motions">
+  <h3>Active Discord Votes</h3>
+  <div class="active-motion-list" id="active-motion-list"></div>
+</div>
+
+<script>
+function isMRPS(messageID) {
+  if (parseInt(messageID) === 510819339411390474) {
+    // console.log('motion is mine')
+    return true
+  } else {
+    // console.log('motion is not mine')
+    return false
+  }
+}
+
+window.addEventListener('load', function() {
+  fetch("http://dr.mrpowerscripts.com:8888/motionsData.json")
+  .then(res => res.json())
+  .then(out => {
+    window.motions = out.motions
+    var motions = out.motions.filter(i => isMRPS(i.author)).slice(0, 3)
+    // console.log(motions)
+    
+    var activeMotionList = document.getElementById("active-motion-list")
+
+    for (var i = 0; i < motions.length; i++) {
+      var motion = document.createElement('a')
+
+      motion.href = `https://discordapp.com/channels/510821302773219331/534510417448402965/${motions[i].msg}`
+      motion.target = '_blank'
+      motion.innerHTML = `⚈ ${motions[i].text}`
+      activeMotionList.appendChild(motion);
+    }
+
+    if (motions.length) {
+      document.getElementById("active-motions").style.height = "100%"
+      document.getElementById("active-motions").style.opacity = "1"
+    }
+  })
+}, false);
+</script> -->
+<article class="post">
+  <h1>Farm karma on Reddit with bots 2019 update</h1>
+  <div class="post-menu-bar">
+    <span>👤MrPowerScripts</span>
+    <span>📅 January 27, 2019</span>
+    <span class="reading-time" title="Estimated read time">
+  
+  
+  ⌛8 mins
+  
+</span>
+
+<!-- 
+Genius https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/ 
+Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-blog-posts/
+-->
+
+    <a class="edit-button" href="/tree/master/_posts/2019-01-27-farm-karma-on-reddit-with-bots-2019-update.md">Edit</a>
+  </div>
+  <hr>
+  <div class="entry">
+    <p>Back in July of 2017, I noticed Reddit became much more - political. Lots of very specific political subreddits with various leanings and few subscribers were getting posts pushed up pretty high on Reddit. It seemed a bit strange, but it wasn’t all that much different from the previous election cycle. The difference though was in the four years since Obama won his second term Reddit’s user base exploded. The number <a href="https://www.statista.com/chart/11882/number-of-subreddits-on-reddit/">of subreddits doubled</a>. There was more communities, more people, and more discussions. So it’s not surprising that many new political subreddits would pop up as well. <!-- (1) video wrapper --></p>
+<div class="youtube-video" data-embed="CCMGHepPBso"> 
+ 
+    <!-- (2) the "play" button -->
+    <div class="play-button"></div> 
+     
+</div>
+<p>Which is awesome. It’s good that more people are involved and aware of how politics work, and that we have the internet to share that information. Can you imagine trying to understand all the nuances to an election a hundred years ago? You cast your vote, and then things happen, and you wake up one day to a newspaper telling you who is running the country. How did that even happen? How were people capable of making informed decisions?</p>
+
+<p>Well, they didn’t.  People were lied to regularly. A bit more than one-hundred years ago we have an event called the Spanish-American war. You don’t hear about this too much because it was a completely fucked up event where journalists made up tons of shit to encourage the American government and people to attack a country. Why would they do that? Money and power. Let’s take a cut from <a href="https://en.wikipedia.org/wiki/Propaganda_of_the_Spanish%E2%80%93American_War">this Wikipedia entry</a>.</p>
+
+<blockquote>
+  <p>The Spanish–American War (April–August 1898) is considered to be both a turning point in the history of propaganda and the beginning of the practice of yellow journalism.</p>
+
+  <p>It was the first conflict in which military action was precipitated by media involvement. The war grew out of U.S. interest in a fight for revolution between the Spanish military and citizens of their Cuban colony. American newspapers fanned the flames of interest in the war by fabricating atrocities which justified intervention in a number of Spanish colonies worldwide.</p>
+
+  <p>Several forces within the United States were pushing for a war with Spain. Their tactics were wide-ranging and their goal was to engage the opinion of the American people in any way possible. Men such as William Randolph Hearst, the owner of The New York Journal was involved in a circulation war with Joseph Pulitzer of the New York World and saw the conflict as a way to sell papers. Many newspapers ran articles of a sensationalist nature and sent correspondents to Cuba to cover the war. Correspondents had to evade Spanish authorities; usually, they were unable to get reliable news and relied heavily on informants for their stories. Many stories were derived from second or third-hand accounts and were either elaborated, misrepresented or completely fabricated by journalists to enhance their dramatic effect. Theodore Roosevelt, who was the Assistant Secretary of the Navy at this time, wanted to use the conflict both to help heal the wounds still fresh from the American Civil War, and to increase the strength of the US Navy, while simultaneously establishing America as a presence on the world stage. Roosevelt put pressure on the United States Congress to come to the aid of the Cuban people. He emphasized Cuban weakness and femininity to justify America’s military intervention.</p>
+</blockquote>
+
+<p>You know the Pulitzer prize right? An award named after Joseph Pulitzer awarding people for excellence in journalism. It’s named after a guy who got into a circulation war launching <a href="https://en.wikipedia.org/wiki/Yellow_journalism">yellow journalism into existence</a>. You cannot make this shit up.  Next, you’re going to tell me the <a href="https://www.theregister.co.uk/2019/01/25/fcc_accused_of_colluding/">FCC is colluding with the companies it was intented to regulate</a>. Or that the <a href="https://www.lifeextension.com/Magazine/2018/1/As-We-See-It/Page-01">FDA is involved in facilitating policies</a> that are knowingly harmful to the American public. Where is our Ministry of Truth when we need it?</p>
+
+<p>Did you read those articles I linked to? I didn’t. The titles supported my argument and that was good enough for me. No clue what they say.</p>
+
+<p>How are we supposed to make meaningful decisions? History so clearly shows that everyone is lying to everyone about everything when there are two things on the line: Money &amp; Power. Rules are for losers, and that’s what you’ll be if you follow the rules.</p>
+
+<p>That sounds harsh, doesn’t it? It’s painful to go through life thinking you can’t trust anyone or anything. Having a system and believing in that system are two very different things. You can have an amazing system that nobody believes in or a completely corrupted one that everyone believes in.  Many Americans believed in their system. They believed newspapers were there to inform them. I mean, why would they lie? They’re an American newspaper. They have a flag outside their building. That should be good enough. Newspapers are there to inform and would never ever ever have any hidden agendas. At least that’s what enough people thought. Of course not all, but you don’t need to cast a ruse over everyone. All you need is enough - to win.</p>
+
+<p>Can we really expect people to go around questioning the veracity of every claim and assertion offered to them on paper, television, or the internet? Of course not, and we all accept that. And the cycle continues.</p>
+
+<p>Things haven’t changed that much since the events that lead up to the Spanish-American war. In fact, it’s even harder now for the everyday individual to keep up with a constantly changing global political landscape. Many people are struggling to put a roof over their head much less worrying about verifying all of the information coming at them non-stop through the day. And even better, why pay attention at all? TV, movies, and plenty of other hobbies are there to fill the void.</p>
+
+<p>Essentially, we’re kinda fucked. Every day a new generation of useful idiots are born. “I’m not a useful idiot” is something you’ll hear a lot of useful idiots say. All of those Americans chomping at the bit to invade Cuba were sure they weren’t useful idiots. They were well-informed individuals because they read the newspaper. That’s what well-informed individuals do.</p>
+
+<blockquote>
+  <p>“If you don’t read the newspaper, you’re uninformed. If you read the newspaper, you’re mis-informed.”
+― Mark Twain</p>
+</blockquote>
+
+<p>This quote is commonly attributed to Mark Twain, but of course, it can’t really be verified. By this point in the article, misattributing quotes should be the least of our concerns anyway.</p>
+
+<p>Yellow Journalism hasn’t died, but now it has too many syllables for the current standard of American political discourse. Fake news is the new term. It was popularized by Republicans during Donald Trumps 2018 campaign for the presidency. Though now it’s a term you’ll hear everyone use for things that they think are, well, fake news. It’s far more succinct than yellow journalism I’ll have to admit. I can see why it’s something people love to throw around.</p>
+
+<p>Personally, I feel people are much more skeptical in this day and age. But perversely, that hasn’t resulted in people being more well informed. It has degraded to people seeking sources of information that affirm bias they find comforting. Whatever that bias might be. Whatever you believe, there’s someone willing to reaffirm that belief - if they can profit or benefit from it. And there’s absolutely no way to tell if it’s for your benefit or theirs unless you have access to all the facts and data yourself. And how often does that happen? How often are you a first party to the information you need to say, elect people who make the laws that govern you? Who they really are, and what they’re really involved in? Almost never. Yet we still carry on believing this is a working system because it’s all we have and it’s all we’ve ever known.</p>
+
+<p>The internet at this stage has made me feel less well informed. I used to follow every news site that I could and read every article available. Even international sites. I wanted to be in the know, and be aware so that I could make informed decisions. Now, it’s hard for me to find the interest. There’s no way to know if another Pulitzer is running the show behind the scenes. The system is broken, or at least it really seems that way.</p>
+
+<p>We’re living in an amazing time. The information age. We’ve solved some astounding problems to get us here. But the biggest hurdles to overcome now are not with technology. Overcoming the human conditions that lead us to fight for our own bias rather than the truth is the biggest challenge ahead. But in a time when so many people are divided and at each other’s throats it doesn’t leave much room for hope in solving these major problems. Only recycling the damaging events of the past. Truth is the first casualty of war, and lies are happy to load the pistol for us.</p>
+
+<p>Anyway, enough of the pessimism. We can still have fun while the world is falling apart around us.</p>
+
+<p>To kick off this new year I’ve updated the karma farming bot to be even easier and smarter than it was before. Now you can farm karma like a pro. It even includes the ability to use a proxy server, which helps to hide the location your bot is running from. It also uses a tool called docker, which runs the bot inside a container, which is like a mini operating system running on your computer. Everything happening inside the container is, uh, contained. That way it won’t interact or mess up your host operating system. This also means that you can run multiple bots at once very easily. You can find the <a href="https://github.com/MrPowerScripts/reddit-karma-farming-bot">latest code for the bot on GitHub</a> with some instructions on how to run it.  Get out there and farm that karma. Nobody will know it’s a bot, and they won’t care if it tells them what they want to hear. Then just sit back and watch the upvotes roll in.</p>
+
+  </div>
+
+  <div class="date">
+    Written on January 27, 2019
+  </div>
+  <hr>
+  <div>
+  If you enjoy the content <a href="/power-up">check out ways you can support me</a>. Looking for the latest toys in tech? <a target="_blank" href="https://www.amazon.com/b?_encoding=UTF8&tag=mrpowerscript-20&linkCode=ur2&linkId=3d88ae58f7f718c680d17870ab493664&camp=1789&creative=9325&node=172456">Say no more</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=mrpowerscript-20&l=ur2&o=1" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />! You could even send someone a cute postcard with <a href="https://sendpostmoji.com" target="_blank">SendPostMoji.com</a>.
+</div>
+
+  <div id="suggested" class="suggested" hidden>
+    <h4>Suggested posts for you</h4>
+    <div class="suggested-posts">
+      <a href="" class="suggested-post" id="suggested-1"></a>
+      <a href="" class="suggested-post" id="suggested-2"></a>
+      <a href="" class="suggested-post" id="suggested-3"></a>
+      <a href="" class="suggested-post" id="suggested-4"></a>
+      <a href="" class="suggested-post" id="suggested-5"></a>
+    </div>
+  </div>
+</article>
+
+<script>
+
+window.addEventListener('load', function() {
+  fetch(window.location.origin+"/api.json")
+  .then(res => res.json())
+  .then(out => {
+    var posts = out.sort(() => .5 - Math.random()).slice(0,5)
+    let i
+    for (i=0; i < posts.length; i++) {
+      document.getElementById(`suggested-${i + 1}`).text = posts[i].title
+      document.getElementById(`suggested-${i + 1}`).href = posts[i].url
+    }
+
+    document.getElementById("suggested").hidden = false
+  })
+  .catch(error => console.error(error))
+}, false);
+</script>
+
+
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <!-- 
+<div id="share-bar">
+
+  <h4>Share this:</h4>
+
+  <div class="share-buttons">
+      <a  href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/farm-karma-on-reddit-with-bots-2019-update/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Facebook" >
+          <i class="fa fa-facebook-official share-button"> facebook</i>
+      </a>
+
+      <a  href="https://twitter.com/intent/tweet?text=Farm karma on Reddit with bots 2019 update&url=http://localhost:4000/farm-karma-on-reddit-with-bots-2019-update/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Twitter" >
+          <i class="fa fa-twitter share-button"> twitter</i>
+      </a>
+
+      <a  href="http://www.tumblr.com/share/link?url=http://localhost:4000/farm-karma-on-reddit-with-bots-2019-update/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Tumblr" >
+          <i class="fa fa-tumblr share-button"> tumblr</i>
+      </a>
+
+      <a  href="http://www.reddit.com/submit?url=http://localhost:4000/farm-karma-on-reddit-with-bots-2019-update/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Reddit" >
+          <i class="fa fa-reddit-alien share-button"> reddit</i>
+      </a>
+
+      <a  href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/farm-karma-on-reddit-with-bots-2019-update/&title=Farm karma on Reddit with bots 2019 update&summary=&source="
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on LinkedIn" >
+          <i class="fa fa-linkedin share-button"> linkedin</i>
+      </a>
+
+      <a  href="mailto:?subject=Farm karma on Reddit with bots 2019 update&amp;body=Check out this site http://localhost:4000/farm-karma-on-reddit-with-bots-2019-update/"
+          title="Share via Email" >
+          <i class="fa fa-envelope share-button"> email</i>
+      </a>
+  </div>
+
+</div> -->
+        <footer class="footer">
+          
+<a href="mailto:playingwithpowershell@gmail.com">e-mail</a> |
+
+
+<a href="https://github.com/mrpowerscripts">github</a> |
+
+
+
+<a href="/feed.xml">rss</a> |
+<a href="https://www.twitter.com/mrpowerscripts">twitter</a> |
+
+<a href="https://youtube.com/user/mrpowerscripts">youtube</a> |
+
+<a href="https://discord.gg/uEBWZKq">discord</a> |
+<a href="https://patreon.com/mrpowerscripts">patreon</a>
+
+<style>
+.meta-links {
+    display: flex;
+    color: white;
+    justify-content: space-around;
+}
+
+.meta-links a {
+  color: white;
+  padding: 0px 0px;
+}
+
+.meta-links a:hover {
+  color:purple;
+}
+</style>
+        </footer>
+      </div>
+    </div>
+
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121890486-1"></script>
+<script>
+  if (document.location.hostname.search("mrpowerscripts.com") !== -1) {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-121890486-1');
+}
+</script>
+
+
+<script type="text/javascript">var _kmq = _kmq || [];
+  var _kmk = _kmk || 'a59a911fe1083dcbd2bc1717206ab09add1eea6a';
+  function _kms(u){
+    setTimeout(function(){
+      var d = document, f = d.getElementsByTagName('script')[0],
+      s = d.createElement('script');
+      s.type = 'text/javascript'; s.async = true; s.src = u;
+      f.parentNode.insertBefore(s, f);
+    }, 1);
+  }
+  _kms('//i.kissmetrics.com/i.js');
+  _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
+  </script>
+
+
+
+
+    <script src="/scripts.js" ></script>
+  </body>
+</html>

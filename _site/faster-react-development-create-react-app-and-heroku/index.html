@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Faster ReactJS development with Create-React-App and Heroku – MrPowerScripts – Learn. Code. Grow.</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+    <link rel="canonical" href="http://localhost:4000/faster-react-development-create-react-app-and-heroku/">
+
+    
+    <meta name="description" content="I always loved working putting together React projects. There was a lot of overhead getting started early on for me. I don't even want to get into how many hours I spent learning how webpack work. Oh, there's a new version of webpack? EVERYTHING IS DIFFERENT NOW. React isn't that much better with breaking changes. When you combine all these various software solutions it can be hard to even get started with what you originally wanted to do. Code the freaking idea up. It took me a long time to figure out a setup that allowed me to jump right into developing the react app and thinking less about the setup. This is what I've finally settled on." />
+    <meta property="og:description" content="I always loved working putting together React projects. There was a lot of overhead getting started early on for me. I don't even want to get into how many hours I spent learning how webpack work. Oh, there's a new version of webpack? EVERYTHING IS DIFFERENT NOW. React isn't that much better with breaking changes. When you combine all these various software solutions it can be hard to even get started with what you originally wanted to do. Code the freaking idea up. It took me a long time to figure out a setup that allowed me to jump right into developing the react app and thinking less about the setup. This is what I've finally settled on." />
+    
+    <meta name="author" content="MrPowerScripts" />
+
+    
+    <meta property="og:title" content="Faster ReactJS development with Create-React-App and Heroku" />
+    <meta property="twitter:title" content="Faster ReactJS development with Create-React-App and Heroku" />
+    
+
+    
+    <meta content="/images/mpslogo.png" property="og:image">
+    
+
+    
+        
+    <meta content="mrpowerscripts" property="article:tag">
+        
+    <meta content="git" property="article:tag">
+        
+    <meta content="create-react-app" property="article:tag">
+        
+    <meta content="reactjs" property="article:tag">
+        
+    <meta content="learn react" property="article:tag">
+        
+    <meta content="react and Heroku" property="article:tag">
+        
+    <meta content="Heroku buildpack" property="article:tag">
+        
+    <meta content="create-react-app and heroku" property="article:tag">
+        
+    
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/images/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/images/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/images/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/images/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/images/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/images/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/images/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/images/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+<link rel="manifest" href="/images/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/images/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="MrPowerScripts - Learn. Code. Grow." href="/feed.xml" />
+
+
+    <meta name="google-site-verification" content="prYTc9sgHOxJOubz6hLVkkfpea2I82I0UfoePeJ_FEg" />
+    <meta name="msvalidate.01" content="5518FAB6C86578E1F5002CD56C1B5F24" />
+    <meta name="yandex-verification" content="4539896b000a5ed9" />
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+
+    
+    
+        <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Faster ReactJS development with Create-React-App and Heroku",
+        "description": "I always loved working putting together React projects. There was a lot of overhead getting started early on for me. I don't even want to get into how many hours I spent learning how webpack work. Oh, there's a new version of webpack? EVERYTHING IS DIFFERENT NOW. React isn't that much better with breaking changes. When you combine all these various software solutions it can be hard to even get started with what you originally wanted to do. Code the freaking idea up. It took me a long time to figure out a setup that allowed me to jump right into developing the react app and thinking less about the setup. This is what I've finally settled on.",
+        "image": [
+            
+                "https://mrpowerscripts.com/images/twilightyellow.png"
+            
+        ],
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http://localhost:4000/faster-react-development-create-react-app-and-heroku/"
+        },
+        "datePublished": "2018-11-18 05:00:45 +0000",
+        "dateModified": "2018-11-18 05:00:45 +0000",
+        "isAccessibleForFree": "True",
+        "isPartOf": {
+            "@type": ["CreativeWork", "Product", "Blog"],
+            "name": "MrPowerScripts",
+            "productID": ""
+        },
+        "license": "http://creativecommons.org/licenses/by-sa/4.0/",
+        "author": {
+            "@type": "Person",
+            "name": "MrPowerScripts",
+            "description": "MrPowerScripts is here to help you automate your life so you have more time for automating your life. 
+My youtube channel started as a way for me to share stuff I was learning about Powershell. That was in 2012, and 
+since then the channel and grown in many different ways as my career and skills have envolved. My new goal with the channel
+is to try and automate it entirely. I'll be sharing a lot about that journey of automation while continuing 
+other porjects and sharing them here on my blog as well as youtube. Join my on Discord if you have any questions.
+",
+            "sameAs": "http://localhost:4000/about",
+            "image": {
+                "@type": "ImageObject",
+                "url": "https://mrpowerscripts.com/images/twilightyellow.png"
+            },
+            "givenName": "",
+            "familyName": "",
+            "alternateName": "MrPowerScripts",
+            "publishingPrinciples": "http://localhost:4000/about/"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "MrPowerScripts",
+            "description": "MrPowerScripts is here to help you automate your life so you have more time for automating your life. 
+My youtube channel started as a way for me to share stuff I was learning about Powershell. That was in 2012, and 
+since then the channel and grown in many different ways as my career and skills have envolved. My new goal with the channel
+is to try and automate it entirely. I'll be sharing a lot about that journey of automation while continuing 
+other porjects and sharing them here on my blog as well as youtube. Join my on Discord if you have any questions.
+",
+            "sameAs": "http://localhost:4000",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://mrpowerscripts.com/images/twilightyellow.png"
+            },
+            "publishingPrinciples": "http://localhost:4000/about/"
+        }
+    }
+</script>
+    
+      
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div id='stars'></div>
+      <div id='stars2'></div>
+      <div id='stars3'></div>
+      <div class="container">
+        <header class="masthead">
+          <a href="/" class="site-avatar"><img src="https://mrpowerscripts.com/images/twilightyellow.png" alt="site avatar" /></a>
+
+          <div class="site-info">
+            <h2 class="site-name"><a href="/">MrPowerScripts</a></h2>
+            <p class="site-description">Learn. Code. Grow.</p>
+          </div>
+
+          <nav>
+            <a onclick="selectRandom()">Random</a>
+            <!-- <a href="/podcast">Podcast</a> -->
+            <a href="http://bit.ly/mrps-discord">Discord</a>
+            <!-- <a href="/about">About</a> -->
+            <a href="/power-up" class="power-up">Power Up</a>
+          </nav>
+
+        </header>
+        <!-- <div class="meta-links">
+            
+<a href="mailto:playingwithpowershell@gmail.com">e-mail</a> |
+
+
+<a href="https://github.com/mrpowerscripts">github</a> |
+
+
+
+<a href="/feed.xml">rss</a> |
+<a href="https://www.twitter.com/mrpowerscripts">twitter</a> |
+
+<a href="https://youtube.com/user/mrpowerscripts">youtube</a> |
+
+<a href="https://discord.gg/uEBWZKq">discord</a> |
+<a href="https://patreon.com/mrpowerscripts">patreon</a>
+
+<style>
+.meta-links {
+    display: flex;
+    color: white;
+    justify-content: space-around;
+}
+
+.meta-links a {
+  color: white;
+  padding: 0px 0px;
+}
+
+.meta-links a:hover {
+  color:purple;
+}
+</style>
+        </div> -->
+        <!-- 
+<div id="share-bar">
+
+  <h4>Share this:</h4>
+
+  <div class="share-buttons">
+      <a  href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/faster-react-development-create-react-app-and-heroku/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Facebook" >
+          <i class="fa fa-facebook-official share-button"> facebook</i>
+      </a>
+
+      <a  href="https://twitter.com/intent/tweet?text=Faster ReactJS development with Create-React-App and Heroku&url=http://localhost:4000/faster-react-development-create-react-app-and-heroku/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Twitter" >
+          <i class="fa fa-twitter share-button"> twitter</i>
+      </a>
+
+      <a  href="http://www.tumblr.com/share/link?url=http://localhost:4000/faster-react-development-create-react-app-and-heroku/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Tumblr" >
+          <i class="fa fa-tumblr share-button"> tumblr</i>
+      </a>
+
+      <a  href="http://www.reddit.com/submit?url=http://localhost:4000/faster-react-development-create-react-app-and-heroku/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Reddit" >
+          <i class="fa fa-reddit-alien share-button"> reddit</i>
+      </a>
+
+      <a  href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/faster-react-development-create-react-app-and-heroku/&title=Faster ReactJS development with Create-React-App and Heroku&summary=&source="
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on LinkedIn" >
+          <i class="fa fa-linkedin share-button"> linkedin</i>
+      </a>
+
+      <a  href="mailto:?subject=Faster ReactJS development with Create-React-App and Heroku&amp;body=Check out this site http://localhost:4000/faster-react-development-create-react-app-and-heroku/"
+          title="Share via Email" >
+          <i class="fa fa-envelope share-button"> email</i>
+      </a>
+  </div>
+
+</div> let's hide this until it looks pretty-->
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <!-- <div id="active-motions" class="active-motions">
+  <h3>Active Discord Votes</h3>
+  <div class="active-motion-list" id="active-motion-list"></div>
+</div>
+
+<script>
+function isMRPS(messageID) {
+  if (parseInt(messageID) === 510819339411390474) {
+    // console.log('motion is mine')
+    return true
+  } else {
+    // console.log('motion is not mine')
+    return false
+  }
+}
+
+window.addEventListener('load', function() {
+  fetch("http://dr.mrpowerscripts.com:8888/motionsData.json")
+  .then(res => res.json())
+  .then(out => {
+    window.motions = out.motions
+    var motions = out.motions.filter(i => isMRPS(i.author)).slice(0, 3)
+    // console.log(motions)
+    
+    var activeMotionList = document.getElementById("active-motion-list")
+
+    for (var i = 0; i < motions.length; i++) {
+      var motion = document.createElement('a')
+
+      motion.href = `https://discordapp.com/channels/510821302773219331/534510417448402965/${motions[i].msg}`
+      motion.target = '_blank'
+      motion.innerHTML = `⚈ ${motions[i].text}`
+      activeMotionList.appendChild(motion);
+    }
+
+    if (motions.length) {
+      document.getElementById("active-motions").style.height = "100%"
+      document.getElementById("active-motions").style.opacity = "1"
+    }
+  })
+}, false);
+</script> -->
+<article class="post">
+  <h1>Faster ReactJS development with Create-React-App and Heroku</h1>
+  <div class="post-menu-bar">
+    <span>👤MrPowerScripts</span>
+    <span>📅 November 18, 2018</span>
+    <span class="reading-time" title="Estimated read time">
+  
+  
+  ⌛2 mins
+  
+</span>
+
+<!-- 
+Genius https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/ 
+Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-blog-posts/
+-->
+
+    <a class="edit-button" href="/tree/master/_posts/2018-11-18-faster-react-development-create-react-app-and-heroku.md">Edit</a>
+  </div>
+  <hr>
+  <div class="entry">
+    <p>I always loved working on React projects. There was a lot of overhead getting started early on for me. I don’t even want to get into how many hours I spent learning how webpack work. Oh, there’s a new version of webpack? EVERYTHING IS DIFFERENT NOW. React isn’t that much better with breaking changes. When you combine all these various software “solutions” it can be hard to even get started with what you originally wanted to do. Code the freaking idea up. <!-- (1) video wrapper --></p>
+<div class="youtube-video" data-embed="xckpWg-Kpss"> 
+ 
+    <!-- (2) the "play" button -->
+    <div class="play-button"></div> 
+     
+</div>
+<p>It took me a long time to figure out a setup that allowed me to jump right into developing the react app and thinking less about the setup. This is what I’ve finally settled on.</p>
+
+<p>First off Create-React-App is an amazing project that basically takes a lot of best practices of React configuration and packs it all together into a framework for building simple React apps. Is it perfect for everything? No, but for most of my projects starting with a Creat-React-App was enough to get me started. Running <code class="highlighter-rouge">create-react-app project-name</code> would create and configure a full React development environment folder structure. It even comes bundled with a hot reloading web server so you can watch things change as you develop. I find it especially wonderful for getting new people into and learning React. Without having to worry about all the React configuration up front.</p>
+
+<p>Building and working on apps locally is fun, but ultimately you’re going to want to show off what you’ve made. That’s where Heroku and their buildpacks come into play here. Buildpacks are Heroku libraries that automate building and deploying tasks on Heroku. There are many buildpacks for many kinds of projects. One of those kinds is create-react-app buildpacks. I used <a href="https://github.com/nhutphuongit/create-react-app-buildpack">this one in the video</a> but you might find others that you like.</p>
+
+<p>With a Heroku account and their <a href="https://devcenter.heroku.com/articles/heroku-cli">sweet CLI tool installed</a> you can configure a buildpack on your local Create-React-App project. This will add a new <code class="highlighter-rouge">git remote</code> called <code class="highlighter-rouge">heroku</code> to your project. Want to deploy your Create-React-App to a live domain that you can share with anyone? All you have to do is <code class="highlighter-rouge">git push heroku master</code> and your code will be pushed up to Heroku where the buildpack will build and optimize your Create-React-App for production.</p>
+
+<p>How freaking cool is that? No need to manage a server. No need to get all wrapped up in webpack. You can get a React project started up and live within ten minutes and start coding out your new idea to share with everyone. At least that has been the case for me. If you like to prototype React projects quickly I highly suggest checking out Heroku and Create-React-App.</p>
+
+  </div>
+
+  <div class="date">
+    Written on November 18, 2018
+  </div>
+  <hr>
+  <div>
+  If you enjoy the content <a href="/power-up">check out ways you can support me</a>. Looking for the latest toys in tech? <a target="_blank" href="https://www.amazon.com/b?_encoding=UTF8&tag=mrpowerscript-20&linkCode=ur2&linkId=3d88ae58f7f718c680d17870ab493664&camp=1789&creative=9325&node=172456">Say no more</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=mrpowerscript-20&l=ur2&o=1" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />! You could even send someone a cute postcard with <a href="https://sendpostmoji.com" target="_blank">SendPostMoji.com</a>.
+</div>
+
+  <div id="suggested" class="suggested" hidden>
+    <h4>Suggested posts for you</h4>
+    <div class="suggested-posts">
+      <a href="" class="suggested-post" id="suggested-1"></a>
+      <a href="" class="suggested-post" id="suggested-2"></a>
+      <a href="" class="suggested-post" id="suggested-3"></a>
+      <a href="" class="suggested-post" id="suggested-4"></a>
+      <a href="" class="suggested-post" id="suggested-5"></a>
+    </div>
+  </div>
+</article>
+
+<script>
+
+window.addEventListener('load', function() {
+  fetch(window.location.origin+"/api.json")
+  .then(res => res.json())
+  .then(out => {
+    var posts = out.sort(() => .5 - Math.random()).slice(0,5)
+    let i
+    for (i=0; i < posts.length; i++) {
+      document.getElementById(`suggested-${i + 1}`).text = posts[i].title
+      document.getElementById(`suggested-${i + 1}`).href = posts[i].url
+    }
+
+    document.getElementById("suggested").hidden = false
+  })
+  .catch(error => console.error(error))
+}, false);
+</script>
+
+
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <!-- 
+<div id="share-bar">
+
+  <h4>Share this:</h4>
+
+  <div class="share-buttons">
+      <a  href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/faster-react-development-create-react-app-and-heroku/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Facebook" >
+          <i class="fa fa-facebook-official share-button"> facebook</i>
+      </a>
+
+      <a  href="https://twitter.com/intent/tweet?text=Faster ReactJS development with Create-React-App and Heroku&url=http://localhost:4000/faster-react-development-create-react-app-and-heroku/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Twitter" >
+          <i class="fa fa-twitter share-button"> twitter</i>
+      </a>
+
+      <a  href="http://www.tumblr.com/share/link?url=http://localhost:4000/faster-react-development-create-react-app-and-heroku/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Tumblr" >
+          <i class="fa fa-tumblr share-button"> tumblr</i>
+      </a>
+
+      <a  href="http://www.reddit.com/submit?url=http://localhost:4000/faster-react-development-create-react-app-and-heroku/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Reddit" >
+          <i class="fa fa-reddit-alien share-button"> reddit</i>
+      </a>
+
+      <a  href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/faster-react-development-create-react-app-and-heroku/&title=Faster ReactJS development with Create-React-App and Heroku&summary=&source="
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on LinkedIn" >
+          <i class="fa fa-linkedin share-button"> linkedin</i>
+      </a>
+
+      <a  href="mailto:?subject=Faster ReactJS development with Create-React-App and Heroku&amp;body=Check out this site http://localhost:4000/faster-react-development-create-react-app-and-heroku/"
+          title="Share via Email" >
+          <i class="fa fa-envelope share-button"> email</i>
+      </a>
+  </div>
+
+</div> -->
+        <footer class="footer">
+          
+<a href="mailto:playingwithpowershell@gmail.com">e-mail</a> |
+
+
+<a href="https://github.com/mrpowerscripts">github</a> |
+
+
+
+<a href="/feed.xml">rss</a> |
+<a href="https://www.twitter.com/mrpowerscripts">twitter</a> |
+
+<a href="https://youtube.com/user/mrpowerscripts">youtube</a> |
+
+<a href="https://discord.gg/uEBWZKq">discord</a> |
+<a href="https://patreon.com/mrpowerscripts">patreon</a>
+
+<style>
+.meta-links {
+    display: flex;
+    color: white;
+    justify-content: space-around;
+}
+
+.meta-links a {
+  color: white;
+  padding: 0px 0px;
+}
+
+.meta-links a:hover {
+  color:purple;
+}
+</style>
+        </footer>
+      </div>
+    </div>
+
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121890486-1"></script>
+<script>
+  if (document.location.hostname.search("mrpowerscripts.com") !== -1) {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-121890486-1');
+}
+</script>
+
+
+<script type="text/javascript">var _kmq = _kmq || [];
+  var _kmk = _kmk || 'a59a911fe1083dcbd2bc1717206ab09add1eea6a';
+  function _kms(u){
+    setTimeout(function(){
+      var d = document, f = d.getElementsByTagName('script')[0],
+      s = d.createElement('script');
+      s.type = 'text/javascript'; s.async = true; s.src = u;
+      f.parentNode.insertBefore(s, f);
+    }, 1);
+  }
+  _kms('//i.kissmetrics.com/i.js');
+  _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
+  </script>
+
+
+
+
+    <script src="/scripts.js" ></script>
+  </body>
+</html>
