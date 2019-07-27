@@ -33,10 +33,10 @@ jobs:
             git config --global user.email "playingwithpowershell@gmail.com"
             git config --global user.name "MrPowerCI"
 
-            cd $DIRECTORY &&
-            git add --all &&
-            git commit -m "Deploy updates" &&
-            git push origin $BRANCH
+      - run: cd $DIRECTORY
+      - run: git add --all 
+      - run: git commit -m "Deploy updates" 
+      - run: git push origin $BRANCH
 
       - run: |
           set -e
