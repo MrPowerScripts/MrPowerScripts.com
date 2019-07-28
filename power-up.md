@@ -51,3 +51,5 @@ Any donation on **[Patreon](https://bit.ly/mrps-patreon)** gives you the **Power
 - [Free trial of Amazon Fresh](https://amzn.to/2SxS8F8) - Get your groceries delivered right to your door
 
 - [Create an Amazon Business account](https://amzn.to/2XsZg9K) - It is the Amazon you love, for work. Make workplace procurement easier with convenient delivery options, simplified purchasing workflows, multiple payment options, and a competitive marketplace with business-only pricing and quantity discounts.
+
+>MrPowerScripts is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com products and services.
