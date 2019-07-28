@@ -51,8 +51,8 @@ jobs:
 
 workflows:
   clear-cache:
-    filters:
-      ignore:
-        - gh-pages
     jobs:
-      - clear-cache
+      - clear-cache:
+          filters:
+            ignore:
+              - gh-pages
