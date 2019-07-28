@@ -54,5 +54,6 @@ workflows:
     jobs:
       - clear-cache:
           filters:
-            ignore:
-              - gh-pages
+            branches:
+              ignore:
+                - gh-pages
