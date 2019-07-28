@@ -318,8 +318,8 @@ Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-bl
 
 <p>It’s not that difficult to get started with making a discord bot. I’ve created a template based on various other bot ideas I’ve seen. You can find the full example <a href="https://github.com/MrPowerScripts/simple-discord-chat-bot">here on GitHub</a>. Here’s the main code that powers the bot.</p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">Discord</span> <span class="k">from</span> <span class="s1">'discord.js'</span>
-<span class="k">import</span> <span class="nx">config</span> <span class="k">from</span> <span class="s1">'./config.json'</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">Discord</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">discord.js</span><span class="dl">'</span>
+<span class="k">import</span> <span class="nx">config</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./config.json</span><span class="dl">'</span>
 
 
 <span class="c1">// choose the enviroment variables as config if they exist</span>
@@ -336,23 +336,23 @@ Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-bl
   <span class="c1">// Initialize Discord Bot</span>
   <span class="kd">let</span> <span class="nx">bot</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Discord</span><span class="p">.</span><span class="nx">Client</span><span class="p">();</span>
 
-  <span class="nx">bot</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">'message'</span><span class="p">,</span> <span class="nx">msg</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">bot</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">message</span><span class="dl">'</span><span class="p">,</span> <span class="nx">msg</span> <span class="o">=&gt;</span> <span class="p">{</span>
       <span class="c1">// don't talk to other bots</span>
       <span class="k">if</span> <span class="p">(</span><span class="nx">msg</span><span class="p">.</span><span class="nx">author</span><span class="p">.</span><span class="nx">bot</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
   
       <span class="c1">// Also good practice to ignore any message that does not start with our prefix, </span>
       <span class="c1">// which is set in the configuration file.</span>
-      <span class="k">if</span> <span class="p">(</span><span class="nx">msg</span><span class="p">.</span><span class="nx">content</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s1">'!'</span><span class="p">)</span> <span class="o">!==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+      <span class="k">if</span> <span class="p">(</span><span class="nx">msg</span><span class="p">.</span><span class="nx">content</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="dl">'</span><span class="s1">!</span><span class="dl">'</span><span class="p">)</span> <span class="o">!==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
 
       <span class="c1">// parse the chat message to get the command that was run</span>
-      <span class="kd">let</span> <span class="nx">args</span> <span class="o">=</span> <span class="nx">msg</span><span class="p">.</span><span class="nx">content</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="mi">1</span><span class="p">).</span><span class="nx">split</span><span class="p">(</span><span class="s1">' '</span><span class="p">)</span>
+      <span class="kd">let</span> <span class="nx">args</span> <span class="o">=</span> <span class="nx">msg</span><span class="p">.</span><span class="nx">content</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="mi">1</span><span class="p">).</span><span class="nx">split</span><span class="p">(</span><span class="dl">'</span><span class="s1"> </span><span class="dl">'</span><span class="p">)</span>
       <span class="kd">let</span> <span class="nx">cmd</span> <span class="o">=</span> <span class="nx">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
       <span class="nx">args</span> <span class="o">=</span> <span class="nx">args</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 
       <span class="k">switch</span><span class="p">(</span><span class="nx">cmd</span><span class="p">)</span> <span class="p">{</span>
         <span class="c1">// check to see if the bot is alive</span>
-        <span class="k">case</span> <span class="s2">"ping"</span><span class="p">:</span>
-          <span class="nx">msg</span><span class="p">.</span><span class="nx">reply</span><span class="p">(</span><span class="s1">'pong'</span><span class="p">)</span>
+        <span class="k">case</span> <span class="dl">"</span><span class="s2">ping</span><span class="dl">"</span><span class="p">:</span>
+          <span class="nx">msg</span><span class="p">.</span><span class="nx">reply</span><span class="p">(</span><span class="dl">'</span><span class="s1">pong</span><span class="dl">'</span><span class="p">)</span>
           <span class="k">break</span>
         <span class="na">default</span><span class="p">:</span>
       <span class="p">}</span>
@@ -361,7 +361,7 @@ Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-bl
   <span class="nx">bot</span><span class="p">.</span><span class="nx">login</span><span class="p">(</span><span class="nx">config</span><span class="p">.</span><span class="nx">discordToken</span><span class="p">)</span>
 <span class="p">}</span>
 
-<span class="nx">process</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">'SIGINT'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+<span class="nx">process</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">SIGINT</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
     <span class="nx">process</span><span class="p">.</span><span class="nx">exit</span><span class="p">()</span>
 <span class="p">})</span>
 

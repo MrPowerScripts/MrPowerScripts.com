@@ -288,7 +288,7 @@ window.addEventListener('load', function() {
     <span class="reading-time" title="Estimated read time">
   
   
-  ⌛3 mins
+  ⌛4 mins
   
 </span>
 
@@ -316,90 +316,90 @@ Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-bl
 
 <p>You can <a href="https://github.com/MrPowerScripts/PowerScripts/blob/16740162b415b9d91f9d4bbd930b2a6d33de1788/Excel/WorkbooksAndWorksheetsExcel.ps1">find the file here on GitHub</a> or check out the source below.</p>
 
-<div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-<span class="c1">#None of this will work through an already open excel application</span>
-<span class="c1">#You must open Excel and workbooks you want to manipulate via the COMobject</span>
+<div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w">
+</span><span class="c">#None of this will work through an already open excel application</span><span class="w">
+</span><span class="c">#You must open Excel and workbooks you want to manipulate via the COMobject</span><span class="w">
 
-<span class="c1">####################################################</span>
-<span class="c1">############### Starting Excel #####################</span>
-<span class="c1">####################################################</span>
+</span><span class="c">####################################################</span><span class="w">
+</span><span class="c">############### Starting Excel #####################</span><span class="w">
+</span><span class="c">####################################################</span><span class="w">
 
-<span class="nv">$Excel</span> <span class="o">=</span> <span class="nb">New-Object</span> -ComObject Excel.Application
+</span><span class="nv">$Excel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">New-Object</span><span class="w"> </span><span class="nt">-ComObject</span><span class="w"> </span><span class="nx">Excel.Application</span><span class="w">
 
-<span class="nv">$Excel</span>.Visible <span class="o">=</span> <span class="nv">$true</span>
-<span class="nv">$Excel</span>.DisplayAlerts <span class="o">=</span> <span class="nv">$false</span>
+</span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Visible</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="bp">$true</span><span class="w">
+</span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">DisplayAlerts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="bp">$false</span><span class="w">
 
-<span class="c1">####################################################</span>
-<span class="c1">############## Working with Workbooks ##############</span>
-<span class="c1">####################################################</span>
+</span><span class="c">####################################################</span><span class="w">
+</span><span class="c">############## Working with Workbooks ##############</span><span class="w">
+</span><span class="c">####################################################</span><span class="w">
 
-<span class="c1">#Add a workbook to your current excel file</span>
-<span class="c1">#You can add multiple workbooks with this method</span>
-<span class="nv">$Excel</span>.Workbooks.Add<span class="o">()</span>
+</span><span class="c">#Add a workbook to your current excel file</span><span class="w">
+</span><span class="c">#You can add multiple workbooks with this method</span><span class="w">
+</span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Workbooks</span><span class="o">.</span><span class="nf">Add</span><span class="p">()</span><span class="w">
 
-<span class="c1">#Find all the workbooks in your excel file by name</span>
-<span class="nv">$Excel</span>.Workbooks | <span class="nb">Select-Object</span> -ExpandProperty name
+</span><span class="c">#Find all the workbooks in your excel file by name</span><span class="w">
+</span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Workbooks</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nf">Select-Object</span><span class="w"> </span><span class="nt">-ExpandProperty</span><span class="w"> </span><span class="nx">name</span><span class="w">
 
-<span class="c1">#Activate a specifc workbook in your excel file</span>
-<span class="nv">$Excel</span>.Workbooks.Item<span class="o">(</span>2<span class="o">)</span>.activate<span class="o">()</span>
-<span class="nv">$Excel</span>.Workbooks.Item<span class="o">(</span><span class="s2">"book1"</span><span class="o">)</span>.activate<span class="o">()</span>
+</span><span class="c">#Activate a specifc workbook in your excel file</span><span class="w">
+</span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Workbooks</span><span class="o">.</span><span class="nf">Item</span><span class="p">(</span><span class="nx">2</span><span class="p">)</span><span class="o">.</span><span class="nf">activate</span><span class="p">()</span><span class="w">
+</span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Workbooks</span><span class="o">.</span><span class="nf">Item</span><span class="p">(</span><span class="s2">"book1"</span><span class="p">)</span><span class="o">.</span><span class="nf">activate</span><span class="p">()</span><span class="w">
 
-<span class="c1">#Acivate Random Workbook in Excel file</span>
-<span class="nv">$Excel</span>.Workbooks.Item<span class="o">((</span><span class="nb">Get-Random</span> -min 1 -Max <span class="o">(</span><span class="nv">$Excel</span>.Workbooks.Count+1<span class="o">)))</span>.activate<span class="o">()</span>
+</span><span class="c">#Acivate Random Workbook in Excel file</span><span class="w">
+</span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Workbooks</span><span class="o">.</span><span class="nf">Item</span><span class="p">((</span><span class="nf">Get-Random</span><span class="w"> </span><span class="nt">-min</span><span class="w"> </span><span class="nx">1</span><span class="w"> </span><span class="nt">-Max</span><span class="w"> </span><span class="p">(</span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Workbooks</span><span class="o">.</span><span class="nf">Count</span><span class="o">+</span><span class="nx">1</span><span class="p">)))</span><span class="o">.</span><span class="nf">activate</span><span class="p">()</span><span class="w">
 
-<span class="c1">#Open an existing workbook on your hardrive</span>
-<span class="nv">$Excel</span>.Workbooks.Open<span class="o">(</span><span class="s2">"</span><span class="nv">$env</span><span class="s2">:userprofile\desktop\mrpowerscripts.xlsx"</span><span class="o">)</span>
+</span><span class="c">#Open an existing workbook on your hardrive</span><span class="w">
+</span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Workbooks</span><span class="o">.</span><span class="nf">Open</span><span class="p">(</span><span class="s2">"</span><span class="nv">$</span><span class="nn">env</span><span class="p">:</span><span class="nv">userprofile</span><span class="s2">\desktop\mrpowerscripts.xlsx"</span><span class="p">)</span><span class="w">
 
-<span class="c1">#close workbooks from an excel file</span>
-<span class="nv">$Excel</span>.Workbooks.Item<span class="o">(</span>1<span class="o">)</span>.close<span class="o">()</span>
-<span class="nv">$Excel</span>.Workbooks.Item<span class="o">(</span><span class="s2">"MrPowerScripts.xlsx"</span><span class="o">)</span>.close<span class="o">()</span>
+</span><span class="c">#close workbooks from an excel file</span><span class="w">
+</span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Workbooks</span><span class="o">.</span><span class="nf">Item</span><span class="p">(</span><span class="nx">1</span><span class="p">)</span><span class="o">.</span><span class="nf">close</span><span class="p">()</span><span class="w">
+</span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Workbooks</span><span class="o">.</span><span class="nf">Item</span><span class="p">(</span><span class="s2">"MrPowerScripts.xlsx"</span><span class="p">)</span><span class="o">.</span><span class="nf">close</span><span class="p">()</span><span class="w">
 
-<span class="c1">#Save workbooks to the hard drive</span>
-<span class="nv">$Excel</span>.Workbooks.item<span class="o">(</span>1<span class="o">)</span>.SaveAs<span class="o">(</span><span class="s2">"</span><span class="nv">$env</span><span class="s2">:userprofile\Desktop\asdf.xlsx"</span><span class="o">)</span>
-
-
-<span class="c1">####################################################</span>
-<span class="c1">########### Working with Worksheets ################</span>
-<span class="c1">####################################################</span>
-
-<span class="c1">#These bits of code will affect the active Workbook.</span>
-
-<span class="c1">#Add a worksheet to your active workbook</span>
-<span class="nv">$Excel</span>.Worksheets.Add<span class="o">()</span>
-
-<span class="c1">#Find all worksheets in your active workbook</span>
-<span class="nv">$Excel</span>.Worksheets | <span class="nb">Select-Object</span> -ExpandProperty name
-
-<span class="c1">#Change name of worksheet in workbook</span>
-<span class="nv">$Excel</span>.Worksheets.Item<span class="o">(</span>1<span class="o">)</span>.name <span class="o">=</span> <span class="s2">"potato"</span>
-<span class="nv">$Excel</span>.Worksheets.Item<span class="o">(</span><span class="s2">"potato"</span><span class="o">)</span>.name <span class="o">=</span> <span class="s2">"spud"</span>
-
-<span class="c1">#Activate specific worksheet in workbook</span>
-<span class="nv">$Excel</span>.Worksheets.Item<span class="o">(</span>2<span class="o">)</span>.activate<span class="o">()</span>
-<span class="nv">$Excel</span>.Worksheets.Item<span class="o">(</span><span class="s2">"sheet3"</span><span class="o">)</span>.activate<span class="o">()</span>
-
-<span class="c1">#Acivate Random Worksheet in Excel file</span>
-<span class="nv">$Excel</span>.Worksheets.Item<span class="o">((</span><span class="nb">Get-Random</span> -min 1 -Max <span class="o">(</span><span class="nv">$Excel</span>.Worksheets.Count+1<span class="o">)))</span>.activate<span class="o">()</span>
-
-<span class="c1">#Delete worksheets from workbook</span>
-<span class="nv">$Excel</span>.Worksheets.Item<span class="o">(</span>1<span class="o">)</span>.delete<span class="o">()</span>
-<span class="nv">$Excel</span>.Worksheets.Item<span class="o">(</span><span class="s2">"Sheet3"</span><span class="o">)</span>.delete<span class="o">()</span>
+</span><span class="c">#Save workbooks to the hard drive</span><span class="w">
+</span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Workbooks</span><span class="o">.</span><span class="nf">item</span><span class="p">(</span><span class="nx">1</span><span class="p">)</span><span class="o">.</span><span class="nf">SaveAs</span><span class="p">(</span><span class="s2">"</span><span class="nv">$</span><span class="nn">env</span><span class="p">:</span><span class="nv">userprofile</span><span class="s2">\Desktop\asdf.xlsx"</span><span class="p">)</span><span class="w">
 
 
-<span class="c1">####################################################</span>
-<span class="c1">########## Cleaning up the environment #############</span>
-<span class="c1">####################################################</span>
+</span><span class="c">####################################################</span><span class="w">
+</span><span class="c">########### Working with Worksheets ################</span><span class="w">
+</span><span class="c">####################################################</span><span class="w">
 
-<span class="nv">$Excel</span>.Workbooks.Close<span class="o">()</span>
-<span class="nv">$Excel</span>.Quit<span class="o">()</span>
+</span><span class="c">#These bits of code will affect the active Workbook.</span><span class="w">
 
-<span class="c1">#Check and you will see an excel process still exists after quitting</span>
-<span class="c1">#Remove the excel process by piping it to stop-process</span>
-<span class="nb">Get-Process </span>excel | <span class="nb">Stop-Process</span> -Force
+</span><span class="c">#Add a worksheet to your active workbook</span><span class="w">
+</span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Worksheets</span><span class="o">.</span><span class="nf">Add</span><span class="p">()</span><span class="w">
 
-<span class="c1">#Now we must release the $excel com object to ready it for garbage collection</span>
-<span class="o">[</span>System.Runtime.Interopservices.Marshal]::ReleaseComObject<span class="o">(</span><span class="nv">$Excel</span><span class="o">)</span>
-</code></pre></div></div>
+</span><span class="c">#Find all worksheets in your active workbook</span><span class="w">
+</span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Worksheets</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nf">Select-Object</span><span class="w"> </span><span class="nt">-ExpandProperty</span><span class="w"> </span><span class="nx">name</span><span class="w">
+
+</span><span class="c">#Change name of worksheet in workbook</span><span class="w">
+</span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Worksheets</span><span class="o">.</span><span class="nf">Item</span><span class="p">(</span><span class="nx">1</span><span class="p">)</span><span class="o">.</span><span class="nf">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"potato"</span><span class="w">
+</span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Worksheets</span><span class="o">.</span><span class="nf">Item</span><span class="p">(</span><span class="s2">"potato"</span><span class="p">)</span><span class="o">.</span><span class="nf">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"spud"</span><span class="w">
+
+</span><span class="c">#Activate specific worksheet in workbook</span><span class="w">
+</span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Worksheets</span><span class="o">.</span><span class="nf">Item</span><span class="p">(</span><span class="nx">2</span><span class="p">)</span><span class="o">.</span><span class="nf">activate</span><span class="p">()</span><span class="w">
+</span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Worksheets</span><span class="o">.</span><span class="nf">Item</span><span class="p">(</span><span class="s2">"sheet3"</span><span class="p">)</span><span class="o">.</span><span class="nf">activate</span><span class="p">()</span><span class="w">
+
+</span><span class="c">#Acivate Random Worksheet in Excel file</span><span class="w">
+</span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Worksheets</span><span class="o">.</span><span class="nf">Item</span><span class="p">((</span><span class="nf">Get-Random</span><span class="w"> </span><span class="nt">-min</span><span class="w"> </span><span class="nx">1</span><span class="w"> </span><span class="nt">-Max</span><span class="w"> </span><span class="p">(</span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Worksheets</span><span class="o">.</span><span class="nf">Count</span><span class="o">+</span><span class="nx">1</span><span class="p">)))</span><span class="o">.</span><span class="nf">activate</span><span class="p">()</span><span class="w">
+
+</span><span class="c">#Delete worksheets from workbook</span><span class="w">
+</span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Worksheets</span><span class="o">.</span><span class="nf">Item</span><span class="p">(</span><span class="nx">1</span><span class="p">)</span><span class="o">.</span><span class="nf">delete</span><span class="p">()</span><span class="w">
+</span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Worksheets</span><span class="o">.</span><span class="nf">Item</span><span class="p">(</span><span class="s2">"Sheet3"</span><span class="p">)</span><span class="o">.</span><span class="nf">delete</span><span class="p">()</span><span class="w">
+
+
+</span><span class="c">####################################################</span><span class="w">
+</span><span class="c">########## Cleaning up the environment #############</span><span class="w">
+</span><span class="c">####################################################</span><span class="w">
+
+</span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Workbooks</span><span class="o">.</span><span class="nf">Close</span><span class="p">()</span><span class="w">
+</span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Quit</span><span class="p">()</span><span class="w">
+
+</span><span class="c">#Check and you will see an excel process still exists after quitting</span><span class="w">
+</span><span class="c">#Remove the excel process by piping it to stop-process</span><span class="w">
+</span><span class="nf">Get-Process</span><span class="w"> </span><span class="nx">excel</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nf">Stop-Process</span><span class="w"> </span><span class="nt">-Force</span><span class="w">
+
+</span><span class="c">#Now we must release the $excel com object to ready it for garbage collection</span><span class="w">
+</span><span class="p">[</span><span class="no">System.Runtime.Interopservices.</span><span class="kt">Marshal</span><span class="p">]::</span><span class="nf">ReleaseComObject</span><span class="p">(</span><span class="nv">$Excel</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
 
   </div>
 
