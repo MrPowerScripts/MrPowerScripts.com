@@ -1,6 +1,6 @@
 ---
-layout: post
-authro: reviewer
+layout: review
+author: MrPowerScripts
 title: Flat internet cable review
 date: 2019-02-18 05:00:45+00
 tags: [mrpowerscripts, flat ethernet cable review, flat ethernet cables are the best ethernet cables]
