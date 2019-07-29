@@ -3,7 +3,7 @@ version: 2.1
 executors:
   default:
     docker:
-      - image: fernfernfern/jekyll
+      - image: mrps/jekyll
 
 jobs:
   clear-cache:
