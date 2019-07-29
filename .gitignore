@@ -1,4 +1,6 @@
 .sass-cache
 .DS_Store
 _wip
+_site
+.bundle
 vendor/bundle
