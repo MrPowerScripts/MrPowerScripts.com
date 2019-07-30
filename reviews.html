@@ -3,18 +3,20 @@ layout: default
 pagination:
   enabled: true
   collection: reviews
+  sort_field: 'date'
+  sort_reverse: true
 ---
 
 <!-- {% include discord-votes.html %} -->
 <div class="posts">
-    {% for post in site.reviews %}
+    {% for post in paginator.posts %}
       <article class="post">
   
         <h2>
             <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
         </h2>
         <div class="post-menu-bar">
-          <span>👤{{ post.author }}</span>
+          <span>👤{{ post.author }} {% if post.author_url %}<a href="{{ post.author_url}}">🔗</a> {% endif %}</span>
           <span>📅 {{ post.date | date: "%B %d, %Y" }}</span>
           {% include read_time.html text=post.content %}
         </div>
