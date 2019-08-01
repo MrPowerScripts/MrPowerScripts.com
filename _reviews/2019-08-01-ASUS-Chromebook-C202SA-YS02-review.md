@@ -1,0 +1,38 @@
+---
+layout: review
+author: Guest
+author_url:
+title: ASUS Chromebook C202SA-YS02 11.6 - Review
+date: 2019-08-01 05:00:45+00
+tags: [mrpowerscripts, mrpowerscripts reviews, product reviews, reviewing amazon products, amazon product]
+description-long: Overall, reviews on the ASUS Chromebook C202SA-YS02 are slightly positive; on top of being an Amazon's Choice product, it has 3.9 stars. Users who left positive reviews were impressed with the product's durability.  Several reviewers mentioned that the product is "very sturdy", "rock solid", and "ruggedized";  the device is, in fact, advertised as "rugged". This makes the device different from most others and seems to be a critical selling point. Furthermore, reviewers often state that they like the product for its versatility; many mention that this is because it is a Chromebook.  Users also tend to mention that, because of the product's versatility and durability, it is a device that is appropriate for both children and adults. The laptop can even survive a drop test; it can be dropped 4 feet with only minor damage thanks to its rubberized bumpers with shock absorption.
+---
+
+## Why do people like it
+Overall, reviews on the ASUS Chromebook C202SA-YS02 are slightly positive; on top of being an Amazon's Choice product, it has 3.9 stars.  Users who left positive reviews were impressed with the product's durability.  Several reviewers mentioned that the product is "very sturdy", "rock solid", and "ruggedized";  the device is, in fact, advertised as "rugged".  This makes the device different from most others and seems to be a critical selling point. Furthermore, reviewers often state that they like the product for its versatility; many mention that this is because it is a Chromebook.  Users also tend to mention that, because of the product's versatility and durability, it is a device that is appropriate for both children and adults.  The laptop can even survive a drop test; it can be dropped 4 feet with only minor damage thanks to its rubberized bumpers with shock absorption.
+
+It seems that adults do tend to purchase this laptop for their children; they mention that the parental controls are a big plus.  The laptop is heavily advertised as a laptop for young learners, so this is not surprising; the tagline for the laptop is even "Less Downtime, More Learning Time."  It is often bought in sets for school classrooms.
+
+Furthermore, buyers seem to be fond of the computer's size (smaller than a standard laptop at only 11.6"), weight, and portability.  Reviewers mention that they use this device for their jobs or school, so this is important to them.  The device is advertised as "lightweight", and reviewers tend to describe it as such.   The overall design of the laptop is excellent for those who want to throw the device in a bag or briefcase quickly before heading to work or school.
+
+As with all laptops, users expect a fast and seamless experience, and they seem to be quite pleased with the technical performance of this laptop. It is frequently described as fast and smooth, and its long-lasting battery is useful for long days at work or school.  Because of the device's strong performance, it seems that a lot of people buy this laptop intending to use it as a "toy" or secondary laptop and end up using it as a primary device.  This speaks volumes to the technical abilities of the little ASUS.
+
+Lastly, the screen quality also seems to be important to many customers.  They repeatedly describe it as "vivid"; this is likely important to users since many of them state that they use the laptop for movies and TV.  Vivid screens with accurate colors are also necessary for working professionals who work with art or design; one top review is praise from a 3D designer, suggesting that the laptop is appropriate even for professionals with highly specific screen quality requirements.
+
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=mrpowerscript-20&language=en_US&marketplace=amazon&region=US&placement=B01DBGVB7K&asins=B01DBGVB7K&linkId=f35d1d71cd21d130b5290118dd3c9e40&show_border=true&link_opens_in_new_window=true"></iframe>
+
+## Why do people dislike it
+
+Though many praise this laptop for its durability, this comes at a price, at least in the eyes of some; the unique design of the laptop is characterized by a large rubber bumper.  It's very noticeable and perceptions of it are varied.  Some reviewers, particularly adults, dislike this design, stating that the laptop seems to be made solely for young children.  The layout of the keyboard, though spill-proof, also seems to be an issue for adults who buy this device; it lacks a caps lock and delete key.  This is unusual for laptops, so it can be confusing for those who are used to a typical keyboard layout.  The keyboard is also highly breakable, with users reporting that the keys fell off of their keyboard or stopped working even without heavy use.  Other parts of this product are also often faulty despite its rugged look, including the hinge and charging cable.
+
+Arguably more importantly, it seems that buyers also tend to have issues with the longevity of the laptop; they claim that it works fine for only a few months or even weeks before the screen suddenly turns black the computer will not turn on again.  Seemingly unfixable charging issues also seem to be a common issue, putting the laptop out of commission long before it should go dead.   These issues seem to be so severe that reviewers call the laptop "useless" and "a paperweight."  Issues with longevity definitely seem to be users' biggest problem.
+
+From a technical standpoint, some find that this laptop is too limited.  The Chrome OS does not allow users to download external apps, so for users who enjoy online gaming or need to use external apps for other reasons, this can be an issue.  Additionally, though it is fairly uncommon, several users state that the laptop did not come with the OS installed; of course this is inconvenient for experienced users, but for those who know little about technology, it can render the laptop completely unusable.
+
+## What's the consensus
+
+Reviewers like that this device is portable and versatile, making it useful for professionals and students alike.  Its fast OS, technical specifications and long-lasting battery also make it a good choice for all-day use, users say it is surprisingly smooth for the low price.  The screen displays bright and beautiful colours, useful for watching movies, viewing images, and professional design work.
+
+On the other hand, the "rugged" design of the device can look a bit awkward to many (especially adults).  Some parts of the laptop, including the keyboard and hinge, often break too easily.  The keyboard also lacks some standard keys.  The laptop often shuts down permanently without warning and will not charge or turn on; this is reviewers' biggest complaint.  The OS's limited applications can be a problem for some, especially if they are using the laptop for gaming.
+
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=mrpowerscript-20&language=en_US&marketplace=amazon&region=US&placement=B01DBGVB7K&asins=B01DBGVB7K&linkId=f35d1d71cd21d130b5290118dd3c9e40&show_border=true&link_opens_in_new_window=true"></iframe>
