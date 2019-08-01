@@ -1,6 +1,6 @@
 ---
 layout: review
-author: Guest
+author: Cole Podany
 author_url:
 title: ASUS Chromebook C202SA-YS02 11.6 - Review
 date: 2019-08-01 05:00:45+00
