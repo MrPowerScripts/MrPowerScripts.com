@@ -9,6 +9,7 @@ description-long: Microsoft’s Ergonomic Wireless Keyboard, nicknamed the Sculp
 ---
 
 Microsoft’s Ergonomic Wireless Keyboard, nicknamed the Sculpt, is a sleek, new keyboard that aims to save both your wrists and your wallet. Microsoft tuned in to grumblings about their former keyboards in the course of recent years, particularly throughout the recent years since the Natural's introduction. The addition of a full numpad on the Natural was a noteworthy ergonomic infringement, as it forced customers to full extend their arms to reach their mice. Learning from this mistake, the Sculpt has a unattached numpad, enabling the mouse to be nearer to the keyboard.
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/6uppIJdaUCI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## The Ergonomic Champion
 
