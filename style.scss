@@ -95,7 +95,7 @@ p {
 }
 
 a {
-  color: lightcoral;
+  color: $link;
   text-decoration: none;
   cursor: pointer;
   &:hover, &:active {
@@ -327,7 +327,7 @@ nav {
   .entry {
     line-height: 24px;
     a {
-      color: lightcoral;
+      color: $link;
       cursor: pointer;
     }
   }
