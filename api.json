@@ -1,4 +1,26 @@
 [{
+      "title": "Advanced function parameters in Powershell",
+      "date": "August 02, 2019",
+      "author": "MrPowerScripts",
+       "categories"  : [
+        ],
+      
+      
+      "url": "/advanced-function-parameters-in-powershell/",
+       "tags"  : ["mrpowerscripts",
+        "powershell function parameters",
+        "advanced powershellfunction parameters",
+        "functions in powershell",
+        "powershell functions."
+        
+        ]
+      
+
+    }
+
+    ,
+
+{
       "title": "How to get around the jekyll-pagination-v2 limitation of GitHub pages with CircleCI",
       "date": "July 28, 2019",
       "author": "MrPowerScripts",
