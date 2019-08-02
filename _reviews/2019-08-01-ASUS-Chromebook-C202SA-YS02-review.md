@@ -28,7 +28,7 @@ Though many praise this laptop for its durability, this comes at a price, at lea
 
 Arguably more importantly, it seems that buyers also tend to have issues with the longevity of the laptop; they claim that it works fine for only a few months or even weeks before the screen suddenly turns black the computer will not turn on again.  Seemingly unfixable charging issues also seem to be a common issue, putting the laptop out of commission long before it should go dead.   These issues seem to be so severe that reviewers call the laptop "useless" and "a paperweight."  Issues with longevity definitely seem to be users' biggest problem.
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/seUKU0SGqAU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% include youtubePlayer.html id="seUKU0SGqAU" %}
 
 From a technical standpoint, some find that this laptop is too limited.  The Chrome OS does not allow users to download external apps, so for users who enjoy online gaming or need to use external apps for other reasons, this can be an issue.  Additionally, though it is fairly uncommon, several users state that the laptop did not come with the OS installed; of course this is inconvenient for experienced users, but for those who know little about technology, it can render the laptop completely unusable.
 
