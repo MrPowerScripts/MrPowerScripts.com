@@ -2,6 +2,7 @@
 layout: post
 title: Google is going mobile first - is your website ready?
 date: 2019-01-13 09:06:45+00
+categories: [google, web development]
 tags: [mrpowerscripts, Google mobile first iniative, google going mobile first, how to make website mobile friendly, is my website mobile friendy, mobile friendly google search console, googl search console mobile friendly]
 description-long: |-
   This is a Jekyll front matter template free for anyone to use
@@ -54,7 +55,7 @@ After the whole song and dance of getting access to your search console profile,
 
 <img src="/images/mobile-friendly-button-google-search-console.png" >
 
-This is your portal to learning more about how Google "sees" your website from the view of a mobile user. Pages deemed having too many errors or not [mobile friendly enough](https://webmasters.googleblog.com/2015/04/rolling-out-mobile-friendly-update.html) will be unapologetically left to float off into the great internet abyss where nobody will ever see your link again. 
+This is your portal to learning more about how Google "sees" your website from the view of a mobile user. Pages deemed having too many errors or not [mobile friendly enough](https://webmasters.googleblog.com/2015/04/rolling-out-mobile-friendly-update.html) will be unapologetically left to float off into the great internet abyss where nobody will ever see your link again.
 
 The more mobile-friendly pages in this list the better off you'll be in this new mobile-first future. Not because Google is making any significant changes but because people's habits are changing. You can see in the chart below as mobile-friendly pages are added to my website the impression count began to increase. I hope to continue that trend, and so most of my website is designed around the mobile user's experience.
 

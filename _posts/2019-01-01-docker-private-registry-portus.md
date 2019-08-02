@@ -2,6 +2,7 @@
 layout: post
 title: Host your own private docker registry with Portus
 date: 2019-01-01 09:06:45+00
+categories: [docker, tutorial]
 tags: [mrpowerscripts, private Docker registry, setup docker registry, set up private Docker registry]
 description-long: If you're familiar with docker then you've probably used DockerHub. Dockerhub is AWESOME. I absolutely love (most) of it and what it does. DockerHub is simply a docker container registry. It's a place where you can store, pull, and share docker containers. It's not the only container registry. Google has their own container registry where you can upload your images. Microsoft and Amazon also have docker container registries. All of that is great, but what if you want to host your won docker images in a private registry. Those registries I mentioned have support for private accounts, but I'm going to reveal how you can host your own private container registry that you control.
 ---

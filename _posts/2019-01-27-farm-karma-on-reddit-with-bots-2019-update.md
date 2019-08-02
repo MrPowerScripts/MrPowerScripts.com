@@ -2,6 +2,7 @@
 layout: post
 title: Farm karma on Reddit with bots 2019 update
 date: 2019-01-27 09:06:45+00
+categories: [reddit, bots, tutorial]
 tags: [python, Reddit, machine learning, Markov chains, create a Reddit bot, Reddit karma farming, make a Reddit bot, Reddit bot, how to karma farm Reddit, Reddit karma farming bots, farm karma with bots, karma farming Reddit, farm karma reddit]
 description-long: |-
   Back in July of 2017, I noticed Reddit became much more - political. Lots of very specific political subreddits with various leanings and few subscribers were getting posts pushed up pretty high on Reddit. It seemed a bit strange, but it wasn't all that much different from the previous election cycle. The difference though was in the four years since Obama won his second term Reddit's user base exploded. The number of subreddits doubled. There was more communities, more people, and more discussions. So it's not surprising that many new political subreddits would pop up as well. Which is awesome. It's good that more people are involved and aware of how politics work, and that we have the internet to share that information. Can you imagine trying to understand all the nuances to an election a hundred years ago? You cast your vote, and then things happen, and you wake up one day to a newspaper telling you who is running the country. How did that even happen? How were people capable of making informed decisions?

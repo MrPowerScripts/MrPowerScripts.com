@@ -2,6 +2,7 @@
 layout: post
 title: How I hacked my Uber rating
 date: 2019-02-03 13:00:45+00
+categories: [advice]
 tags: [mrpowerscripts, uber rating hack, hacking uber rating, raise your uber rating, get a higher uber rating, social engineering uber rating]
 description-long: Uber ratings are a weird concept. You spend a short period of time with someone who is whisking you around the city. You might have a chat with them, or maybe you prefer to have a quiet ride. Sometimes they'll even offer you treats, or refreshments if you're lucky! Then, in the end, you judge each other based on a 5-star rating. No pressure. Your Uber rating is intended to give drivers some vague insight into the person they'll be picking up, but it also has some advantages as well.
 ---

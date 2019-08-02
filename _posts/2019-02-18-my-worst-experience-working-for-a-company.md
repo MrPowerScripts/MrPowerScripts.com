@@ -2,6 +2,7 @@
 layout: post
 title: My worst experience working for a company
 date: 2019-02-18 05:00:45+00
+categories: [story]
 tags: [mrpowerscripts, shady business owners. shady businesses, horrible company experience]
 description-long: I mention pretty often that I've worked for a lot of companies big and small. Most of them have been amazing experiences, but not all of them have been pleasant. The worst experience by far still bothers the shit out of me to this today. There were so many wrong things happening it upsets me I stuck around as long as I did. A month and a half. What a weird experience from start to end. I found this advert looking for someone to do part-time IT work on Craigslist,  and it all went downhill from there.
 ---

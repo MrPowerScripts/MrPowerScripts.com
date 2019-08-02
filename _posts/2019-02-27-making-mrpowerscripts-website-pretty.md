@@ -2,13 +2,14 @@
 layout: post
 title: Making MrPowerScripts.com pretty
 date: 2019-02-27 14:00:45+00
+categories: [story, tutorial, web development]
 tags: [mrpowerscripts, web design, website improvemnets, design improvements. making mrepowerscripts.com pretty ]
 description-long: I'm not a designer. I have a terrible sense of design really. Though I feel like it has improved considerably over the years. Hopefully, that trend continues. And while I believe through hard work anyone can become great at what they put their mind to some people simply have an innate advantage. That's okay because collaboration is what makes every project great. I don't know anyone who built something great by themselves. The Great Pyramid of Giza?  The internet? Kim Kardashian's butt? All of these took the efforts of many to achieve their notoriety. People have always built off the efforts or inspirations of others.
 ---
 
 I'm not a designer. I have a terrible sense of design really. Though I feel like it has improved considerably over the years. Hopefully, that trend continues. And while I believe through hard work anyone can become great at what they put their mind to some people simply have an innate advantage. That's okay because collaboration is what makes every project great. I don't know anyone who built something great by themselves. The Great Pyramid of Giza?  The internet? Kim Kardashian's butt? All of these took the efforts of many to achieve their notoriety. People have always built off the efforts or inspirations of others.
 
-When I need insights and inspirations to guide me on designs I reach out to my buddy Ben Rossi. He's an exceptional UX designer and general maker of awesome things. I told him I needed up update the look of my blog. It was hastily put together so I could start exploring SEO techniques. Well, now I want it to look pretty, and he was happy to help me by providing some inspiration and tips.
+When I need insights and inspirations to guide me on designs I reach out to my buddy Ben Rossi. He's an exceptional UX designer and general maker of awesome things. I told him I needed to update the look of my blog. It was hastily put together so I could start exploring SEO techniques. Well, now I want it to look pretty, and he was happy to help me by providing some inspiration and tips.
 
 First off, the previous site was incredibly dull. I didn't utilize color in any meaningful way, and the color I did have came from clashing social icons. He suggested I make things more colorful, and that was a great idea. I need to stop being afraid of using color. MORE color! One of the examples he shared was a website he's followed for a long time, [which is also a blog](https://kottke.org/). I loved it! I played around with some ideas and for the time being I've settled with a three-color gradient spanning the entire header. This also creates a nice separation between navigation and content. I've removed the social icons for now to simplify the process. I'll figure out how to merge them back later in a way that blends with the new theme.
 

@@ -2,6 +2,7 @@
 layout: post
 title: How to get around the jekyll-pagination-v2 limitation of GitHub pages with CircleCI
 date: 2019-07-28 11:00:45+00
+categories: [web development, automation]
 tags: [mrpowerscripts, CircleCI automation, Cloudflare, improve website speed, website speed tips, Cloudflare caching, jekyll-paginate-v2, jekyll pagniation, github pages pagniation, github pages paginiation v2, github pages, circleci github pages ]
 description-long: Github pages is a damn modern marvel. You can put together a basic website hosted for free from a jazillion templates available on the internet. Buy a domain name. You're set. Push up changes to the source on GitHub and they regenerate the site. AMAZING. Almost as good as geocities was. But using GitHub pages the way GitHub suggests has some limitations. Jekyll has soooo many helpful plugins that you can use outside of the oens offered on GitHub pages. Such as the jekyll-paginate-v2 plugin. And if you want to use the jekyll-paginate-v2 plugin with GitHub pages you're out of luck! They don't support it. Which means you can't do pagniation of collections - a very useful feature when you want to build more complex websites or blogs using jekyll. But we can work around this with a bit of scripting and CircleCI.
 ---

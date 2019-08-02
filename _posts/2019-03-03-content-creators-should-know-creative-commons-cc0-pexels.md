@@ -2,6 +2,7 @@
 layout: post
 title: Every Content Creator Should Know This - Creative Commons CC0 License & Pexels.com
 date: 2019-03-03 09:00:45+00
+categories: [advice]
 tags: [mrpowerscripts, creative commons, creativecommons.org, pexels, pexels.com, cc0 license]
 description-long: Creating content all by yourself is really hard, so it's helpful to use art, music, and other assets to help you share your message. If you want to monetize your content you need to be especially careful. If the content you create utilizes the copyrighted works of others then you might be in for a world of pain. Thankfully Creative Commons has been around for a few years helping content creators by creating content licenses. These licenses are easy for content creators to understand, and help them share their works for others to use in various ways. One license is incredibly useful for content creators to know about, which is the CC0 license
 ---

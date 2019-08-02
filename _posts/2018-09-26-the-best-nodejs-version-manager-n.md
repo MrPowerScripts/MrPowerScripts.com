@@ -2,6 +2,7 @@
 layout: post
 title: The best nodejs version manager - n
 date: 2018-09-26 20:10:45+00
+categories: [nodejs, review]
 tags: [mrpowerscripts, n tutorial, nodejs version manager, manage nodejs versions, nodejs version tool ]
 description-long: Nodejs is the javascript runtime that will not go away even though people have been complaining about it for a long time. Things get trickier when you add `npm` into the mix. Your project you want to work on might require an older version of nodejs, but you have the latest and greatest version installed. The incredibly simple tool with a fitting name called - n - can help you quickly manage the version of nodejs that you're currently using.
 ---

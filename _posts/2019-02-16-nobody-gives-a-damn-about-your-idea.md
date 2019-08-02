@@ -2,6 +2,7 @@
 layout: post
 title: Nobody gives a damn about your idea
 date: 2019-02-16 06:00:45+00
+categories: [story, advice]
 tags: [mrpowerscripts, nobody gives a damn about your idea]
 description-long: Really. They'll pretend they do if they like you, but that's the best you're gonna get. Everyone has ideas. If a snowflake fell every time someone had a great idea we'd all be buried up to our necks in snow. And ya know what? That snow would be way more useful than the ideas that produced it. A snowperson, snow angels, snowballs - there's a lot of fun to be had in the snow. Your ideas, however, aren't worth a damn. And nobody cares about them.
 ---
