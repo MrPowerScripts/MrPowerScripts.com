@@ -136,7 +136,7 @@ p {
 }
 
 a {
-  color: lightcoral;
+  color: #ff3c3c;
   text-decoration: none;
   cursor: pointer;
 }
@@ -352,7 +352,7 @@ nav a:hover {
   line-height: 24px;
 }
 .post .entry a {
-  color: lightcoral;
+  color: #ff3c3c;
   cursor: pointer;
 }
 .post .post-menu-bar {
