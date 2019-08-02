@@ -21,6 +21,6 @@ Here are a few reasons why you would want to use advanced powershell function pa
 1. Add validation to the arguments passed into the function. Only want the user to enter a number between 1 and 100? You can enforce that. Do you want to control whether they can pass in a null value, or empty string? You can validate for that as well. You can even validate the argument using a regex string.
 1. Control whether or not an argument can be passed into the function through the powershell Pipleline.
 
-These are a few of the benfits, and there are even more! Adding some of these advanced powershell function parameter techniques can seriously improve the reliablity and reusability of your functions. Check out the video below to see some of the benefits in action!
+These are a few of the benefits, and there are even more! Adding some of these advanced powershell function parameter techniques can seriously improve the reliablity and reusability of your functions. Check out the video below to see some of the benefits in action!
 
 {% include youtubePlayer.html id="6ySxsnOGnCU" %}
