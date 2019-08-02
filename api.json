@@ -549,7 +549,7 @@
     ,
 
 {
-      "title": "Making REST API requests with Powershell",
+      "title": "Send GET requests to API with Powershell",
       "date": "October 24, 2018",
       "author": "MrPowerScripts",
        "categories"  : [
