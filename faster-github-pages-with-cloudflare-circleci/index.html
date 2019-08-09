@@ -335,7 +335,7 @@ Genius https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/
 Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-blog-posts/
 -->
 
-    <a class="edit-button" href="/tree/master/_posts/2019-04-06-faster-github-pages-with-cloudflare-circleci.md">Edit</a>
+    <a class="edit-button" href="https://github.com/MrPowerScripts/MrPowerScripts.com/tree/master/_posts/2019-04-06-faster-github-pages-with-cloudflare-circleci.md">Edit</a>
   </div>
   <hr>
   <div class="entry">
@@ -346,13 +346,13 @@ Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-bl
 <p>In comes Cloudflare, one of the biggest CDNs on the web.  I didn’t do all the work to figure this out, to be honest. They posted their own <a href="https://blog.cloudflare.com/secure-and-fast-github-pages-with-cloudflare/">great blog post</a> on how to set up their service in front of GitHub pages to cache ALL THE THINGS.  Once I configured MrPowerScripts.com on their service using the free plan all I had to do was update my name servers in NameCheap to use the ones they provided me. From there Cloudflare handled all of the caching and requests to the site. Dramatically reducing the page size and loading time.  Check the results for yourself:</p>
 
 <div>
-  <img style="object-fit: contain" src="/images/mrps-fast/page-size.png" />
+  <img style="object-fit: contain" src="/images/mrps-fast/page-size.png" alt="image" />
 </div>
 
 <p>First off, the size of the page download is MUCH smaller. It went from ~1.5MB to ~205KB. That’s HUGE. The entire website size was reduced by over 1MB. Also, check out the number of requests needed to render the site. It went from around 38 requests to about 15. Yeah, it cut the number of requests by more than half. Amazing! All of that lead to the following chart.</p>
 
 <div>
-  <img style="object-fit: contain" src="/images/mrps-fast/page-timings.png" />
+  <img style="object-fit: contain" src="/images/mrps-fast/page-timings.png" alt="image" />
 </div>
 
 <p>Previously, the entire site took more than 4 seconds to load. Now, that doesn’t mean 4 seconds to see things on the page. It just means for the entire site to finish loading. Including various background requests. Now, the entire site loads in less than a second. These are amazing results! Cloudflare has allowed me to cache all site assets, and to keep them cached for up to 8 days. Then, the caches will be purged.</p>
