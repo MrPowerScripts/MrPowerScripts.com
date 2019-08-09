@@ -5,8 +5,28 @@ executors:
     docker:
       - image: mrps/jekyll
 
+commands:
+  install-deps:
+    steps:
+      - restore_cache:
+          keys:
+            - -v1-{{ checksum "Gemfile.lock" }}
+      - run: bundler install --path vendor/bundle
+      - save_cache:
+          key: -v1-{{ checksum "Gemfile.lock" }}
+          paths:
+            - "vendor/bundle"
+
 jobs:
-  clear-cache:
+  test:
+    executor: default
+    steps:
+      - checkout
+      - install-deps
+      - run: bundle exec jekyll build
+      - run: bundle exec htmlproofer ./_site --check-html --disable-external --check-opengraph --check-favicon
+
+  deploy:
     executor: default
     steps:
       - checkout
@@ -22,26 +42,16 @@ jobs:
       - run: git fetch origin $BRANCH
       - run: rm -rf $DIRECTORY
       - run: git worktree add $DIRECTORY $BRANCH
-      - restore_cache:
-          keys:
-            - -v1-{{ checksum "Gemfile.lock" }}
-      - run: bundler install --path vendor/bundle
-      - save_cache:
-          key: -v1-{{ checksum "Gemfile.lock" }}
-          paths:
-            - "vendor/bundle"
       - run: |
             git config --global user.email "playingwithpowershell@gmail.com"
             git config --global user.name "MrPowerCI"
-
+      - install-deps
       - run: bundle exec jekyll build
-      - run: bundle exec htmlproofer ./_site --check-html --disable-external --check-opengraph --check-favicon
       - run: |
           cd $DIRECTORY
           git add -A
           git commit -m "[skip ci] Deploy updates" 
           git push origin gh-pages -f
-
       - run: |
           set -e
           curl -X POST "https://api.cloudflare.com/client/v4/zones/$CF_ZONE/purge_cache" \
@@ -51,10 +61,17 @@ jobs:
               --data '{"purge_everything":true}'
 
 workflows:
-  clear-cache:
+  test-deploy:
     jobs:
-      - clear-cache:
+      - test:
           filters:
             branches:
               ignore:
                 - gh-pages
+      - deploy:
+          requires:
+            - test
+          filters:
+            branches:
+              only:
+                - master
