@@ -5,6 +5,7 @@ author_url: https://twitter.com/UnproTweets
 title: Anker AK-UBA Wireless Vertical Ergonomic Mouse Review
 date: 2019-07-29 05:00:45+00
 tags: [mrpowerscripts, mrpowerscripts reviews, product reviews, reviewing amazon products, amazon product]
+categories: [review]
 description-long: Two years ago, I was in a minor motorcycle accident. I was going a bit too fast on a road that was probably only meant for bikes. In retrospect, I’m just glad no one ended up getting injured. No one besides me that is. Other than ripping open my skin on several parts of my body I nearly broke my right wrist. The doctor told me I was incredibly lucky, had I not been quick to get into a “safe crash position” (thank you driving school) and hit my wrist in any other angle I wouldn’t only have broken it, I’d probably never be able to use it correctly again. Phew. Unfortunately, that doesn’t mean my wrist got out unscathed. For months I couldn’t even hold a pencil without intense pain, let alone use a mouse.
 ---
 

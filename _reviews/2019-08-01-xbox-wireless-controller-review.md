@@ -5,6 +5,7 @@ author_url:
 title: XBox Wireless Controller White - Review
 date: 2019-08-01 05:00:45+00
 tags: [mrpowerscripts, mrpowerscripts reviews, product reviews, reviewing amazon products, amazon product]
+categories: [review]
 description-long: Microsoft’s Xbox Wireless Controller includes numerous new features that completely enhances the gaming experience, making it a generally well-liked product among customers. Released in 2016, this edition seems to be a step-up from earlier models, especially in terms of physical appearance, where the controller sports a “textured grip” and a “sleek streamlined design.” In addition, it also includes a 35 mm headphone jack, which supports almost all third party headphones, and the ability to button map for preferred controls. The controller also allows for easy wireless gaming, using Bluetooth technology that gives players the ability to use the controller on any Windows 10 PC, tablet, or phone, and twice the wireless range.
 ---
 

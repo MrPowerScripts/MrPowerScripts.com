@@ -76,4 +76,4 @@ Is this set up sustainable? I have no idea in all honesty. I've never built anyt
 
 We aren't going to change the world by making it super easy for people to send emoji postcards. But we might help someone put a smile on someone else's face. That's pretty cool too. We have a great foundation, so from here we can continue to improve and learn from this experience over time. I would absolutely love if you could help us test this new service by sending someone you know a PostMoji, and telling us how the experience was for you. PostMoji is only available to send to USA addresses at the moment.
 
-[https://SendPostMoji.com](SendPostMoji.com)
+[https://SendPostMoji.com](https://SendPostMoji.com)

@@ -35,6 +35,7 @@ jobs:
             git config --global user.name "MrPowerCI"
 
       - run: bundle exec jekyll build
+      - run: bundle exec htmlproofer ./_site --check-html --disable-external --check-opengraph --check-favicon
       - run: |
           cd $DIRECTORY
           git add -A

@@ -5,6 +5,7 @@ author_url: https://twitter.com/UnproTweets
 title: Oculus Quest – The Best All-In-One VR-Headset
 date: 2019-08-07 05:00:45+00
 tags: [mrpowerscripts, mrpowerscripts reviews, product reviews, reviewing amazon products, amazon product]
+categories: [review]
 description-long: If you’re anything like me then being inside a video game is a childhood dream. A dream you probably thought you’d never see become a reality. Around comes 2012 and a promising start up that launched an incredibly successful Kickstarter campaign that raised over 2 *million* dollars. The product? A pair of goggles that let’s you step into the game; The Oculus Rift. This was the starting point of a completely new medium - Virtual Reality. Today many companies, most notably Facebook, HTC, Valve and Microsoft, are focusing their efforts on creating the most immersive and most powerful Virtual Reality headset. It may not be the full dive VR I dreamed of as a kid but it’s a necessary steppingstone to getting there. One of the latest entries in the VR-market is the Oculus Quest.
 ---
 

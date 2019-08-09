@@ -15,11 +15,11 @@ First off, the previous site was incredibly dull. I didn't utilize color in any 
 
 <hr>
 ## Old Design
-<img src="/images/mrps-pretty/old-header.png">
+{% include image.html src="/images/mrps-pretty/old-header.png" %}
 
 <hr>
 ## New Design
-<img src="/images/mrps-pretty/new-header.png">
+{% include image.html src="/images/mrps-pretty/new-header.png" %}
 <hr>
 
 Another suggestion was to adjust the line spacing size and utilize some multiple of 4. I don't remember why. If I have time to bug him again I'll go back an ask to update this post. He's the export and I'm simply taking shade in his shadow. I should also take note to take better notes... later. In the images above you can see the line spacing and font size have been slightly increased, and I have to say to does read better for me!

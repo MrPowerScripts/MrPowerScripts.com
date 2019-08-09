@@ -53,20 +53,20 @@ Thankfully google also provides many tools for you to see how mobile-friendly Go
 
 After the whole song and dance of getting access to your search console profile, you can find a "Mobile Usability" button in the "Enhancements" dropdown on the left.
 
-<img src="/images/mobile-friendly-button-google-search-console.png" >
+{% include image.html src="/images/mobile-friendly-button-google-search-console.png" %}
 
 This is your portal to learning more about how Google "sees" your website from the view of a mobile user. Pages deemed having too many errors or not [mobile friendly enough](https://webmasters.googleblog.com/2015/04/rolling-out-mobile-friendly-update.html) will be unapologetically left to float off into the great internet abyss where nobody will ever see your link again.
 
 The more mobile-friendly pages in this list the better off you'll be in this new mobile-first future. Not because Google is making any significant changes but because people's habits are changing. You can see in the chart below as mobile-friendly pages are added to my website the impression count began to increase. I hope to continue that trend, and so most of my website is designed around the mobile user's experience.
 
-<img src="/images/google-search-console-impressions-mobile.png" >
+{% include image.html src="/images/google-search-console-impressions-mobile.png" %}
 
 Clicking on any of the detail items will show you a list of valid links, links that contain errors, or any other link status types.
 
-<img src="/images/google-search-console-mobile-friendly-page-examples.png" >
+{% include image.html src="/images/google-search-console-mobile-friendly-page-examples.png" %}
 
 Clicking on any of your links will allow you to see a mobile test report that even previews how your website looks to Google's mobile index bot.
 
-<img src="/images/google-search-console-mobile-test-page.png" >
+{% include image.html src="/images/google-search-console-mobile-test-page.png" %}
 
 While Google's "mobile-first initiative" seems scary at first it doesn't involve any major impending changes to search index ranking. Just how Google "reads" the pages of your site for their index. But these changes are indicatives of how people are using mobile primarily as the way to find things they need. And if they can't see you on mobile then you may never be seen! Thankfully the tools to find out if you're ready are freely available. Check out the Google search console with your own website.

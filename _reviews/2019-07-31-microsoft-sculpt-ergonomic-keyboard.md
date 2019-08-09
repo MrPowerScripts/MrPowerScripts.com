@@ -5,6 +5,7 @@ author_url:
 title: Save your wrists and your wallet - The Microsoft Sculpt Ergonomic Wireless Keyboard - Review
 date: 2019-07-31 05:00:45+00
 tags: [mrpowerscripts, mrpowerscripts reviews, product reviews, reviewing amazon products, amazon product]
+categories: [review]
 description-long: Microsoft’s Ergonomic Wireless Keyboard, nicknamed the Sculpt, is a sleek, new keyboard that aims to save both your wrists and your wallet. Microsoft tuned in to grumblings about their former keyboards in the course of recent years, particularly throughout the recent years since the Natural's introduction. The addition of a full numpad on the Natural was a noteworthy ergonomic infringement, as it forced customers to full extend their arms to reach their mice. Learning from this mistake, the Sculpt has a unattached numpad, enabling the mouse to be nearer to the keyboard.
 ---
 

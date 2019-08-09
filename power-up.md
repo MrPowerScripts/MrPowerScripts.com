@@ -24,7 +24,7 @@ Any donation on **[Patreon](https://bit.ly/mrps-patreon)** gives you the **Power
 
 ### Buy cool stuff
 
-- Looking for some new gadgets to play with? Check out <a target="_blank" href="https://www.amazon.com/b?_encoding=UTF8&tag=mrpowerscript-20&linkCode=ur2&linkId=3d88ae58f7f718c680d17870ab493664&camp=1789&creative=9325&node=172456">the latest in tech</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=mrpowerscript-20&l=ur2&o=1" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />!
+- Looking for some new gadgets to play with? Check out <a target="_blank" href="https://www.amazon.com/b?_encoding=UTF8&tag=mrpowerscript-20&linkCode=ur2&linkId=3d88ae58f7f718c680d17870ab493664&camp=1789&creative=9325&node=172456">the latest in tech</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=mrpowerscript-20&l=ur2&o=1" width="1" height="1" border="0" alt="image" style="border:none !important; margin:0px !important;" />!
 
 ### Try out some great services FOR FREE
 

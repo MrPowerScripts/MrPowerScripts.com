@@ -5,6 +5,7 @@ author_url:
 title: The Nest Learning Thermostat - A Great First Step Into Creating A Smart Home
 date: 2019-08-08 05:00:45+00
 tags: [mrpowerscripts, mrpowerscripts reviews, product reviews, reviewing amazon products, amazon product]
+categories: [review]
 description-long: The Nest Learning Thermostat has become a symbol of the surprising level of convenience that smart home systems can bring to our daily lives; the temperature in our homes can be controlled with the touch of a button, from work or home. The first edition of the Nest was released in 2011, followed by the 2nd and 3rd editions in 2013 and 2015 respectively. The third generation Nest is the newest model and, though it has its fair share of problems, it has proven to be a great addition to any smart home system with its simple interface, unassuming appearance, and customizable controls.
 ---
 

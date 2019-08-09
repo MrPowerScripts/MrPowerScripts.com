@@ -5,6 +5,7 @@ author_url:
 title: Lenovo Thinkpad T480 Review
 date: 2019-08-02 05:00:45+00
 tags: [mrpowerscripts, mrpowerscripts reviews, product reviews, reviewing amazon products, amazon product]
+categories: [review]
 description-long: ThinkPads have been in the market since the 90's. First introduced by IBM, these laptops have been historically praised by their high-end features and durability. Over the years, many aspects of the ThinkPad Series have been modified. They've switched developers, added innovations and overall improved the quality while keeping up to date. But that particular characteristic remains unchanged. Which is, these are computers that are built to last.Aesthetically, ThinkPads are known for their rather simplistic design---black and boxy, and not particularly creative. They are heavy, when compared to other laptops of similar characteristics (with the heaviest being almost 5lbs). But what they lack in design, they compensate with functionality tenfold. These laptops are business oriented, they are sturdy, able to sustain continuous---if not intensive---use. The Lenovo ThinkPad T480 is not an exception. As the rest of the T Series, this laptop has received mostly praise for its solid build, with some minor complaints considering the design.
 ---
 

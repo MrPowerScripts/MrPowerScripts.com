@@ -5,6 +5,7 @@ author_url:
 title: Wacom Cintiq Pro 13 inch Creative Pen Display review
 date: 2019-08-04 05:00:45+00
 tags: [mrpowerscripts, mrpowerscripts reviews, product reviews, reviewing amazon products, amazon product]
+categories: [review]
 description-long: It is said that an artist doesn't need the best tools or equipment to be good, and---while it's true---using the right ones can surely be of help. As a part-time illustrator, keeping up to date is key. For me, it means trying different techniques and media. The birth of digital art and the subsequent addition of digital technology as part of the creative process brings me to the topic in question, which is graphic tablets such as the Wacom Cintiq Pro. Over the years I've tried many different models and brands, with mixed results. There are several things to consider when purchasing a new graphic tablet, such as the type (passive, active, optical, capacitive, even acoustic), the size, the stylus which it comes paired with, and so on. In the end, many of these things tend to be a matter of taste. But in general, one might agree that there are certain factors that are deal-breakers, like the pen accuracy and pressure sensitivity or a lag-free tracking.
 ---
 
