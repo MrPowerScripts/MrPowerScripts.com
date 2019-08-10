@@ -56,12 +56,6 @@ table {
   box-sizing: border-box;
 }
 
-@font-face {
-  font-display: swap;
-  font-family: 'Montserrat Bold';
-  src: url("fonts/Montserrat/Montserrat-Bold.woff2") format("truetype");
-  font-family: monospace;
-}
 /**************/
 /* BASE RULES */
 /**************/
