@@ -9,14 +9,7 @@ pagination:
     {% for post in paginator.posts %}
       <article class="post">
   
-        <h2>
-            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-        </h2>
-        <div class="post-menu-bar">
-          <span>👤{{ post.author }}</span>
-          <span>📅 {{ post.date | date: "%B %d, %Y" }}</span>
-          {% include read_time.html text=post.content %}
-        </div>
+        {% include content-header.html type="post" %}
         <div class="entry">
             {{ post.excerpt }}
         </div>

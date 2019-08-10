@@ -48,10 +48,18 @@ h1, h2, h3, h4, h5, h6 {
   color: $darkerGray;
   font-weight: bold;
   color: black;
-
   line-height: 2;
   margin: 1em 0 15px;
   padding: 0;
+
+  a {
+    color: $link;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover, &:active {
+      color: black;
+    }
+  }
 
   @include mobile {
     line-height: 2;
@@ -99,7 +107,7 @@ a {
   text-decoration: none;
   cursor: pointer;
   &:hover, &:active {
-    font-weight: bold;
+    color: $linkHover
   }
 }
 
@@ -245,6 +253,7 @@ img {
     border-color: white;
 
     &:hover {
+      color: white;
       border-bottom: 3px solid white;
     }
   }
@@ -337,11 +346,7 @@ nav {
 .post-menu-bar {
   display: flex;
   flex-flow: row wrap;
-  justify-content: left;
-
-  span {
-    margin-right: 2vw;
-  }
+  justify-content: space-around;
 
   .edit-button {
     opacity: 0;
