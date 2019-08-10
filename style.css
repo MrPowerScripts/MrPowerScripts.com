@@ -60,7 +60,7 @@ table {
   font-display: swap;
   font-family: 'Montserrat Bold';
   src: url("fonts/Montserrat/Montserrat-Bold.woff2") format("truetype");
-  font-family: sans-serif;
+  font-family: monospace;
 }
 /**************/
 /* BASE RULES */
@@ -152,9 +152,11 @@ a:hover, a:active {
 }
 
 ul, ol {
-  margin: 15px 0;
+  margin: 15px 0px;
+  margin-bottom: 20px;
   padding-left: 30px;
   line-height: 30px;
+  font-size: 120%;
 }
 
 ul {
@@ -163,6 +165,10 @@ ul {
 
 ol {
   list-style-type: decimal;
+}
+
+li {
+  margin-bottom: 15px;
 }
 
 ol ul, ul ol, ul ul, ol ol {
@@ -360,6 +366,7 @@ nav a:hover {
 }
 .post .entry {
   line-height: 24px;
+  font-family: monospace;
 }
 .post .entry a {
   color: #ff3c3c;
@@ -369,6 +376,9 @@ nav a:hover {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+}
+.post .post-menu-bar span {
+  font-family: cursive;
 }
 .post .post-menu-bar .edit-button {
   opacity: 0;
