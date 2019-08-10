@@ -1,0 +1,14 @@
+---
+layout: default
+---
+{% assign categories =  site.reviews | map: 'categories' | uniq %}
+{% for category in categories %}
+  <h3>{{ category }}</h3>
+  <ul>
+  {% for review in site.reviews %}
+    {% if review.categories contains category %}
+    <li><a href="{{ site.baseurl }}{{ review.url }}">{{ review.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+{% endfor %}

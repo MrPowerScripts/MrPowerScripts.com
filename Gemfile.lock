@@ -53,6 +53,9 @@ GEM
       jekyll (>= 3.7, < 5.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
+    jsonlint (0.3.0)
+      oj (~> 3)
+      optimist (~> 3)
     kramdown (1.17.0)
     liquid (4.0.3)
     listen (3.1.5)
@@ -64,6 +67,8 @@ GEM
     minitest (5.11.3)
     nokogiri (1.10.3)
       mini_portile2 (~> 2.4.0)
+    oj (3.8.1)
+    optimist (3.0.0)
     parallel (1.17.0)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
@@ -96,6 +101,7 @@ DEPENDENCIES
   jekyll-feed
   jekyll-paginate-v2
   jekyll-sitemap
+  jsonlint
 
 BUNDLED WITH
    2.0.2
