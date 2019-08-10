@@ -1,16 +1,16 @@
 {% if include.type == "post" %}
 <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 <div class="post-menu-bar">
-  <span>{{ post.author }}</span>
-  <span>{{ post.date | date: "%B %d, %Y" }}</span>
+  <span>{{ post.author }}</span> |
+  <span>{{ post.date | date: "%B %d, %Y" }}</span> |
   {% include read_time.html text=post.content %}
   <a class="edit-button" href="{{ site.github.repository_url }}/tree/master/{{ post.relative_path }}">Edit</a>
 </div>
 {% elsif include.type= "page" %}
 <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ page.title }}</a></h2>
 <div class="post-menu-bar">
-  <span>{{ page.author }}</span>
-  <span>{{ page.date | date: "%B %d, %Y" }}</span>
+  <span>{{ page.author }}</span> |
+  <span>{{ page.date | date: "%B %d, %Y" }}</span> |
   {% include read_time.html text=page.content %}
   <a class="edit-button" href="{{ site.github.repository_url }}/tree/master/{{ post.relative_path }}">Edit</a>
 </div>
