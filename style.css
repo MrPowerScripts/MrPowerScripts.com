@@ -373,6 +373,7 @@ nav a:hover {
 }
 .post .post-menu-bar span {
   font-family: monospace;
+  font-size: 105%;
 }
 .post .post-menu-bar .edit-button {
   opacity: 0;
