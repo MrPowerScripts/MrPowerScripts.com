@@ -372,7 +372,7 @@ nav a:hover {
   justify-content: space-around;
 }
 .post .post-menu-bar span {
-  font-family: cursive;
+  font-family: monospace;
 }
 .post .post-menu-bar .edit-button {
   opacity: 0;
