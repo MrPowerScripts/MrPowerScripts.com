@@ -146,6 +146,7 @@ a:hover, a:active {
 ul, ol {
   margin: 15px 0;
   padding-left: 30px;
+  line-height: 30px;
 }
 
 ul {
@@ -310,6 +311,7 @@ nav a {
   text-align: right;
   font-weight: bold;
   letter-spacing: 1px;
+  white-space: nowrap;
 }
 nav a:hover {
   border-bottom: 1px solid white;
