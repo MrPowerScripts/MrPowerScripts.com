@@ -92,6 +92,14 @@ h1, h2, h3, h4, h5, h6 {
   margin: 1em 0 15px;
   padding: 0;
 }
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: #ff3c3c;
+  text-decoration: none;
+  cursor: pointer;
+}
+h1 a:hover, h1 a:active, h2 a:hover, h2 a:active, h3 a:hover, h3 a:active, h4 a:hover, h4 a:active, h5 a:hover, h5 a:active, h6 a:hover, h6 a:active {
+  color: black;
+}
 @media screen and (max-width: 640px) {
   h1, h2, h3, h4, h5, h6 {
     line-height: 2;
@@ -140,7 +148,7 @@ a {
   cursor: pointer;
 }
 a:hover, a:active {
-  font-weight: bold;
+  color: #cc2121;
 }
 
 ul, ol {
@@ -277,6 +285,7 @@ img {
   border-color: white;
 }
 .site-name a:hover {
+  color: white;
   border-bottom: 3px solid white;
 }
 
@@ -359,10 +368,7 @@ nav a:hover {
 .post .post-menu-bar {
   display: flex;
   flex-flow: row wrap;
-  justify-content: left;
-}
-.post .post-menu-bar span {
-  margin-right: 2vw;
+  justify-content: space-around;
 }
 .post .post-menu-bar .edit-button {
   opacity: 0;
