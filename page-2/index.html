@@ -273,112 +273,51 @@ window.addEventListener('load', function() {
   })
 }, false);
 </script> -->
+<div class="reviews">
+  <div id="suggested-reviews" class="suggested-reviews">
+    <h4>Suggested reviews for you</h4>
+    <ul class="suggested-reviews-list">
+      <li><a href="" class="suggested-reviews-1" id="suggested-reviews-1"></a></li>
+      <li><a href="" class="suggested-reviews-2" id="suggested-reviews-2"></a></li>
+      <li><a href="" class="suggested-reviews-3" id="suggested-reviews-3"></a></li>
+      <li><a href="" class="suggested-reviews-4" id="suggested-reviews-4"></a></li>
+      <li><a href="" class="suggested-reviews-5" id="suggested-reviews-5"></a></li>
+    </ul>
+  </div>
+</div>
+
+<script>
+    window.addEventListener('load', function() {
+      fetch(window.location.origin+"/api-reviews.json")
+      .then(res => res.json())
+      .then(out => {
+        var posts = out.sort(() => .5 - Math.random()).slice(0,5)
+        let i
+        for (i=0; i < posts.length; i++) {
+          document.getElementById(`suggested-reviews-${i + 1}`).text = posts[i].title
+          document.getElementById(`suggested-reviews-${i + 1}`).href = posts[i].url
+        }
+    
+        let content = document.getElementById('suggested-reviews')
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+
+      })
+      .catch(error => console.error(error))
+    }, false);
+    </script>
 <div class="posts">
     
       <article class="post">
   
         
-<h2><a href="/nobody-gives-a-damn-about-your-idea/">Nobody gives a damn about your idea</a></h2>
+<h2><a href="/automated-reality-channel-episode-one/">Automated Reality Channel Episode One Released!</a></h2>
 <div class="post-menu-bar">
   <span>MrPowerScripts</span> |
-  <span>February 16, 2019</span> |
-  <span class="reading-time" title="Estimated read time">
-  
-  
-  9 mins
-  
-</span>
-
-<!-- 
-Genius https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/ 
-Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-blog-posts/
--->
-
-  <a class="edit-button" href="https://github.com/MrPowerScripts/MrPowerScripts.com/tree/master/_posts/2019-02-16-nobody-gives-a-damn-about-your-idea.md">Edit</a>
-</div>
-
-        <div class="entry">
-            <p>Really. They’ll pretend they do if they like you, but that’s the best you’re gonna get. Everyone has ideas. If a snowflake fell every time someone had a great idea we’d all be buried up to our necks in snow. And ya know what? That snow would be way more useful than the ideas that produced it. A snowperson, snow angels, snowballs - there’s a lot of fun to be had in the snow. Your ideas, however, aren’t worth a damn. And nobody cares about them.</p>
-
-
-        </div>
-        <a href="/nobody-gives-a-damn-about-your-idea/" class="read-more">Read More</a>
-      </article>
-    
-      <article class="post">
-  
-        
-<h2><a href="/how-I-hacked-my-uber-rating/">How I hacked my Uber rating</a></h2>
-<div class="post-menu-bar">
-  <span>MrPowerScripts</span> |
-  <span>February 03, 2019</span> |
-  <span class="reading-time" title="Estimated read time">
-  
-  
-  9 mins
-  
-</span>
-
-<!-- 
-Genius https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/ 
-Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-blog-posts/
--->
-
-  <a class="edit-button" href="https://github.com/MrPowerScripts/MrPowerScripts.com/tree/master/_posts/2019-02-03-how-I-hacked-my-uber-rating.md">Edit</a>
-</div>
-
-        <div class="entry">
-            <p>Uber ratings are a weird concept. You spend a short period of time with someone who is whisking you around the city. You might have a chat with them, or maybe you prefer to have a quiet ride. Sometimes they’ll even offer you treats, or refreshments if you’re lucky! Then, in the end, you judge each other based on a 5-star rating. No pressure. Your Uber rating is intended to give drivers some vague insight into the person they’ll be picking up, but it also has some advantages as well.</p>
-
-
-        </div>
-        <a href="/how-I-hacked-my-uber-rating/" class="read-more">Read More</a>
-      </article>
-    
-      <article class="post">
-  
-        
-<h2><a href="/farm-karma-on-reddit-with-bots-2019-update/">Farm karma on Reddit with bots 2019 update</a></h2>
-<div class="post-menu-bar">
-  <span>MrPowerScripts</span> |
-  <span>January 27, 2019</span> |
-  <span class="reading-time" title="Estimated read time">
-  
-  
-  8 mins
-  
-</span>
-
-<!-- 
-Genius https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/ 
-Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-blog-posts/
--->
-
-  <a class="edit-button" href="https://github.com/MrPowerScripts/MrPowerScripts.com/tree/master/_posts/2019-01-27-farm-karma-on-reddit-with-bots-2019-update.md">Edit</a>
-</div>
-
-        <div class="entry">
-            <p>Back in July of 2017, I noticed Reddit became much more - political. Lots of very specific political subreddits with various leanings and few subscribers were getting posts pushed up pretty high on Reddit. It seemed a bit strange, but it wasn’t all that much different from the previous election cycle. The difference though was in the four years since Obama won his second term Reddit’s user base exploded. The number <a href="https://www.statista.com/chart/11882/number-of-subreddits-on-reddit/">of subreddits doubled</a>. There was more communities, more people, and more discussions. So it’s not surprising that many new political subreddits would pop up as well. <!-- (1) video wrapper --></p>
-<div class="youtube-video" data-embed="CCMGHepPBso"> 
- 
-    <!-- (2) the "play" button -->
-    <div class="play-button"></div> 
-     
-</div>
-<p>Which is awesome. It’s good that more people are involved and aware of how politics work, and that we have the internet to share that information. Can you imagine trying to understand all the nuances to an election a hundred years ago? You cast your vote, and then things happen, and you wake up one day to a newspaper telling you who is running the country. How did that even happen? How were people capable of making informed decisions?</p>
-
-
-        </div>
-        <a href="/farm-karma-on-reddit-with-bots-2019-update/" class="read-more">Read More</a>
-      </article>
-    
-      <article class="post">
-  
-        
-<h2><a href="/google-is-going-mobile-first-make-your-website-ready/">Google is going mobile first - is your website ready?</a></h2>
-<div class="post-menu-bar">
-  <span>MrPowerScripts</span> |
-  <span>January 13, 2019</span> |
+  <span>March 14, 2019</span> |
   <span class="reading-time" title="Estimated read time">
   
   
@@ -391,33 +330,32 @@ Genius https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/
 Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-blog-posts/
 -->
 
-  <a class="edit-button" href="https://github.com/MrPowerScripts/MrPowerScripts.com/tree/master/_posts/2019-01-14-google-is-going-mobile-first-make-your-website-ready.md">Edit</a>
+  <a class="edit-button" href="https://github.com/MrPowerScripts/MrPowerScripts.com/tree/master/_posts/2019-03-14-automated-reality-channel-episode-one.md">Edit</a>
 </div>
 
         <div class="entry">
-            <p>If you use the Google search console you may have started receiving emails that go something like this:</p>
-<blockquote>
-  <p>Subject: Mobile-first indexing enabled</p>
-
-  <p>Dear Search Console user,</p>
-
-  <p>We are updating one or more of your properties as part of the mobile-first initiative. This means that you may see more traffic in your logs for those properties from Googlebot Smartphone. You may also see that snippets in Google Search results are now generated from the mobile version of your content.</p>
-
-  <p>The following properties are being updated (list limited to 20 properties):</p>
-</blockquote>
+            <p>IT WORKS. IT. FREAKING. WORKS. <a href="/help-me-automate-my-youtube-channel/">I wrote a few months ago about this idea to automate my youtube channel</a>. Now, at the time the idea wasn’t really well defined. I decided I wanted to do something and then I had to figure out how I was going to do it. I should have <a href="/nobody-gives-a-damn-about-your-idea/">shut up and built it first</a>, but I was too excited and prematurely let the idea out. It happens to everyone. Over time though I crafted a more well-defined concept. You can see the whole evolution in this playlist in fact.
+<!-- (1) video wrapper --></p>
+<div class="youtube-video" data-embed="videoseries?list=PLqpaLALjc1lyekGkzAltr50RD3RD3kA4d&amp;modestbranding=1&amp;enablejsapi=1"> 
+ 
+    <!-- (2) the "play" button -->
+    <div class="play-button"></div> 
+     
+</div>
+<p>Well, I finally put together something I would consider a prototype. Despite many hiccups, lingering issues, and generally losing faith in the idea I managed to put together the scaffolding for a working project. This is how it all works.</p>
 
 
         </div>
-        <a href="/google-is-going-mobile-first-make-your-website-ready/" class="read-more">Read More</a>
+        <a href="/automated-reality-channel-episode-one/" class="read-more">Read More</a>
       </article>
     
       <article class="post">
   
         
-<h2><a href="/jekyll-front-matter-template/">Jekyll Front Matter Template</a></h2>
+<h2><a href="/reduce-memory-use-gradle-kotlin/">Reduce memory usage of Gradle and Kotlin for Android development DevOps</a></h2>
 <div class="post-menu-bar">
   <span>MrPowerScripts</span> |
-  <span>January 13, 2019</span> |
+  <span>March 10, 2019</span> |
   <span class="reading-time" title="Estimated read time">
   
   
@@ -430,30 +368,28 @@ Genius https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/
 Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-blog-posts/
 -->
 
-  <a class="edit-button" href="https://github.com/MrPowerScripts/MrPowerScripts.com/tree/master/_posts/2019-01-13-jekyll-front-matter-template.md">Edit</a>
+  <a class="edit-button" href="https://github.com/MrPowerScripts/MrPowerScripts.com/tree/master/_posts/2019-03-10-reduce-memory-use-gradle-kotlin.md">Edit</a>
 </div>
 
         <div class="entry">
-            <p>This is a Jekyll front matter template free for anyone to use</p>
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
-<span class="nn">---</span>
-</code></pre></div></div>
+            <p>When you’re building your android project locally your machines probably have a lot of horsepower. When you’re running in a DevOps workflow such as continuous integration and delivery you may not have as many resources. This can cause your builds to run out of memory. Here are some quick tips to help reduce the memory usage of your Gradle and Kotlin builds for Android development.</p>
+
 
         </div>
-        <a href="/jekyll-front-matter-template/" class="read-more">Read More</a>
+        <a href="/reduce-memory-use-gradle-kotlin/" class="read-more">Read More</a>
       </article>
     
       <article class="post">
   
         
-<h2><a href="/remove-unwanted-apps-services-windows-10/">Cleandows-10: Remove unwanted apps and services from Windows 10 with Powershell</a></h2>
+<h2><a href="/content-creators-should-know-creative-commons-cc0-pexels/">Every Content Creator Should Know This - Creative Commons CC0 License & Pexels.com</a></h2>
 <div class="post-menu-bar">
   <span>MrPowerScripts</span> |
-  <span>January 12, 2019</span> |
+  <span>March 03, 2019</span> |
   <span class="reading-time" title="Estimated read time">
   
   
-  1 min
+  2 mins
   
 </span>
 
@@ -462,34 +398,35 @@ Genius https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/
 Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-blog-posts/
 -->
 
-  <a class="edit-button" href="https://github.com/MrPowerScripts/MrPowerScripts.com/tree/master/_posts/2019-01-12-remove-unwanted-apps-services-windows-10.md">Edit</a>
+  <a class="edit-button" href="https://github.com/MrPowerScripts/MrPowerScripts.com/tree/master/_posts/2019-03-03-content-creators-should-know-creative-commons-cc0-pexels.md">Edit</a>
 </div>
 
         <div class="entry">
-            <p>Well, this is really cool to see! I had a fellow scripter drop into the <a href="https://bit.ly/mrps-discord">Discord channel</a> asking some questions about one of my videos. Windows restore points with Powershell - super exciting content. I wasn’t very helpful, but they did show me what they were working on. Some really cool Powershell scripts for windows 10 to remove apps and services. <!-- (1) video wrapper --></p>
-<div class="youtube-video" data-embed="XMK3ZAazprM"> 
+            <p>Creating content all by yourself is really hard, so it’s helpful to use art, music, and other assets to help you share your message. If you want to monetize your content you need to be especially careful. If the content you create utilizes the copyrighted works of others then you might be in for a world of pain. Thankfully Creative Commons has been around for a few years helping content creators by creating content licenses. <!-- (1) video wrapper --></p>
+<div class="youtube-video" data-embed="J_qTrc_fV-Y"> 
  
     <!-- (2) the "play" button -->
     <div class="play-button"></div> 
      
 </div>
+<p>These licenses are easy for content creators to understand, and help them share their works for others to use in various ways. One license is incredibly useful for content creators to know about, which is the CC0 license</p>
 
 
         </div>
-        <a href="/remove-unwanted-apps-services-windows-10/" class="read-more">Read More</a>
+        <a href="/content-creators-should-know-creative-commons-cc0-pexels/" class="read-more">Read More</a>
       </article>
     
       <article class="post">
   
         
-<h2><a href="/yaml-aint-markup-language-sing-along-song/">YAML Ain't Markup Language Sing Along Song</a></h2>
+<h2><a href="/making-mrpowerscripts-website-pretty/">Making MrPowerScripts.com pretty</a></h2>
 <div class="post-menu-bar">
   <span>MrPowerScripts</span> |
-  <span>January 07, 2019</span> |
+  <span>February 27, 2019</span> |
   <span class="reading-time" title="Estimated read time">
   
   
-  1 min
+  5 mins
   
 </span>
 
@@ -498,33 +435,28 @@ Genius https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/
 Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-blog-posts/
 -->
 
-  <a class="edit-button" href="https://github.com/MrPowerScripts/MrPowerScripts.com/tree/master/_posts/2019-01-07-yaml-aint-markup-language-sing-along-song.md">Edit</a>
+  <a class="edit-button" href="https://github.com/MrPowerScripts/MrPowerScripts.com/tree/master/_posts/2019-02-27-making-mrpowerscripts-website-pretty.md">Edit</a>
 </div>
 
         <div class="entry">
-            <p>I’m really happy I was able to stop laughing long enough to upload this. Check out the new hit sing along song YAML Ain’t Markup Language. <!-- (1) video wrapper --></p>
-<div class="youtube-video" data-embed="0GnWd4jiyH4"> 
- 
-    <!-- (2) the "play" button -->
-    <div class="play-button"></div> 
-     
-</div>
+            <p>I’m not a designer. I have a terrible sense of design really. Though I feel like it has improved considerably over the years. Hopefully, that trend continues. And while I believe through hard work anyone can become great at what they put their mind to some people simply have an innate advantage. That’s okay because collaboration is what makes every project great. I don’t know anyone who built something great by themselves. The Great Pyramid of Giza?  The internet? Kim Kardashian’s butt? All of these took the efforts of many to achieve their notoriety. People have always built off the efforts or inspirations of others.</p>
+
 
         </div>
-        <a href="/yaml-aint-markup-language-sing-along-song/" class="read-more">Read More</a>
+        <a href="/making-mrpowerscripts-website-pretty/" class="read-more">Read More</a>
       </article>
     
       <article class="post">
   
         
-<h2><a href="/docker-private-registry-portus/">Host your own private docker registry with Portus</a></h2>
+<h2><a href="/my-worst-experience-working-for-a-company/">My worst experience working for a company</a></h2>
 <div class="post-menu-bar">
   <span>MrPowerScripts</span> |
-  <span>January 01, 2019</span> |
+  <span>February 18, 2019</span> |
   <span class="reading-time" title="Estimated read time">
   
   
-  10 mins
+  12 mins
   
 </span>
 
@@ -533,96 +465,15 @@ Genius https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/
 Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-blog-posts/
 -->
 
-  <a class="edit-button" href="https://github.com/MrPowerScripts/MrPowerScripts.com/tree/master/_posts/2019-01-01-docker-private-registry-portus.md">Edit</a>
+  <a class="edit-button" href="https://github.com/MrPowerScripts/MrPowerScripts.com/tree/master/_posts/2019-02-18-my-worst-experience-working-for-a-company.md">Edit</a>
 </div>
 
         <div class="entry">
-            <p>If you’re familiar with docker then you’ve probably used DockerHub. Dockerhub is AWESOME. I absolutely love (most of) it and what it does. DockerHub is simply a docker container registry. It’s a place where you can store, pull, and share docker containers. <!-- (1) video wrapper --></p>
-<div class="youtube-video" data-embed="gvaRfAqCfGY"> 
- 
-    <!-- (2) the "play" button -->
-    <div class="play-button"></div> 
-     
-</div>
-<p>It’s not the only container registry. Google has their own container registry where you can upload your images. Microsoft and Amazon also have docker container registries. All of that is great, but what if you want to host your won docker images in a private registry. Those registries I mentioned have support for private accounts, but I’m going to reveal how you can host your own private container registry that you control.</p>
+            <p>I mention pretty often that I’ve worked for a lot of companies big and small. Most of them have been amazing experiences, but not all of them have been pleasant. The worst experience by far still bothers the shit out of me to this today. There were so many wrong things happening it upsets me I stuck around as long as I did. A month and a half. What a weird experience from start to end. I found this advert looking for someone to do part-time IT work on Craigslist,  and it all went downhill from there.</p>
 
 
         </div>
-        <a href="/docker-private-registry-portus/" class="read-more">Read More</a>
-      </article>
-    
-      <article class="post">
-  
-        
-<h2><a href="/how-to-build-a-monitizable-web-app-in-60-days/">How to build a monetizable web app in 60 days</a></h2>
-<div class="post-menu-bar">
-  <span>MrPowerScripts</span> |
-  <span>December 13, 2018</span> |
-  <span class="reading-time" title="Estimated read time">
-  
-  
-  13 mins
-  
-</span>
-
-<!-- 
-Genius https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/ 
-Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-blog-posts/
--->
-
-  <a class="edit-button" href="https://github.com/MrPowerScripts/MrPowerScripts.com/tree/master/_posts/2018-12-13-how-to-build-a-monitizable-web-app-in-60-days.md">Edit</a>
-</div>
-
-        <div class="entry">
-            <p>Well, 63 days if we’re going by the latest commit in the repo. But that’s close enough! Do you have any side projects? I have tons of them. I have side projects that are waiting on side-side projects for the side project that will (fingers crossed) make them even more awesome (when they’re finished (if ever)). Do you have any side projects that make money? Ah, now THAT is a much rarer sighting. I’ve personally never had a side project that was capable of generating money on its own. <!-- (1) video wrapper --></p>
-<div class="youtube-video" data-embed="zAWGcx4aNZE"> 
- 
-    <!-- (2) the "play" button -->
-    <div class="play-button"></div> 
-     
-</div>
-<p>I suppose the Youtube channel does, but it’s nothing to write home about. Every once in a while we’re sitting at our desk thinking we could be doing something better with our time, and changing the world with code! And I’ve had that moment many times myself. I have an idea. I get started on it. It turns out to be way harder than I thought. It doesn’t just happen to individuals. It happens to companies as well.</p>
-
-
-        </div>
-        <a href="/how-to-build-a-monitizable-web-app-in-60-days/" class="read-more">Read More</a>
-      </article>
-    
-      <article class="post">
-  
-        
-<h2><a href="/help-me-automate-my-youtube-channel/">Help me automate my youtube channel</a></h2>
-<div class="post-menu-bar">
-  <span>MrPowerScripts</span> |
-  <span>December 12, 2018</span> |
-  <span class="reading-time" title="Estimated read time">
-  
-  
-  7 mins
-  
-</span>
-
-<!-- 
-Genius https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/ 
-Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-blog-posts/
--->
-
-  <a class="edit-button" href="https://github.com/MrPowerScripts/MrPowerScripts.com/tree/master/_posts/2018-12-12-help-me-automate-my-youtube-channel.md">Edit</a>
-</div>
-
-        <div class="entry">
-            <p>I made the MrPowerScripts YouTube channel on Jan 5, 2012. Very close to seven years old! How wild is that? After making over one hundred videos my channel has 373,803+ views. It feels really great knowing I’ve helped so many people save time by scripting, programming, and developing. I’ve had so much fun with it, and I want to see it continue to grow. And this is always the challenge with growing up, right? I’m finding I have less to spend on hours and hours cutting up video. Doing in-depth research about a subject so I don’t get called out for being inaccurate in the comments. Reviewing, making the thumbnails, doing conversions and more reviews after reviews after reviews. <!-- (1) video wrapper --></p>
-<div class="youtube-video" data-embed="Q7tLhrnMZVs"> 
- 
-    <!-- (2) the "play" button -->
-    <div class="play-button"></div> 
-     
-</div>
-<p>I’m exhausted just thinking about all of it. I started blogging and it’s great. I love writing, and this has given me an opportunity to write more and share thoughts in a different way. But videos have always been my thing.</p>
-
-
-        </div>
-        <a href="/help-me-automate-my-youtube-channel/" class="read-more">Read More</a>
+        <a href="/my-worst-experience-working-for-a-company/" class="read-more">Read More</a>
       </article>
     
   
@@ -636,7 +487,7 @@ Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-bl
         <a href="/" class="previous">&laquo; Previous</a>
       
   
-      <span class="page_number">Page: 2 of 4</span>
+      <span class="page_number">Page: 2 of 7</span>
   
       
         <a href="/page-3/" class="next">Next &raquo;</a>

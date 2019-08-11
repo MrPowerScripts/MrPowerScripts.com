@@ -273,19 +273,55 @@ window.addEventListener('load', function() {
   })
 }, false);
 </script> -->
+<div class="reviews">
+  <div id="suggested-reviews" class="suggested-reviews">
+    <h4>Suggested reviews for you</h4>
+    <ul class="suggested-reviews-list">
+      <li><a href="" class="suggested-reviews-1" id="suggested-reviews-1"></a></li>
+      <li><a href="" class="suggested-reviews-2" id="suggested-reviews-2"></a></li>
+      <li><a href="" class="suggested-reviews-3" id="suggested-reviews-3"></a></li>
+      <li><a href="" class="suggested-reviews-4" id="suggested-reviews-4"></a></li>
+      <li><a href="" class="suggested-reviews-5" id="suggested-reviews-5"></a></li>
+    </ul>
+  </div>
+</div>
+
+<script>
+    window.addEventListener('load', function() {
+      fetch(window.location.origin+"/api-reviews.json")
+      .then(res => res.json())
+      .then(out => {
+        var posts = out.sort(() => .5 - Math.random()).slice(0,5)
+        let i
+        for (i=0; i < posts.length; i++) {
+          document.getElementById(`suggested-reviews-${i + 1}`).text = posts[i].title
+          document.getElementById(`suggested-reviews-${i + 1}`).href = posts[i].url
+        }
+    
+        let content = document.getElementById('suggested-reviews')
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+
+      })
+      .catch(error => console.error(error))
+    }, false);
+    </script>
 <div class="posts">
     
       <article class="post">
   
         
-<h2><a href="/mindfulness-meditation-can-help-you-get-in-the-flow/">Mindfulness meditation can help you get in the flow</a></h2>
+<h2><a href="/nobody-gives-a-damn-about-your-idea/">Nobody gives a damn about your idea</a></h2>
 <div class="post-menu-bar">
   <span>MrPowerScripts</span> |
-  <span>November 24, 2018</span> |
+  <span>February 16, 2019</span> |
   <span class="reading-time" title="Estimated read time">
   
   
-  6 mins
+  9 mins
   
 </span>
 
@@ -294,24 +330,91 @@ Genius https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/
 Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-blog-posts/
 -->
 
-  <a class="edit-button" href="https://github.com/MrPowerScripts/MrPowerScripts.com/tree/master/_posts/2018-11-24-mindfulness-meditation-can-help-you-get-in-the-flow.md">Edit</a>
+  <a class="edit-button" href="https://github.com/MrPowerScripts/MrPowerScripts.com/tree/master/_posts/2019-02-16-nobody-gives-a-damn-about-your-idea.md">Edit</a>
 </div>
 
         <div class="entry">
-            <p>Having trouble concentrating? You don’t feel as productive as you once did? Are small things getting to you? If you answered yes to any of those questions I really wish I had a pill to sell you. Really. I could be like a millionaire by now. Almost everyone I know has these problems. I’m not here to offer any medical advice though. If you have a severe ailment you should really see a doctor. If not, here’s a giant helping of opinion for ya.</p>
+            <p>Really. They’ll pretend they do if they like you, but that’s the best you’re gonna get. Everyone has ideas. If a snowflake fell every time someone had a great idea we’d all be buried up to our necks in snow. And ya know what? That snow would be way more useful than the ideas that produced it. A snowperson, snow angels, snowballs - there’s a lot of fun to be had in the snow. Your ideas, however, aren’t worth a damn. And nobody cares about them.</p>
 
 
         </div>
-        <a href="/mindfulness-meditation-can-help-you-get-in-the-flow/" class="read-more">Read More</a>
+        <a href="/nobody-gives-a-damn-about-your-idea/" class="read-more">Read More</a>
       </article>
     
       <article class="post">
   
         
-<h2><a href="/that-time-I-created-the-broadband-laws-for-a-country/">That time I created a broadband law for an entire country</a></h2>
+<h2><a href="/how-I-hacked-my-uber-rating/">How I hacked my Uber rating</a></h2>
 <div class="post-menu-bar">
   <span>MrPowerScripts</span> |
-  <span>November 24, 2018</span> |
+  <span>February 03, 2019</span> |
+  <span class="reading-time" title="Estimated read time">
+  
+  
+  9 mins
+  
+</span>
+
+<!-- 
+Genius https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/ 
+Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-blog-posts/
+-->
+
+  <a class="edit-button" href="https://github.com/MrPowerScripts/MrPowerScripts.com/tree/master/_posts/2019-02-03-how-I-hacked-my-uber-rating.md">Edit</a>
+</div>
+
+        <div class="entry">
+            <p>Uber ratings are a weird concept. You spend a short period of time with someone who is whisking you around the city. You might have a chat with them, or maybe you prefer to have a quiet ride. Sometimes they’ll even offer you treats, or refreshments if you’re lucky! Then, in the end, you judge each other based on a 5-star rating. No pressure. Your Uber rating is intended to give drivers some vague insight into the person they’ll be picking up, but it also has some advantages as well.</p>
+
+
+        </div>
+        <a href="/how-I-hacked-my-uber-rating/" class="read-more">Read More</a>
+      </article>
+    
+      <article class="post">
+  
+        
+<h2><a href="/farm-karma-on-reddit-with-bots-2019-update/">Farm karma on Reddit with bots 2019 update</a></h2>
+<div class="post-menu-bar">
+  <span>MrPowerScripts</span> |
+  <span>January 27, 2019</span> |
+  <span class="reading-time" title="Estimated read time">
+  
+  
+  8 mins
+  
+</span>
+
+<!-- 
+Genius https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/ 
+Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-blog-posts/
+-->
+
+  <a class="edit-button" href="https://github.com/MrPowerScripts/MrPowerScripts.com/tree/master/_posts/2019-01-27-farm-karma-on-reddit-with-bots-2019-update.md">Edit</a>
+</div>
+
+        <div class="entry">
+            <p>Back in July of 2017, I noticed Reddit became much more - political. Lots of very specific political subreddits with various leanings and few subscribers were getting posts pushed up pretty high on Reddit. It seemed a bit strange, but it wasn’t all that much different from the previous election cycle. The difference though was in the four years since Obama won his second term Reddit’s user base exploded. The number <a href="https://www.statista.com/chart/11882/number-of-subreddits-on-reddit/">of subreddits doubled</a>. There was more communities, more people, and more discussions. So it’s not surprising that many new political subreddits would pop up as well. <!-- (1) video wrapper --></p>
+<div class="youtube-video" data-embed="CCMGHepPBso"> 
+ 
+    <!-- (2) the "play" button -->
+    <div class="play-button"></div> 
+     
+</div>
+<p>Which is awesome. It’s good that more people are involved and aware of how politics work, and that we have the internet to share that information. Can you imagine trying to understand all the nuances to an election a hundred years ago? You cast your vote, and then things happen, and you wake up one day to a newspaper telling you who is running the country. How did that even happen? How were people capable of making informed decisions?</p>
+
+
+        </div>
+        <a href="/farm-karma-on-reddit-with-bots-2019-update/" class="read-more">Read More</a>
+      </article>
+    
+      <article class="post">
+  
+        
+<h2><a href="/google-is-going-mobile-first-make-your-website-ready/">Google is going mobile first - is your website ready?</a></h2>
+<div class="post-menu-bar">
+  <span>MrPowerScripts</span> |
+  <span>January 13, 2019</span> |
   <span class="reading-time" title="Estimated read time">
   
   
@@ -324,283 +427,33 @@ Genius https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/
 Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-blog-posts/
 -->
 
-  <a class="edit-button" href="https://github.com/MrPowerScripts/MrPowerScripts.com/tree/master/_posts/2018-11-24-that-time-I-created-the-broadband-laws-for-a-country.md">Edit</a>
+  <a class="edit-button" href="https://github.com/MrPowerScripts/MrPowerScripts.com/tree/master/_posts/2019-01-14-google-is-going-mobile-first-make-your-website-ready.md">Edit</a>
 </div>
 
         <div class="entry">
-            <p>When I was in my early 20’s I somehow ended up as the “IT Guy” at this company headquarters. This was a long time ago but I still think about it sometimes. While most of the company was out in the west coast they had a headquarters on the east where all the executives worked. Though, their IT support was entirely based on the west coast. Which left a gap in the morning for available IT support. Well, that is not the kind of service these money makers are used to! They want support, and they want it NOW. So through a series of odd events that person ended up being me. That’s where the story really starts.</p>
+            <p>If you use the Google search console you may have started receiving emails that go something like this:</p>
+<blockquote>
+  <p>Subject: Mobile-first indexing enabled</p>
+
+  <p>Dear Search Console user,</p>
+
+  <p>We are updating one or more of your properties as part of the mobile-first initiative. This means that you may see more traffic in your logs for those properties from Googlebot Smartphone. You may also see that snippets in Google Search results are now generated from the mobile version of your content.</p>
+
+  <p>The following properties are being updated (list limited to 20 properties):</p>
+</blockquote>
 
 
         </div>
-        <a href="/that-time-I-created-the-broadband-laws-for-a-country/" class="read-more">Read More</a>
+        <a href="/google-is-going-mobile-first-make-your-website-ready/" class="read-more">Read More</a>
       </article>
     
       <article class="post">
   
         
-<h2><a href="/faster-react-development-create-react-app-and-heroku/">Faster ReactJS development with Create-React-App and Heroku</a></h2>
+<h2><a href="/jekyll-front-matter-template/">Jekyll Front Matter Template</a></h2>
 <div class="post-menu-bar">
   <span>MrPowerScripts</span> |
-  <span>November 18, 2018</span> |
-  <span class="reading-time" title="Estimated read time">
-  
-  
-  2 mins
-  
-</span>
-
-<!-- 
-Genius https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/ 
-Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-blog-posts/
--->
-
-  <a class="edit-button" href="https://github.com/MrPowerScripts/MrPowerScripts.com/tree/master/_posts/2018-11-18-faster-react-development-create-react-app-and-heroku.md">Edit</a>
-</div>
-
-        <div class="entry">
-            <p>I always loved working on React projects. There was a lot of overhead getting started early on for me. I don’t even want to get into how many hours I spent learning how webpack work. Oh, there’s a new version of webpack? EVERYTHING IS DIFFERENT NOW. React isn’t that much better with breaking changes. When you combine all these various software “solutions” it can be hard to even get started with what you originally wanted to do. Code the freaking idea up. <!-- (1) video wrapper --></p>
-<div class="youtube-video" data-embed="xckpWg-Kpss"> 
- 
-    <!-- (2) the "play" button -->
-    <div class="play-button"></div> 
-     
-</div>
-<p>It took me a long time to figure out a setup that allowed me to jump right into developing the react app and thinking less about the setup. This is what I’ve finally settled on.</p>
-
-
-        </div>
-        <a href="/faster-react-development-create-react-app-and-heroku/" class="read-more">Read More</a>
-      </article>
-    
-      <article class="post">
-  
-        
-<h2><a href="/how-to-make-a-discord-bot/">How to make a discord bot</a></h2>
-<div class="post-menu-bar">
-  <span>MrPowerScripts</span> |
-  <span>November 11, 2018</span> |
-  <span class="reading-time" title="Estimated read time">
-  
-  
-  2 mins
-  
-</span>
-
-<!-- 
-Genius https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/ 
-Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-blog-posts/
--->
-
-  <a class="edit-button" href="https://github.com/MrPowerScripts/MrPowerScripts.com/tree/master/_posts/2018-11-11-how-to-make-a-discord-bot.md">Edit</a>
-</div>
-
-        <div class="entry">
-            <p>Discord is probably one of my favorite apps ever. They started off with a simple idea and worked really hard to add features over time. Though the software hasn’t suffered from its rapid development and release cycles. <!-- (1) video wrapper --></p>
-<div class="youtube-video" data-embed="kieSx_pzpCU"> 
- 
-    <!-- (2) the "play" button -->
-    <div class="play-button"></div> 
-     
-</div>
-<p>A lot of times you’ll see apps with the growth of Discord become bloated. Discord has managed to remain simple, but still has lots of power available to the user.</p>
-
-
-        </div>
-        <a href="/how-to-make-a-discord-bot/" class="read-more">Read More</a>
-      </article>
-    
-      <article class="post">
-  
-        
-<h2><a href="/how-to-use-git-version-control/">How to use git version control</a></h2>
-<div class="post-menu-bar">
-  <span>MrPowerScripts</span> |
-  <span>October 24, 2018</span> |
-  <span class="reading-time" title="Estimated read time">
-  
-  
-  1 mins
-  
-</span>
-
-<!-- 
-Genius https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/ 
-Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-blog-posts/
--->
-
-  <a class="edit-button" href="https://github.com/MrPowerScripts/MrPowerScripts.com/tree/master/_posts/2018-10-28-how-to-use-git-version-control.md">Edit</a>
-</div>
-
-        <div class="entry">
-            <p>When I first started scripting, my development flow went something like this: Create a script and save it as a file. Make some adjustments I want to test and save it in a new file. Make more adjustments and save it as a new file. Rinse, repeat. I would end up with a folder full of different file versions with different names that all were effectively the same script. <!-- (1) video wrapper --></p>
-<div class="youtube-video" data-embed="NwQ0M-pyeHQ"> 
- 
-    <!-- (2) the "play" button -->
-    <div class="play-button"></div> 
-     
-</div>
-<p>If you’re doing things this way then STOP. Watch the video above and save yourself. After learning to use git I was vastly more effective in terms of speed and organization of my code.</p>
-
-
-        </div>
-        <a href="/how-to-use-git-version-control/" class="read-more">Read More</a>
-      </article>
-    
-      <article class="post">
-  
-        
-<h2><a href="/making-rest-api-requests-with-powershell/">Send GET requests to API with Powershell</a></h2>
-<div class="post-menu-bar">
-  <span>MrPowerScripts</span> |
-  <span>October 24, 2018</span> |
-  <span class="reading-time" title="Estimated read time">
-  
-  
-  2 mins
-  
-</span>
-
-<!-- 
-Genius https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/ 
-Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-blog-posts/
--->
-
-  <a class="edit-button" href="https://github.com/MrPowerScripts/MrPowerScripts.com/tree/master/_posts/2018-10-24-making-rest-api-requests-with-powershell.md">Edit</a>
-</div>
-
-        <div class="entry">
-            <p>When I started learning Powershell web technologies were mostly a mystery for me. I was a simple systems admin trying to make my life easier by automating things. Sure, I knew how to create a basic HTML site with some CSS, but even javascript was well beyond my understanding. Though over time I developed an interest in developing for the web, which spurred me to learn how Powershell can interact with things beyond my computer or local network. <!-- (1) video wrapper --></p>
-<div class="youtube-video" data-embed="7mEmQgGowMY"> 
- 
-    <!-- (2) the "play" button -->
-    <div class="play-button"></div> 
-     
-</div>
-<p>How can I scrape a website with Powershell? How can I access an API? How can I send data from my computer to services on the web? I had so many questions for a long time.</p>
-
-
-        </div>
-        <a href="/making-rest-api-requests-with-powershell/" class="read-more">Read More</a>
-      </article>
-    
-      <article class="post">
-  
-        
-<h2><a href="/automate-install-ip-printer-with-powershell/">Automate Installing IP Printers With Powershell</a></h2>
-<div class="post-menu-bar">
-  <span>MrPowerScripts</span> |
-  <span>October 14, 2018</span> |
-  <span class="reading-time" title="Estimated read time">
-  
-  
-  4 mins
-  
-</span>
-
-<!-- 
-Genius https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/ 
-Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-blog-posts/
--->
-
-  <a class="edit-button" href="https://github.com/MrPowerScripts/MrPowerScripts.com/tree/master/_posts/2018-10-14-automate-install-ip-printer-with-powershell.md">Edit</a>
-</div>
-
-        <div class="entry">
-            <p>One of my favorite ways of saving time as a systems administrator was automating the installation of printers. You don’t need Powershell for it. I often times did with simple batch scripts. PowerShell is all the rage in the world of Windows these days, so that’s why the video examples use it. <!-- (1) video wrapper --></p>
-<div class="youtube-video" data-embed="E2x6NG72tn4"> 
- 
-    <!-- (2) the "play" button -->
-    <div class="play-button"></div> 
-     
-</div>
-<p>Learning how to automate printer installations really saved me a lot of time in previous jobs, but it wasn’t always easy changing a culture of manual effort. Sometimes you have to wait for the right opportunity.</p>
-
-
-        </div>
-        <a href="/automate-install-ip-printer-with-powershell/" class="read-more">Read More</a>
-      </article>
-    
-      <article class="post">
-  
-        
-<h2><a href="/continuous-meme-delivery-using-circleci/">Continuous Integration Meme Delivery With CircleCI</a></h2>
-<div class="post-menu-bar">
-  <span>MrPowerScripts</span> |
-  <span>October 13, 2018</span> |
-  <span class="reading-time" title="Estimated read time">
-  
-  
-  1 mins
-  
-</span>
-
-<!-- 
-Genius https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/ 
-Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-blog-posts/
--->
-
-  <a class="edit-button" href="https://github.com/MrPowerScripts/MrPowerScripts.com/tree/master/_posts/2018-10-13-continuous-meme-delivery-using-circleci.md">Edit</a>
-</div>
-
-        <div class="entry">
-            <p>I made a video about continuous integration and continuous delivery. Also known as CI/CD. The cool way to do DevOps! Are you not practicing this yet? I bet you’re still writing checks. You probably still think dippin’ dots are the future of ice cream. At least the future of software development is here, so dive in old timer. We write tests now and YOLO every commit out to production faster than anyone has time to review them. <!-- (1) video wrapper --></p>
-<div class="youtube-video" data-embed="oHaYyZgiDIU"> 
- 
-    <!-- (2) the "play" button -->
-    <div class="play-button"></div> 
-     
-</div>
-<p>The writing tests part is optional for maximum YOLO. You won’t see this being taught in school, but I also like to dab at my desk every time I push a commit. Let all the haters (colleagues) know that I’m making some changes around here.</p>
-
-
-        </div>
-        <a href="/continuous-meme-delivery-using-circleci/" class="read-more">Read More</a>
-      </article>
-    
-      <article class="post">
-  
-        
-<h2><a href="/sending-an-email-from-powershell/">Sending an email from Powershell using send-mailmessage and Gmail</a></h2>
-<div class="post-menu-bar">
-  <span>MrPowerScripts</span> |
-  <span>October 03, 2018</span> |
-  <span class="reading-time" title="Estimated read time">
-  
-  
-  1 mins
-  
-</span>
-
-<!-- 
-Genius https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/ 
-Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-blog-posts/
--->
-
-  <a class="edit-button" href="https://github.com/MrPowerScripts/MrPowerScripts.com/tree/master/_posts/2018-10-04-sending-an-email-from-powershell.md">Edit</a>
-</div>
-
-        <div class="entry">
-            <p>I made this video about sending an email from Powershell about five years ago. I didn’t think much of it at the time, but I used my actual email address in the example of the video. This resulted in people copy/pasting the example including my email and sending me all of their test emails. I’ve really loved it! <!-- (1) video wrapper --></p>
-<div class="youtube-video" data-embed="gxHdAic6im8"> 
- 
-    <!-- (2) the "play" button -->
-    <div class="play-button"></div> 
-     
-</div>
-<p>The script below will show how to use send-mailmessage with Gmail to send emails from Powershell.</p>
-
-
-        </div>
-        <a href="/sending-an-email-from-powershell/" class="read-more">Read More</a>
-      </article>
-    
-      <article class="post">
-  
-        
-<h2><a href="/that-time-I-destroyed-a-customers-computer/">That time I destroyed a customer's computer</a></h2>
-<div class="post-menu-bar">
-  <span>MrPowerScripts</span> |
-  <span>September 30, 2018</span> |
+  <span>January 13, 2019</span> |
   <span class="reading-time" title="Estimated read time">
   
   
@@ -613,22 +466,17 @@ Genius https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/
 Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-blog-posts/
 -->
 
-  <a class="edit-button" href="https://github.com/MrPowerScripts/MrPowerScripts.com/tree/master/_posts/2018-09-30-that-time-I-destroyed-a-customers-computer.md">Edit</a>
+  <a class="edit-button" href="https://github.com/MrPowerScripts/MrPowerScripts.com/tree/master/_posts/2019-01-13-jekyll-front-matter-template.md">Edit</a>
 </div>
 
         <div class="entry">
-            <p>This was a very different video than I’m used to making! I’m pretty sure this is the first storytelling video I’ve made for the channel. Sharing a not so spectacular experience from early on in my IT career. <!-- (1) video wrapper --></p>
-<div class="youtube-video" data-embed="hHMKyfGkiNY"> 
- 
-    <!-- (2) the "play" button -->
-    <div class="play-button"></div> 
-     
-</div>
-<p>I managed to wipe a customer’s entire hard drive, and that was a pretty grim week for me. But shit happens. We learn and move on. I’m well aware the video is corny as hell with the background audio. I like corn.</p>
-
+            <p>This is a Jekyll front matter template free for anyone to use</p>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="nn">---</span>
+</code></pre></div></div>
 
         </div>
-        <a href="/that-time-I-destroyed-a-customers-computer/" class="read-more">Read More</a>
+        <a href="/jekyll-front-matter-template/" class="read-more">Read More</a>
       </article>
     
   
@@ -642,7 +490,7 @@ Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-bl
         <a href="/page-2/" class="previous">&laquo; Previous</a>
       
   
-      <span class="page_number">Page: 3 of 4</span>
+      <span class="page_number">Page: 3 of 7</span>
   
       
         <a href="/page-4/" class="next">Next &raquo;</a>
