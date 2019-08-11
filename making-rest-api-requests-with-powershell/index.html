@@ -289,9 +289,9 @@ window.addEventListener('load', function() {
 </script> -->
 <article class="post">
   <div class="reviews">
-  <div id="suggested-reviews" class="suggested-reviews" hidden>
+  <div id="suggested-reviews" class="suggested-reviews">
     <h4>Suggested reviews for you</h4>
-    <div class="suggested-reviews">
+    <div class="suggested-reviews-list">
       <a href="" class="suggested-reviews-1" id="suggested-reviews-1"></a>
       <a href="" class="suggested-reviews-2" id="suggested-reviews-2"></a>
       <a href="" class="suggested-reviews-3" id="suggested-reviews-3"></a>
@@ -313,7 +313,13 @@ window.addEventListener('load', function() {
           document.getElementById(`suggested-reviews-${i + 1}`).href = posts[i].url
         }
     
-        document.getElementById("suggested-reviews").hidden = false
+        let content = document.getElementById('suggested-reviews')
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+
       })
       .catch(error => console.error(error))
     }, false);
@@ -338,7 +344,6 @@ Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-bl
   <a class="edit-button" href="https://github.com/MrPowerScripts/MrPowerScripts.com/tree/master/">Edit</a>
 </div>
 
-  <hr>
   <div class="entry">
     <p>When I started learning Powershell web technologies were mostly a mystery for me. I was a simple systems admin trying to make my life easier by automating things. Sure, I knew how to create a basic HTML site with some CSS, but even javascript was well beyond my understanding. Though over time I developed an interest in developing for the web, which spurred me to learn how Powershell can interact with things beyond my computer or local network. <!-- (1) video wrapper --></p>
 <div class="youtube-video" data-embed="7mEmQgGowMY"> 

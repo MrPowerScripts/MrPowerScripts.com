@@ -287,9 +287,9 @@ window.addEventListener('load', function() {
 </script> -->
 <article class="post">
   <div class="reviews">
-  <div id="suggested-reviews" class="suggested-reviews" hidden>
+  <div id="suggested-reviews" class="suggested-reviews">
     <h4>Suggested reviews for you</h4>
-    <div class="suggested-reviews">
+    <div class="suggested-reviews-list">
       <a href="" class="suggested-reviews-1" id="suggested-reviews-1"></a>
       <a href="" class="suggested-reviews-2" id="suggested-reviews-2"></a>
       <a href="" class="suggested-reviews-3" id="suggested-reviews-3"></a>
@@ -311,7 +311,13 @@ window.addEventListener('load', function() {
           document.getElementById(`suggested-reviews-${i + 1}`).href = posts[i].url
         }
     
-        document.getElementById("suggested-reviews").hidden = false
+        let content = document.getElementById('suggested-reviews')
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+
       })
       .catch(error => console.error(error))
     }, false);
@@ -336,7 +342,6 @@ Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-bl
   <a class="edit-button" href="https://github.com/MrPowerScripts/MrPowerScripts.com/tree/master/">Edit</a>
 </div>
 
-  <hr>
   <div class="entry">
     <p>I made the MrPowerScripts YouTube channel on Jan 5, 2012. Very close to seven years old! How wild is that? After making over one hundred videos my channel has 373,803+ views. It feels really great knowing I’ve helped so many people save time by scripting, programming, and developing. I’ve had so much fun with it, and I want to see it continue to grow. And this is always the challenge with growing up, right? I’m finding I have less to spend on hours and hours cutting up video. Doing in-depth research about a subject so I don’t get called out for being inaccurate in the comments. Reviewing, making the thumbnails, doing conversions and more reviews after reviews after reviews. <!-- (1) video wrapper --></p>
 <div class="youtube-video" data-embed="Q7tLhrnMZVs"> 

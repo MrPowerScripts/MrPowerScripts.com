@@ -303,9 +303,9 @@ window.addEventListener('load', function() {
 </script> -->
 <article class="post">
   <div class="reviews">
-  <div id="suggested-reviews" class="suggested-reviews" hidden>
+  <div id="suggested-reviews" class="suggested-reviews">
     <h4>Suggested reviews for you</h4>
-    <div class="suggested-reviews">
+    <div class="suggested-reviews-list">
       <a href="" class="suggested-reviews-1" id="suggested-reviews-1"></a>
       <a href="" class="suggested-reviews-2" id="suggested-reviews-2"></a>
       <a href="" class="suggested-reviews-3" id="suggested-reviews-3"></a>
@@ -327,7 +327,13 @@ window.addEventListener('load', function() {
           document.getElementById(`suggested-reviews-${i + 1}`).href = posts[i].url
         }
     
-        document.getElementById("suggested-reviews").hidden = false
+        let content = document.getElementById('suggested-reviews')
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+
       })
       .catch(error => console.error(error))
     }, false);
@@ -352,7 +358,6 @@ Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-bl
   <a class="edit-button" href="https://github.com/MrPowerScripts/MrPowerScripts.com/tree/master/">Edit</a>
 </div>
 
-  <hr>
   <div class="entry">
     <p>Back in July of 2017, I noticed Reddit became much more - political. Lots of very specific political subreddits with various leanings and few subscribers were getting posts pushed up pretty high on Reddit. It seemed a bit strange, but it wasn’t all that much different from the previous election cycle. The difference though was in the four years since Obama won his second term Reddit’s user base exploded. The number <a href="https://www.statista.com/chart/11882/number-of-subreddits-on-reddit/">of subreddits doubled</a>. There was more communities, more people, and more discussions. So it’s not surprising that many new political subreddits would pop up as well. <!-- (1) video wrapper --></p>
 <div class="youtube-video" data-embed="CCMGHepPBso"> 

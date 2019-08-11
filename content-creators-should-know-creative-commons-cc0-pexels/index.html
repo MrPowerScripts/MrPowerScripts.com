@@ -289,9 +289,9 @@ window.addEventListener('load', function() {
 </script> -->
 <article class="post">
   <div class="reviews">
-  <div id="suggested-reviews" class="suggested-reviews" hidden>
+  <div id="suggested-reviews" class="suggested-reviews">
     <h4>Suggested reviews for you</h4>
-    <div class="suggested-reviews">
+    <div class="suggested-reviews-list">
       <a href="" class="suggested-reviews-1" id="suggested-reviews-1"></a>
       <a href="" class="suggested-reviews-2" id="suggested-reviews-2"></a>
       <a href="" class="suggested-reviews-3" id="suggested-reviews-3"></a>
@@ -313,7 +313,13 @@ window.addEventListener('load', function() {
           document.getElementById(`suggested-reviews-${i + 1}`).href = posts[i].url
         }
     
-        document.getElementById("suggested-reviews").hidden = false
+        let content = document.getElementById('suggested-reviews')
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+
       })
       .catch(error => console.error(error))
     }, false);
@@ -338,7 +344,6 @@ Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-bl
   <a class="edit-button" href="https://github.com/MrPowerScripts/MrPowerScripts.com/tree/master/">Edit</a>
 </div>
 
-  <hr>
   <div class="entry">
     <p>Creating content all by yourself is really hard, so it’s helpful to use art, music, and other assets to help you share your message. If you want to monetize your content you need to be especially careful. If the content you create utilizes the copyrighted works of others then you might be in for a world of pain. Thankfully Creative Commons has been around for a few years helping content creators by creating content licenses. <!-- (1) video wrapper --></p>
 <div class="youtube-video" data-embed="J_qTrc_fV-Y"> 

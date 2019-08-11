@@ -293,9 +293,9 @@ window.addEventListener('load', function() {
 </script> -->
 <article class="post">
   <div class="reviews">
-  <div id="suggested-reviews" class="suggested-reviews" hidden>
+  <div id="suggested-reviews" class="suggested-reviews">
     <h4>Suggested reviews for you</h4>
-    <div class="suggested-reviews">
+    <div class="suggested-reviews-list">
       <a href="" class="suggested-reviews-1" id="suggested-reviews-1"></a>
       <a href="" class="suggested-reviews-2" id="suggested-reviews-2"></a>
       <a href="" class="suggested-reviews-3" id="suggested-reviews-3"></a>
@@ -317,7 +317,13 @@ window.addEventListener('load', function() {
           document.getElementById(`suggested-reviews-${i + 1}`).href = posts[i].url
         }
     
-        document.getElementById("suggested-reviews").hidden = false
+        let content = document.getElementById('suggested-reviews')
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+
       })
       .catch(error => console.error(error))
     }, false);
@@ -342,7 +348,6 @@ Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-bl
   <a class="edit-button" href="https://github.com/MrPowerScripts/MrPowerScripts.com/tree/master/">Edit</a>
 </div>
 
-  <hr>
   <div class="entry">
     <p>I always loved working on React projects. There was a lot of overhead getting started early on for me. I don’t even want to get into how many hours I spent learning how webpack work. Oh, there’s a new version of webpack? EVERYTHING IS DIFFERENT NOW. React isn’t that much better with breaking changes. When you combine all these various software “solutions” it can be hard to even get started with what you originally wanted to do. Code the freaking idea up. <!-- (1) video wrapper --></p>
 <div class="youtube-video" data-embed="xckpWg-Kpss"> 

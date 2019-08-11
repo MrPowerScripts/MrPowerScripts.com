@@ -301,9 +301,9 @@ window.addEventListener('load', function() {
 </script> -->
 <article class="post">
   <div class="reviews">
-  <div id="suggested-reviews" class="suggested-reviews" hidden>
+  <div id="suggested-reviews" class="suggested-reviews">
     <h4>Suggested reviews for you</h4>
-    <div class="suggested-reviews">
+    <div class="suggested-reviews-list">
       <a href="" class="suggested-reviews-1" id="suggested-reviews-1"></a>
       <a href="" class="suggested-reviews-2" id="suggested-reviews-2"></a>
       <a href="" class="suggested-reviews-3" id="suggested-reviews-3"></a>
@@ -325,7 +325,13 @@ window.addEventListener('load', function() {
           document.getElementById(`suggested-reviews-${i + 1}`).href = posts[i].url
         }
     
-        document.getElementById("suggested-reviews").hidden = false
+        let content = document.getElementById('suggested-reviews')
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+
       })
       .catch(error => console.error(error))
     }, false);
@@ -350,7 +356,6 @@ Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-bl
   <a class="edit-button" href="https://github.com/MrPowerScripts/MrPowerScripts.com/tree/master/">Edit</a>
 </div>
 
-  <hr>
   <div class="entry">
     <p>Github pages is a damn modern marvel. You can put together a basic website hosted for free from a jazillion templates available on the internet. Buy a domain name. You’re set. Push up changes to the source on GitHub and they regenerate the site. AMAZING. Almost as good as geocities was. But using GitHub pages the way GitHub suggests has some limitations. Jekyll has soooo many helpful plugins that you can use outside of the oens offered on GitHub pages. Such as the <code class="highlighter-rouge">jekyll-paginate-v2</code> plugin. And if you want to use the <code class="highlighter-rouge">jekyll-paginate-v2</code> plugin with GitHub pages you’re out of luck! They don’t support it. Which means you can’t do pagniation of collections - a very useful feature when you want to build more complex websites or blogs using jekyll. But we can work around this with a bit of scripting and CircleCI.</p>
 
