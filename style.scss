@@ -398,7 +398,13 @@ nav {
   color: lightcoral;
 }
 
-.suggested-posts, .suggested-reviews {
+.suggested-reviews {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1.2s ease-in-out;
+}
+
+.suggested-posts, .suggested-reviews-list {
   display: flex;
   flex-flow: column nowrap;
 }
