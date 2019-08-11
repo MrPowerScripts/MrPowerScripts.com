@@ -24,7 +24,9 @@ jobs:
       - checkout
       - install-deps
       - run: bundle exec jekyll build
-      - run: $FILES=$(find ./_site/ -type f -name '*.json') && echo "$FILES" && bundle exec jsonlint $FILES
+      - run: $FILES=$(find ./_site/ -type f -name '*.json') >> "$BASH_ENV"
+      - run: echo "$FILES"
+      - run: bundle exec jsonlint $FILES
       - run: bundle exec htmlproofer ./_site --check-html --disable-external --check-opengraph --check-favicon
 
   deploy:
