@@ -146,8 +146,7 @@ a:hover, a:active {
 }
 
 ul, ol {
-  margin: 15px 0px;
-  margin-bottom: 20px;
+  margin-top: 15px;
   padding-left: 30px;
   line-height: 30px;
   font-size: 120%;
