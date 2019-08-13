@@ -1,6 +1,6 @@
 ---
 layout: review
-author: Guest Writer
+author: Alan
 author_url: 
 title: Acer Aspire 5 Slim Laptop - Review
 date: 2019-08-13 05:00:45+00
