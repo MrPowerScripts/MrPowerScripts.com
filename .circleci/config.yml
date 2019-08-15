@@ -61,6 +61,9 @@ jobs:
               -H "X-Auth-Key: $CF_KEY" \
               -H "Content-Type: application/json" \
               --data '{"purge_everything":true}'
+      - run: |
+          set -e
+          curl -X PUT "https://www.googleapis.com/webmasters/v3/sites/https://mrpowerscripts.com/sitemaps/https://mrpowerscripts.com/sitemap.xml?key=$GSC_KEY"
 
 workflows:
   test-deploy:
