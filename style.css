@@ -363,6 +363,7 @@ nav a:hover {
 }
 .post .entry a {
   color: #ff3c3c;
+  font-size: 110%;
   cursor: pointer;
 }
 .post .post-menu-bar {
