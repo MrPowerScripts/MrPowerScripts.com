@@ -1,7 +1,7 @@
 ---
 layout: review
-author: Unpronounceable
-author_url: https://twitter.com/UnproTweets
+author: Simon
+author_url: https://twitter.com/siimonhansson
 title: Samsung Galaxy Note 9 - The Phone You Should Probably Get Instead - Review
 date: 2019-08-08 05:00:45+00
 tags: [mrpowerscripts, mrpowerscripts reviews, product reviews, reviewing amazon products, amazon product]
