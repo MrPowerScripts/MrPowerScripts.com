@@ -342,7 +342,7 @@ nav {
 
   .entry {
     line-height: 24px;
-    font-family: monospace;
+    font-family: sans-serif;
     a {
       color: $link;
       font-size: 110%;
@@ -353,7 +353,7 @@ nav {
 .post-menu-bar {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   
   span {
     font-family: monospace;
@@ -477,6 +477,15 @@ footer {
   width: 100%;
   top: 0;
   left: 0;
+}
+
+.highlighter-rouge {
+  color: #ce887b;
+  font-weight: 400;
+  border: 1px solid #607D8B;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  padding: 0.1rem 0.5rem;
 }
 
 .power-chev {
