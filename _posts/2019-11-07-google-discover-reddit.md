@@ -4,6 +4,7 @@ title: How I discovered the Google Discover page with a Reddit bot
 date: 2019-11-07 03:00:45+00
 categories: [reddit, google]
 tags: [mrpowerscripts, reddit]
+published: false
 description-long: Bit of context late last year, I decided to learn as much as I could about SEO, and one of those mediums for learning is this blog. So if you found this through search - Hi - it worked. And through learning more about SEO, Marketing, and other dark arts, I arrived at one of the most insidious practices of these evil arts - Affiliate marketing. It's not quite moving to Chiang Mai and drop shipping pantyhose, but it feels just as dirty. So I started a site called ReviewHuntr.com, which is loaded with product reviews - with a twist. I'll let you figure out what that twist could be, though.
 ---
 
