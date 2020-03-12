@@ -4,7 +4,7 @@ layout: default
 
 ### Power Up with MrPowerScripts
 
-You may see links to products available through Amazon around my site. As a parter of the Amazon affiliate program, clicking those links and purchasing any porudcts from Amazon will help support me and this site. Such as any of the links or search box, for example.
+You may see links to products available through Amazon around my site. As a partner of the Amazon affiliate program, clicking those links and purchasing any porudcts from Amazon will help support me and this site. Such as clicking on any of the links or using the search box below, for example.
 
 <script type="text/javascript">
 amzn_assoc_placement = "adunit0";
