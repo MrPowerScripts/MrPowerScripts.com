@@ -2,12 +2,14 @@
 layout: post
 title: Automate Simple Static Website Testing
 date: 2020-03-14 03:00:45+00
-categories: [productivity]
+categories: [automation]
 tags: [mrpowerscripts, productivity, automation]
-description-long: I like to use Jekyll to build simple static websites where I can. A static website is a site built with simple HTML, CSS, and Javascript. Ready to be served up by any webserver. Jekyll is one of the many frameworks that help create static websites using nifty features like templates, logic, and an embedded development server. But these static site generators can't prevent you from writing bad code, but they do make it easier to duplicate that bade code across your whole website. You can have borked syntax or bad links throughout the generated website source code. Maybe you're using some JSON files as an "API," and you need to make sure it's not broken in some way.
+description-long: I like to use Jekyll to build simple static websites where I can. A static website is a site built with simple HTML, CSS, and Javascript. Ready to be served up by any webserver. Jekyll is one of the many frameworks that help create static websites using nifty features like templates, logic, and an embedded development server.
 ---
 
-I like to use Jekyll to build simple static websites where I can. A static website is a site built with simple HTML, CSS, and Javascript. Ready to be served up by any webserver. Jekyll is one of the many frameworks that help create static websites using nifty features like templates, logic, and an embedded development server. But these static site generators can't prevent you from writing bad code, but they do make it easier to duplicate that bade code across your whole website. You can have borked syntax or bad links throughout the generated website source code. Maybe you're using some JSON files as an "API," and you need to make sure it's not broken in some way.
+I like to use Jekyll to build simple static websites where I can. A static website is a site built with simple HTML, CSS, and Javascript. Ready to be served up by any webserver. Jekyll is one of the many frameworks that help create static websites using nifty features like templates, logic, and an embedded development server. 
+
+These static site generators can't prevent you from writing bad code, but they do make it easier to duplicate that bade code across your whole website. You can have borked syntax or bad links throughout the generated website source code. Maybe you're using some JSON files as an "API", and you need to make sure it's not broken in some way.
 
 ALL. OF. THIS. CAN. BE. AUTOMATED.
 
