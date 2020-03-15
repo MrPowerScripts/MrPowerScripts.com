@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How I orgaize my life with apps
-date: 2019-11-07 03:00:45+00
+date: 2020-03-18 03:00:45+00
 categories: [productivity]
 tags: [mrpowerscripts, productivity]
 description-long: I do a lot of stuff. Like, I should probably chill out a bit, but I can't. I have a lot of passions, and they keep me super busy. I work an (almost) full-time job at a tech startup for the moment. Anyone that has worked for a startup knows that there's an endless amount of work that needs to be done and usually not enough people to do it. 
