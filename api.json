@@ -1,4 +1,26 @@
 [{
+      "title": "This is the best blog post ever",
+      "date": "March 22, 2020",
+      "author": "MrPowerScripts",
+       "categories"  : ["blog post"
+        
+        
+        ],
+      
+      
+      "url": "/best-blog-post-ever/",
+       "tags"  : ["mrpowerscripts",
+        "productivity",
+        "automation"
+        
+        ]
+      
+
+    }
+
+    ,
+
+{
       "title": "Automate Simple Static Website Testing",
       "date": "March 14, 2020",
       "author": "MrPowerScripts",
