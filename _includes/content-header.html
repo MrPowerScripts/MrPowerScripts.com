@@ -3,9 +3,7 @@
 {% elsif include.type= "page" %}
 <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ page.title }}</a></h2>
 <div class="post-menu-bar">
-  <!-- <span>{{ page.author }}{% if page.author_url %}<a href="{{ page.author_url}}">🔗</a> {% endif %}</span> 
   <span>{{ page.date | date: "%B %d, %Y" }}</span> 
-  {% include read_time.html text=page.content %} -->
   <a class="edit-button" href="{{ site.github.repository_url }}/tree/master/{{ post.relative_path }}">Edit</a>
 </div>
 {% endif %}
