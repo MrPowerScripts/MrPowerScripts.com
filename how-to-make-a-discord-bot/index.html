@@ -302,7 +302,7 @@ var reviewHTML = '<div class="reviews">'+
             '</div>';
 
     window.addEventListener('load', function() {
-      fetch(window.location.origin+"/api-reviews.json")
+      fetch('https://reviewhuntr.com/'+"/api-reviews.json")
       .then(res => res.json())
       .then(out => {
 
@@ -318,7 +318,7 @@ var reviewHTML = '<div class="reviews">'+
         let i
         for (i=0; i < posts.length; i++) {
           document.getElementById(`suggested-reviews-${i + 1}`).text = posts[i].title
-          document.getElementById(`suggested-reviews-${i + 1}`).href = posts[i].url
+          document.getElementById(`suggested-reviews-${i + 1}`).href = 'https://reviewhuntr.com/' + posts[i].url
         }
     
         let content = document.getElementById('suggested-reviews')
@@ -337,7 +337,7 @@ var reviewHTML = '<div class="reviews">'+
   
 <h2><a href="">How to make a discord bot</a></h2>
 <div class="post-menu-bar">
-  <span>MrPowerScripts</span> 
+  <!-- <span>MrPowerScripts</span> 
   <span>November 11, 2018</span> 
   <span class="reading-time" title="Estimated read time">
   
@@ -350,11 +350,11 @@ var reviewHTML = '<div class="reviews">'+
 Genius https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/ 
 Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-blog-posts/
 -->
-
+ -->
   <a class="edit-button" href="https://github.com/MrPowerScripts/MrPowerScripts.com/tree/master/">Edit</a>
 </div>
 
-  <div id="amzn-assoc-ad-08b4ca1c-2647-4b60-9e4a-704ef215179e"></div>
+  <!-- <div id="amzn-assoc-ad-08b4ca1c-2647-4b60-9e4a-704ef215179e"></div> -->
   <div class="entry">
     <p>Discord is probably one of my favorite apps ever. They started off with a simple idea and worked really hard to add features over time. Though the software hasn’t suffered from its rapid development and release cycles. <!-- (1) video wrapper --></p>
 <div class="youtube-video" data-embed="kieSx_pzpCU"> 
@@ -459,7 +459,7 @@ Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-bl
     </script>
 </article>
 
-<script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=08b4ca1c-2647-4b60-9e4a-704ef215179e"></script>
+<!-- <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=08b4ca1c-2647-4b60-9e4a-704ef215179e"></script> -->
 <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=4157821c-83ef-4e23-a734-d3f7e07f2fa2"></script>
 
     </div>

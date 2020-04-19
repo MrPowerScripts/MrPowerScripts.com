@@ -300,7 +300,7 @@ var reviewHTML = '<div class="reviews">'+
             '</div>';
 
     window.addEventListener('load', function() {
-      fetch(window.location.origin+"/api-reviews.json")
+      fetch('https://reviewhuntr.com/'+"/api-reviews.json")
       .then(res => res.json())
       .then(out => {
 
@@ -316,7 +316,7 @@ var reviewHTML = '<div class="reviews">'+
         let i
         for (i=0; i < posts.length; i++) {
           document.getElementById(`suggested-reviews-${i + 1}`).text = posts[i].title
-          document.getElementById(`suggested-reviews-${i + 1}`).href = posts[i].url
+          document.getElementById(`suggested-reviews-${i + 1}`).href = 'https://reviewhuntr.com/' + posts[i].url
         }
     
         let content = document.getElementById('suggested-reviews')
@@ -335,7 +335,7 @@ var reviewHTML = '<div class="reviews">'+
   
 <h2><a href="">What Is the Best Programmable Mouse for You? An In-depth Look & Review of the Top Three Programmable Mice of 2019.</a></h2>
 <div class="post-menu-bar">
-  <span>Will Adam</span> 
+  <!-- <span>Will Adam</span> 
   <span>August 10, 2019</span> 
   <span class="reading-time" title="Estimated read time">
   
@@ -348,7 +348,7 @@ var reviewHTML = '<div class="reviews">'+
 Genius https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/ 
 Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-blog-posts/
 -->
-
+ -->
   <a class="edit-button" href="https://github.com/MrPowerScripts/MrPowerScripts.com/tree/master/">Edit</a>
 </div>
 

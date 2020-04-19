@@ -294,7 +294,7 @@ var reviewHTML = '<div class="reviews">'+
             '</div>';
 
     window.addEventListener('load', function() {
-      fetch(window.location.origin+"/api-reviews.json")
+      fetch('https://reviewhuntr.com/'+"/api-reviews.json")
       .then(res => res.json())
       .then(out => {
 
@@ -310,7 +310,7 @@ var reviewHTML = '<div class="reviews">'+
         let i
         for (i=0; i < posts.length; i++) {
           document.getElementById(`suggested-reviews-${i + 1}`).text = posts[i].title
-          document.getElementById(`suggested-reviews-${i + 1}`).href = posts[i].url
+          document.getElementById(`suggested-reviews-${i + 1}`).href = 'https://reviewhuntr.com/' + posts[i].url
         }
     
         let content = document.getElementById('suggested-reviews')
@@ -329,7 +329,7 @@ var reviewHTML = '<div class="reviews">'+
   
 <h2><a href="">Nobody gives a damn about your idea</a></h2>
 <div class="post-menu-bar">
-  <span>MrPowerScripts</span> 
+  <!-- <span>MrPowerScripts</span> 
   <span>February 16, 2019</span> 
   <span class="reading-time" title="Estimated read time">
   
@@ -342,11 +342,11 @@ var reviewHTML = '<div class="reviews">'+
 Genius https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/ 
 Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-blog-posts/
 -->
-
+ -->
   <a class="edit-button" href="https://github.com/MrPowerScripts/MrPowerScripts.com/tree/master/">Edit</a>
 </div>
 
-  <div id="amzn-assoc-ad-08b4ca1c-2647-4b60-9e4a-704ef215179e"></div>
+  <!-- <div id="amzn-assoc-ad-08b4ca1c-2647-4b60-9e4a-704ef215179e"></div> -->
   <div class="entry">
     <p>Really. They’ll pretend they do if they like you, but that’s the best you’re gonna get. Everyone has ideas. If a snowflake fell every time someone had a great idea we’d all be buried up to our necks in snow. And ya know what? That snow would be way more useful than the ideas that produced it. A snowperson, snow angels, snowballs - there’s a lot of fun to be had in the snow. Your ideas, however, aren’t worth a damn. And nobody cares about them.</p>
 
@@ -433,7 +433,7 @@ Double genius https://scottdorman.github.io/2017/07/09/adding-reading-time-to-bl
     </script>
 </article>
 
-<script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=08b4ca1c-2647-4b60-9e4a-704ef215179e"></script>
+<!-- <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=08b4ca1c-2647-4b60-9e4a-704ef215179e"></script> -->
 <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=4157821c-83ef-4e23-a734-d3f7e07f2fa2"></script>
 
     </div>
