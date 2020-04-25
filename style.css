@@ -369,7 +369,6 @@ nav a:hover {
 .post .post-menu-bar {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
 }
 .post .post-menu-bar span {
   font-family: monospace;
