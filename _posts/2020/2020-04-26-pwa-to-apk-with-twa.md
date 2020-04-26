@@ -13,6 +13,7 @@ Do you have a [Progressive Web App (PWA)](https://en.wikipedia.org/wiki/Progress
 
 You install a progressive web app through browsers like Chome. Not every browser supports PWAs yet, but support is growing. For instance, Firefox Mobile supports them, but Firefox Desktop, as of this date, does not. All you need to do to turn your website into a progressive web app is to add a manifest file with the details of your PWA and a service worker. Here is an example of my manifest.json file, which lives in the root of my site.
 
+```json
 {
   "name": "ThisIsMySiteOrPWAName",
   "short_name": "ThisIsShorter",
@@ -35,6 +36,7 @@ You install a progressive web app through browsers like Chome. Not every browser
     }
   ]
 }
+```
 
 Browsers will see this file and know that it should treat your site as a progressive web app. You also need to configure a service worker, which allows your PWA to have cool capabilities. Like offline viewing with caching, and push notifications. You know, like a native app! But this isn't a howto on setting up a PWA. I'm assuming you already have one.
 
@@ -48,7 +50,7 @@ Now, if you went to look at the repo, you'll notice that there is a bit of setup
 
 Trusted web activity is an open way to verify trusted web content within an Android app. So, anything that is being opened by the mobile Chrome browser within an app. Sometimes you'll see native apps can load web content in a browser. It's still chrome, embedded within the native app. TWA tells the browser that the content is from the same developer as the app. How does the browser know that the website it's opening is a TWA? It does this by creating a Digital Asset Links file, which like the manifest file, is accessible from your website. It would live here: `https://example.com/.well-known/assetlinks.json` Here's an example `assetlinks.json` from [Google's TWA Quickstart guide](https://developers.google.com/web/android/trusted-web-activity/quick-start#creating-your-asset-link-file).  
 
-```
+```json
 [{
   "relation": ["delegate_permission/common.handle_all_urls"],
   "target": {
