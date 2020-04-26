@@ -4,7 +4,7 @@ title: Oh My Gosh turn your PWA into an Android app in the Google play store
 date: 2020-04-26 03:00:45+00
 categories: ["blog post"]
 tags: [mrpowerscripts]
-description-long: So I posted the best blog post ever the other day. And it challenged anyone who disagreed with the notion that it's the best blog post to tell me why so that I could make it better. Now the point was to highlight two critical components to successful growth more so than profess that it's the best blog post ever. I mean, is it REALLY the best blog post ever? Yes, obviously. It says so in the title, why wouldn't it be true? But that isn't the point of it. 
+description-long: Do you have a Progressive Web App (PWA) that you would love to see in Google's Android play store? You can make that happen today! With bubblewrap from GoogleChromeLabs. It is an experimental tool that uses a CLI to process your PWA and generate an apk you can upload to the play store. Let's look at how I did it for one of my sits. Now, mrpowerscripts.com isn't a PWA... yet. But I have many other flat Jekyll sites that are progressive web apps. 
 ---
 
 Do you have a [Progressive Web App (PWA)](https://en.wikipedia.org/wiki/Progressive_web_application) that you would love to see in Google's Android play store? You can make that happen today! With [bubblewrap from GoogleChromeLabs](https://github.com/GoogleChromeLabs/bubblewrap). It is an experimental tool that [uses a CLI](https://github.com/GoogleChromeLabs/bubblewrap/tree/master/packages/cli) to process your PWA and generate an apk you can upload to the play store. Let's look at how I did it for one of my sits. Now, mrpowerscripts.com isn't a PWA... yet. But I have many other flat Jekyll sites that are progressive web apps.
