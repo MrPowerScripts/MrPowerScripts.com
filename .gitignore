@@ -3,4 +3,5 @@
 _wip
 _site
 .bundle
+.jekyll-cache
 vendor/bundle
