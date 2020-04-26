@@ -339,28 +339,29 @@ var reviewHTML = '<div class="reviews">'+
 
 <p>You install a progressive web app through browsers like Chome. Not every browser supports PWAs yet, but support is growing. For instance, Firefox Mobile supports them, but Firefox Desktop, as of this date, does not. All you need to do to turn your website into a progressive web app is to add a manifest file with the details of your PWA and a service worker. Here is an example of my manifest.json file, which lives in the root of my site.</p>
 
-<p>{
-  “name”: “ThisIsMySiteOrPWAName”,
-  “short_name”: “ThisIsShorter”,
-  “theme_color”: “#39a4cd”,
-  “background_color”: “#fff”,
-  “prefer_related_applications”: false,
-  “display”: “standalone”,
-  “Scope”: “/”,
-  “start_url”: “/?utm_source=a2hs”,
-  “icons”: [
-    {
-      “src”: “assets/img/favicon/manifest-icon-192.png”,
-      “sizes”: “192x192”,
-      “type”: “image/png”
-    },
-    {
-      “src”: “assets/img/favicon/manifest-icon-512.png”,
-      “sizes”: “512x512”,
-      “type”: “image/png”
-    }
-  ]
-}</p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ThisIsMySiteOrPWAName"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"short_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ThisIsShorter"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"theme_color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#39a4cd"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"background_color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#fff"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"prefer_related_applications"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"standalone"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"Scope"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"start_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/?utm_source=a2hs"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"icons"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"src"</span><span class="p">:</span><span class="w"> </span><span class="s2">"assets/img/favicon/manifest-icon-192.png"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"sizes"</span><span class="p">:</span><span class="w"> </span><span class="s2">"192x192"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image/png"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"src"</span><span class="p">:</span><span class="w"> </span><span class="s2">"assets/img/favicon/manifest-icon-512.png"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"sizes"</span><span class="p">:</span><span class="w"> </span><span class="s2">"512x512"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image/png"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
 
 <p>Browsers will see this file and know that it should treat your site as a progressive web app. You also need to configure a service worker, which allows your PWA to have cool capabilities. Like offline viewing with caching, and push notifications. You know, like a native app! But this isn’t a howto on setting up a PWA. I’m assuming you already have one.</p>
 
@@ -374,19 +375,19 @@ var reviewHTML = '<div class="reviews">'+
 
 <p>Trusted web activity is an open way to verify trusted web content within an Android app. So, anything that is being opened by the mobile Chrome browser within an app. Sometimes you’ll see native apps can load web content in a browser. It’s still chrome, embedded within the native app. TWA tells the browser that the content is from the same developer as the app. How does the browser know that the website it’s opening is a TWA? It does this by creating a Digital Asset Links file, which like the manifest file, is accessible from your website. It would live here: <code class="highlighter-rouge">https://example.com/.well-known/assetlinks.json</code> Here’s an example <code class="highlighter-rouge">assetlinks.json</code> from <a href="https://developers.google.com/web/android/trusted-web-activity/quick-start#creating-your-asset-link-file">Google’s TWA Quickstart guide</a>.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[{
-  "relation": ["delegate_permission/common.handle_all_urls"],
-  "target": {
-    "namespace": "android_app",
-    "package_name": "com.appspot.pwa_directory",
-    "sha256_cert_fingerprints": [
-      "FA:2A:03:CB:38:9C:F3:BE:28:E3:CA:7F:DA:2E:FA:4F:4A:96:F3:BC:45:2C:08:A2:16:A1:5D:FD:AB:46:BC:9D",
-      "4F:FF:49:FF:C6:1A:22:E3:BB:6F:E6:E1:E6:5B:40:17:55:C0:A9:F9:02:D9:BF:28:38:0B:AE:A7:46:A0:61:8C"
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[{</span><span class="w">
+  </span><span class="nl">"relation"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"delegate_permission/common.handle_all_urls"</span><span class="p">],</span><span class="w">
+  </span><span class="nl">"target"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"namespace"</span><span class="p">:</span><span class="w"> </span><span class="s2">"android_app"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"package_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"com.appspot.pwa_directory"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"sha256_cert_fingerprints"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="s2">"FA:2A:03:CB:38:9C:F3:BE:28:E3:CA:7F:DA:2E:FA:4F:4A:96:F3:BC:45:2C:08:A2:16:A1:5D:FD:AB:46:BC:9D"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"4F:FF:49:FF:C6:1A:22:E3:BB:6F:E6:E1:E6:5B:40:17:55:C0:A9:F9:02:D9:BF:28:38:0B:AE:A7:46:A0:61:8C"</span><span class="w">
 
-    ]
-  }
-}]
-</code></pre></div></div>
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}]</span><span class="w">
+</span></code></pre></div></div>
 
 <p>I created that file through a tool in their quickstart guide called <code class="highlighter-rouge">Peter's Asset Link Tool</code>. You can <a href="https://play.google.com/store/apps/details?id=dev.conn.assetlinkstool&amp;hl=en">download Peter’s Asset Link Tool</a> from the Play store. After publishing a Beta version of the app to the play store and downloading it, I was able to use that tool to generate the <code class="highlighter-rouge">assetlinks.json file</code> and add it to my site. So when the generated APK opens my PWA using chrome, it knows that I made the app because of the fingerprint on my website. My content is therefor trusted and granted special abilities like being full screen. Otherwise, you would see the chrome toolbar at the top. Similar to when you see other native apps open a browser. So it’s a website disguised as a PWA disguised as a native app. It’s pretty cool!</p>
 
