@@ -20,7 +20,7 @@
             "@id": "{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
         },
         "datePublished": "{{page.date}}",
-        "dateModified": "{% if page.modified %}{{page.modified}}{% else %}{{page.date}}{% endif %}",
+        "dateModified": "{{ page.last_modified_at }}",
         "isAccessibleForFree": "True",
         "isPartOf": {
             "@type": ["CreativeWork", "Product", "Blog"],
