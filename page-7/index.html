@@ -64,7 +64,24 @@
         "@context": "http://schema.org",
         "@type": "BlogPosting",
         "headline": " - page 7",
-        "description": "",
+        "description": "
+
+    {% for post in paginator.posts %}
+      
+  
+        {% include content-header.html type="post" %}
+        
+            {{ post.excerpt }}
+        
+        Read More
+      
+    {% endfor %}
+  
+    {% include supporter-cta.html %}
+    
+    {% include pagination-footer.html %}
+  
+",
         "image": [
             
                 "https://mrpowerscripts.com/images/twilightyellow.png"
@@ -277,6 +294,25 @@ window.addEventListener('load', function() {
       <article class="post">
   
         
+<h2><a href="/how-to-make-a-discord-bot/">How to make a discord bot</a></h2>
+
+        <div class="entry">
+            <p>Discord is probably one of my favorite apps ever. They started off with a simple idea and worked really hard to add features over time. Though the software hasn’t suffered from its rapid development and release cycles. <!-- (1) video wrapper --></p>
+<div class="youtube-video" data-embed="kieSx_pzpCU"> 
+ 
+    <!-- (2) the "play" button -->
+    <div class="play-button"></div> 
+     
+</div>
+<p>A lot of times you’ll see apps with the growth of Discord become bloated. Discord has managed to remain simple, but still has lots of power available to the user.</p>
+
+        </div>
+        <a href="/how-to-make-a-discord-bot/" class="read-more">Read More</a>
+      </article>
+    
+      <article class="post">
+  
+        
 <h2><a href="/learn-git/">How to use git version control</a></h2>
 
         <div class="entry">
@@ -350,25 +386,6 @@ window.addEventListener('load', function() {
         <a href="/continuous-meme-delivery/" class="read-more">Read More</a>
       </article>
     
-      <article class="post">
-  
-        
-<h2><a href="/sending-an-email-from-powershell/">Sending an email from Powershell using send-mailmessage and Gmail</a></h2>
-
-        <div class="entry">
-            <p>I made this video about sending an email from Powershell about five years ago. I didn’t think much of it at the time, but I used my actual email address in the example of the video. This resulted in people copy/pasting the example including my email and sending me all of their test emails. I’ve really loved it! <!-- (1) video wrapper --></p>
-<div class="youtube-video" data-embed="gxHdAic6im8"> 
- 
-    <!-- (2) the "play" button -->
-    <div class="play-button"></div> 
-     
-</div>
-<p>The script below will show how to use send-mailmessage with Gmail to send emails from Powershell.</p>
-
-        </div>
-        <a href="/sending-an-email-from-powershell/" class="read-more">Read More</a>
-      </article>
-    
   
     <div>
   Do you have some thoughts on this content? Come chat about it on <a href="http://bit.ly/mrps-discord">Discord</a>.
@@ -380,7 +397,7 @@ window.addEventListener('load', function() {
       <a href="/page-6/" class="previous">&laquo; Previous</a>
     
 
-    <span class="page_number">Page: 7 of 8</span>
+    <span class="page_number">Page: 7 of 9</span>
 
     
       <a href="/page-8/" class="next">Next &raquo;</a>

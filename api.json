@@ -1,4 +1,24 @@
 [{
+      "title": "Simple tips for great tutorial videos",
+      "date": "June 09, 2020",
+      "author": "MrPowerScripts",
+       "categories"  : ["blog post"
+        
+        
+        ],
+      
+      
+      "url": "/tutorial-video-tips/",
+       "tags"  : ["mrpowerscripts"
+        
+        ]
+      
+
+    }
+
+    ,
+
+{
       "title": "Feng Shui Bracelet - The greatest youtube commercial ever",
       "date": "June 01, 2020",
       "author": "MrPowerScripts",
@@ -104,7 +124,7 @@
 
 {
       "title": "How I orgaize my life with apps",
-      "date": "March 11, 2020",
+      "date": "February 18, 2020",
       "author": "MrPowerScripts",
        "categories"  : ["productivity"
         
@@ -465,7 +485,7 @@
 
 {
       "title": "Google is going mobile first - is your website ready?",
-      "date": "January 13, 2019",
+      "date": "January 14, 2019",
       "author": "MrPowerScripts",
        "categories"  : ["google"
         ,
@@ -640,6 +660,31 @@
     ,
 
 {
+      "title": "That time I created a broadband law for an entire country",
+      "date": "November 24, 2018",
+      "author": "MrPowerScripts",
+       "categories"  : ["story"
+        
+        
+        ],
+      
+      
+      "url": "/south-america-law/",
+       "tags"  : ["mrpowerscripts",
+        "git",
+        "creating laws",
+        "South America",
+        "broadband in South America",
+        "South American tech laws"
+        
+        ]
+      
+
+    }
+
+    ,
+
+{
       "title": "Mindfulness meditation can help you get in the flow",
       "date": "November 24, 2018",
       "author": "MrPowerScripts",
@@ -657,31 +702,6 @@
         "how to get in developer flow",
         "development flow",
         "mental flow"
-        
-        ]
-      
-
-    }
-
-    ,
-
-{
-      "title": "That time I created a broadband law for an entire country",
-      "date": "November 24, 2018",
-      "author": "MrPowerScripts",
-       "categories"  : ["story"
-        
-        
-        ],
-      
-      
-      "url": "/south-america-law/",
-       "tags"  : ["mrpowerscripts",
-        "git",
-        "creating laws",
-        "South America",
-        "broadband in South America",
-        "South American tech laws"
         
         ]
       
@@ -754,7 +774,7 @@
 
 {
       "title": "How to use git version control",
-      "date": "October 24, 2018",
+      "date": "October 28, 2018",
       "author": "MrPowerScripts",
        "categories"  : ["git"
         ,
@@ -863,7 +883,7 @@
 
 {
       "title": "Sending an email from Powershell using send-mailmessage and Gmail",
-      "date": "October 03, 2018",
+      "date": "October 04, 2018",
       "author": "MrPowerScripts",
        "categories"  : ["powershell"
         

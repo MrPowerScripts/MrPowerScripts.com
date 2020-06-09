@@ -64,7 +64,21 @@
         "@context": "http://schema.org",
         "@type": "BlogPosting",
         "headline": " - page 3",
-        "description": "",
+        "description": "
+
+    {% for post in paginator.posts %}
+      
+        {% include content-header.html type="post"%}
+        
+            {{ post.excerpt }}
+        
+        Read More
+      
+    {% endfor %}
+    
+    {% include pagination-footer.html %}
+  
+",
         "image": [
             
                 "https://mrpowerscripts.com/images/twilightyellow.png"
@@ -277,18 +291,6 @@ window.addEventListener('load', function() {
       <article class="post">
   
         
-<h2><a href="/reviews/lenovo-thinkpad-t480-review/">Lenovo Thinkpad T480 Review</a></h2>
-
-        <div class="entry">
-            <p>ThinkPads have been in the market since the 90’s. First introduced by IBM, these laptops have been historically praised by their high-end features and durability. Over the years, many aspects of the ThinkPad Series have been modified. They’ve switched developers, added innovations and overall improved the quality while keeping up to date. But that particular characteristic remains unchanged. Which is, these are computers that are built to last. Aesthetically, ThinkPads are known for their rather simplistic design—black and boxy, and not particularly creative. They are heavy, when compared to other laptops of similar characteristics (with the heaviest being almost 5lbs).But what they lack in design, they compensate with functionality tenfold. These laptops are business oriented, they are sturdy, able to sustain continuous—if not intensive—use. The Lenovo ThinkPad T480 is not an exception. As the rest of the T Series, this laptop has received mostly praise for its solid build, with some minor complaints considering the design.</p>
-
-        </div>
-        <a href="/reviews/lenovo-thinkpad-t480-review/" class="read-more">Read More</a>
-      </article>
-    
-      <article class="post">
-  
-        
 <h2><a href="/reviews/xbox-wireless-controller-review/">XBox Wireless Controller White - Review</a></h2>
 
         <div class="entry">
@@ -339,6 +341,24 @@ window.addEventListener('load', function() {
 
         </div>
         <a href="/reviews/anker-ak-uba-wireless-vertical-mouse-review/" class="read-more">Read More</a>
+      </article>
+    
+      <article class="post">
+  
+        
+<h2><a href="/reviews/50-foot-flat-ethernet-cable-review/">Flat internet cable review</a></h2>
+
+        <div class="entry">
+            <p>I purchased a flat internet cable recently and there’s no going back. The days of large bulky internet cables are gone! Welcome the sleek look of flat ethernet cables. I had some concerns about how well a flat cable would do given the conditions I needed it for, but the one I bought has turned out to be tough enough for the job. <!-- (1) video wrapper --></p>
+<div class="youtube-video" data-embed="hXkbS7Cq_RI"> 
+ 
+    <!-- (2) the "play" button -->
+    <div class="play-button"></div> 
+     
+</div>
+
+        </div>
+        <a href="/reviews/50-foot-flat-ethernet-cable-review/" class="read-more">Read More</a>
       </article>
     
   

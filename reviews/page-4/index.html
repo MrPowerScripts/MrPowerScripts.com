@@ -64,7 +64,21 @@
         "@context": "http://schema.org",
         "@type": "BlogPosting",
         "headline": " - page 4",
-        "description": "",
+        "description": "
+
+    {% for post in paginator.posts %}
+      
+        {% include content-header.html type="post"%}
+        
+            {{ post.excerpt }}
+        
+        Read More
+      
+    {% endfor %}
+    
+    {% include pagination-footer.html %}
+  
+",
         "image": [
             
                 "https://mrpowerscripts.com/images/twilightyellow.png"
@@ -277,19 +291,15 @@ window.addEventListener('load', function() {
       <article class="post">
   
         
-<h2><a href="/reviews/50-foot-flat-ethernet-cable-review/">Flat internet cable review</a></h2>
+<h2><a href="/reviews/acer-aspire-5-slim-laptop-review/">Acer Aspire 5 Slim Laptop - Review</a></h2>
 
         <div class="entry">
-            <p>I purchased a flat internet cable recently and there’s no going back. The days of large bulky internet cables are gone! Welcome the sleek look of flat ethernet cables. I had some concerns about how well a flat cable would do given the conditions I needed it for, but the one I bought has turned out to be tough enough for the job. <!-- (1) video wrapper --></p>
-<div class="youtube-video" data-embed="hXkbS7Cq_RI"> 
- 
-    <!-- (2) the "play" button -->
-    <div class="play-button"></div> 
-     
-</div>
+            <p>If you are a working professional or a busy student, no other gadget could hold the same importance to you like your laptop. Why? It secures and protects your work, and it helps you with your research. Oh, it does so much more as well. Your laptop lets you connect to the outside world, and it allows you to relax and unwind after a long day. A mobile computer is a multipurpose device that helps you manage your day to day requirements, while also keeping you company when you need it the most.</p>
+
+<p>If you are one such individual who stores their life on their laptop, then you would appreciate everything written above. After all, a fabulous laptop computer is inherently built to serve all these functions.</p>
 
         </div>
-        <a href="/reviews/50-foot-flat-ethernet-cable-review/" class="read-more">Read More</a>
+        <a href="/reviews/acer-aspire-5-slim-laptop-review/" class="read-more">Read More</a>
       </article>
     
   
