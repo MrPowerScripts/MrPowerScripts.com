@@ -4,7 +4,6 @@ author: MrPowerScripts
 title: Flat internet cable review
 tags: [mrpowerscripts, flat ethernet cable review, flat ethernet cables are the best ethernet cables]
 categories: [reviews, networking equipment]
-description-long: I purchased a flat internet cable recently and there's no going back. The days of large bulky internet cables are gone! Welcome the sleek look of flat ethernet cables. I had some concerns about how well a flat cable would do given the conditions I needed it for, but the one I bought has turned out to be tough enough for the job.
 ---
 
 I purchased a flat internet cable recently and there's no going back. The days of large bulky internet cables are gone! Welcome the sleek look of flat ethernet cables. I had some concerns about how well a flat cable would do given the conditions I needed it for, but the one I bought has turned out to be tough enough for the job. {% include youtubePlayer.html id="hXkbS7Cq_RI" %}

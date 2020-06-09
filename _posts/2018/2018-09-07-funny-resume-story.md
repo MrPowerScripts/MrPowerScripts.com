@@ -3,7 +3,6 @@ layout: post
 title: How I got a job with a ridiculous opening email.
 categories: [story]
 tags: [funny, job search, funny story]
-description-long: A couple of years ago my then girlfriend wanted to find a better job. I had a lot more experience going on interviews and generally traversing the drudgery of job searching so I helped her through the process. She found a job posting that interested her but wasn't within the umbrella of her education or previous work experience. I jokingly commented that I could probably get the job before she did, and this ended up turning into a competition. I had no relevant education or work experience in this field either, but I'm a great bullshitter so I gave it my best shot. We both applied for the job with our own unique approaches.
 ---
 
 A couple of years ago my then girlfriend wanted to find a better job. I had a lot more experience going on interviews and generally traversing the drudgery of job searching so I helped her through the process. She found a job posting that interested her but wasn't within the umbrella of her education or previous work experience. I jokingly commented that I could probably get the job before she did, and this ended up turning into a competition. I had no relevant education or work experience in this field either, but I'm a great bullshitter so I gave it my best shot. We both applied for the job with our own unique approaches. The job title was `Junior Amazing And Talented Content Creator`. The following is the email I sent them. All grammar and spelling mistakes included.

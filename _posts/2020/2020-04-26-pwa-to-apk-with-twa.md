@@ -3,7 +3,6 @@ layout: post
 title: Oh My Gosh turn your PWA into an Android app in the Google play store
 categories: ["blog post"]
 tags: [mrpowerscripts]
-description-long: Do you have a Progressive Web App (PWA) that you would love to see in Google's Android play store? You can make that happen today! With bubblewrap from GoogleChromeLabs. It is an experimental tool that uses a CLI to process your PWA and generate an apk you can upload to the play store. Let's look at how I did it for one of my sites. Now, mrpowerscripts.com isn't a PWA... yet. But I have many other flat Jekyll sites that are progressive web apps. 
 ---
 
 Do you have a [Progressive Web App (PWA)](https://en.wikipedia.org/wiki/Progressive_web_application) that you would love to see in Google's Android play store? You can make that happen today! With [bubblewrap from GoogleChromeLabs](https://github.com/GoogleChromeLabs/bubblewrap). It is an experimental tool that [uses a CLI](https://github.com/GoogleChromeLabs/bubblewrap/tree/master/packages/cli) to process your PWA and generate an apk you can upload to the play store. Let's look at how I did it for one of my sites. Now, mrpowerscripts.com isn't a PWA... yet. But I have many other flat Jekyll sites that are progressive web apps.

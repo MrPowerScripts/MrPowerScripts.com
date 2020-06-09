@@ -3,7 +3,6 @@ layout: post
 title: Microsoft Excel Automation with Powershell 
 categories: [automation, powershell]
 tags: [mrpowerscripts, Microsoft Excel Automation, Microsoft Excel Powershell Automation. Automation with Powershell, Powershell Excel workbooks and worksheets]
-description-long: Do you want to take your Excel skills to the next level? Did you know that you don't need Excel to work with Excel files? Sometimes doing things programmatically is a bit easier than pointing and clicking. Or maybe you need to process a lot of files really fast, over and over again. Powershell automation with Microsoft Excel is possible! In this video you'll see how you can update Excel workbooks and worksheets with a Powershell script.
 ---
 
 Do you want to take your Excel skills to the next level? Did you know that you don't need Excel to work with Excel files? Sometimes doing things programmatically is a bit easier than pointing and clicking. Or maybe you need to process a lot of files really fast, over and over again. Powershell automation with Microsoft Excel is possible! {% include youtubePlayer.html id="3blgg3QfJP8" %} In this video you'll see how you can update Excel workbooks and worksheets with a Powershell script.

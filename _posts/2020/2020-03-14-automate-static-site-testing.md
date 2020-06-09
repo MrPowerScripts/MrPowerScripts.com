@@ -3,7 +3,6 @@ layout: post
 title: Automate Simple Static Website Testing
 categories: [automation]
 tags: [mrpowerscripts, productivity, automation]
-description-long: I like to use Jekyll to build simple static websites where I can. A static website is a site built with simple HTML, CSS, and Javascript. Ready to be served up by any webserver. Jekyll is one of the many frameworks that help create static websites using nifty features like templates, logic, and an embedded development server.
 ---
 
 I like using Jekyll to build static websites when I can. A static website is a site built with simple HTML, CSS, and Javascript. Ready to be served up by webservers. Jekyll is one of the many frameworks that help create static websites by using nifty features like templating, and an embedded development server.

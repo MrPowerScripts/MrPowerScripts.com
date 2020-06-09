@@ -3,7 +3,6 @@ layout: post
 title: Sending an email from Powershell using send-mailmessage and Gmail
 categories: [powershell]
 tags: [mrpowerscripts, sending email, send email PowerShell, send email from PowerShell, powershell and gmail, powershell send-mailmessage gmail ]
-description-long: I made this video about sending an email from Powershell about five years ago. I didn't think much of it at the time, but I used my actual email address in the example of the video. This resulted in people copy/pasting the example including my email and sending me all of their test emails. I've really loved it! Read more to learn how to use send-mailmessage with Gmail to send emails from Powershell.
 ---
 
 I made this video about sending an email from Powershell about five years ago. I didn't think much of it at the time, but I used my actual email address in the example of the video. This resulted in people copy/pasting the example including my email and sending me all of their test emails. I've really loved it! {% include youtubePlayer.html id="gxHdAic6im8" %} The script below will show how to use send-mailmessage with Gmail to send emails from Powershell.

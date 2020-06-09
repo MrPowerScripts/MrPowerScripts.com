@@ -5,7 +5,6 @@ author_url:
 title: Logitech Z906 5.1 Surround Sound Speaker System - Review
 tags: [mrpowerscripts, mrpowerscripts reviews, product reviews, reviewing amazon products, amazon product]
 categories: [reviews, audio devices]
-description-long: Whether you are a film or a music lover, being able to hear your favorite track at its best quality is a must. Luckily for us, technology has evolved enough in the recent years to reward us with the perfect solution surround systems. Without them, recreating the full gamut of sound we can find in modern movies or songs is near to impossible.
 ---
 
 Whether you are a film or a music lover, being able to hear your favorite track at its best quality is a must.

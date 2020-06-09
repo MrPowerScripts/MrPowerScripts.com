@@ -4,9 +4,9 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
     <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html',''}}">
 
-    {% if page.description-long %}
-    <meta name="description" content="{{ page.description-long| strip_html }}" />
-    <meta property="og:description" content="{{ page.description-long| strip_html }}" />
+    {% if page.excerpt %}
+    <meta name="description" content="{{ page.content | strip_html | truncatewords: 100 }}" />
+    <meta property="og:description" content="{{ page.content | strip_html | truncatewords: 100 }}" />
     {% else %}
     <meta name="description" content="{{ site.description }}">
     <meta property="og:description" content="{{ site.description }}" />

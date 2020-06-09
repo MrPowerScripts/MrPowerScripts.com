@@ -3,7 +3,6 @@ layout: post
 title: "Cleandows-10: Remove unwanted apps and services from Windows 10 with Powershell"
 categories: [review]
 tags: [mrpowerscripts, clean windows 10 Powershell, Powershell remove apps windows 10, windows 10 remove apps]
-description-long: Well, this is really cool to see! I had a fellow scripter drop into the Discord channel asking some questions about one of my videos. Windows restore points with Powershell - super exciting content. I wasn't very helpful, but they did show me what they were working on. Some really cool Powershell scripts for windows 10 to remove apps and services.
 ---
 
 Well, this is really cool to see! I had a fellow scripter drop into the [Discord channel](https://bit.ly/mrps-discord) asking some questions about one of my videos. Windows restore points with Powershell - super exciting content. I wasn't very helpful, but they did show me what they were working on. Some really cool Powershell scripts for windows 10 to remove apps and services. {% include youtubePlayer.html id="XMK3ZAazprM" %}

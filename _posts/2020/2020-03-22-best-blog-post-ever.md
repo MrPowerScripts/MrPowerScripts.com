@@ -3,7 +3,6 @@ layout: post
 title: This is the best blog post ever
 categories: ["blog post"]
 tags: [mrpowerscripts, productivity, automation]
-description-long: Do you disagree? Okay, I know you haven't read it yet, but you probably had some preconceived idea that it wasn't - didn't you? A small bit of bias? None? You didn't even weigh the possibility a bit? Well, if you don't think it is - Why not? What doesn't it have?
 ---
 
 Do you disagree? Okay, I know you haven't read it yet, but you probably had some preconceived idea that it wasn't - didn't you? A small bit of bias? None? You didn't even weigh the possibility a bit? Well, if you don't think it is - Why not? What doesn't it have?

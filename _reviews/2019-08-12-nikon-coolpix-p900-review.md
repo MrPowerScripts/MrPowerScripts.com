@@ -5,7 +5,6 @@ author_url:
 title: Nikon COOLPIX P900 - Review
 tags: [mrpowerscripts, mrpowerscripts reviews, product reviews, reviewing amazon products, amazon product]
 categories: [printers]
-description-long: From the early daguerreotypes, passing through the birth of film, and reaching the sophisticated digital cameras we can easily find nowadays, photography has traveled a long way. Being able to preserve an image be it for history, education or communication in itself, has always been a matter of great interest. What’s more, cameras help us to create and keep memories of sentimental value.This is why, the importance of a camera lies not within the device, but in what it produces.
 ---
 
 From the early daguerreotypes, passing through the birth of film, and reaching the sophisticated digital cameras we can easily find nowadays, photography has traveled a long way. Being able to preserve an image be it for history, education or communication in itself, has always been a matter of great interest. What’s more, cameras help us to create and keep memories of sentimental value. This is why, the importance of a camera lies not within the device, but in what it produces.

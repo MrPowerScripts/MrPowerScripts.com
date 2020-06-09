@@ -5,7 +5,6 @@ author_url:
 title: Acer Aspire 5 Slim Laptop - Review
 tags: [mrpowerscripts, mrpowerscripts reviews, product reviews, reviewing amazon products, amazon product]
 categories: [laptops]
-description-long: If you are a working professional or a busy student, no other gadget could hold the same importance to you like your laptop. Why? It secures and protects your work, and it helps you with your research. Oh, it does so much more as well. Your laptop lets you connect to the outside world, and it allows you to relax and unwind after a long day. A mobile computer is a multipurpose device that helps you manage your day to day requirements, while also keeping you company when you need it the most. If you are one such individual who stores their life on their laptop, then you would appreciate everything written above. After all, a fabulous laptop computer is inherently built to serve all these functions. 
 ---
 
 If you are a working professional or a busy student, no other gadget could hold the same importance to you like your laptop. Why? It secures and protects your work, and it helps you with your research. Oh, it does so much more as well. Your laptop lets you connect to the outside world, and it allows you to relax and unwind after a long day. A mobile computer is a multipurpose device that helps you manage your day to day requirements, while also keeping you company when you need it the most.

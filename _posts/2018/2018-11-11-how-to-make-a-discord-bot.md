@@ -3,7 +3,6 @@ layout: post
 title: How to make a discord bot
 categories: [bots, automation, tutorial]
 tags: [mrpowerscripts, git, discord bot, how to make a discord bot, discord bot help, discordjs]
-description-long: Discord is probably one of my favorite apps ever. They started off with a simple idea and worked really hard to add features over time. Though the software hasn't suffered from its rapid development and release cycles. A lot of times you'll see apps with the growth of Discord become bloated. Discord has managed to remain simple, but still has lots of power available to the user.
 ---
 
 Discord is probably one of my favorite apps ever. They started off with a simple idea and worked really hard to add features over time. Though the software hasn't suffered from its rapid development and release cycles. {% include youtubePlayer.html id="kieSx_pzpCU" %} A lot of times you'll see apps with the growth of Discord become bloated. Discord has managed to remain simple, but still has lots of power available to the user.

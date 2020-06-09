@@ -5,7 +5,6 @@ author_url:
 title: What Is the Best Programmable Mouse for You? An In-depth Look & Review of the Top Three Programmable Mice of 2019.
 tags: [mrpowerscripts, mrpowerscripts reviews, product reviews, reviewing amazon products, amazon product]
 categories: [reviews, input devices]
-description-long: Whether you’re a gamer, a programmer, a macro enthusiast, or just someone in need of a programmable mouse, there have been some large breakthroughs in the mouse world within recent years. When looking for a mouse, you don’t just want functionality; comfort, price, appearance, and an avoidance of cheap parts are all factors that are important when buying a mouse. I have compiled a list of my top three programmable mice for 2019, and I will be scoring the following mice on the aforementioned categories. For convenience, I have placed these mice in price order from least expensive to most expensive.
 ---
 Whether you’re a gamer, a programmer, a macro enthusiast, or just someone in need of a programmable mouse, there have been some large breakthroughs in the mouse world within recent years. When looking for a mouse, you don’t just want functionality; comfort, price, appearance, and an avoidance of cheap parts are all factors that are important when buying a mouse. I have compiled a list of my top three programmable mice for 2019, and I will be scoring the following mice on the aforementioned categories. For convenience, I have placed these mice in price order from least expensive to most expensive.
 
