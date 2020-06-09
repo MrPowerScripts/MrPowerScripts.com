@@ -1,7 +1,6 @@
 ---
 layout: post
 title: How I discovered the Google Discover page with a Reddit bot
-date: 2019-11-07 03:00:45+00
 categories: [reddit, google]
 tags: [mrpowerscripts, reddit]
 published: false

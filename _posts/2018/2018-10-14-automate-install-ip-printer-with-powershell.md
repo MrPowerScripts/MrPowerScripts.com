@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Automate Installing IP Printers With Powershell
-date: 2018-10-14 11:00:45+00
 categories: [automation, powershell, tutorial]
 tags: [mrpowerscripts, PowerShell, install IP printer, install direct IP printer, install printer PowerShell, installing a printer, printer installation, automate printer installation, powershell printer install, install printer powershell, ]
 description-long: One of my favorite ways of saving time as a systems administrator was automating the installation of printers. You don't need Powershell for it. I often times did with simple batch scripts. PowerShell is all the rage in the world of Windows these days, so that's why the video examples use it. Learning how to automate printer installations really saved me a lot of time in previous jobs, but it wasn't always easy changing a culture of manual effort. Sometimes you have to wait for the right opportunity.

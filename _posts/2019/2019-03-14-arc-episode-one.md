@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Automated Reality Channel Episode One Released!
-date: 2019-03-14 08:00:45+00
 categories: [personal projects]
 tags: [mrpowerscripts, Automated Reality Channel, automated youtube channel, automating youtube channel]
 description-long: IT WORKS. IT. FREAKING. WORKS. I wrote a few months ago about this idea to automate my youtube channel Now, at the time the idea wasn't really well defined. I decided I wanted to do something and then I had to figure out how I was going to do it. I should have shut up and built it first, but I was too excited and prematurely let the idea out. It happens to everyone. Over time though I crafted a more well-defined concept. You can see the whole evolution in this playlist in fact. Well, I finally put together something I would consider a prototype. Despite many hiccups, lingering issues, and generally losing faith in the idea I managed to put together the scaffolding for a working project. This is how it all works.

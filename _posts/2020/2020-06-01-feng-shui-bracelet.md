@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Feng Shui Bracelet - The greatest youtube commercial ever
-date: 2020-06-01 03:00:45+00
 categories: ["blog post"]
 tags: [mrpowerscripts]
 description-long: Do you want to learn more about Feng Shui and how to use it to shake $20 from people's pockets? Well, I have the deal of a lifetime for you. Reading this blog post is going to unlock real wealth and happiness in your life. Not that fake knock of wealth and happiness. So let's learn more about Feng Shui and how you can attain everything you've ever wanted.

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Making MrPowerScripts.com pretty
-date: 2019-02-27 14:00:45+00
 categories: [story, tutorial, web development]
 tags: [mrpowerscripts, web design, website improvemnets, design improvements. making mrepowerscripts.com pretty ]
 description-long: I'm not a designer. I have a terrible sense of design really. Though I feel like it has improved considerably over the years. Hopefully, that trend continues. And while I believe through hard work anyone can become great at what they put their mind to some people simply have an innate advantage. That's okay because collaboration is what makes every project great. I don't know anyone who built something great by themselves. The Great Pyramid of Giza?  The internet? Kim Kardashian's butt? All of these took the efforts of many to achieve their notoriety. People have always built off the efforts or inspirations of others.

@@ -3,7 +3,6 @@ layout: review
 author: Simon
 author_url: https://twitter.com/siimonhansson
 title: Samsung Galaxy Note 9 - The Phone You Should Probably Get Instead - Review
-date: 2019-08-08 05:00:45+00
 tags: [mrpowerscripts, mrpowerscripts reviews, product reviews, reviewing amazon products, amazon product]
 categories: [reviews, smartphones]
 description-long: This week Samsung unveiled the latest phone in their Note-series lineup, the Samsung Galaxy *Note 10*. So what better time to get a new phone, right? Although, as you might be able to tell by the title I’m not actually going to recommend you get the Note 10, instead I recommend going for the previous installment, the Samsung Galaxy Note 9.

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Help me automate my youtube channel
-date: 2018-12-12 13:00:45+00
 categories: []
 tags: [mrpowerscripts, automate youtube, automate youtube channel, help automate my youtube channel, youtube automation]
 description-long: I made the MrPowerScripts YouTube channel on Jan 5, 2012. Very close to seven years old! How wild is that? After making over one hundred videos my channel has 373,803+ views. It feels really great knowing I've helped so many people save time by scripting, programming, and developing. I've had so much fun with it, and I want to see it continue to grow. And this is always the challenge with growing up, right? I'm finding I have less to spend on hours and hours cutting up video. Doing in-depth research about a subject so I don't get called out for being inaccurate in the comments. Reviewing, making the thumbnails, doing conversions and more reviews after reviews after reviews. I'm exhausted just thinking about all of it. I started blogging and it's great. I love writing, and this has given me an opportunity to write more and share thoughts in a different way. But videos have always been my thing. 

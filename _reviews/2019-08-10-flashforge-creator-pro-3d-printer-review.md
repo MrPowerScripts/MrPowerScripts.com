@@ -3,7 +3,6 @@ layout: review
 author: Victoria Blanco
 author_url: 
 title: FlashForge Creator Pro - 3D Printer Review
-date: 2019-08-10 05:00:45+00
 tags: [mrpowerscripts, mrpowerscripts reviews, product reviews, reviewing amazon products, amazon product]
 categories: [reviews, printers]
 description-long: If you ever struggled trying to find that one overly-specific replacement part, or had a project you wanted to bring to life, or even an idea about a personalized gift, then having a 3D printer might have come in handy. Over the past few years, 3D printers have become an affordable inversion that can be used to achieve multiple goals. From saving you money by 3D printing things you might ordinarily buy, to actually being a potential source of income, the possibilities with a 3D printer are endless.

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Mindfulness meditation can help you get in the flow
-date: 2018-11-24 13:00:45+00
 categories: [advice]
 tags: [mrpowerscripts, mindfulness, mindfulness meditation, developer flow, how to get in developer flow, development flow, mental flow]
 description-long: Having trouble concentrating? You don't feel as productive as you once did? Are small things getting to you? If you answered yes to any of those questions I really wish I had a pill to sell you. Really. I could be like a millionaire by now. Almost everyone I know has these problems. I'm not here to offer any medical advice though. If you have a severe ailment you should really see a doctor. If not, here's a giant helping of opinion for ya.

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: How I made the MrPowerScripts.com website FAST on GitHub pages with Cloudflare and CircleCI
-date: 2019-04-06 11:00:45+00
 categories: [web development, automation]
 tags: [mrpowerscripts, CircleCI automation, Cloudflare, improve website speed, website speed tips, Cloudflare caching, Cloudflare website speed ]
 description-long: The performance of my website recently tanked. On Google PageSpeed Insights I had a ~99 rating. I looked at it recently and it TANKED down to 44. 44! The whole point of this blog was to journey into learning more about SEO. One of the most important metrics for Google Page rank and general SEO ranking is the speed of your website. 44 was unacceptable. I needed to change some things FAST to make the website FAST. I even have the charts to show how much faster it is. Wait until you see the results!

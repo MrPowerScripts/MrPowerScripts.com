@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Reduce memory usage of Gradle and Kotlin for Android development DevOps
-date: 2019-03-10 05:00:45+00
 categories: [tutorial]
 tags: [mrpowerscripts, java memory, android development, gradle memory, kotlin memory]
 description-long: When you're building your android project locally your machines probably have a lot of horsepower. When you're running in a DevOps workflow such as continuous integration and delivery you may not have as many resources. This can cause your builds to run out of memory. Here are some quick tips to help reduce the memory usage of your Gradle and Kotlin builds for Android development.

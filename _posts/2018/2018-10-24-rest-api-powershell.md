@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Send GET requests to API with Powershell
-date: 2018-10-24 13:00:45+00
 categories: [powershell]
 tags: [mrpowerscripts, PowerShell, how do I make a rest API request, restful API, make rest API request in Powershell, Powershell API request]
 description-long: When I started learning Powershell web technologies were much of a mystery for me. I was a simple systems admin trying to make my life easier by automating things. Sure, I knew how to create a simple HTML site with some CSS, but even basic javascript was well beyond my understanding. Though over time I developed an interest in developing for the web, which spurred me to learn how Powershell can interact with things beyond my computer or local network. How can I scrape a website with Powershell? How can I access an API? How can I send data from my computer to services on the web? I had so many questions for a long time. 

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Farm karma on Reddit with bots 2019 update
-date: 2019-01-27 09:06:45+00
 categories: [reddit, bots, tutorial]
 tags: [python, Reddit, machine learning, Markov chains, create a Reddit bot, Reddit karma farming, make a Reddit bot, Reddit bot, how to karma farm Reddit, Reddit karma farming bots, farm karma with bots, karma farming Reddit, farm karma reddit]
 description-long: |-

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: U need 2 Iterate. You need to iterate. Iteration is necessary.
-date: 2020-04-25 03:00:45+00
 categories: ["blog post"]
 tags: [mrpowerscripts]
 description-long: So I posted the best blog post ever the other day. And it challenged anyone who disagreed with the notion that it's the best blog post to tell me why so that I could make it better. Now the point was to highlight two critical components to successful growth more so than profess that it's the best blog post ever. I mean, is it REALLY the best blog post ever? Yes, obviously. It says so in the title, why wouldn't it be true? But that isn't the point of it. 
