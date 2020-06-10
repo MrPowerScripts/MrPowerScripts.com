@@ -12,7 +12,7 @@ When I created my first video, I didn't really know anything about video editing
 
 ## What I learned making tutorial videos
 
-Here's a quick list of tips that will help you create great tutorial videos. Obviously, I have my own sort of approach with making tutorial videos. I like to focus on showing code, or simple images that may help illustrate a point. Everony has their own style, and everyone has style preferences. So, if your style is different than mine these suggestions may not be helpful, but maybe they'll help you consider some ideas you haven't thought of already.
+Here's a quick list of tips that will help you create great tutorial videos. Obviously, I have my own sort of approach with making tutorial videos. I like to focus on showing code, or simple images that may help illustrate a point. Everyone has their own style, and everyone has style preferences. So, if your style is different than mine these suggestions may not be helpful, but maybe they'll help you consider some ideas you haven't thought of already.
 
 1. Good audio is critical and poor sound is distracting. You want your voice to be clear and consistent throughout the video and without random background noises that detracts from the experience. It's worth investing in all the new mid-range condenser mics available these days. It will make a huge difference. Also, learning how to apply filters like condensers and noise limiters can drastically improve the performance of even lower range audio devices.
 
