@@ -60,9 +60,7 @@
     <meta name="yandex-verification" content="4539896b000a5ed9" />
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
 
-    
-    
-        <script type="application/ld+json">
+    "potato"<script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -123,8 +121,6 @@ other porjects and sharing them here on my blog as well as youtube. Join my on D
         }
     }
 </script>
-    
-      
     <script>
       if ("serviceWorker" in navigator) {
       if (navigator.serviceWorker.controller) {
@@ -383,13 +379,13 @@ var reviewHTML = '<div class="reviews">'+
 
 <h2 id="the-bubblewrap-cli">The bubblewrap CLI</h2>
 
-<p>Once you have a site that is working as a PWA, you can start using <a href="https://github.com/GoogleChromeLabs/bubblewrap/tree/master/packages/cli">the bubblewrap CLI</a>. Now, this may feel a bit overwhelming but stay with me here. Here are the commands you need to run to turn the PWA into an APK. <code class="highlighter-rouge">bubblewrap init --manifest https://example.com/manifest.json</code> and <code class="highlighter-rouge">bubblewrap build</code>. That’s it? That’s it. The bubblewrap CLI tool pulls in your PWA manifest file information and uses it to initialize the project. It might be a good idea to use the <code class="highlighter-rouge">--directory=</code> on the init as well, so it keeps everything in a folder for you. Then you can turn that folder into a git repo and track the changes. The <code class="highlighter-rouge">bubblewrap build</code> command takes the initialized project and uses it to build an Android APK. From there, you can treat it as a standard Android APK file. Like uploading it to the play store.</p>
+<p>Once you have a site that is working as a PWA, you can start using <a href="https://github.com/GoogleChromeLabs/bubblewrap/tree/master/packages/cli">the bubblewrap CLI</a>. Now, this may feel a bit overwhelming but stay with me here. Here are the commands you need to run to turn the PWA into an APK. <code class="language-plaintext highlighter-rouge">bubblewrap init --manifest https://example.com/manifest.json</code> and <code class="language-plaintext highlighter-rouge">bubblewrap build</code>. That’s it? That’s it. The bubblewrap CLI tool pulls in your PWA manifest file information and uses it to initialize the project. It might be a good idea to use the <code class="language-plaintext highlighter-rouge">--directory=</code> on the init as well, so it keeps everything in a folder for you. Then you can turn that folder into a git repo and track the changes. The <code class="language-plaintext highlighter-rouge">bubblewrap build</code> command takes the initialized project and uses it to build an Android APK. From there, you can treat it as a standard Android APK file. Like uploading it to the play store.</p>
 
 <p>Now, if you went to look at the repo, you’ll notice that there is a bit of setup because of dependencies. But it seems like this is a relatively new project that has a lot of ongoing work, so I think the dependencies will be managed better in the future. The great thing is that it works now! If you have any issues setting it up pop into <a href="https://bit.ly/mrps-discord">Discord</a> and get help.</p>
 
 <h2 id="this-works-thanks-to-trusted-web-activity">This works thanks to Trusted Web Activity</h2>
 
-<p>Trusted web activity is an open way to verify trusted web content within an Android app. So, anything that is being opened by the mobile Chrome browser within an app. Sometimes you’ll see native apps can load web content in a browser. It’s still chrome, but apps use this feature of <a href="https://developers.google.com/web/android/custom-tabs/implementation-guide">Chrome Browser called Custom Tabs</a>. This lets app developers make their apps open content in a browser without having to build a mobile browser themselves. It’s very convenient, and our generated APK file basically opens our PWA right into a Chrome Custom Tab instance. Then TWA tells the browser that the content is from the same developer as the app. How does the browser know that the website it’s opening is a TWA? It does this by creating a Digital Asset Links file, which like the manifest file, is accessible from your website. It would live here: <code class="highlighter-rouge">https://example.com/.well-known/assetlinks.json</code> Here’s an example <code class="highlighter-rouge">assetlinks.json</code> from <a href="https://developers.google.com/web/android/trusted-web-activity/quick-start#creating-your-asset-link-file">Google’s TWA Quickstart guide</a>.</p>
+<p>Trusted web activity is an open way to verify trusted web content within an Android app. So, anything that is being opened by the mobile Chrome browser within an app. Sometimes you’ll see native apps can load web content in a browser. It’s still chrome, but apps use this feature of <a href="https://developers.google.com/web/android/custom-tabs/implementation-guide">Chrome Browser called Custom Tabs</a>. This lets app developers make their apps open content in a browser without having to build a mobile browser themselves. It’s very convenient, and our generated APK file basically opens our PWA right into a Chrome Custom Tab instance. Then TWA tells the browser that the content is from the same developer as the app. How does the browser know that the website it’s opening is a TWA? It does this by creating a Digital Asset Links file, which like the manifest file, is accessible from your website. It would live here: <code class="language-plaintext highlighter-rouge">https://example.com/.well-known/assetlinks.json</code> Here’s an example <code class="language-plaintext highlighter-rouge">assetlinks.json</code> from <a href="https://developers.google.com/web/android/trusted-web-activity/quick-start#creating-your-asset-link-file">Google’s TWA Quickstart guide</a>.</p>
 
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[{</span><span class="w">
   </span><span class="nl">"relation"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"delegate_permission/common.handle_all_urls"</span><span class="p">],</span><span class="w">
@@ -405,7 +401,7 @@ var reviewHTML = '<div class="reviews">'+
 </span><span class="p">}]</span><span class="w">
 </span></code></pre></div></div>
 
-<p>I created that file through a tool in their quickstart guide called <code class="highlighter-rouge">Peter's Asset Link Tool</code>. You can <a href="https://play.google.com/store/apps/details?id=dev.conn.assetlinkstool&amp;hl=en">download Peter’s Asset Link Tool</a> from the Play store. After publishing a Beta version of the app to the play store and downloading it, I was able to use that tool to generate the <code class="highlighter-rouge">assetlinks.json</code> file and add it to my site. So when the generated APK opens my PWA using Chrome, it knows that I made the app because of the fingerprint on my website. My content is therefor trusted and granted special abilities like being full screen in the custom tab. Otherwise, you would see the chrome toolbar at the top. Similar to when you see other native apps open a custom tab browser. So it’s a website disguised as a PWA disguised as a native app. It’s pretty cool!</p>
+<p>I created that file through a tool in their quickstart guide called <code class="language-plaintext highlighter-rouge">Peter's Asset Link Tool</code>. You can <a href="https://play.google.com/store/apps/details?id=dev.conn.assetlinkstool&amp;hl=en">download Peter’s Asset Link Tool</a> from the Play store. After publishing a Beta version of the app to the play store and downloading it, I was able to use that tool to generate the <code class="language-plaintext highlighter-rouge">assetlinks.json</code> file and add it to my site. So when the generated APK opens my PWA using Chrome, it knows that I made the app because of the fingerprint on my website. My content is therefor trusted and granted special abilities like being full screen in the custom tab. Otherwise, you would see the chrome toolbar at the top. Similar to when you see other native apps open a custom tab browser. So it’s a website disguised as a PWA disguised as a native app. It’s pretty cool!</p>
 
 <p>PWA’s brought a lot of power to websites on native devices, and TWA with fancy new tools is further blurring the line between web and native applications. In this case, I only need one code base and my responsive site works on Desktop, tablets, mobile devices, Play store, and many more interfaces thanks to simple web conventions.</p>
 

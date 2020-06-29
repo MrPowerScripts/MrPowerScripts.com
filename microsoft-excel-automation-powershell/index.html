@@ -66,9 +66,7 @@
     <meta name="yandex-verification" content="4539896b000a5ed9" />
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
 
-    
-    
-        <script type="application/ld+json">
+    "potato"<script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -129,8 +127,6 @@ other porjects and sharing them here on my blog as well as youtube. Join my on D
         }
     }
 </script>
-    
-      
     <script>
       if ("serviceWorker" in navigator) {
       if (navigator.serviceWorker.controller) {
@@ -366,7 +362,7 @@ var reviewHTML = '<div class="reviews">'+
 
 <p>Excel has a COM interface which is a technology developed by Microsoft  (of course). I’ve never read an amazing explanation of COM but basically, it allows communication between programming languages and Windows applications. Even if the application was not built with the programming language. Powershell is more of a scripting language, but we can connect to the Excel COM interface all the same.</p>
 
-<p>Through this COM interface Excel exposes <a href="https://docs.microsoft.com/en-us/office/vba/api/overview/excel/object-model">the Excel Object Model</a>. I’ve linked you to the current docs, but that link will probably be dead in six months - because Microsoft. Also, the examples shown  for the Excel Object Model use something called Visual Basic for Applications. Which is something I learned about 5 minutes ago when I was trying to find the old generic Excel Object Model reference. Apparently it doesn’t exist anymore. Once again, because Microsoft. I wish I could offer more help and insights but - Microsoft. Still, you can use the script below to play around with creating and updating workbooks and worksheets. You can also explore the properties of the excel object with <code class="highlighter-rouge">Get-Member</code> to learn more about the available options.</p>
+<p>Through this COM interface Excel exposes <a href="https://docs.microsoft.com/en-us/office/vba/api/overview/excel/object-model">the Excel Object Model</a>. I’ve linked you to the current docs, but that link will probably be dead in six months - because Microsoft. Also, the examples shown  for the Excel Object Model use something called Visual Basic for Applications. Which is something I learned about 5 minutes ago when I was trying to find the old generic Excel Object Model reference. Apparently it doesn’t exist anymore. Once again, because Microsoft. I wish I could offer more help and insights but - Microsoft. Still, you can use the script below to play around with creating and updating workbooks and worksheets. You can also explore the properties of the excel object with <code class="language-plaintext highlighter-rouge">Get-Member</code> to learn more about the available options.</p>
 
 <p>You can <a href="https://github.com/MrPowerScripts/PowerScripts/blob/16740162b415b9d91f9d4bbd930b2a6d33de1788/Excel/WorkbooksAndWorksheetsExcel.ps1">find the file here on GitHub</a> or check out the source below.</p>
 
@@ -399,7 +395,7 @@ var reviewHTML = '<div class="reviews">'+
 </span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Workbooks</span><span class="o">.</span><span class="nf">Item</span><span class="p">(</span><span class="s2">"book1"</span><span class="p">)</span><span class="o">.</span><span class="nf">activate</span><span class="p">()</span><span class="w">
 
 </span><span class="c">#Acivate Random Workbook in Excel file</span><span class="w">
-</span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Workbooks</span><span class="o">.</span><span class="nf">Item</span><span class="p">((</span><span class="nf">Get-Random</span><span class="w"> </span><span class="nt">-min</span><span class="w"> </span><span class="nx">1</span><span class="w"> </span><span class="nt">-Max</span><span class="w"> </span><span class="p">(</span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Workbooks</span><span class="o">.</span><span class="nf">Count</span><span class="o">+</span><span class="nx">1</span><span class="p">)))</span><span class="o">.</span><span class="nf">activate</span><span class="p">()</span><span class="w">
+</span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Workbooks</span><span class="o">.</span><span class="nf">Item</span><span class="p">((</span><span class="nf">Get-Random</span><span class="w"> </span><span class="nt">-min</span><span class="w"> </span><span class="nx">1</span><span class="w"> </span><span class="nt">-Max</span><span class="w"> </span><span class="p">(</span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Workbooks</span><span class="o">.</span><span class="nf">Count</span><span class="o">+</span><span class="mi">1</span><span class="p">)))</span><span class="o">.</span><span class="nf">activate</span><span class="p">()</span><span class="w">
 
 </span><span class="c">#Open an existing workbook on your hardrive</span><span class="w">
 </span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Workbooks</span><span class="o">.</span><span class="nf">Open</span><span class="p">(</span><span class="s2">"</span><span class="nv">$</span><span class="nn">env</span><span class="p">:</span><span class="nv">userprofile</span><span class="s2">\desktop\mrpowerscripts.xlsx"</span><span class="p">)</span><span class="w">
@@ -433,7 +429,7 @@ var reviewHTML = '<div class="reviews">'+
 </span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Worksheets</span><span class="o">.</span><span class="nf">Item</span><span class="p">(</span><span class="s2">"sheet3"</span><span class="p">)</span><span class="o">.</span><span class="nf">activate</span><span class="p">()</span><span class="w">
 
 </span><span class="c">#Acivate Random Worksheet in Excel file</span><span class="w">
-</span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Worksheets</span><span class="o">.</span><span class="nf">Item</span><span class="p">((</span><span class="nf">Get-Random</span><span class="w"> </span><span class="nt">-min</span><span class="w"> </span><span class="nx">1</span><span class="w"> </span><span class="nt">-Max</span><span class="w"> </span><span class="p">(</span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Worksheets</span><span class="o">.</span><span class="nf">Count</span><span class="o">+</span><span class="nx">1</span><span class="p">)))</span><span class="o">.</span><span class="nf">activate</span><span class="p">()</span><span class="w">
+</span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Worksheets</span><span class="o">.</span><span class="nf">Item</span><span class="p">((</span><span class="nf">Get-Random</span><span class="w"> </span><span class="nt">-min</span><span class="w"> </span><span class="nx">1</span><span class="w"> </span><span class="nt">-Max</span><span class="w"> </span><span class="p">(</span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Worksheets</span><span class="o">.</span><span class="nf">Count</span><span class="o">+</span><span class="mi">1</span><span class="p">)))</span><span class="o">.</span><span class="nf">activate</span><span class="p">()</span><span class="w">
 
 </span><span class="c">#Delete worksheets from workbook</span><span class="w">
 </span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Worksheets</span><span class="o">.</span><span class="nf">Item</span><span class="p">(</span><span class="nx">1</span><span class="p">)</span><span class="o">.</span><span class="nf">delete</span><span class="p">()</span><span class="w">

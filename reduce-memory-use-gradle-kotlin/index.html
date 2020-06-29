@@ -68,9 +68,7 @@
     <meta name="yandex-verification" content="4539896b000a5ed9" />
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
 
-    
-    
-        <script type="application/ld+json">
+    "potato"<script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -131,8 +129,6 @@ other porjects and sharing them here on my blog as well as youtube. Join my on D
         }
     }
 </script>
-    
-      
     <script>
       if ("serviceWorker" in navigator) {
       if (navigator.serviceWorker.controller) {
@@ -361,7 +357,7 @@ var reviewHTML = '<div class="reviews">'+
 
 <h2 id="tell-java-to-chill-out-with-the-memory-usage">Tell Java to chill out with the memory usage</h2>
 
-<p>Since android build tools are Java-based, and Java is a memory hog, you can first tell Java to limit its memory usage. You might see people put these same options in a <code class="highlighter-rouge">GRADLE_OPTS</code> variable but if the process gets forked those options won’t always get passed down into the forked process. It’s better to set an environment variable consumed direction by Java. <code class="highlighter-rouge">_JAVA_OPTIONS</code> environment variable is widely supported in Oracle based Java environments. Combined with the <code class="highlighter-rouge">-Xmx</code> configuration you can set the max heap size for use by Java, which is where it stores things like class objects into memory. Setting this value to 75% of the available memory will give Java enough room to store what it needs without choking the rest of the system resources. If you have 4GB available, then try setting it to  3GB. <code class="highlighter-rouge">_JAVA_OPTIONS=-Xmx3g</code>.</p>
+<p>Since android build tools are Java-based, and Java is a memory hog, you can first tell Java to limit its memory usage. You might see people put these same options in a <code class="language-plaintext highlighter-rouge">GRADLE_OPTS</code> variable but if the process gets forked those options won’t always get passed down into the forked process. It’s better to set an environment variable consumed direction by Java. <code class="language-plaintext highlighter-rouge">_JAVA_OPTIONS</code> environment variable is widely supported in Oracle based Java environments. Combined with the <code class="language-plaintext highlighter-rouge">-Xmx</code> configuration you can set the max heap size for use by Java, which is where it stores things like class objects into memory. Setting this value to 75% of the available memory will give Java enough room to store what it needs without choking the rest of the system resources. If you have 4GB available, then try setting it to  3GB. <code class="language-plaintext highlighter-rouge">_JAVA_OPTIONS=-Xmx3g</code>.</p>
 
 <h2 id="shut-down-the-daemons">Shut down the daemons</h2>
 

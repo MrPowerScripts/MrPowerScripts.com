@@ -74,9 +74,7 @@
     <meta name="yandex-verification" content="4539896b000a5ed9" />
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
 
-    
-    
-        <script type="application/ld+json">
+    "potato"<script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -137,8 +135,6 @@ other porjects and sharing them here on my blog as well as youtube. Join my on D
         }
     }
 </script>
-    
-      
     <script>
       if ("serviceWorker" in navigator) {
       if (navigator.serviceWorker.controller) {
@@ -442,7 +438,7 @@ yeah I don’t really have a path forward on this, but I’ve come to the conclu
     <p>(Almost) limitless scalability. Our Lambda relies on other APIs. So really they’re our only bottleneck. I wouldn’t be surprised if AWS was hosting the APIs for all the services in the Lambda. They do big things yo. Right now the Lambda isn’t aware of rate limits, so that would need to be considered in the future. But we would need to start receiving dozens of orders per second before that becomes a cause for concern. I don’t see that happening soon.</p>
   </li>
   <li>
-    <p>Manageable codebase. Our lambda function is only about 130 lines of code. The serverless framework adds quite a few files to the repo and you have to configure the <code class="highlighter-rouge">serverless.yml</code>. Once you have it set up it’s a breeze to manage a Serverless function. The frontend is a simple Jekyll app mostly powered by jquery. In a word of React and Vue - I know. There are only a few main files to mess around with in that repo. We also have a nice clean distinction between our backend and our frontend in two separate folders.</p>
+    <p>Manageable codebase. Our lambda function is only about 130 lines of code. The serverless framework adds quite a few files to the repo and you have to configure the <code class="language-plaintext highlighter-rouge">serverless.yml</code>. Once you have it set up it’s a breeze to manage a Serverless function. The frontend is a simple Jekyll app mostly powered by jquery. In a word of React and Vue - I know. There are only a few main files to mess around with in that repo. We also have a nice clean distinction between our backend and our frontend in two separate folders.</p>
   </li>
   <li>
     <p>Flexibility. We’ve branded this site around emoji images after we scaled back on many ideas and iterations of what this project would be. But we can quickly substitute any other kind of branded cards in our card creator system. We could consider licensing sports team logos and set up a totally new site layout fairly fast. The lambda and frontend were built with this type of flexibility in mind, so they can quickly adapt to support other iterations without changing much code.</p>
