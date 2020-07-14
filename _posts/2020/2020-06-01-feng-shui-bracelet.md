@@ -45,7 +45,7 @@ The video tells us Pixiu is known to bring fortune and attract wealth. I mean th
 
 ## Block out your haters
 
-This negative energy needs to be blocked out, and thankfully the bracelet has that critical Obsidian element. The video also goes on to state that Black Obsidian is known to increase self-control and makes one embrace their true self. Which might be why those people bought this bracelet in the first place, they simply didn't have the self-control they needed. And now, which this bracelet, they definitely won't make any further impulsive decisions. Truly amazing.
+This negative energy needs to be blocked out, and thankfully the bracelet has that critical Obsidian element. The video also goes on to state that Black Obsidian is known to increase self-control and makes one embrace their true self. Which might be why those people bought this bracelet in the first place, they simply didn't have the self-control they needed. And now, with this bracelet, they definitely won't make any further impulsive decisions. Truly amazing.
 
 But the most amazing part of all this is that Noel discovered the bracelet when he met Master Xi. See, Noel was a garbage collector before Master Xi put him onto the Feng Shui Black Obsidian bracelet. Noel found a wallet on the ground with more money than he could earn. Did that wallet have more money than he could make in a day? A week? A year? WE DON'T KNOW AND WHO CARES. Stop asking so many questions. 
 
