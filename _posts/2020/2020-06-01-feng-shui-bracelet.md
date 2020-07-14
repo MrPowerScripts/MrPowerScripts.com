@@ -23,7 +23,7 @@ The video, released Nov 3, 2019, lets us know that Feng Shui originated in China
 
 1. Always sit so there is a solid wall behind your back. This ensures that you have support in your life. Never sit with your back towards the window.
 
-1. Aways play face machines, telephone, computers, and cash registers in the southeast wealth sector to attract more prospective businesses.
+1. Always place fax machines, telephone, computers, and cash registers in the southeast wealth sector to attract more prospective businesses.
 
 1. Arrange your desk so you always have a clear view of the door, preferably facing the door. If it is impossible to arrange, then hang a small mirror so you can clearly see the reflection of the door.
 
