@@ -39,7 +39,7 @@ Holy shit, you can literally carry Feng Shui around on your wrist with the Feng 
 
 ## Attract fortune and wealth with Pixiu talisman
 
-The video tells us Pixiu is known to bring fortune and attract wealth. I mean those are kinda the same thing, right? I'm not sure why you said the same thing in two different ways, but I like the sound of both of them. This is combo deal talisman. Incredible two for one talisman value. Then there's the black Obsidian, which is known to give protection and shield against negativity. Which is so important in this day and age where haters are everywhere. Like haters in the video youtube comments who bought the bracelet and found it didn't do anything at all.
+The video tells us Pixiu is known to bring fortune and attract wealth. I mean those are kinda the same thing, right? I'm not sure why you said the same thing in two different ways, but I like the sound of both of them. This is a combo deal talisman. Incredible two for one talisman value. Then there's the black Obsidian, which is known to give protection and shield against negativity. Which is so important in this day and age where haters are everywhere. Like haters in the video youtube comments who bought the bracelet and found it didn't do anything at all.
 
 {% include image.html src="/images/feng-shui-comments.jpg" %}
 
