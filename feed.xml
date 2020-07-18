@@ -1,4 +1,50 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://mrpowerscripts.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mrpowerscripts.com/" rel="alternate" type="text/html" /><updated>2020-07-14T00:27:01+00:00</updated><id>https://mrpowerscripts.com/feed.xml</id><title type="html">MrPowerScripts</title><subtitle>Learn. Code. Grow.</subtitle><entry><title type="html">Automated Reality Channel Ep2 Planning</title><link href="https://mrpowerscripts.com/arc-episode-two/" rel="alternate" type="text/html" title="Automated Reality Channel Ep2 Planning" /><published>2020-06-20T00:00:00+00:00</published><updated>2020-06-20T08:19:56+00:00</updated><id>https://mrpowerscripts.com/arc-episode-two</id><content type="html" xml:base="https://mrpowerscripts.com/arc-episode-two/">&lt;p&gt;I was pretty happy to get &lt;a href=&quot;https://mrpowerscripts.com/arc-episode-one/&quot;&gt;a single episode of the automated reality channel&lt;/a&gt; processed and published live. It put waaaaay too much effort into something that probably isn’t going to go anywhere. It worked through! I did get episode 1 out the door, but it didn’t reach the project’s real goal.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://mrpowerscripts.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mrpowerscripts.com/" rel="alternate" type="text/html" /><updated>2020-07-18T13:25:15+00:00</updated><id>https://mrpowerscripts.com/feed.xml</id><title type="html">MrPowerScripts</title><subtitle>Learn. Code. Grow.</subtitle><entry><title type="html">My code is in the GitHub Arctic Code Vault</title><link href="https://mrpowerscripts.com/github-arctic-code-vault/" rel="alternate" type="text/html" title="My code is in the GitHub Arctic Code Vault" /><published>2020-07-17T00:00:00+00:00</published><updated>2020-07-18T13:19:45+00:00</updated><id>https://mrpowerscripts.com/github-arctic-code-vault</id><content type="html" xml:base="https://mrpowerscripts.com/github-arctic-code-vault/">&lt;p&gt;I opened up GitHub the other day to find I had a new badge called Artic Code Vault Contributor. Excuse me? Wat? Some of you might be thinking, “of course! The Artic Code Vault”. But I had no  fucking  clue what that meant in the slightest. So I did what most people do when they’re trying to shake the dumb from their brain. I Googled, “What is the Artic Code Vault?”. And this is what I saw.&lt;/p&gt;
+
+&lt;!-- (1) video wrapper --&gt;
+&lt;div class=&quot;youtube-video&quot; data-embed=&quot;fzI9FNjXQ0o&quot;&gt; 
+ 
+    &lt;!-- (2) the &quot;play&quot; button --&gt;
+    &lt;div class=&quot;play-button&quot;&gt;&lt;/div&gt; 
+     
+&lt;/div&gt;
+
+&lt;p&gt;Wow. My code is literally chilling inside an island called Svalbard, housed deep in an old mine to be preserved for the future of humanity. If that doesn’t sound like some wild James Bond shit, I don’t know what does, but it doesn’t matter MY CODE IS IN  A FREAKING ARTIC CODE VAULT IN THE ARTIC IN A VAULT THAT”S SUPER COLD HOW COOL IS THAT?&lt;/p&gt;
+
+&lt;p&gt;Below freezing. I couldn’t find any specific information about the Arctic Code Vault’s temperature, but it’s probably safe to say it’s below freezing. And that’s pretty fucking cool. So what code is stored in the Artic Code Vault? &lt;a href=&quot;https://github.com/MrPowerScripts/reddit-karma-farming-bot&quot;&gt;The Reddit Karma Farming Bot&lt;/a&gt;, The &lt;a href=&quot;https://github.com/MrPowerScripts/meme-cd&quot;&gt;Continuous Meme Delivery Project&lt;/a&gt;, and my &lt;a href=&quot;https://github.com/MrPowerScripts/storage&quot;&gt;generic script storage&lt;/a&gt; repo. None of that was worth preserving for future generations of humans. Unless future generations will need to spam Reddit with puppy pictures for fake internet points. Okay, maybe at least that one was worth saving. KARMA.&lt;/p&gt;
+
+&lt;p&gt;What an amazing feat of human achievement, and I’m super happy to be part of this plan put forth because we’re probably going to fuck this planet up so bad it’s gonna cause a fun evolutionary reset. Hopefully, chicken people get a shot at dominating the world next. Working on open-source software with some odd wing-friendly keyboards, and the Artic Code Vault will definitely give them a head start.&lt;/p&gt;
+
+&lt;p&gt;We can all agree that this is a monumental feat of human achievement of preserving technological advancements and culture. Just like the Svalbard Global Seed Vault which is not far from the GitHub Arctic Code Vault. All of these endeavors are 5 stars, right? Uhhhh then why does the Svalbard Global Seed Vault have a 4.6 rating on Google Maps? HOW IS THIS NOT 6 STARS??? You can look at it right on the map embedded below.&lt;/p&gt;
+
+&lt;div class=&quot;map-responsive&quot;&gt;
+&lt;iframe src=&quot;https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1483769.3529564082!2d11.008897656105544!3d78.2356771916149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x459c54abde19eff1%3A0x15fa4670a5924662!2sSvalbard%20Global%20Seed%20Vault!5e1!3m2!1sen!2spt!4v1595012008749!5m2!1sen!2spt&quot; width=&quot;600&quot; height=&quot;450&quot; frameborder=&quot;0&quot; style=&quot;border:0;&quot; allowfullscreen=&quot;&quot; aria-hidden=&quot;false&quot; tabindex=&quot;0&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;WHO COULD POSSIBLY THINK THIS IS NOT AMAZING?&lt;/p&gt;
+
+&lt;div&gt;
+  &lt;img style=&quot;object-fit: contain&quot; src=&quot;/images/code-vault-review-1.jpg&quot; alt=&quot;image&quot; /&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;img style=&quot;object-fit: contain&quot; src=&quot;/images/code-vault-review-2.jpg&quot; alt=&quot;image&quot; /&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;img style=&quot;object-fit: contain&quot; src=&quot;/images/code-vault-review-3.jpg&quot; alt=&quot;image&quot; /&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;img style=&quot;object-fit: contain&quot; src=&quot;/images/code-vault-review-4.jpg&quot; alt=&quot;image&quot; /&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;img style=&quot;object-fit: contain&quot; src=&quot;/images/code-vault-review-5.jpg&quot; alt=&quot;image&quot; /&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;img style=&quot;object-fit: contain&quot; src=&quot;/images/code-vault-review-6.jpg&quot; alt=&quot;image&quot; /&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;img style=&quot;object-fit: contain&quot; src=&quot;/images/code-vault-review-7.jpg&quot; alt=&quot;image&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;You know what? Fuck it. Do the elites have a Patreon I can support to speed this all up?&lt;/p&gt;</content><author><name>MrPowerScripts</name></author><category term="mrpowerscripts" /><summary type="html">I opened up GitHub the other day to find I had a new badge called Artic Code Vault Contributor. Excuse me? Wat? Some of you might be thinking, “of course! The Artic Code Vault”. But I had no fucking clue what that meant in the slightest. So I did what most people do when they’re trying to shake the dumb from their brain. I Googled, “What is the Artic Code Vault?”. And this is what I saw.</summary></entry><entry><title type="html">Automated Reality Channel Ep2 Planning</title><link href="https://mrpowerscripts.com/arc-episode-two/" rel="alternate" type="text/html" title="Automated Reality Channel Ep2 Planning" /><published>2020-06-20T00:00:00+00:00</published><updated>2020-06-20T08:19:56+00:00</updated><id>https://mrpowerscripts.com/arc-episode-two</id><content type="html" xml:base="https://mrpowerscripts.com/arc-episode-two/">&lt;p&gt;I was pretty happy to get &lt;a href=&quot;https://mrpowerscripts.com/arc-episode-one/&quot;&gt;a single episode of the automated reality channel&lt;/a&gt; processed and published live. It put waaaaay too much effort into something that probably isn’t going to go anywhere. It worked through! I did get episode 1 out the door, but it didn’t reach the project’s real goal.&lt;/p&gt;
 
 &lt;p&gt;I was hoping to collaborate with content creators to create the content assets that the episodes used. Instead, I had it sing mary had a little lamb, and I showed off my atrocious paint.net skills. For episode two, I would like to accomplish the actual goal. It’s collaborating time!&lt;/p&gt;
 
@@ -284,42 +330,4 @@
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Those are a few basic techniques I use to stay on top of things for myself and others. I may have other things I’m not thinking of at the moment. But if I think of anything else I’ll add it to my to-do list and be sure to update this blog post in the future when I have some free time :)&lt;/p&gt;</content><author><name>MrPowerScripts</name></author><category term="mrpowerscripts" /><category term="productivity" /><summary type="html">I do a lot of stuff. Like, I should probably chill out a bit, but I can’t. I have a lot of passions, and they keep me super busy. I work an (almost) full-time job at a tech startup for the moment. Anyone that has worked for a startup knows that there’s an endless amount of work that needs to be done and usually not enough people to do it.</summary></entry><entry><title type="html">Advanced function parameters in Powershell</title><link href="https://mrpowerscripts.com/advanced-function-parameters-in-powershell/" rel="alternate" type="text/html" title="Advanced function parameters in Powershell" /><published>2019-08-02T00:00:00+00:00</published><updated>2020-06-09T20:31:49+00:00</updated><id>https://mrpowerscripts.com/advanced-function-parameters-in-powershell</id><content type="html" xml:base="https://mrpowerscripts.com/advanced-function-parameters-in-powershell/">&lt;p&gt;If you’re not making use of functions in your Powershell code then you need to stop what you’re doing right now and learn about them! But where?!? Oh, click the video below and watch. That will get you started. &lt;!-- (1) video wrapper --&gt;&lt;/p&gt;
-&lt;div class=&quot;youtube-video&quot; data-embed=&quot;qz0x_WL8ueo&quot;&gt; 
- 
-    &lt;!-- (2) the &quot;play&quot; button --&gt;
-    &lt;div class=&quot;play-button&quot;&gt;&lt;/div&gt; 
-     
-&lt;/div&gt;
-&lt;p&gt;That’s awesome! Now you know what functions are! Exciting! But after you’ve made a function you’ll probably want to adapt it a bit. Reusability of code without some customization is super limiting. Next you’ll want to learn how to add parameters to your functions. By adding parameters to your functions you’ll unlock the true power of functions in Powershell! Thankfully the video below will get you up to speed on function parameters in powershell. Then you’re ready for the advanced stuff!&lt;/p&gt;
-
-&lt;!-- (1) video wrapper --&gt;
-&lt;div class=&quot;youtube-video&quot; data-embed=&quot;RW2tRebxqzQ&quot;&gt; 
- 
-    &lt;!-- (2) the &quot;play&quot; button --&gt;
-    &lt;div class=&quot;play-button&quot;&gt;&lt;/div&gt; 
-     
-&lt;/div&gt;
-
-&lt;p&gt;So now you know what functions are in Powershell, and you’ve learned a few ways to add parameters to them. But if you create your Powershell functions without some of the advanced Powershell function parameter techniques you might be setting yourself up for future disaster! Leading you or others using your code to end up in an endless pit of darkness and dispair.&lt;/p&gt;
-
-&lt;p&gt;Here are a few reasons why you would want to use advanced powershell function parameters:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Control the types of arguments passed into functions. If someone puts an string into a function when it should be an integer Powershell will automatically warn them.&lt;/li&gt;
-  &lt;li&gt;Flags allow you to modify a powershell functions behavior without users needing to supply a parameter.&lt;/li&gt;
-  &lt;li&gt;Create help messages for your parameters so that users will know how to use them appropriately&lt;/li&gt;
-  &lt;li&gt;Configure some parameters to be mandatory and prevent the function from running if it is unused&lt;/li&gt;
-  &lt;li&gt;Add validation to the arguments passed into the function. Only want the user to enter a number between 1 and 100? You can enforce that. Do you want to control whether they can pass in a null value, or empty string? You can validate for that as well. You can even validate the argument using a regex string.&lt;/li&gt;
-  &lt;li&gt;Control whether or not an argument can be passed into the function through the powershell Pipleline.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;These are a few of the benefits, and there are even more! Adding some of these advanced powershell function parameter techniques can seriously improve the reliablity and reusability of your functions. Check out the video below to see some of the benefits in action!&lt;/p&gt;
-
-&lt;!-- (1) video wrapper --&gt;
-&lt;div class=&quot;youtube-video&quot; data-embed=&quot;6ySxsnOGnCU&quot;&gt; 
- 
-    &lt;!-- (2) the &quot;play&quot; button --&gt;
-    &lt;div class=&quot;play-button&quot;&gt;&lt;/div&gt; 
-     
-&lt;/div&gt;</content><author><name>MrPowerScripts</name></author><category term="mrpowerscripts" /><category term="powershell function parameters" /><category term="advanced powershellfunction parameters" /><category term="functions in powershell" /><category term="powershell functions." /><summary type="html">If you’re not making use of functions in your Powershell code then you need to stop what you’re doing right now and learn about them! But where?!? Oh, click the video below and watch. That will get you started. That’s awesome! Now you know what functions are! Exciting! But after you’ve made a function you’ll probably want to adapt it a bit. Reusability of code without some customization is super limiting. Next you’ll want to learn how to add parameters to your functions. By adding parameters to your functions you’ll unlock the true power of functions in Powershell! Thankfully the video below will get you up to speed on function parameters in powershell. Then you’re ready for the advanced stuff!</summary></entry></feed>
+&lt;p&gt;Those are a few basic techniques I use to stay on top of things for myself and others. I may have other things I’m not thinking of at the moment. But if I think of anything else I’ll add it to my to-do list and be sure to update this blog post in the future when I have some free time :)&lt;/p&gt;</content><author><name>MrPowerScripts</name></author><category term="mrpowerscripts" /><category term="productivity" /><summary type="html">I do a lot of stuff. Like, I should probably chill out a bit, but I can’t. I have a lot of passions, and they keep me super busy. I work an (almost) full-time job at a tech startup for the moment. Anyone that has worked for a startup knows that there’s an endless amount of work that needs to be done and usually not enough people to do it.</summary></entry></feed>
