@@ -9,7 +9,7 @@ Battle Nation Live is a discord variety show bot that I wrote a few years ago. I
 
 ## Battle Nation Live Overview
 
-You can get the quickest overview of how it works by checking out https://bnl.mrpowerscripts.com/, the original website.
+You can get the quickest overview of how it works by checking out [https://bnl.mrpowerscripts.com/](https://bnl.mrpowerscripts.com/), the original website.
 
 ## How does Battle Nation Live work
 
@@ -21,6 +21,6 @@ And this whole process of users signing up,  changing the role of who can use th
 
 ## Battle Nation Live source code
 
-The code is super terrible. I was learning a lot of stuff about node and js at the time, as I still am. But I'm going to share it anyway. https://github.com/MrPowerScripts/battle-nation-live-discord-bot
+The code is super terrible. I was learning a lot of stuff about node and js at the time, as I still am. But I'm going to share it anyway. [https://github.com/MrPowerScripts/battle-nation-live-discord-bot](https://github.com/MrPowerScripts/battle-nation-live-discord-bot)
 
-And if you want to test your skills, joins the MrPowerScripts Discord server (https://bit.ly/mrps-discord) where the bot is running 24/7. You can always hop on the mic at the Battle Nation Live show. lol I should never be allowed to name things.
+And if you want to test your skills, joins the MrPowerScripts Discord server ([https://bit.ly/mrps-discord](https://bit.ly/mrps-discord)) where the bot is running 24/7. You can always hop on the mic at the Battle Nation Live show. lol I should never be allowed to name things.
