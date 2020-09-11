@@ -7,379 +7,461 @@
 		<atom:link href="https://mrpowerscripts.com/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
-				<title>This is the best blog post ever</title>
-				<description>&lt;p&gt;Do you disagree? Okay, I know you haven’t read it yet, but you probably had some preconceived idea that it wasn’t - didn’t you? A small bit of bias? None? You didn’t even weigh the possibility a bit? Well, if you don’t think it is - Why not? What doesn’t it have?&lt;/p&gt;
-
-&lt;p&gt;See, here’s the thing about this blog post. It isn’t afraid of change. It’s a living document. It &lt;a href=&quot;https://github.com/MrPowerScripts/MrPowerScripts.com/blob/master/_posts/2020-03-22-best-blog-post-ever.md&quot;&gt;lives here in GitHub&lt;/a&gt;, where it is committed to being the best blog post ever. So if it isn’t, tell me why. You can do it here on &lt;a href=&quot;http://bit.ly/mrps-discord&quot;&gt;Discord&lt;/a&gt;, &lt;a href=&quot;https://github.com/MrPowerScripts/MrPowerScripts.com/issues&quot;&gt;GitHub&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/MrPowerScripts&quot;&gt;Twitter&lt;/a&gt;, or even by &lt;a href=&quot;mailto:playingwithpowershell@gmail.com&quot;&gt;e-mail&lt;/a&gt;. This blog post can take on the challenge. This blog post isn’t afraid to be the best. This blog post IS the best.&lt;/p&gt;
-
-&lt;p&gt;Thanks for reading!&lt;/p&gt;
-</description>
-				<pubDate>Sun, 22 Mar 2020 00:00:00 +0000</pubDate>
-				<link>https://mrpowerscripts.com/best-blog-post-ever/</link>
-				<guid isPermaLink="true">https://mrpowerscripts.com/best-blog-post-ever/</guid>
-			</item>
-		
-			<item>
-				<title>Automate Simple Static Website Testing</title>
-				<description>&lt;p&gt;I like using Jekyll to build static websites when I can. A static website is a site built with simple HTML, CSS, and Javascript. Ready to be served up by webservers. Jekyll is one of the many frameworks that help create static websites by using nifty features like templating, and an embedded development server.&lt;/p&gt;
-
-&lt;p&gt;These static site generators can’t prevent you from writing bad structure to your HTML other potential problems. You can have borked syntax or bad links throughout the generated website source code that may go undeteceted. Even JSON files can also be generated with invalid syntax very easily. And there’s plenty of tools to help you avoid shipping that crappy code live. Plus…&lt;/p&gt;
-
-&lt;p&gt;ALL. OF. THIS. CAN. BE. AUTOMATED.&lt;/p&gt;
-
-&lt;p&gt;YAY&lt;/p&gt;
-
-&lt;p&gt;We’re going to use a few tools that other people have written, and that’s the easiest part about this whole thing. First thing is test all of the JSON files that my site generates using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jsonlint&lt;/code&gt; combined with a command that finds all of the JSON files in the site directory tree.&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;FILES&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;find ./_site &lt;span class=&quot;nt&quot;&gt;-type&lt;/span&gt; f &lt;span class=&quot;nt&quot;&gt;-name&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'*.json'&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$FILES&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; jsonlint &lt;span class=&quot;nv&quot;&gt;$FILES&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;The code above uses the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;find&lt;/code&gt; command to locate all the JSON files in the directory, and displays them on the screen, and then passes them to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jsonlint&lt;/code&gt;, which will validate that all of the files are good whomesome JSON like Mom used to make.&lt;/p&gt;
-
-&lt;p&gt;Great. So now we know our JSON isn’t screwed up. We can make sure that all of the site HTML is well-formed as well. We’ll use a tool called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;htmlproofer&lt;/code&gt; which can check the integrity of the produced site. You can see everything it tests &lt;a href=&quot;https://github.com/gjtorikian/html-proofer&quot;&gt;here on their repo&lt;/a&gt;. I run the command:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;htmlproofer ./_site &lt;span class=&quot;nt&quot;&gt;--check-html&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--disable-external&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--check-opengraph&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--check-favicon&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;The first time I tried &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;htmlproofer&lt;/code&gt; on one of my Jekyll sites, it found over 300 errors. It took me a while to fix all of the broken issues with my HTML, but &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;htmlproofer&lt;/code&gt; helped me test it very quickly as I was updating the code.&lt;/p&gt;
-
-&lt;p&gt;Next, this isn’t really testing, but sometimes allowing the wrong sizes of images to get through can provide a poor user experience. So why not automate preventing that? We can do that with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mogrify&lt;/code&gt; command from the &lt;a href=&quot;https://imagemagick.org/script/download.php&quot;&gt;ImageMagick toolset&lt;/a&gt;. I use the command below on one of my sites to make sure images are no larger than 500px on either side, and this will resize them if they are, which helps make sure image file sizes are smaller.&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;find ./_site/assets/img/ &lt;span class=&quot;nt&quot;&gt;-name&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'*.jpg'&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-execdir&lt;/span&gt; mogrify &lt;span class=&quot;nt&quot;&gt;-resize&lt;/span&gt; 500x &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;But sometimes that isn’t enough to get the file sizes down to a reasonable level. We can use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jpegoptim&lt;/code&gt; command to enforce that image files are under a specific file size, and automatically optimize the image to fit within that limit. The command below grabs all image files in a folder and reduces their sizes to below 70k.&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;find ./_site/assets/img &lt;span class=&quot;nt&quot;&gt;-type&lt;/span&gt; d &lt;span class=&quot;nt&quot;&gt;-exec&lt;/span&gt; sh &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'ls &quot;$0&quot;/*.jpg 2&amp;gt;/dev/null &amp;amp;&amp;amp; jpegoptim --size=70k --max=90 --all-progressive --strip-all -t &quot;$0&quot;/*.jpg'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Then you can automate all of that using devops tools like CircleCI for testing and trimming your source before it gets deployed somewhere, like GitHub pages, which is where this blog lives. Every commit I push to update the website automatically gets validated through CircleCI using the tools above. The CircleCI config with test and deploy jobs make sure the site is validated every single time I make a change before it gets deployed live — no more shipping sites with tons of broken code that can hurt SEO or the user’s experience.&lt;/p&gt;
-
-&lt;script src=&quot;http://gist-it.appspot.com/http://github.com/MrPowerScripts/MrPowerScripts.com/blob/master/.circleci/config.yml&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;When I pushed the change that contained this blog post &lt;a href=&quot;https://circleci.com/gh/MrPowerScripts/MrPowerScripts.com/298&quot;&gt;it actually hit an error&lt;/a&gt; because I added a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;&lt;/code&gt; where it can break site formatting. The CircleCI job failed and the site was not deployed. I was able to fix the site code and &lt;a href=&quot;https://circleci.com/workflow-run/852b83a1-84ec-425a-823b-c5032b288265&quot;&gt;push a new commit&lt;/a&gt; where it was validated as successful and the site was deployed successfully.&lt;/p&gt;
-
-&lt;p&gt;We could take the website optimization a few steps further by using tools that help minimize the site source code or run SEO checks. But using these simple tools drastically improved the confidence of the code I was shipping out.&lt;/p&gt;
-</description>
-				<pubDate>Sat, 14 Mar 2020 00:00:00 +0000</pubDate>
-				<link>https://mrpowerscripts.com/automate-static-site-testing/</link>
-				<guid isPermaLink="true">https://mrpowerscripts.com/automate-static-site-testing/</guid>
-			</item>
-		
-			<item>
-				<title>How I orgaize my life with apps</title>
-				<description>&lt;p&gt;I do a lot of stuff. Like, I should probably chill out a bit, but I can’t. I have a lot of passions, and they keep me super busy. I work an (almost) full-time job at a tech startup for the moment. Anyone that has worked for a startup knows that there’s an endless amount of work that needs to be done and usually not enough people to do it.&lt;/p&gt;
-
-&lt;p&gt;Thankfully, I’ve been there for a couple of years. I know how to do my job reasonably efficiently. But I also have my side projects. This blog, the youtube channel that goes with it, (okay I haven’t updated either of them in a long time - but I think about them! does that count?). I have some other websites that I work on, which i’m trying to grow, and I have people helping with them. I manage and run a bunch of performance related events in the city where I live, which takes quite a bit of time coordinating with venues and performers. Plus other hobbies like playing basketball, video games, working on short films, helping friends with their projects. On top of all the essentials - laundry, making meals.&lt;/p&gt;
-
-&lt;p&gt;I’m always so. fuckin. busy. The honest solution is that I should chill out a bit and drop some of these things. But I’m way too stubborn to do that. So, I have to use simple tricks that help me keep o top of everything. And that’s the key for me. The methods I use are SIMPLE. A complicated system of organization only adds to the chaos for me. So everything I’m about to list most likely won’t blow anyone away, but they truly help me out a lot in keeping track of what I need to be doing.&lt;/p&gt;
-
-&lt;p&gt;HERE IS THE (short) LIST OF SIMPLE TRICKS&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Calendar. I use Google calendar. If it’s not on the calendar - it doesn’t matter. I don’t put frivolous things on my calendar. I don’t need a reminder to feed the cat every day. The cat does that just fine. When I wake up, I look at the calendar widget on the home screen of my phone. It tells me everything I NEED to be concerned with that day. But I also look at the coming days to help decide how I should spend currently available free time, and having few items as possible makes it easier to do that. Some people might feel the need to “block off that time for everything”. No thanks. I don’t want a cluttered calendar with my entire day planned out to the minute. I want as few things on the schedule as possible. My key to success here is to be aware of what is coming up and utilize the free spaces effectively in the moments they become available. When my calendar is lean, it’s easier to see what is coming up today, tomorrow, and the next day. And it allows me the flexibility to manage my free time in the moment, which includes preparing for things coming up in the near term. Some people enjoy micromanaging their time, but I prefer to spend as little time in the calendar app as possible. With a quick swipe, I can see a couple of days of things that are important for me to be aware of, and I decide when/how to prepare for those events in the gaps between them.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Whatsapp. I use WhatsApp as my primary means of communication. As pretty much everyone else does in Europe. But I use it more or less as a task list for things related to other people. You can very easily archive conversations, so I use that feature often. If I’m done communicating with someone, and there’s no follow up needed - the conversation gets archived. So my conversation list is very often empty when I open the app. I often see people with a gigantic list of conversations, and because of my system, it drives me bonkers. If I need to reply to a person about something, if I need to follow up with them in any way - the conversation stays open. Otherwise, everyone gets archived.  So I treat Whatsapp as a task list for other people primarily. Sometimes I’ll have a name there for a couple of days if there’s a long-running follow-up. It happens. But making this a habit allows me to focus better and not drop the ball on doing things for other people. Again, it also keeps reminders and events off my calendar. That’s a place for things that most concern me. Whatsapp is a task list for matters related to other people.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;An actual “to-do list”. I use an app with a widget on my phone’s home screen that’s called “to-do list”. Amazing - I know. The to-do list is where I put things that aren’t time-sensitive like small side projects I would like to create or ideas I should look into when I have some free time. Something that I can follow up on in those moments between calendar items. And when they get done - I check quickly knock them off the list. It could be a blog post idea or a video idea.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Those are a few basic techniques I use to stay on top of things for myself and others. I may have other things I’m not thinking of at the moment. But if I think of anything else I’ll add it to my to-do list and be sure to update this blog post in the future when I have some free time :)&lt;/p&gt;
-</description>
-				<pubDate>Tue, 18 Feb 2020 00:00:00 +0000</pubDate>
-				<link>https://mrpowerscripts.com/calendar-contacts-tasks/</link>
-				<guid isPermaLink="true">https://mrpowerscripts.com/calendar-contacts-tasks/</guid>
-			</item>
-		
-			<item>
-				<title>Advanced function parameters in Powershell</title>
-				<description>&lt;p&gt;If you’re not making use of functions in your Powershell code then you need to stop what you’re doing right now and learn about them! But where?!? Oh, click the video below and watch. That will get you started. &lt;!-- (1) video wrapper --&gt;&lt;/p&gt;
-&lt;div class=&quot;youtube-video&quot; data-embed=&quot;qz0x_WL8ueo&quot;&gt; 
+				<title>Every Content Creator Should Know This - Creative Commons CC0 License &amp; Pexels.com</title>
+				<description>&lt;p&gt;Creating content all by yourself is really hard, so it’s helpful to use art, music, and other assets to help you share your message. If you want to monetize your content you need to be especially careful. If the content you create utilizes the copyrighted works of others then you might be in for a world of pain. Thankfully Creative Commons has been around for a few years helping content creators by creating content licenses. &lt;!-- (1) video wrapper --&gt;&lt;/p&gt;
+&lt;div class=&quot;youtube-video&quot; data-embed=&quot;J_qTrc_fV-Y&quot;&gt; 
  
     &lt;!-- (2) the &quot;play&quot; button --&gt;
     &lt;div class=&quot;play-button&quot;&gt;&lt;/div&gt; 
      
 &lt;/div&gt;
-&lt;p&gt;That’s awesome! Now you know what functions are! Exciting! But after you’ve made a function you’ll probably want to adapt it a bit. Reusability of code without some customization is super limiting. Next you’ll want to learn how to add parameters to your functions. By adding parameters to your functions you’ll unlock the true power of functions in Powershell! Thankfully the video below will get you up to speed on function parameters in powershell. Then you’re ready for the advanced stuff!&lt;/p&gt;
+&lt;p&gt;These licenses are easy for content creators to understand, and help them share their works for others to use in various ways. One license is incredibly useful for content creators to know about, which is the CC0 license&lt;/p&gt;
 
-&lt;!-- (1) video wrapper --&gt;
-&lt;div class=&quot;youtube-video&quot; data-embed=&quot;RW2tRebxqzQ&quot;&gt; 
+&lt;p&gt;The CC0 license allows a content creator to revoke all copyrights to the content they’ve created. Thus allowing anyone to use that content in their own private or commercial projects. Need a happy person to include in your marketing ad? It’s difficult and time-consuming to hire a model and snap the pictures yourself. It can also be expensive to buy stock photography. Especially if you have little to no budget. Thankfully there’s a lot of places that already exist where you can find CCO license photos or other kinds of content.&lt;/p&gt;
+
+&lt;p&gt;My favorite place to find CC0 license content is &lt;a href=&quot;https://pexels.com&quot;&gt;pexels.com&lt;/a&gt;. They have been around for a few years now, and their collections are always growing. They have all types of high-quality photography available under the CC0 license, so you can use them safely in your own projects without fear of violating someone elses copyrights. Pexels has also added a video site, which can be found at &lt;a href=&quot;https://video.pexels.com&quot;&gt;Pexels video&lt;/a&gt;. The Pexels video collection isn’t as large since it is a recent edition, but it will continue to grow over time.&lt;/p&gt;
+
+&lt;p&gt;I’ve also contributed to Pexels by submitting over a hundred of my own photos for people to use. I log in every once in a while to check out the stats and see the download counter go up. I wish there was a way for me to know how my images were being used. It would be cool to see a picture I took modified and used for a magazine, or a brochure. In any case, I’m happy others are able to find some use for them instead of letting them sit on a hard drive somewhere never to be looked at again.&lt;/p&gt;
+
+&lt;p&gt;If you have your own photography or videos you think others might find useful consider uploading them to Pexels. Sure, one day you might sell that random photo of a sunflower for a million dollars. It’s tempting to hold onto the copyrights. You might have some others worth sharing though. Sharing is caring.&lt;/p&gt;
+</description>
+				<pubDate>Sun, 03 Mar 2019 00:00:00 +0000</pubDate>
+				<link>https://mrpowerscripts.com/cc0-pexels/</link>
+				<guid isPermaLink="true">https://mrpowerscripts.com/cc0-pexels/</guid>
+			</item>
+		
+			<item>
+				<title>Making MrPowerScripts.com pretty</title>
+				<description>&lt;p&gt;I’m not a designer. I have a terrible sense of design really. Though I feel like it has improved considerably over the years. Hopefully, that trend continues. And while I believe through hard work anyone can become great at what they put their mind to some people simply have an innate advantage. That’s okay because collaboration is what makes every project great. I don’t know anyone who built something great by themselves. The Great Pyramid of Giza?  The internet? Kim Kardashian’s butt? All of these took the efforts of many to achieve their notoriety. People have always built off the efforts or inspirations of others.&lt;/p&gt;
+
+&lt;p&gt;When I need insights and inspirations to guide me on designs I reach out to my buddy Ben Rossi. He’s an exceptional UX designer and general maker of awesome things. I told him I needed to update the look of my blog. It was hastily put together so I could start exploring SEO techniques. Well, now I want it to look pretty, and he was happy to help me by providing some inspiration and tips.&lt;/p&gt;
+
+&lt;p&gt;First off, the previous site was incredibly dull. I didn’t utilize color in any meaningful way, and the color I did have came from clashing social icons. He suggested I make things more colorful, and that was a great idea. I need to stop being afraid of using color. MORE color! One of the examples he shared was a website he’s followed for a long time, &lt;a href=&quot;https://kottke.org/&quot;&gt;which is also a blog&lt;/a&gt;. I loved it! I played around with some ideas and for the time being I’ve settled with a three-color gradient spanning the entire header. This also creates a nice separation between navigation and content. I’ve removed the social icons for now to simplify the process. I’ll figure out how to merge them back later in a way that blends with the new theme.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;old-design&quot;&gt;Old Design&lt;/h2&gt;
+&lt;div&gt;
+  &lt;img style=&quot;object-fit: contain&quot; src=&quot;/images/mrps-pretty/old-header.png&quot; alt=&quot;image&quot; /&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;new-design&quot;&gt;New Design&lt;/h2&gt;
+&lt;div&gt;
+  &lt;img style=&quot;object-fit: contain&quot; src=&quot;/images/mrps-pretty/new-header.png&quot; alt=&quot;image&quot; /&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Another suggestion was to adjust the line spacing size and utilize some multiple of 4. I don’t remember why. If I have time to bug him again I’ll go back an ask to update this post. He’s the export and I’m simply taking shade in his shadow. I should also take note to take better notes… later. In the images above you can see the line spacing and font size have been slightly increased, and I have to say to does read better for me!&lt;/p&gt;
+
+&lt;p&gt;After adjusting the spacing it was time to give the fonts a bit of love. I did a bit of research on this myself and found some that I truly love. For headings, I went with &lt;a href=&quot;https://fonts.google.com/specimen/Montserrat&quot;&gt;Montserrat Bold&lt;/a&gt; created by &lt;a href=&quot;https://github.com/JulietaUla/Montserrat&quot;&gt;Julieta Ulanovsky&lt;/a&gt; and inspired by the old posters and signs in the traditional Montserrat neighborhood of Buenos Aires. I was not expecting the font to have a cute story behind it, but there you have it. I love it. For body text, I went with the popular &lt;a href=&quot;https://fonts.google.com/specimen/Open+Sans&quot;&gt;Open Sans&lt;/a&gt; created by &lt;a href=&quot;https://twitter.com/@SteveMatteson1&quot;&gt;Steve Matteson&lt;/a&gt;. This is a super popular font in recent years and I like the readability of it. I’ve been using it for projects for a long time. I searched around for other options but I don’t see a reason to deviate from what works well here.&lt;/p&gt;
+
+&lt;p&gt;Another suggestion was to break the uniformity of my posts on the index page. I had a very strict format which I unwittingly created. I’m definitely a creature of habit and don’t always recognize when i’ve burrowed myself into a cycle. A rigid design pattern in this case. If the post had an associated video to go along with it I would post the video right under the title, and then the post’s introductory paragraph, and then a link to read more. First off, people come to a blog to read, so sticking a video a the beginning seems is a bit nonsensical in hindsight. But I do want to keep the videos on there in the hopes it adds some clicks. What’s the solution?&lt;/p&gt;
+
+&lt;p&gt;Once again as suggested from Ben and drawing inspiration from Kottke’s blog I’ve added the videos either somewhere in the middle of the intro paragraphs or at the end. The added benefit of this is offering an opportunity to read some of the posts first before giving the option of clicking the video. Rather than the previous format where the video is already scrolled off the screen (in the case of mobile) before you have a chance to read what it may be about.&lt;/p&gt;
+
+&lt;p&gt;I made another small update because of something I found frustrating on mobile. I had a “read more” button that was positioned to the right of the screen. Sometimes I’m using my left hand on mobile and it made it difficult to scroll and select the “read more” button unless I was using my right hand. Now the button spans the entire width of the post. Lefties rejoice! Also, keeping with the new colorful header I changed the color of the button to a much lighter blue. I’m not in love with this as the moment and I’m going to keep experimenting with ideas for the button here. It works tho.&lt;/p&gt;
+
+&lt;p&gt;Another small change was adding a space between the post title and the content for metadata. At the moment it only shows an estimated reading time for the post. I’ll be adding some other metadata such as author, post date, and potentially a social sharing option. I still have to figure out how I’m going to work that last one in there.&lt;/p&gt;
+
+&lt;p&gt;Finally, how about some animations?  This is something I totally stumbled upon without planning. I wanted to add some animations to the “read more” button to make it stand out a bit when I came across the starfield.  I added a parallax starfield to the header based on &lt;a href=&quot;https://codepen.io/saransh/pen/BKJun&quot;&gt;this codepen&lt;/a&gt; that I found. Based on… I ripped the code and figured out have to shove it into the header. It kinda reminds me of Goku charging of a spirit bomb, and I think it fits with my “Power Up” page. It’s a bit cheesy, but for now, I enjoy looking at it.&lt;/p&gt;
+
+&lt;p&gt;It isn’t perfect. I still need to work on colors, sizing, and adding other elements. I’m much happier looking at the current state than I did before tho. I won’t be taking on any design jobs soon, but thankfully I have great people and inspirations to help me to improve.&lt;/p&gt;
+</description>
+				<pubDate>Wed, 27 Feb 2019 00:00:00 +0000</pubDate>
+				<link>https://mrpowerscripts.com/making-mrpowerscripts-website-pretty/</link>
+				<guid isPermaLink="true">https://mrpowerscripts.com/making-mrpowerscripts-website-pretty/</guid>
+			</item>
+		
+			<item>
+				<title>My worst experience working for a company</title>
+				<description>&lt;p&gt;I mention pretty often that I’ve worked for a lot of companies big and small. Most of them have been amazing experiences, but not all of them have been pleasant. The worst experience by far still bothers the shit out of me to this today. There were so many wrong things happening it upsets me I stuck around as long as I did. A month and a half. What a weird experience from start to end. I found this advert looking for someone to do part-time IT work on Craigslist,  and it all went downhill from there.&lt;/p&gt;
+
+&lt;iframe src=&quot;https://anchor.fm/mrpowerscripts/embed/episodes/My-worst-experience-working-for-a-company-e3ih3l&quot; id=&quot;iframe-resize&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;I was working for myself at the time as a freelance IT guy, which was a lot of fun for a while. I went to lots of peoples homes and helped them with their computer issues. Still, I was getting tired of driving all over the place as well as all the other hassles of freelance life. I wanted to find something more consistent and local. So a part-time IT job seemed like a nice way to receive some consistent income without having to run around all over the map.&lt;/p&gt;
+
+&lt;p&gt;They liked my resume and called me in for an interview. I interviewed with the owner of the company. It was a business that did a lot of work in the area. Their company logo was all over the region because of the type of industry they were in. I remember thinking “oh cool, I’ve seen this company before. This should be fun”. As fun as missing the head of a nail and wacking yourself with a hammer, as it turned out.&lt;/p&gt;
+
+&lt;p&gt;The same day of the interview I got another call about the job. They’d like me to start next week. Awesome!&lt;/p&gt;
+
+&lt;p&gt;The following week arrives and I show up. It’s a fairly small office with about ten other people working there. The owner brought me around to meet everyone and immediately something felt off. Besides a couple of key people close to the owner, everyone felt very… cold. Not in a rude way, but no one seemed excited or happy. At all. There was a sense of looming death in the air and I couldn’t figure it out. But hey it’s Monday so whatever. Who is happy on a Monday?  I’m sure things will get better. Wrong again bucko!&lt;/p&gt;
+
+&lt;p&gt;After I met everyone I was taken to my desk and shown my computer. It didn’t work. I was told once I get it working I can start using it. Well, that’s what I’m here for so okay. Someone crimped the ethernet cable wrong. They had the materials and tools to make a new cable so I went ahead and made one. A few minutes later and I finally had internet access to get my emails. Everyone had like Hotmail accounts or something using POP3 with outlook express.&lt;/p&gt;
+
+&lt;p&gt;I had never seen an office in such technical disarray. The owner’s office had a really nice brand new looking PC. Everyone else in the office had what looked like recycled machines of various brands and operating systems. Some with Windows XP (professional &amp;amp; home),  Windows 2000. and Windows Vista (professional &amp;amp; home). If that alone doesn’t hurt you to read then consider yourself fortunate. I almost cried. They had a single “server” which acted as a file store. People accessed files through manually mapped drives from their client machines to shares on the “server”, as well as manually mapped drives to each other’s computers. There was no central management whatsoever. The server didn’t even run server software. It was a bunch of terminals jerry-rigged together. Oh no…&lt;/p&gt;
+
+&lt;p&gt;As the IT guy, part of my job there was to go around and help everyone with issues they had with their computers. I would come in that day and see what problems people had in my inbox then go around and help them. This is where I realized how bad things were, and why everyone was so cold from the onset. It wasn’t that they weren’t excited to see me. They all hated the owner and his presence killed any emotion in the room. He was a psychopath and they all feared him. That’s exactly how he liked it.&lt;/p&gt;
+
+&lt;p&gt;It was really interesting because the owner trusted me much more so than other employees. We spent a lot of time together while I was helping him with tasks. I was his personal technology assistant. He would take me to BestBuy to help him look at TVs. Not for the office of course. This was for his home. He had no clue whatsoever about tech, and so any opportunity he could leverage my experience he did. During these moments he would try to share little “life lessons” with me that started to reveal how horrible of a person he really was. More on that later.&lt;/p&gt;
+
+&lt;p&gt;As time went on and I got to know individuals they began opening up with me about different office happenings. Do you know how weird it is to work with people and they’re all telling you various things about each other? “Don’t trust this person”. Then that persons tells you to watch out for another person. Holy crap the people there were really on edge. I’m just here to get your file share working again yo. I’m nodding my head and people are getting deep into their beefs. I’m trying to figure out why a Windows XP machine keeps losing the connection to a Vista machine. Short answer - Windows Vista was a huge piece of shit. Here’s a heavy helping of drama to go along with the technical issues. Lucky me. It was obviously not a healthy place for anyone there. I felt really bad.&lt;/p&gt;
+
+&lt;p&gt;The one person they all talked about though was the owner, and how terrible he was. The workers were assets, not people. They were treated as such. If people were caught socializing for even a moment they were admonished with boorish remarks lobbed from across the office.  Everyone was to be at their desks working at all times. I think that’s partially why people opened up and chatted with me so much. I was their only opportunity for basic human contact through much of the day. There was no concept of “team” in this place. Everyone seemed to fend for themselves in one way or another.&lt;/p&gt;
+
+&lt;p&gt;He had some employees whose job was clearly to bully others and act as “the muscle” to enforce these parameters while he was away. One of these enforcers was your typical knucklehead. Big guy. Liked to chew tobacco and spit it right into his trash for everyone else to enjoy the aroma. Would not shut the fuck up about how popular he was in high school. Everyone feared him as much as he feared the owner himself. Everything around this place was structured around fear. Ugh…&lt;/p&gt;
+
+&lt;p&gt;So many moments that are comically moviesque I still can’t even believe it sometimes.&lt;/p&gt;
+
+&lt;p&gt;There was a day when I was down on the floor working on someone’s computer in her office. We were talking about her and where she’s from. Light stuff. Unprovoked she started making some comments about how not to trust certain people. I’m not even going to repeat exactly what she was saying because it was pretty bad. Once again, I’m just trying to figure out why your phone doesn’t have a dial tone and this discussion is starting to turn dark. But as she continues to talk I realized that “people” was really a description of the owner. It was wild how many people tried to clue me into this stuff. Really. It was like they were all prisoners trying to tell me to get out as soon as possible. I tried to steer things in a more positive direction and we continued to chat. A few moments later I turn around and the owner is looming over us in the doorway of her office. I have no clue how long he was standing there, but he was definitely taking advantage of us being unaware. “What are you doing?”…  he asked. “I’m fixing the phone…”, I replied. “Sounds like a lot of talking and not working”. We didn’t say anything as he walked away.&lt;/p&gt;
+
+&lt;p&gt;Their chief accountant was a typical sleazy money guy. I remember one day he started yelling on the phone at someone loud enough for everyone to hear. “Well, he’s not my business partner any more because he stole $10,000 from me!” before slamming the phone down. This, apparently an issue related to his own personal business.  Good to see the kind of company these people keep. And the kind of people the company keeps. He and the owner seemed like best buddies. Obviously, you gotta treat the guy who manages all your money well. One day the CA tasked me with going to McDonald’s and told me to get some free food. He wanted to test my negotiating skills. I was given $20 and tasked to negotiate. At McDonald’s. I did not do that. Ugh…&lt;/p&gt;
+
+&lt;p&gt;There was a time that the owner wanted to buy a projector so he could do presentations in one of the rooms. We had a big debate on what impacts the size of the projection. The available distance from the wall is important, and I wasn’t sure the room was big enough. He disagreed that distance had any relevance to the size of the projection. It was the first time we really butted heads on something. I had to call up a retail store and put them on speakerphone and pretend I didn’t know anything about projectors so they would explain all the important details to me. Eventually, I asserted his opinion on the subject and the retail employee was quick to correct me. The debate stopped immediately after I hung up and he asked me to buy whatever projector I thought would work best.&lt;/p&gt;
+
+&lt;p&gt;One event really bothered me. I came to his office to help him with something. He had a stack of checks on his desk that he was signing. Out of nowhere, he began ranting about how it makes him physically sick that he has to give all this money away. These were for employees and contractors that did very difficult laborious work for him. He considered paying people for their efforts giving money away. That made me physically sick.&lt;/p&gt;
+
+&lt;p&gt;I should have left by this point. Unfortunately, my car broke down during my employment there. I had to stop servicing my personal clients and now I REALLY needed the money if I ever wanted that car to work again. I wasn’t exactly livin’ it up at this point so this was a huge blower for me. Now I’m stuck here. Thankfully the walk to work was only about twenty-five minutes and It was summer time. So at least I could continue this until I got my car situation figured out.&lt;/p&gt;
+
+&lt;p&gt;The tipping point arrived not too long after all this though. He had a buddy who owned another company in the area. I’m guessing his buddy was talking about all of his cool tech equipment and offered to give the owner some extra stuff he had. We both went to visit his buddies company to pick up the equipment. It was like night and day. This guy obviously spent boatloads on his IT infrastructure. They had a proper server room with a rack. Everything was wired up clean around the building. It was amazing. Really. The whole setup was impressive. The type of business environment I was used to working in.&lt;/p&gt;
+
+&lt;p&gt;His buddy gave him a hardware internet filter. It didn’t work for some reason, but the owner was okay with that. “It’s okay if it doesn’t work. As long as people THINK I know what they’re doing they’ll be scared. Can you wire it so it looks connected?”. Ugh….. At one point his buddy mentioned something that they do there, and the owner asked me to set that up as well. I don’t remember what it was. I told him we can’t do it because we don’t have an Exchange Server. His buddy jumps in with “What? You don’t have an Exchange Server? You’re missing out!”. The owner had no idea what an Exchange Server was, but now he had to have one. I figured this was finally a chance to get the guy to spend some money revamping his IT infrastructure. If only I could still be so young an optimistic.&lt;/p&gt;
+
+&lt;p&gt;At the time Microsoft had an offering called Small Business Server. It was a bundle with Microsoft Server 2003 that had Active Directory, Exchange, and some other cool things in a pricing model targeted for smaller companies. It was perfect. He could host everything using his existing “server” hardware. Though most of the terminals would have to be wiped and reinstalled with a professional license for windows.&lt;/p&gt;
+
+&lt;p&gt;I did all the due diligence for pricing of the software and terminals that would need to be updated to work with the new system. I put it all in a document and shared it with him.&lt;/p&gt;
+
+&lt;p&gt;He almost had a heart attack.&lt;/p&gt;
+
+&lt;p&gt;To be fair, it was not chump change but that was the cost of the setup. He wanted everything his buddy had without spending any of the money. This is where things turned even worse.&lt;/p&gt;
+
+&lt;p&gt;He found out through a friend that by being an authorized Microsoft software distributor you can buy all the software we needed at a huge discount. He excitedly told me to go sign us up to the program online. “uhh that program is for companies that provide IT and software services. We don’t do any of that here”, I said. That wasn’t a problem. “If you tell them we sell software then we’re a software seller”. I told him that I didn’t think that’s how the program worked. Then he sent his CA to further convince me it would fine. There wasn’t any problem at all and I was being ridiculous. This is where they became really pushy. They wanted me to sign up as the contact to register the company as a software distributor so we could buy the software we needed at a huge discount and use it. They weren’t giving up.&lt;/p&gt;
+
+&lt;p&gt;I really needed this job. I wasn’t having success finding anything else I could walk to.&lt;/p&gt;
+
+&lt;p&gt;I went into his office and quit the next day.&lt;/p&gt;
+
+&lt;p&gt;I told them I would finish out the week, but I wouldn’t be able to continue after that. They were floored, and couldn’t understand why I wanted to go. Maybe it’s because I don’t want to commit fraud on your behalf and then have y’all throw me under the bus when you inevitably get caught? I just told them the position wasn’t for me.&lt;/p&gt;
+
+&lt;p&gt;The final days there were really strange. I did my best to tie off some loose ends and advise some of the more technical employees how to fix common issues that came up. Many of them knew and understood why I was leaving. It was a small office and everyone talked when the bullies weren’t parading around squashing morale.  A couple people even asked for my contact info so they could recommend me to places their friends or significant others worked. They even called me back a few weeks later to come back.&lt;/p&gt;
+
+&lt;p&gt;No thanks.&lt;/p&gt;
+</description>
+				<pubDate>Mon, 18 Feb 2019 00:00:00 +0000</pubDate>
+				<link>https://mrpowerscripts.com/worst-company-ever/</link>
+				<guid isPermaLink="true">https://mrpowerscripts.com/worst-company-ever/</guid>
+			</item>
+		
+			<item>
+				<title>Nobody gives a damn about your idea</title>
+				<description>&lt;p&gt;Really. They’ll pretend they do if they like you, but that’s the best you’re gonna get. Everyone has ideas. If a snowflake fell every time someone had a great idea we’d all be buried up to our necks in snow. And ya know what? That snow would be way more useful than the ideas that produced it. A snowperson, snow angels, snowballs - there’s a lot of fun to be had in the snow. Your ideas, however, aren’t worth a damn. And nobody cares about them.&lt;/p&gt;
+
+&lt;p&gt;You know what people care about? Actions. Motion. Shiny things they can look at and go “oooooooooooo, pretty”. Ideas carry weight when we can see them in living color. Well, at that juncture they’re no longer ideas, and that’s really the point. If you truly want people to care you need to bring your ideas to real life. Anyone can have an idea.&lt;/p&gt;
+
+&lt;p&gt;That’s precisely why ideas without actions are so useless. People love to sit around and wax poetic about things they would love to do or want to do. It’s not a skill, and you’re not going to sell anyone on the idea that you’re a great ideas person. Unless of course, you have a history of turning your ideas into actions and delivering. Even people with such a reputation still have refuters and detractors. Delivering on ideas is the hard part, and if you want people to respect your ideas you need to start delivering something.&lt;/p&gt;
+
+&lt;p&gt;I’m entirely guilty of this myself. I’ve had a lot of “amazing ideas” that I never even tried to bring to life. But I wanted people to respect them because they were great! Hell, I’m blameworthy as I write this after announcing this great idea &lt;a href=&quot;/automate-youtube-channel/&quot;&gt;to automate my YouTube channel&lt;/a&gt;. Spoiler alert: It didn’t work out the way I thought it would. It’s a lot harder than I thought. Surprise surprise. Have I made progress? Sure. Is it even close to the idea I envisioned? Not even a little bit. I should have shut the hell up and built something that works first. I’m not sure if it’ll ever get finished at this point.&lt;/p&gt;
+
+&lt;p&gt;Now I’m not saying you shouldn’t have ideas. Ideas are great. It’s fun to think up things you want to make or goals you want to reach. It feels good to bring them up in conversation and have other people validate your thoughts. But that’s the key issue with falling in love with the idea and sharing them with everyone. People tend to grow content with that validation and lose motivation in delivering. This isn’t even just my option. There are &lt;a href=&quot;https://sivers.org/zipit&quot;&gt;studies that have shown&lt;/a&gt; when you profess your ideas you’re less motivated to achieve them. Well, shit. I fell into that trap again.&lt;/p&gt;
+
+&lt;p&gt;It doesn’t always end up like that though. Sometimes you can find the motivation in other ways to break past patting yourself on the back for thinking something up and then calling it a day. I remember a long time ago in a company far, far away I had an idea that would totally improve one of the systems.&lt;/p&gt;
+
+&lt;p&gt;I was working on a project that provided a service which assuredly you’ve used at least once in your life (if you live in the USA at least). Part of my role was managing the operating system images that were used to provision machines before they were sent out into the field. “The field” was a network of more than 50,000 computer terminals across the entire United States. It was big, and terminals had to be replaced all the time for various reasons. It was critical that systems are deployed as fast as possible without any errors. Our imaging process was a computer replacement pipeline to keep this heavily used network up and running.&lt;/p&gt;
+
+&lt;p&gt;We used Norton Ghost as the solution to deploy the images to terminals. There wasn’t really any better option at the time. Norton Ghost was the best imaging solution, and it wasn’t cheap because of that. There was a lot of aspects to the system that made it cumbersome to manage. Ghost images were sector-based, and so images ended up being the same size as the hard drive you pulled the image from because of that. If the hard drive was 20GB then that was the size of your image. Even if the data only took up 4GB.  So we had around six different terminal images which each had either 20GB or 40GB hard drives. Even calculating the low end, this meant we had 120GB of image data to manage.  This was 2011 &lt;a href=&quot;https://www.statista.com/statistics/751847/worldwide-seagate-western-digital-average-hard-drive-capacity/&quot;&gt;when hard drives were still slow and Gigabytes were still expensive&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Oh, but it gets better. There wasn’t a single image for each machine. The final image was built up after creating seven different layers of images. The first layer contained the basic vanilla operating system. Then the second layer contained all of the latest operating system updates. Then the third layer would contain all of the custom hardware drivers and software. This continued on until you had a final image which was ready to deploy to the terminal. Now each machine had seven images, so let’s redo our math.  20GB * 7 layers * 6 machines resulted in 840GB worth of images. Mind you, this is our hypothetical low end, which was not the reality. If you had to update one of the layers it meant you had to re-create all of the successive layers after that, and it was a regular practice to maintain the images this way.&lt;/p&gt;
+
+&lt;p&gt;It was a slow laborious process using expensive software and the whole setup itself was expensive to store and slow manage.  I hated it. Because I was the one that had to manage it.&lt;/p&gt;
+
+&lt;p&gt;Through a bit of research, I found out about a new tool created and distributed for free by Microsoft to manage deployments of their operating system better.  It was called WIM images. This was a very new tool, and nobody seemed to know much about it at the time. It was difficult for me to understand as well since I was just learning how to automate things with batch scripts. Oh, batch scripts. I don’t miss you at all. It had the possibility to solve so many problems we faced.&lt;/p&gt;
+
+&lt;p&gt;WIM images only took up the amount of space equal to the amount of data on the drive. So if you created a WIM image from a 20GB hard drive and there was only 4GB of data on the drive then your resulting image was only 4GB. Also, you could append images to each other and it would only increase the image size by the size of the new data. It would not duplicate file data between appended images. So with our layering process, we could combine all seven layers into a single image that was able to fit on a DVD. A single set of machine images that took at minimum 120GB of data could now be the size of a DVD. That also made them FAST to provision. A process which previously took up 15-20 minutes to deploy could now be completed in a few minutes. Also, did I mention it was free? FREE. NO LICENSING TO DEAL WITH.&lt;/p&gt;
+
+&lt;p&gt;After all the research I  was confident this is something we could hack together with scripts to replace our existing expensive cumbersome system. I remember the day I excitedly went to my team lead and shared my idea to update the system with this new solution. I explained all of the benefits as best I could and shared my desire for us to build this.&lt;/p&gt;
+
+&lt;p&gt;“No.”&lt;/p&gt;
+
+&lt;p&gt;Wait? What!? But this is amazing! This is going to save us so much time, money, headaches. It might even cure baldness it’s so good! Steve Balmer will come and thank me personally. I didn’t let it go that day. I shared it with other colleagues in front of him. He had to listen to me ramble on about this idea all day since our team shared a small common area. That did not go over well. “We are NOT going to do this. Stop wasting time with it.”, was the last statement he made about it before leaving the room. That was the end of our discussion about it that week. That infuriated me. Here I was spending my own time outside work hours figuring out how we could make things better, faster, stronger and I was told off in front of my peers for doing so.&lt;/p&gt;
+
+&lt;p&gt;Fuck. That.&lt;/p&gt;
+
+&lt;p&gt;The timing couldn’t have been better. He went on vacation the following week which left our team to manage ourselves. Every single day I worked feverishly to learn more about WIM images enough to put together a proof of concept. I would blaze through finishing my daily tasks before lunchtime and spent the afternoon hacking away with batch scripts and the WIM tools to produce a client/server deployment setup similar to our existing system. And it was certainly similar to our existing system, except better in every single way possible. I could have an entire machine image saved to a single DVD. That image could be deployed to any system within a few minutes by having the machine boot to a USB that automatically identified the system type and pulled the correct image. It worked, and it worked amazingly well.&lt;/p&gt;
+
+&lt;p&gt;It was no longer merely an idea. I had something to show off. When he returned from vacation I asked him to come see something. I gave a demonstration of the process which took all of a few minutes. I wish I could explain the 180 degrees turn his attitude took this time around. He now realized the magnitude of implementing this within our business process. This was huge. The gears started turning in his head and HE was convincing ME of other benefits that I hadn’t even thought of.&lt;/p&gt;
+
+&lt;p&gt;Immediately, that day, he encouraged me to continue building out the rest of the images and system while also tasking another colleague to help with this process.  “How fast do you think you could finish this?”. It was basically already finished. We just needed to create the images for the other systems.&lt;/p&gt;
+
+&lt;p&gt;It did everything I said it could do, but he absolutely did not care until he saw it in action. This is not unique to him, and I never held the scenario against him. He was acting in the best interests of the team at the time. Ideas without action don’t hold value, and I spent a whole day rambling on about this one. In his eyes, I produced no value that day. I was, effectively, wasting the companies time.&lt;/p&gt;
+
+&lt;p&gt;There still stands the caveat that some people have a reputation for delivering, and so their ideas hold far more weight. I was probably the youngest person within the entire wing of the building in my early 20’s and the least experienced person on the team. I could barely read a batch script when I joined. A year later I think I can replace an entire system that existed for 5+ years developed by multiple talented engineers? Yeah right. Go back to your desk and shut up, kid.&lt;/p&gt;
+
+&lt;p&gt;Had I stayed at that position I’m sure my thoughts would have carried further weight in future discussions, but I moved on to new challenges shortly after. Though I did stay long enough to see through having my proof of concept developed further and deployed into production.&lt;/p&gt;
+
+&lt;p&gt;Had I not been admonished by my team lead in front of my colleagues I might have sat content with everyone telling me how cool the idea was. “Wouldn’t this be cool?” “It sure would!”. Book closes. End of story.&lt;/p&gt;
+
+&lt;p&gt;I swear tho I’m going to automate that youtube channel. It’s such a great idea.&lt;/p&gt;
+</description>
+				<pubDate>Sat, 16 Feb 2019 00:00:00 +0000</pubDate>
+				<link>https://mrpowerscripts.com/build-first/</link>
+				<guid isPermaLink="true">https://mrpowerscripts.com/build-first/</guid>
+			</item>
+		
+			<item>
+				<title>How I hacked my Uber rating</title>
+				<description>&lt;p&gt;Uber ratings are a weird concept. You spend a short period of time with someone who is whisking you around the city. You might have a chat with them, or maybe you prefer to have a quiet ride. Sometimes they’ll even offer you treats, or refreshments if you’re lucky! Then, in the end, you judge each other based on a 5-star rating. No pressure. Your Uber rating is intended to give drivers some vague insight into the person they’ll be picking up, but it also has some advantages as well.&lt;/p&gt;
+
+&lt;p&gt;Uber has a program called Uber Star. It might not be available everywhere, but it is where I am. This is a program where if you take at least 10 rides every month, and maintain a high uber rating (4.8 or higher) you’ll have access to Uber Star cars. They’re the same as the regular economy option, but the difference being only drivers with a rating of 4.8 or higher will be able to see your ride request. The best for the best!&lt;/p&gt;
+
+&lt;p&gt;Uber Star drivers are more likely to have comforts like free wifi, candy, or bottled water. Why should I settle for less? I mean, I am an Uber Star, after all.&lt;/p&gt;
+
+&lt;p&gt;I’ve had a fairly good Uber rating. Hovering around 4.85. Not the best, but it qualified me for the program each month. But I noticed I had a period where it started to slip. I saw it went down to 4.84 one day. I didn’t worry. I’m still well within range. Then it hit 4.83, and panic set in.&lt;/p&gt;
+
+&lt;p&gt;What is going on? How did I start falling so far? I couldn’t pinpoint it. I couldn’t think of any behaviors that changed to warrant such a dramatic decline putting my Uber Star status at risk. It was time to do something, and I set out to hack my Uber rating.&lt;/p&gt;
+
+&lt;p&gt;First I thought maybe I could hack Uber’s servers. I would manually change the ratings that drivers gave to me, so they would all say five stars. My Uber Star status would be safe from the whims of drivers judgments upon me. I could continue to enjoy my candies and water with peace of mind. Then, I realized that’s probably really difficult, a lot of work, and fairly illegal. I had to think of a different vector for this attack&lt;/p&gt;
+
+&lt;p&gt;Social Engineering &lt;a href=&quot;https://digitalguardian.com/blog/social-engineering-attacks-common-techniques-how-prevent-attack&quot;&gt;is by far the most common form of a security threat for companies&lt;/a&gt;. If that’s what many professional hackers are using, why wouldn’t it work here? I figured my best bet was to hack the drivers instead.&lt;/p&gt;
+
+&lt;p&gt;The key to success here is that after the ride is finished the driver will select 5-stars when they are given the choice to rate me. This relies on their memory of the trip which just occurred. That’s the key bit here. It doesn’t matter what actually happened on the trip. Only what they remember in the moment of judgment. Their memory is what I need to exploit.&lt;/p&gt;
+
+&lt;p&gt;Memory in people isn’t a very straightforward subject. How we perceive events of the past can become distorted in many different ways. There are [various well-studied memory biases[(https://en.wikipedia.org/wiki/List_of_memory_biases) that illustrate how your memory of an event can be quite subjective. Memory biases are not the only ones that could impact how the driver chooses to rate me, whether they’re conscious of them or not.&lt;/p&gt;
+
+&lt;p&gt;Bias against race, religions, genders, or other elements of our identity are very common. Since I have no control over those biases I excluded them as a concern in my approach here. If a driver gives me a poor rating because they don’t like my face there’s not much I can do about that. Instead, I chose to focus on the elements that I could control.&lt;/p&gt;
+
+&lt;p&gt;Another bias that people may succumb to is &lt;a href=&quot;https://en.wikipedia.org/wiki/Negativity_bias&quot;&gt;the negativity bias&lt;/a&gt;. Essentially, negative events have a larger impact on one’s psychological state than positive ones of equal intensity. Let’s use receiving or losing an ice cream as an example. If I give you ice cream it might make you a bit happier, but if you drop that ice cream you’ll feel way worse than any happiness generated by receiving it. The loss has far more impact on you than the gain.&lt;/p&gt;
+
+&lt;p&gt;I still have a memory of when I was around six years old at the zoo. We stopped on a footbridge to admire some birds swimming around below us. My ice cream slipped and fell into the water where all the animals made a dash to devour it in front of me. I cried. A lot. I don’t remember anything else about that trip. I’ve been given countless ice creams since then, and I couldn’t recall a single one of them. Negative events tend to leave a deeper lasting impact than good ones.&lt;/p&gt;
+
+&lt;p&gt;By understanding various biases of memory and mood I believed I could use those factors to influence the driver’s decision. I broke down the various elements of a trip to then think about the most effective actions for each portion in maximizing a potential 5-star rating. These are the elements of a trip I felt could have an impact on their final decision.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;the waiting&lt;/li&gt;
+  &lt;li&gt;the greeting&lt;/li&gt;
+  &lt;li&gt;the ride&lt;/li&gt;
+  &lt;li&gt;the farewell&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The waiting. Few people like to wait. Especially when waiting costs you money. Uber drivers are providing their time as a service, and the more people they can serve within a given period of time the more money they make. If you make them wait you’re costing them money and they might carry a negative view of you through the entire trip. Regardless of how nice you seem. I made sure to avoid this. I was ready to flag down the driver and hop in immediately every single trip. This was the easy part.&lt;/p&gt;
+
+&lt;p&gt;The next two can be grouped together under some basic ideas we learned from the various stated biases. Some people might think it’s a good idea to be friendly to the driver by being very communicative. But given how conversations can take weird turns, or you can say something that the other party dislikes without realizing it, the best strategy is to talk as little as possible. Reducing the potential for negative interactions can far outweigh the benefit of many positive interactions. One negative interaction can outweigh any earned goodwill, and you may not even realize what you’ve done.&lt;/p&gt;
+
+&lt;p&gt;My greetings from the point of starting this practice were always polite and brief. I verified my name with the driver, gave a friendly hello, and then shut up. During the ride itself, I would not engage the drivers in conversation. I’m not the most talkative person, to begin with, but I would get into fairly detailed discussions with drivers regularly.  Though now if they engaged with me I would kindly answer questions directly without much of a follow-up. If they made some comment with the expectation of a response I would provide some neutral response affirming I recognized whatever observation they had made. It was important to find a soft balance between brief and curt. The idea is to come across like a vanilla passenger.  Boring, uninteresting, and not worth engaging or casting any judgment upon - yet. By limiting these interactions I  reduced the chance of saying something that could leave a negative impression on the driver.&lt;/p&gt;
+
+&lt;p&gt;Some of you chatty Cathys might think it comes across as rude to not engage in discussion, and in some ways you’re right. But I’m sure you’ve heard the famous quote &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;It's better to keep your mouth shut and appear stupid than open it and remove all doubt&lt;/code&gt;. By remaining friendly yet neutral it removes the opportunity for the driver to be sure about any negative inclination they might ascribe to a reserved personality. Are you being rude, or are you just a completely boring nitwit? Tough call, and there’s room for doubt. That doubt is easier to mend in our final stage than would be from inciting a negative response, intentionally or not, through increased interactions. You have to cross this minefield either way, and your best bet is to limit the number of footsteps it takes. Positioning for a neutral experience in the greeting and ride sets the stage for the grand finale.&lt;/p&gt;
+
+&lt;p&gt;If you haven’t managed to put your foot in your mouth the ride should have been pleasant. Nothing noteworthy. A normal, everyday ride. Now, we can focus on the farewell. This was the key change that I believe had the most impact on scoring. I was overly polite, engaging, and communicative during the farewell portion. Oh, I laid it on THICK with politeness and friendliness. This is where the memory hacks start to take place. I wanted the farewell to be &lt;a href=&quot;https://en.wikipedia.org/wiki/Peak%E2%80%93end_rule&quot;&gt;the most prominent and pleasant interaction of the trip&lt;/a&gt;. Being overt and talkative right at the end will have a lasting impact on the personal memory of you and their view of the trip. Their muddled doubts should melt away with the sheer force of your polite posturing.&lt;/p&gt;
+
+&lt;p&gt;To continue in that vein the &lt;a href=&quot;https://en.wikipedia.org/wiki/Serial-position_effect#Recency_effect&quot;&gt;recency effect&lt;/a&gt; explains that given a list of items a person will have the easiest time remembering the last items, then the first items, and finally the items in the middle.  Consider all of the interactions with the driver as items in a list. Those are what they use to decide their score. In our scenario with the driver, they will remember the farewell the most, the greeting second, and finally the drive. But these interactions are not basic items such as from a shopping list. Each interaction can carry a psychological weight. Meaning there’s a threshold where the negativity bias can override the memory biases. We only want them to think about the last interaction where they were met with a blast of good vibes. Not any negative events that could have happened during the drive. That’s why it’s better to seem boring and neutral during the trip. Increased interactions increase the chances of making a mistake when your best move at this point is to make no mistakes at all. Then hit them with all of your positive energy right at the end.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Thank you so much. Have a fantastic day. It was a pleasure. Thank you.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Thank you so much for the candy! Have a wonderful day! See you, bye bye!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This was so great. Thank you so much for the ride. I like your shirt by the way. Have a great day!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Pour. it. on. thick. This is the only time that matters. They have a few moments to make a decision on how to rate you before they zoom off to the next client. That brief but potent injection of positivity at the end is most likely to be the thing they remember when deciding how to rate the entirely of the trip. At least if you didn’t cause any lingering negative interactions that outweigh it.&lt;/p&gt;
+
+&lt;p&gt;I practiced these concepts for several weeks (maybe even a bit more than a month) making sure to be consistent with the approach. Treating every ride as an operation. Eventually, my Uber Rating was raised to 4.88. Which is .2 points higher than my previous peak.&lt;/p&gt;
+
+&lt;p&gt;“you hacked your Uber rating by being really nice?” is something you might be asking. Yep, that’s basically it.&lt;/p&gt;
+</description>
+				<pubDate>Sun, 03 Feb 2019 00:00:00 +0000</pubDate>
+				<link>https://mrpowerscripts.com/how-I-hacked-my-uber-rating/</link>
+				<guid isPermaLink="true">https://mrpowerscripts.com/how-I-hacked-my-uber-rating/</guid>
+			</item>
+		
+			<item>
+				<title>Farm karma on Reddit with bots 2019 update</title>
+				<description>&lt;p&gt;Back in July of 2017, I noticed Reddit became much more - political. Lots of very specific political subreddits with various leanings and few subscribers were getting posts pushed up pretty high on Reddit. It seemed a bit strange, but it wasn’t all that much different from the previous election cycle. The difference though was in the four years since Obama won his second term Reddit’s user base exploded. The number &lt;a href=&quot;https://www.statista.com/chart/11882/number-of-subreddits-on-reddit/&quot;&gt;of subreddits doubled&lt;/a&gt;. There was more communities, more people, and more discussions. So it’s not surprising that many new political subreddits would pop up as well. &lt;!-- (1) video wrapper --&gt;&lt;/p&gt;
+&lt;div class=&quot;youtube-video&quot; data-embed=&quot;CCMGHepPBso&quot;&gt; 
  
     &lt;!-- (2) the &quot;play&quot; button --&gt;
     &lt;div class=&quot;play-button&quot;&gt;&lt;/div&gt; 
      
 &lt;/div&gt;
+&lt;p&gt;Which is awesome. It’s good that more people are involved and aware of how politics work, and that we have the internet to share that information. Can you imagine trying to understand all the nuances to an election a hundred years ago? You cast your vote, and then things happen, and you wake up one day to a newspaper telling you who is running the country. How did that even happen? How were people capable of making informed decisions?&lt;/p&gt;
 
-&lt;p&gt;So now you know what functions are in Powershell, and you’ve learned a few ways to add parameters to them. But if you create your Powershell functions without some of the advanced Powershell function parameter techniques you might be setting yourself up for future disaster! Leading you or others using your code to end up in an endless pit of darkness and dispair.&lt;/p&gt;
+&lt;p&gt;Well, they didn’t.  People were lied to regularly. A bit more than one-hundred years ago we have an event called the Spanish-American war. You don’t hear about this too much because it was a completely fucked up event where journalists made up tons of shit to encourage the American government and people to attack a country. Why would they do that? Money and power. Let’s take a cut from &lt;a href=&quot;https://en.wikipedia.org/wiki/Propaganda_of_the_Spanish%E2%80%93American_War&quot;&gt;this Wikipedia entry&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Here are a few reasons why you would want to use advanced powershell function parameters:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;The Spanish–American War (April–August 1898) is considered to be both a turning point in the history of propaganda and the beginning of the practice of yellow journalism.&lt;/p&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;Control the types of arguments passed into functions. If someone puts an string into a function when it should be an integer Powershell will automatically warn them.&lt;/li&gt;
-  &lt;li&gt;Flags allow you to modify a powershell functions behavior without users needing to supply a parameter.&lt;/li&gt;
-  &lt;li&gt;Create help messages for your parameters so that users will know how to use them appropriately&lt;/li&gt;
-  &lt;li&gt;Configure some parameters to be mandatory and prevent the function from running if it is unused&lt;/li&gt;
-  &lt;li&gt;Add validation to the arguments passed into the function. Only want the user to enter a number between 1 and 100? You can enforce that. Do you want to control whether they can pass in a null value, or empty string? You can validate for that as well. You can even validate the argument using a regex string.&lt;/li&gt;
-  &lt;li&gt;Control whether or not an argument can be passed into the function through the powershell Pipleline.&lt;/li&gt;
-&lt;/ol&gt;
+  &lt;p&gt;It was the first conflict in which military action was precipitated by media involvement. The war grew out of U.S. interest in a fight for revolution between the Spanish military and citizens of their Cuban colony. American newspapers fanned the flames of interest in the war by fabricating atrocities which justified intervention in a number of Spanish colonies worldwide.&lt;/p&gt;
 
-&lt;p&gt;These are a few of the benefits, and there are even more! Adding some of these advanced powershell function parameter techniques can seriously improve the reliablity and reusability of your functions. Check out the video below to see some of the benefits in action!&lt;/p&gt;
+  &lt;p&gt;Several forces within the United States were pushing for a war with Spain. Their tactics were wide-ranging and their goal was to engage the opinion of the American people in any way possible. Men such as William Randolph Hearst, the owner of The New York Journal was involved in a circulation war with Joseph Pulitzer of the New York World and saw the conflict as a way to sell papers. Many newspapers ran articles of a sensationalist nature and sent correspondents to Cuba to cover the war. Correspondents had to evade Spanish authorities; usually, they were unable to get reliable news and relied heavily on informants for their stories. Many stories were derived from second or third-hand accounts and were either elaborated, misrepresented or completely fabricated by journalists to enhance their dramatic effect. Theodore Roosevelt, who was the Assistant Secretary of the Navy at this time, wanted to use the conflict both to help heal the wounds still fresh from the American Civil War, and to increase the strength of the US Navy, while simultaneously establishing America as a presence on the world stage. Roosevelt put pressure on the United States Congress to come to the aid of the Cuban people. He emphasized Cuban weakness and femininity to justify America’s military intervention.&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;!-- (1) video wrapper --&gt;
-&lt;div class=&quot;youtube-video&quot; data-embed=&quot;6ySxsnOGnCU&quot;&gt; 
- 
-    &lt;!-- (2) the &quot;play&quot; button --&gt;
-    &lt;div class=&quot;play-button&quot;&gt;&lt;/div&gt; 
-     
-&lt;/div&gt;
+&lt;p&gt;You know the Pulitzer prize right? An award named after Joseph Pulitzer awarding people for excellence in journalism. It’s named after a guy who got into a circulation war launching &lt;a href=&quot;https://en.wikipedia.org/wiki/Yellow_journalism&quot;&gt;yellow journalism into existence&lt;/a&gt;. You cannot make this shit up.  Next, you’re going to tell me the &lt;a href=&quot;https://www.theregister.co.uk/2019/01/25/fcc_accused_of_colluding/&quot;&gt;FCC is colluding with the companies it was intented to regulate&lt;/a&gt;. Or that the &lt;a href=&quot;https://www.lifeextension.com/Magazine/2018/1/As-We-See-It/Page-01&quot;&gt;FDA is involved in facilitating policies&lt;/a&gt; that are knowingly harmful to the American public. Where is our Ministry of Truth when we need it?&lt;/p&gt;
+
+&lt;p&gt;Did you read those articles I linked to? I didn’t. The titles supported my argument and that was good enough for me. No clue what they say.&lt;/p&gt;
+
+&lt;p&gt;How are we supposed to make meaningful decisions? History so clearly shows that everyone is lying to everyone about everything when there are two things on the line: Money &amp;amp; Power. Rules are for losers, and that’s what you’ll be if you follow the rules.&lt;/p&gt;
+
+&lt;p&gt;That sounds harsh, doesn’t it? It’s painful to go through life thinking you can’t trust anyone or anything. Having a system and believing in that system are two very different things. You can have an amazing system that nobody believes in or a completely corrupted one that everyone believes in.  Many Americans believed in their system. They believed newspapers were there to inform them. I mean, why would they lie? They’re an American newspaper. They have a flag outside their building. That should be good enough. Newspapers are there to inform and would never ever ever have any hidden agendas. At least that’s what enough people thought. Of course not all, but you don’t need to cast a ruse over everyone. All you need is enough - to win.&lt;/p&gt;
+
+&lt;p&gt;Can we really expect people to go around questioning the veracity of every claim and assertion offered to them on paper, television, or the internet? Of course not, and we all accept that. And the cycle continues.&lt;/p&gt;
+
+&lt;p&gt;Things haven’t changed that much since the events that lead up to the Spanish-American war. In fact, it’s even harder now for the everyday individual to keep up with a constantly changing global political landscape. Many people are struggling to put a roof over their head much less worrying about verifying all of the information coming at them non-stop through the day. And even better, why pay attention at all? TV, movies, and plenty of other hobbies are there to fill the void.&lt;/p&gt;
+
+&lt;p&gt;Essentially, we’re kinda fucked. Every day a new generation of useful idiots are born. “I’m not a useful idiot” is something you’ll hear a lot of useful idiots say. All of those Americans chomping at the bit to invade Cuba were sure they weren’t useful idiots. They were well-informed individuals because they read the newspaper. That’s what well-informed individuals do.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“If you don’t read the newspaper, you’re uninformed. If you read the newspaper, you’re mis-informed.”
+― Mark Twain&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This quote is commonly attributed to Mark Twain, but of course, it can’t really be verified. By this point in the article, misattributing quotes should be the least of our concerns anyway.&lt;/p&gt;
+
+&lt;p&gt;Yellow Journalism hasn’t died, but now it has too many syllables for the current standard of American political discourse. Fake news is the new term. It was popularized by Republicans during Donald Trumps 2018 campaign for the presidency. Though now it’s a term you’ll hear everyone use for things that they think are, well, fake news. It’s far more succinct than yellow journalism I’ll have to admit. I can see why it’s something people love to throw around.&lt;/p&gt;
+
+&lt;p&gt;Personally, I feel people are much more skeptical in this day and age. But perversely, that hasn’t resulted in people being more well informed. It has degraded to people seeking sources of information that affirm bias they find comforting. Whatever that bias might be. Whatever you believe, there’s someone willing to reaffirm that belief - if they can profit or benefit from it. And there’s absolutely no way to tell if it’s for your benefit or theirs unless you have access to all the facts and data yourself. And how often does that happen? How often are you a first party to the information you need to say, elect people who make the laws that govern you? Who they really are, and what they’re really involved in? Almost never. Yet we still carry on believing this is a working system because it’s all we have and it’s all we’ve ever known.&lt;/p&gt;
+
+&lt;p&gt;The internet at this stage has made me feel less well informed. I used to follow every news site that I could and read every article available. Even international sites. I wanted to be in the know, and be aware so that I could make informed decisions. Now, it’s hard for me to find the interest. There’s no way to know if another Pulitzer is running the show behind the scenes. The system is broken, or at least it really seems that way.&lt;/p&gt;
+
+&lt;p&gt;We’re living in an amazing time. The information age. We’ve solved some astounding problems to get us here. But the biggest hurdles to overcome now are not with technology. Overcoming the human conditions that lead us to fight for our own bias rather than the truth is the biggest challenge ahead. But in a time when so many people are divided and at each other’s throats it doesn’t leave much room for hope in solving these major problems. Only recycling the damaging events of the past. Truth is the first casualty of war, and lies are happy to load the pistol for us.&lt;/p&gt;
+
+&lt;p&gt;Anyway, enough of the pessimism. We can still have fun while the world is falling apart around us.&lt;/p&gt;
+
+&lt;p&gt;To kick off this new year I’ve updated the karma farming bot to be even easier and smarter than it was before. Now you can farm karma like a pro. It even includes the ability to use a proxy server, which helps to hide the location your bot is running from. It also uses a tool called docker, which runs the bot inside a container, which is like a mini operating system running on your computer. Everything happening inside the container is, uh, contained. That way it won’t interact or mess up your host operating system. This also means that you can run multiple bots at once very easily. You can find the &lt;a href=&quot;https://github.com/MrPowerScripts/reddit-karma-farming-bot&quot;&gt;latest code for the bot on GitHub&lt;/a&gt; with some instructions on how to run it.  Get out there and farm that karma. Nobody will know it’s a bot, and they won’t care if it tells them what they want to hear. Then just sit back and watch the upvotes roll in.&lt;/p&gt;
 </description>
-				<pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
-				<link>https://mrpowerscripts.com/advanced-function-parameters-in-powershell/</link>
-				<guid isPermaLink="true">https://mrpowerscripts.com/advanced-function-parameters-in-powershell/</guid>
+				<pubDate>Sun, 27 Jan 2019 00:00:00 +0000</pubDate>
+				<link>https://mrpowerscripts.com/farm-karma-on-reddit-with-bots-2019-update/</link>
+				<guid isPermaLink="true">https://mrpowerscripts.com/farm-karma-on-reddit-with-bots-2019-update/</guid>
 			</item>
 		
 			<item>
-				<title>How to get around the jekyll-pagination-v2 limitation of GitHub pages with CircleCI</title>
-				<description>&lt;p&gt;Github pages is a damn modern marvel. You can put together a basic website hosted for free from a jazillion templates available on the internet. Buy a domain name. You’re set. Push up changes to the source on GitHub and they regenerate the site. AMAZING. Almost as good as geocities was. But using GitHub pages the way GitHub suggests has some limitations. Jekyll has soooo many helpful plugins that you can use outside of the oens offered on GitHub pages. Such as the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll-paginate-v2&lt;/code&gt; plugin. And if you want to use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll-paginate-v2&lt;/code&gt; plugin with GitHub pages you’re out of luck! They don’t support it. Which means you can’t do pagniation of collections - a very useful feature when you want to build more complex websites or blogs using jekyll. But we can work around this with a bit of scripting and CircleCI.&lt;/p&gt;
+				<title>Google is going mobile first - is your website ready?</title>
+				<description>&lt;p&gt;If you use the Google search console you may have started receiving emails that go something like this:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Subject: Mobile-first indexing enabled&lt;/p&gt;
 
-&lt;p&gt;If you want to know all of the technical details of the script then check out the &lt;a href=&quot;http://sangsoonam.github.io/2019/02/08/using-git-worktree-to-deploy-github-pages.html&quot;&gt;blog post by Sangsoo Nam&lt;/a&gt; which inspired me to automate this. It’s really well written and explains the mechanics better than I could. But to catch you up we basically configure our GitHub pages site to use two separate branches. One branch will contain the source code of our jekyll site. Typically the branch would be the defaul &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;master&lt;/code&gt; branch, and we push our site changes to this branch. This will kick off a job on CircleCI which uses the latest version of jekyll and all of it’s available plugins to generate the site source code. Then it automagically pushes that generated source code back up to our GitHub pages branch which is typically &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh-pages&lt;/code&gt;. Then the GitHub repo is configured to serve up the freshly baked source code right from the CircleCI oven to your users. So now we’re not limited to using the hosted version of jekyll and limited set of allowed plugins. WE CAN USE ANYTHING. FREEDOM.&lt;/p&gt;
+  &lt;p&gt;Dear Search Console user,&lt;/p&gt;
 
-&lt;script src=&quot;https://gist-it.appspot.com/http://github.com/MrPowerScripts/MrPowerScripts.com/blob/master/.circleci/config.yml&quot;&gt;&lt;/script&gt;
+  &lt;p&gt;We are updating one or more of your properties as part of the mobile-first initiative. This means that you may see more traffic in your logs for those properties from Googlebot Smartphone. You may also see that snippets in Google Search results are now generated from the mobile version of your content.&lt;/p&gt;
 
-&lt;p&gt;And since we can use anything I decided to add some testing to the site. Before I had the testing I didn’t realize how many things were broken. A ruby gem called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;html-proofer&lt;/code&gt; found over 250 errors with my site! Yikes. Even some very broken stuff that broke the site for search engines which hurts the SEO on the pages. Now that we’re running on CircleCI we can add simple checks to the generated site before we deploy it. So first I used &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;html-proofer&lt;/code&gt; which lints all of sites html structure. Finding broken html structure and bad practices. It even has an option to lint your opengraph structure. Another thing I wanted to check was some generated json files that I use as an API. I use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;find&lt;/code&gt; to create a list of all the json files in the site source. Then I pass them into another ruby gem called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jsonlint&lt;/code&gt; which makes sure the json structure is corect before the site gets deployed. At the end you can see that it makes an API call to CloudFlare to purge the cache. You don’t need to add this but CLoudFlare is really good and can help speed up the site. They have a free tier that will work for pretty much any GitHub pages site.&lt;/p&gt;
+  &lt;p&gt;The following properties are being updated (list limited to 20 properties):&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;So all the magic here is thanks to CircleCI. Basically when we push a commit it spins up a CI job that performs the deployment steps outlined win Sansoo’s blog post. Which you know about now since you went to read it. But to give the tl;dr of the whole process again: When we push a commit to GitHub it triggers a job on CircleCI. Using the config above in the site repo CircleCI will checkout the code from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;master&lt;/code&gt;. Then compile our fresh jekyll website using the latest version of jekyll and whatever plugins we need. In my case it was the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll-paginate-v2&lt;/code&gt; plugin. Then it runs tests to make sure the site structure and json APIs aren’t broken. Finally, that freshly compiled site gets pushed back up to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh-pages&lt;/code&gt; branch where GitHub will serve it up on GitHub pages. Cool.&lt;/p&gt;
+&lt;p&gt;Google’s &lt;a href=&quot;https://webmasters.googleblog.com/2018/03/rolling-out-mobile-first-indexing.html&quot;&gt;mobile-first initiative announced March 26, 2018&lt;/a&gt; has a few key initiatives summed up at the end of their blog post:&lt;/p&gt;
 
-&lt;p&gt;Other than all that it’s still pretty close to the original script. Except now the whole process is automated, so no need to manually push code twice.&lt;/p&gt;
-</description>
-				<pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
-				<link>https://mrpowerscripts.com/github-pages-circleci-jekyll-paginate-v2/</link>
-				<guid isPermaLink="true">https://mrpowerscripts.com/github-pages-circleci-jekyll-paginate-v2/</guid>
-			</item>
-		
-			<item>
-				<title>How I made the MrPowerScripts.com website FAST on GitHub pages with Cloudflare and CircleCI</title>
-				<description>&lt;p&gt;The performance of my website recently tanked. On Google PageSpeed Insights I had a ~99 rating. I looked at it recently and it TANKED down to 44. 44! The whole point of this blog was to &lt;a href=&quot;https://www.youtube.com/watch?v=5YsFoEY7Ulo&amp;amp;list=PLqpaLALjc1lwz6nHCgsP98xYX_Ykawh3J&quot;&gt;journey into learning more about SEO&lt;/a&gt;. One of the most important metrics for Google Page rank and general SEO ranking is the speed of your website. 44 was unacceptable. I needed to change some things FAST to make the website FAST. I even have the charts to show how much faster it is. Wait until you see the results!&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;To recap:&lt;/p&gt;
 
-&lt;p&gt;Since the site &lt;a href=&quot;https://github.com/MrPowerScripts/MrPowerScripts.com&quot;&gt;is an open source repo hosted via GitHub Pages&lt;/a&gt; I have no control over server-side hosting decisions. Such as cache settings, and various other techniques that could help improve the performance to my website. Ya know what is really great for improving delivery of web assets? CDNs. Content Delivery Networks.&lt;/p&gt;
+  &lt;ol&gt;
+    &lt;li&gt;
+      &lt;p&gt;Mobile-indexing is rolling out more broadly. Being indexed this way has &amp;gt;no ranking advantage and operates independently from our mobile-&amp;gt;friendly assessment.&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p&gt;Having mobile-friendly content is still helpful for those looking at ways &amp;gt;to perform better in mobile search results.&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p&gt;Having fast-loading content is still helpful for those looking at ways to &amp;gt;perform better for mobile and desktop users.&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p&gt;As always, ranking uses many factors. We may show content to users &amp;gt;that’s not mobile-friendly or that is slow loading if our many other signals &amp;gt;determine it is the most relevant content to show.&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;In comes Cloudflare, one of the biggest CDNs on the web.  I didn’t do all the work to figure this out, to be honest. They posted their own &lt;a href=&quot;https://blog.cloudflare.com/secure-and-fast-github-pages-with-cloudflare/&quot;&gt;great blog post&lt;/a&gt; on how to set up their service in front of GitHub pages to cache ALL THE THINGS.  Once I configured MrPowerScripts.com on their service using the free plan all I had to do was update my name servers in NameCheap to use the ones they provided me. From there Cloudflare handled all of the caching and requests to the site. Dramatically reducing the page size and loading time.  Check the results for yourself:&lt;/p&gt;
+&lt;p&gt;When you see the e-mail subject arrive in your inbox it sounds like Google is ditching the desktop and you’re screwed SEO-wise if you don’t have a mobile site. That’s not the case - yet. But Google is hinting throughout the article a reality that many people might be failing to realize. Most people are finding stuff they need through mobile first. Here’s the key sentence:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Mobile-first indexing means that we’ll use the mobile version of the page &amp;gt; for indexing and ranking, to better help our – primarily mobile – users find &amp;gt; what they’re looking for.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Let us &lt;strong&gt;ENHANCE&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;primarily mobile&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;While they say in the blog post that indexing your site as a mobile view won’t impact its page rank, they do make it very clear &lt;a href=&quot;https://webmasters.googleblog.com/2015/04/rolling-out-mobile-friendly-update.html&quot;&gt;that mobile-friendly sites do have PageRank preference&lt;/a&gt; when it comes to mobile search, and it has been like that since 2015.&lt;/p&gt;
+
+&lt;p&gt;Google’s search userbase is primarily mobile, and mobile-friendly websites receive preference in mobile search results. You probably should consider making your website mobile friendly - like three years ago. It’s never too late to get started!&lt;/p&gt;
+
+&lt;p&gt;Thankfully google also provides many tools for you to see how mobile-friendly Google thinks your website is. If you’re familiar with the Google search console this won’t be news to you. If not, and you have a website that you want people to find in the future now it the time to get acquainted.&lt;/p&gt;
+
+&lt;p&gt;After the whole song and dance of getting access to your search console profile, you can find a “Mobile Usability” button in the “Enhancements” dropdown on the left.&lt;/p&gt;
 
 &lt;div&gt;
-  &lt;img style=&quot;object-fit: contain&quot; src=&quot;/images/mrps-fast/page-size.png&quot; alt=&quot;image&quot; /&gt;
+  &lt;img style=&quot;object-fit: contain&quot; src=&quot;/images/mobile-friendly-button-google-search-console.png&quot; alt=&quot;image&quot; /&gt;
 &lt;/div&gt;
 
-&lt;p&gt;First off, the size of the page download is MUCH smaller. It went from ~1.5MB to ~205KB. That’s HUGE. The entire website size was reduced by over 1MB. Also, check out the number of requests needed to render the site. It went from around 38 requests to about 15. Yeah, it cut the number of requests by more than half. Amazing! All of that lead to the following chart.&lt;/p&gt;
+&lt;p&gt;This is your portal to learning more about how Google “sees” your website from the view of a mobile user. Pages deemed having too many errors or not &lt;a href=&quot;https://webmasters.googleblog.com/2015/04/rolling-out-mobile-friendly-update.html&quot;&gt;mobile friendly enough&lt;/a&gt; will be unapologetically left to float off into the great internet abyss where nobody will ever see your link again.&lt;/p&gt;
+
+&lt;p&gt;The more mobile-friendly pages in this list the better off you’ll be in this new mobile-first future. Not because Google is making any significant changes but because people’s habits are changing. You can see in the chart below as mobile-friendly pages are added to my website the impression count began to increase. I hope to continue that trend, and so most of my website is designed around the mobile user’s experience.&lt;/p&gt;
 
 &lt;div&gt;
-  &lt;img style=&quot;object-fit: contain&quot; src=&quot;/images/mrps-fast/page-timings.png&quot; alt=&quot;image&quot; /&gt;
+  &lt;img style=&quot;object-fit: contain&quot; src=&quot;/images/google-search-console-impressions-mobile.png&quot; alt=&quot;image&quot; /&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Previously, the entire site took more than 4 seconds to load. Now, that doesn’t mean 4 seconds to see things on the page. It just means for the entire site to finish loading. Including various background requests. Now, the entire site loads in less than a second. These are amazing results! Cloudflare has allowed me to cache all site assets, and to keep them cached for up to 8 days. Then, the caches will be purged.&lt;/p&gt;
+&lt;p&gt;Clicking on any of the detail items will show you a list of valid links, links that contain errors, or any other link status types.&lt;/p&gt;
 
-&lt;p&gt;This creates a problem though. What if I update the website? Cloudflare will deliver the cached website they have stored rather than the latest updates i’ve pushed to GitHub Pages. Cloudflare has a nice API though, so i’ve connected CircleCI to my GitHub repository to run a job every time a push a commit. That job sends an API request to Cloudflare telling it to clear out the cache. The next person that visits the site will see the latest version of it, and Cloudflare will rebuild the cache. You can see &lt;a href=&quot;https://github.com/MrPowerScripts/MrPowerScripts.com/blob/f41b5b2a8d51b5f80f4d7da9bab33368d3b602c3/.circleci/config.yml&quot;&gt;the CircleCI config file here&lt;/a&gt; with the api call that perfoms the cache clearing. CircleCI has a generous open source plan (it’s free. that’s pretty generous). Now this isn’t perfect. It could be optimized to only purge the cache of certain pages, but it works for my simple little blog.&lt;/p&gt;
+&lt;div&gt;
+  &lt;img style=&quot;object-fit: contain&quot; src=&quot;/images/google-search-console-mobile-friendly-page-examples.png&quot; alt=&quot;image&quot; /&gt;
+&lt;/div&gt;
 
-&lt;p&gt;None of this costs me any money since i’m using the free tier of each application, and now my website is SUPER FAST once again.&lt;/p&gt;
+&lt;p&gt;Clicking on any of your links will allow you to see a mobile test report that even previews how your website looks to Google’s mobile index bot.&lt;/p&gt;
 
-&lt;p&gt;If you want to see some more stats on the site improvements you can &lt;a href=&quot;https://gtmetrix.com/reports/mrpowerscripts.com/S4kSarB8&quot;&gt;check out the live results I pulled the graphs from&lt;/a&gt;.&lt;/p&gt;
+&lt;div&gt;
+  &lt;img style=&quot;object-fit: contain&quot; src=&quot;/images/google-search-console-mobile-test-page.png&quot; alt=&quot;image&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;While Google’s “mobile-first initiative” seems scary at first it doesn’t involve any major impending changes to search index ranking. Just how Google “reads” the pages of your site for their index. But these changes are indicatives of how people are using mobile primarily as the way to find things they need. And if they can’t see you on mobile then you may never be seen! Thankfully the tools to find out if you’re ready are freely available. Check out the Google search console with your own website.&lt;/p&gt;
 </description>
-				<pubDate>Sat, 06 Apr 2019 00:00:00 +0000</pubDate>
-				<link>https://mrpowerscripts.com/faster-github-pages-with-cloudflare-circleci/</link>
-				<guid isPermaLink="true">https://mrpowerscripts.com/faster-github-pages-with-cloudflare-circleci/</guid>
+				<pubDate>Mon, 14 Jan 2019 00:00:00 +0000</pubDate>
+				<link>https://mrpowerscripts.com/google.mobile-first/</link>
+				<guid isPermaLink="true">https://mrpowerscripts.com/google.mobile-first/</guid>
 			</item>
 		
 			<item>
-				<title>CircleCI Nick Young meme for your overconfident developers</title>
-				<description>&lt;p&gt;Do you have overconfident devs on your team pushing up code and calling it a day? Only to find out their jobs failed on CircleCI? Now you have something to send them to let them know it isn’t time to celebrate until the job is green! Check out the full post for the video with sound and the giphy.&lt;/p&gt;
-
-&lt;div style=&quot;width:100%;height:0;padding-bottom:56%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/vxr7x3PYRSSGdXfTTA&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameborder=&quot;0&quot; class=&quot;giphy-embed&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;If you want to get the full experience with sound you can check it out on youtube below.&lt;/p&gt;
-
-&lt;!-- (1) video wrapper --&gt;
-&lt;div class=&quot;youtube-video&quot; data-embed=&quot;RNtFTLV2Fog&quot;&gt; 
+				<title>Jekyll Front Matter Template</title>
+				<description>&lt;p&gt;This is a Jekyll front matter template free for anyone to use&lt;/p&gt;
+&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+				<pubDate>Sun, 13 Jan 2019 00:00:00 +0000</pubDate>
+				<link>https://mrpowerscripts.com/jekyll-front-matter-template/</link>
+				<guid isPermaLink="true">https://mrpowerscripts.com/jekyll-front-matter-template/</guid>
+			</item>
+		
+			<item>
+				<title>Cleandows-10: Remove unwanted apps and services from Windows 10 with Powershell</title>
+				<description>&lt;p&gt;Well, this is really cool to see! I had a fellow scripter drop into the &lt;a href=&quot;https://bit.ly/mrps-discord&quot;&gt;Discord channel&lt;/a&gt; asking some questions about one of my videos. Windows restore points with Powershell - super exciting content. I wasn’t very helpful, but they did show me what they were working on. Some really cool Powershell scripts for windows 10 to remove apps and services. &lt;!-- (1) video wrapper --&gt;&lt;/p&gt;
+&lt;div class=&quot;youtube-video&quot; data-embed=&quot;XMK3ZAazprM&quot;&gt; 
  
     &lt;!-- (2) the &quot;play&quot; button --&gt;
     &lt;div class=&quot;play-button&quot;&gt;&lt;/div&gt; 
      
 &lt;/div&gt;
 
-&lt;p&gt;You can also share the gif easy with this link: &lt;a href=&quot;https://gph.is/g/4z9AGwZ&quot;&gt;https://gph.is/g/4z9AGwZ&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;It was actually interesting to peek into the world of PowerShell on Windows 10 looking at the code. Oh Windows, you bloated monstrosity. I was just praising Microsoft &lt;a href=&quot;https://bit.ly/mrps-twitter&quot;&gt;on twitter&lt;/a&gt; for all of the recent good karma they’ve earned. All of my development work is done with an open source Microsoft IDE. How crazy is that? VSCode is amazing! Of course, I also push all my code up to GitHub. Now owned by Microsoft.&lt;/p&gt;
+
+&lt;p&gt;Microsoft killed Atom browser and then bought out GitHub. So they embraced and extinguished. They’re almost back up to their old tricks! Oh, wait, Windows Subsystem for Linux. There’s your extend right there. We better keep an eye on this. It all sounds too good to be true…&lt;/p&gt;
+
+&lt;p&gt;Still, I do all of my development on Linux/macOS so they haven’t quite pulled me back in yet. I’m still using Windows 8.1 on a six-year-old laptop. But it’s mostly for games and uhh because it’s there. Works great. No complaints. Thankfully though I’ve been provided a fancy maxed out MacBook Pro through work. That’s where all of the development magic happens. Microsoft and the Windows team are going to have to pull some real magic to make that change.&lt;/p&gt;
+
+&lt;p&gt;Glad to see Powershell is alive and thriving though. Helping to remove all the bloat for users on Windows 10.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/Ignaciox/Cleandows-10&quot;&gt;Checkout cleandows 10&lt;/a&gt;&lt;/p&gt;
 </description>
-				<pubDate>Sat, 30 Mar 2019 00:00:00 +0000</pubDate>
-				<link>https://mrpowerscripts.com/CircleCI-nick-young-meme/</link>
-				<guid isPermaLink="true">https://mrpowerscripts.com/CircleCI-nick-young-meme/</guid>
+				<pubDate>Sat, 12 Jan 2019 00:00:00 +0000</pubDate>
+				<link>https://mrpowerscripts.com/remove-unwanted-apps-services-windows-10/</link>
+				<guid isPermaLink="true">https://mrpowerscripts.com/remove-unwanted-apps-services-windows-10/</guid>
 			</item>
 		
 			<item>
-				<title>Microsoft Excel Automation with Powershell</title>
-				<description>&lt;p&gt;Do you want to take your Excel skills to the next level? Did you know that you don’t need Excel to work with Excel files? Sometimes doing things programmatically is a bit easier than pointing and clicking. Or maybe you need to process a lot of files really fast, over and over again. Powershell automation with Microsoft Excel is possible! &lt;!-- (1) video wrapper --&gt;&lt;/p&gt;
-&lt;div class=&quot;youtube-video&quot; data-embed=&quot;3blgg3QfJP8&quot;&gt; 
+				<title>YAML Ain't Markup Language Sing Along Song</title>
+				<description>&lt;p&gt;I’m really happy I was able to stop laughing long enough to upload this. Check out the new hit sing along song YAML Ain’t Markup Language. &lt;!-- (1) video wrapper --&gt;&lt;/p&gt;
+&lt;div class=&quot;youtube-video&quot; data-embed=&quot;0GnWd4jiyH4&quot;&gt; 
  
     &lt;!-- (2) the &quot;play&quot; button --&gt;
     &lt;div class=&quot;play-button&quot;&gt;&lt;/div&gt; 
      
 &lt;/div&gt;
-&lt;p&gt;In this video you’ll see how you can update Excel workbooks and worksheets with a Powershell script.&lt;/p&gt;
-
-&lt;p&gt;Excel has a COM interface which is a technology developed by Microsoft  (of course). I’ve never read an amazing explanation of COM but basically, it allows communication between programming languages and Windows applications. Even if the application was not built with the programming language. Powershell is more of a scripting language, but we can connect to the Excel COM interface all the same.&lt;/p&gt;
-
-&lt;p&gt;Through this COM interface Excel exposes &lt;a href=&quot;https://docs.microsoft.com/en-us/office/vba/api/overview/excel/object-model&quot;&gt;the Excel Object Model&lt;/a&gt;. I’ve linked you to the current docs, but that link will probably be dead in six months - because Microsoft. Also, the examples shown  for the Excel Object Model use something called Visual Basic for Applications. Which is something I learned about 5 minutes ago when I was trying to find the old generic Excel Object Model reference. Apparently it doesn’t exist anymore. Once again, because Microsoft. I wish I could offer more help and insights but - Microsoft. Still, you can use the script below to play around with creating and updating workbooks and worksheets. You can also explore the properties of the excel object with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Get-Member&lt;/code&gt; to learn more about the available options.&lt;/p&gt;
-
-&lt;p&gt;You can &lt;a href=&quot;https://github.com/MrPowerScripts/PowerScripts/blob/16740162b415b9d91f9d4bbd930b2a6d33de1788/Excel/WorkbooksAndWorksheetsExcel.ps1&quot;&gt;find the file here on GitHub&lt;/a&gt; or check out the source below.&lt;/p&gt;
-
-&lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;#None of this will work through an already open excel application&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;#You must open Excel and workbooks you want to manipulate via the COMobject&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-
-&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;####################################################&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;############### Starting Excel #####################&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;####################################################&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-
-&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;New-Object&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-ComObject&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Excel.Application&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-
-&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Visible&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;$true&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;DisplayAlerts&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;$false&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-
-&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;####################################################&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;############## Working with Workbooks ##############&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;####################################################&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-
-&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;#Add a workbook to your current excel file&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;#You can add multiple workbooks with this method&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Workbooks&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-
-&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;#Find all the workbooks in your excel file by name&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Workbooks&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Select-Object&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-ExpandProperty&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-
-&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;#Activate a specifc workbook in your excel file&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Workbooks&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;activate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Workbooks&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;book1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;activate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-
-&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;#Acivate Random Workbook in Excel file&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Workbooks&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Get-Random&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-min&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-Max&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Workbooks&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Count&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;activate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-
-&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;#Open an existing workbook on your hardrive&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Workbooks&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;userprofile&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;\desktop\mrpowerscripts.xlsx&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-
-&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;#close workbooks from an excel file&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Workbooks&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Workbooks&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;MrPowerScripts.xlsx&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-
-&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;#Save workbooks to the hard drive&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Workbooks&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;SaveAs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;userprofile&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;\Desktop\asdf.xlsx&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-
-
-&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;####################################################&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;########### Working with Worksheets ################&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;####################################################&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-
-&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;#These bits of code will affect the active Workbook.&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-
-&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;#Add a worksheet to your active workbook&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Worksheets&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-
-&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;#Find all worksheets in your active workbook&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Worksheets&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Select-Object&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-ExpandProperty&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-
-&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;#Change name of worksheet in workbook&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Worksheets&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;potato&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Worksheets&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;potato&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;spud&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-
-&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;#Activate specific worksheet in workbook&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Worksheets&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;activate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Worksheets&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;sheet3&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;activate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-
-&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;#Acivate Random Worksheet in Excel file&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Worksheets&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Get-Random&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-min&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-Max&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Worksheets&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Count&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;activate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-
-&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;#Delete worksheets from workbook&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Worksheets&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;delete&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Worksheets&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Sheet3&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;delete&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-
-
-&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;####################################################&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;########## Cleaning up the environment #############&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;####################################################&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-
-&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Workbooks&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Quit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-
-&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;#Check and you will see an excel process still exists after quitting&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;#Remove the excel process by piping it to stop-process&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Get-Process&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;excel&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Stop-Process&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-Force&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-
-&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;#Now we must release the $excel com object to ready it for garbage collection&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;System.Runtime.Interopservices.&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Marshal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]::&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;ReleaseComObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
-				<pubDate>Sun, 24 Mar 2019 00:00:00 +0000</pubDate>
-				<link>https://mrpowerscripts.com/microsoft-excel-automation-powershell/</link>
-				<guid isPermaLink="true">https://mrpowerscripts.com/microsoft-excel-automation-powershell/</guid>
-			</item>
-		
-			<item>
-				<title>Automated Reality Channel Episode One Released!</title>
-				<description>&lt;p&gt;IT WORKS. IT. FREAKING. WORKS. &lt;a href=&quot;/automate-youtube-channel/&quot;&gt;I wrote a few months ago about this idea to automate my youtube channel&lt;/a&gt;. Now, at the time the idea wasn’t really well defined. I decided I wanted to do something and then I had to figure out how I was going to do it. I should have &lt;a href=&quot;/build-first/&quot;&gt;shut up and built it first&lt;/a&gt;, but I was too excited and prematurely let the idea out. It happens to everyone. Over time though I crafted a more well-defined concept. You can see the whole evolution in this playlist in fact.
-&lt;!-- (1) video wrapper --&gt;&lt;/p&gt;
-&lt;div class=&quot;youtube-video&quot; data-embed=&quot;videoseries?list=PLqpaLALjc1lyekGkzAltr50RD3RD3kA4d&amp;amp;modestbranding=1&amp;amp;enablejsapi=1&quot;&gt; 
- 
-    &lt;!-- (2) the &quot;play&quot; button --&gt;
-    &lt;div class=&quot;play-button&quot;&gt;&lt;/div&gt; 
-     
-&lt;/div&gt;
-&lt;p&gt;Well, I finally put together something I would consider a prototype. Despite many hiccups, lingering issues, and generally losing faith in the idea I managed to put together the scaffolding for a working project. This is how it all works.&lt;/p&gt;
-
-&lt;p&gt;It all starts with a yaml file to describe the video that should be created. Here’s the file for the first episode.
-&lt;script src=&quot;https://gist-it.appspot.com/github/mrpowerscripts/automated-reality-channel/blob/master/scripts/arc-ep-1.yml?slice=0:30&quot;&gt;&lt;/script&gt;
-The yaml file has an array which describes each scene of the video. Each scene describes what should be shown on the screen. To start off simple I chose to stick with providing an image and using text-to-speech to generate some dialogue, which is also described in the yaml file. In the future, it should recognize if the content is a video or if the audio is from a file as well. It will pull all of the assets accordingly and then builds each scene as described in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;scenes&lt;/code&gt; array.&lt;/p&gt;
-
-&lt;p&gt;The script file is ingested through the PowerBot Discord bot that runs in &lt;a href=&quot;https:/bit.ly/mrps-discord&quot;&gt;my discord channel&lt;/a&gt;. I can run commands in Discord that tell the bot what to do. Such as building the video by passing it the script file above. Here’s a bit of the Discord bot code. You can click the footer to see the rest.
-&lt;script src=&quot;https://gist-it.appspot.com/github/MrPowerScripts/mrps-discord-powerbot/blob/master/veditor.js?slice=0:30&quot;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;For the record, I’m completely ashamed of this code. I have no idea how to code in nodejs and a lot of this was done at 3 am when I should have been well asleep. Instead, I produced the monstrosity you see above. Anyway, the build function is what generates the video files from the script yaml. First, it downloads all of the assets which are images in this case. It uses &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FFmpeg&lt;/code&gt; to turn the images and audio of each scene into an individual video file. The audio at the moment is generated using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;espeak&lt;/code&gt; text-to-speak application. Once each scene is generated &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FFmpeg&lt;/code&gt; once again combines all of the individual video files into a single video. How cool is that?&lt;/p&gt;
-
-&lt;p&gt;After the build is created I can preview the generated video. If I like what I see I can run a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;publish&lt;/code&gt; command that will automatically upload the video to the &lt;a href=&quot;https://bit.ly/mrps-arc&quot;&gt;Automated Reality Channel&lt;/a&gt; on YouTube. So, here I am to present the very first episode for your viewing pleasure.&lt;/p&gt;
-
-&lt;!-- (1) video wrapper --&gt;
-&lt;div class=&quot;youtube-video&quot; data-embed=&quot;h8esG-ZwwY4&quot;&gt; 
- 
-    &lt;!-- (2) the &quot;play&quot; button --&gt;
-    &lt;div class=&quot;play-button&quot;&gt;&lt;/div&gt; 
-     
-&lt;/div&gt;
-
-&lt;p&gt;Okay. That wasn’t very impressive. It’s a start though! Next, I would like to polish up a lot of the code. There’s a bunch of bugs. Sometimes it crashes. Nothing is really optimized. So, time to learn how to properly code in an async environment. Well, learn as best as I can. Also, remove a lot of the code duplication. A lot of the functions could be composed better. Also, adding some of the other elements that I talked about. Such as publishing drafts of individual scenes for people to vote on with emojis. SHowing draft previews that also allow voting. Allowing people to submit scene suggestions through discord commands. Such as text-to-speech scripts, or scene images.&lt;/p&gt;
-
-&lt;p&gt;Lots of work to do. But the idea has reached a much more concrete position, and it works. Time for more iteration when I can find some more time&lt;/p&gt;
-</description>
-				<pubDate>Thu, 14 Mar 2019 00:00:00 +0000</pubDate>
-				<link>https://mrpowerscripts.com/arc-episode-one/</link>
-				<guid isPermaLink="true">https://mrpowerscripts.com/arc-episode-one/</guid>
-			</item>
-		
-			<item>
-				<title>Reduce memory usage of Gradle and Kotlin for Android development DevOps</title>
-				<description>&lt;p&gt;When you’re building your android project locally your machines probably have a lot of horsepower. When you’re running in a DevOps workflow such as continuous integration and delivery you may not have as many resources. This can cause your builds to run out of memory. Here are some quick tips to help reduce the memory usage of your Gradle and Kotlin builds for Android development.&lt;/p&gt;
-
-&lt;h2 id=&quot;tell-java-to-chill-out-with-the-memory-usage&quot;&gt;Tell Java to chill out with the memory usage&lt;/h2&gt;
-
-&lt;p&gt;Since android build tools are Java-based, and Java is a memory hog, you can first tell Java to limit its memory usage. You might see people put these same options in a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GRADLE_OPTS&lt;/code&gt; variable but if the process gets forked those options won’t always get passed down into the forked process. It’s better to set an environment variable consumed direction by Java. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_JAVA_OPTIONS&lt;/code&gt; environment variable is widely supported in Oracle based Java environments. Combined with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-Xmx&lt;/code&gt; configuration you can set the max heap size for use by Java, which is where it stores things like class objects into memory. Setting this value to 75% of the available memory will give Java enough room to store what it needs without choking the rest of the system resources. If you have 4GB available, then try setting it to  3GB. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_JAVA_OPTIONS=-Xmx3g&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;shut-down-the-daemons&quot;&gt;Shut down the daemons&lt;/h2&gt;
-
-&lt;p&gt;This is a tip for both Gradle and Kotlin as they each have their own daemons. The daemons run in the background and help speed up re-compilation times by storing generated project information from previous compilation times. Typically when running in a CI workflow you won’t be recompiling anything as environments are reset each time. In this case, the daemon will take up extra memory without providing any benefits.&lt;/p&gt;
-
-&lt;p&gt;Using these methods to control memory use in your Android DevOps lifecycle can reduce out of memory failures within environments that don’t have limited resources.&lt;/p&gt;
-</description>
-				<pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-				<link>https://mrpowerscripts.com/reduce-memory-use-gradle-kotlin/</link>
-				<guid isPermaLink="true">https://mrpowerscripts.com/reduce-memory-use-gradle-kotlin/</guid>
+				<pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate>
+				<link>https://mrpowerscripts.com/yaml-song/</link>
+				<guid isPermaLink="true">https://mrpowerscripts.com/yaml-song/</guid>
 			</item>
 		
 	</channel>
