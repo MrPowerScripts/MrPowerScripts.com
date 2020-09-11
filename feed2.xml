@@ -7,461 +7,789 @@
 		<atom:link href="https://mrpowerscripts.com/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
-				<title>Every Content Creator Should Know This - Creative Commons CC0 License &amp; Pexels.com</title>
-				<description>&lt;p&gt;Creating content all by yourself is really hard, so it’s helpful to use art, music, and other assets to help you share your message. If you want to monetize your content you need to be especially careful. If the content you create utilizes the copyrighted works of others then you might be in for a world of pain. Thankfully Creative Commons has been around for a few years helping content creators by creating content licenses. &lt;!-- (1) video wrapper --&gt;&lt;/p&gt;
-&lt;div class=&quot;youtube-video&quot; data-embed=&quot;J_qTrc_fV-Y&quot;&gt; 
+				<title>Host your own private docker registry with Portus</title>
+				<description>&lt;p&gt;If you’re familiar with docker then you’ve probably used DockerHub. Dockerhub is AWESOME. I absolutely love (most of) it and what it does. DockerHub is simply a docker container registry. It’s a place where you can store, pull, and share docker containers. &lt;!-- (1) video wrapper --&gt;&lt;/p&gt;
+&lt;div class=&quot;youtube-video&quot; data-embed=&quot;gvaRfAqCfGY&quot;&gt; 
  
     &lt;!-- (2) the &quot;play&quot; button --&gt;
     &lt;div class=&quot;play-button&quot;&gt;&lt;/div&gt; 
      
 &lt;/div&gt;
-&lt;p&gt;These licenses are easy for content creators to understand, and help them share their works for others to use in various ways. One license is incredibly useful for content creators to know about, which is the CC0 license&lt;/p&gt;
+&lt;p&gt;It’s not the only container registry. Google has their own container registry where you can upload your images. Microsoft and Amazon also have docker container registries. All of that is great, but what if you want to host your won docker images in a private registry. Those registries I mentioned have support for private accounts, but I’m going to reveal how you can host your own private container registry that you control.&lt;/p&gt;
 
-&lt;p&gt;The CC0 license allows a content creator to revoke all copyrights to the content they’ve created. Thus allowing anyone to use that content in their own private or commercial projects. Need a happy person to include in your marketing ad? It’s difficult and time-consuming to hire a model and snap the pictures yourself. It can also be expensive to buy stock photography. Especially if you have little to no budget. Thankfully there’s a lot of places that already exist where you can find CCO license photos or other kinds of content.&lt;/p&gt;
+&lt;p&gt;Want to automate this whole configuration process? I have a script that will set all of this up in 10 minutes! With some extra configuration that is very useful for a first install. You can &lt;a href=&quot;http://bit.ly/mrps-portus-registry&quot;&gt;find a link to the script here&lt;/a&gt; or at the bottom of the page. Enjoy!&lt;/p&gt;
 
-&lt;p&gt;My favorite place to find CC0 license content is &lt;a href=&quot;https://pexels.com&quot;&gt;pexels.com&lt;/a&gt;. They have been around for a few years now, and their collections are always growing. They have all types of high-quality photography available under the CC0 license, so you can use them safely in your own projects without fear of violating someone elses copyrights. Pexels has also added a video site, which can be found at &lt;a href=&quot;https://video.pexels.com&quot;&gt;Pexels video&lt;/a&gt;. The Pexels video collection isn’t as large since it is a recent edition, but it will continue to grow over time.&lt;/p&gt;
-
-&lt;p&gt;I’ve also contributed to Pexels by submitting over a hundred of my own photos for people to use. I log in every once in a while to check out the stats and see the download counter go up. I wish there was a way for me to know how my images were being used. It would be cool to see a picture I took modified and used for a magazine, or a brochure. In any case, I’m happy others are able to find some use for them instead of letting them sit on a hard drive somewhere never to be looked at again.&lt;/p&gt;
-
-&lt;p&gt;If you have your own photography or videos you think others might find useful consider uploading them to Pexels. Sure, one day you might sell that random photo of a sunflower for a million dollars. It’s tempting to hold onto the copyrights. You might have some others worth sharing though. Sharing is caring.&lt;/p&gt;
-</description>
-				<pubDate>Sun, 03 Mar 2019 00:00:00 +0000</pubDate>
-				<link>https://mrpowerscripts.com/cc0-pexels/</link>
-				<guid isPermaLink="true">https://mrpowerscripts.com/cc0-pexels/</guid>
-			</item>
-		
-			<item>
-				<title>Making MrPowerScripts.com pretty</title>
-				<description>&lt;p&gt;I’m not a designer. I have a terrible sense of design really. Though I feel like it has improved considerably over the years. Hopefully, that trend continues. And while I believe through hard work anyone can become great at what they put their mind to some people simply have an innate advantage. That’s okay because collaboration is what makes every project great. I don’t know anyone who built something great by themselves. The Great Pyramid of Giza?  The internet? Kim Kardashian’s butt? All of these took the efforts of many to achieve their notoriety. People have always built off the efforts or inspirations of others.&lt;/p&gt;
-
-&lt;p&gt;When I need insights and inspirations to guide me on designs I reach out to my buddy Ben Rossi. He’s an exceptional UX designer and general maker of awesome things. I told him I needed to update the look of my blog. It was hastily put together so I could start exploring SEO techniques. Well, now I want it to look pretty, and he was happy to help me by providing some inspiration and tips.&lt;/p&gt;
-
-&lt;p&gt;First off, the previous site was incredibly dull. I didn’t utilize color in any meaningful way, and the color I did have came from clashing social icons. He suggested I make things more colorful, and that was a great idea. I need to stop being afraid of using color. MORE color! One of the examples he shared was a website he’s followed for a long time, &lt;a href=&quot;https://kottke.org/&quot;&gt;which is also a blog&lt;/a&gt;. I loved it! I played around with some ideas and for the time being I’ve settled with a three-color gradient spanning the entire header. This also creates a nice separation between navigation and content. I’ve removed the social icons for now to simplify the process. I’ll figure out how to merge them back later in a way that blends with the new theme.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;old-design&quot;&gt;Old Design&lt;/h2&gt;
-&lt;div&gt;
-  &lt;img style=&quot;object-fit: contain&quot; src=&quot;/images/mrps-pretty/old-header.png&quot; alt=&quot;image&quot; /&gt;
-&lt;/div&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;new-design&quot;&gt;New Design&lt;/h2&gt;
-&lt;div&gt;
-  &lt;img style=&quot;object-fit: contain&quot; src=&quot;/images/mrps-pretty/new-header.png&quot; alt=&quot;image&quot; /&gt;
-&lt;/div&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Another suggestion was to adjust the line spacing size and utilize some multiple of 4. I don’t remember why. If I have time to bug him again I’ll go back an ask to update this post. He’s the export and I’m simply taking shade in his shadow. I should also take note to take better notes… later. In the images above you can see the line spacing and font size have been slightly increased, and I have to say to does read better for me!&lt;/p&gt;
-
-&lt;p&gt;After adjusting the spacing it was time to give the fonts a bit of love. I did a bit of research on this myself and found some that I truly love. For headings, I went with &lt;a href=&quot;https://fonts.google.com/specimen/Montserrat&quot;&gt;Montserrat Bold&lt;/a&gt; created by &lt;a href=&quot;https://github.com/JulietaUla/Montserrat&quot;&gt;Julieta Ulanovsky&lt;/a&gt; and inspired by the old posters and signs in the traditional Montserrat neighborhood of Buenos Aires. I was not expecting the font to have a cute story behind it, but there you have it. I love it. For body text, I went with the popular &lt;a href=&quot;https://fonts.google.com/specimen/Open+Sans&quot;&gt;Open Sans&lt;/a&gt; created by &lt;a href=&quot;https://twitter.com/@SteveMatteson1&quot;&gt;Steve Matteson&lt;/a&gt;. This is a super popular font in recent years and I like the readability of it. I’ve been using it for projects for a long time. I searched around for other options but I don’t see a reason to deviate from what works well here.&lt;/p&gt;
-
-&lt;p&gt;Another suggestion was to break the uniformity of my posts on the index page. I had a very strict format which I unwittingly created. I’m definitely a creature of habit and don’t always recognize when i’ve burrowed myself into a cycle. A rigid design pattern in this case. If the post had an associated video to go along with it I would post the video right under the title, and then the post’s introductory paragraph, and then a link to read more. First off, people come to a blog to read, so sticking a video a the beginning seems is a bit nonsensical in hindsight. But I do want to keep the videos on there in the hopes it adds some clicks. What’s the solution?&lt;/p&gt;
-
-&lt;p&gt;Once again as suggested from Ben and drawing inspiration from Kottke’s blog I’ve added the videos either somewhere in the middle of the intro paragraphs or at the end. The added benefit of this is offering an opportunity to read some of the posts first before giving the option of clicking the video. Rather than the previous format where the video is already scrolled off the screen (in the case of mobile) before you have a chance to read what it may be about.&lt;/p&gt;
-
-&lt;p&gt;I made another small update because of something I found frustrating on mobile. I had a “read more” button that was positioned to the right of the screen. Sometimes I’m using my left hand on mobile and it made it difficult to scroll and select the “read more” button unless I was using my right hand. Now the button spans the entire width of the post. Lefties rejoice! Also, keeping with the new colorful header I changed the color of the button to a much lighter blue. I’m not in love with this as the moment and I’m going to keep experimenting with ideas for the button here. It works tho.&lt;/p&gt;
-
-&lt;p&gt;Another small change was adding a space between the post title and the content for metadata. At the moment it only shows an estimated reading time for the post. I’ll be adding some other metadata such as author, post date, and potentially a social sharing option. I still have to figure out how I’m going to work that last one in there.&lt;/p&gt;
-
-&lt;p&gt;Finally, how about some animations?  This is something I totally stumbled upon without planning. I wanted to add some animations to the “read more” button to make it stand out a bit when I came across the starfield.  I added a parallax starfield to the header based on &lt;a href=&quot;https://codepen.io/saransh/pen/BKJun&quot;&gt;this codepen&lt;/a&gt; that I found. Based on… I ripped the code and figured out have to shove it into the header. It kinda reminds me of Goku charging of a spirit bomb, and I think it fits with my “Power Up” page. It’s a bit cheesy, but for now, I enjoy looking at it.&lt;/p&gt;
-
-&lt;p&gt;It isn’t perfect. I still need to work on colors, sizing, and adding other elements. I’m much happier looking at the current state than I did before tho. I won’t be taking on any design jobs soon, but thankfully I have great people and inspirations to help me to improve.&lt;/p&gt;
-</description>
-				<pubDate>Wed, 27 Feb 2019 00:00:00 +0000</pubDate>
-				<link>https://mrpowerscripts.com/making-mrpowerscripts-website-pretty/</link>
-				<guid isPermaLink="true">https://mrpowerscripts.com/making-mrpowerscripts-website-pretty/</guid>
-			</item>
-		
-			<item>
-				<title>My worst experience working for a company</title>
-				<description>&lt;p&gt;I mention pretty often that I’ve worked for a lot of companies big and small. Most of them have been amazing experiences, but not all of them have been pleasant. The worst experience by far still bothers the shit out of me to this today. There were so many wrong things happening it upsets me I stuck around as long as I did. A month and a half. What a weird experience from start to end. I found this advert looking for someone to do part-time IT work on Craigslist,  and it all went downhill from there.&lt;/p&gt;
-
-&lt;iframe src=&quot;https://anchor.fm/mrpowerscripts/embed/episodes/My-worst-experience-working-for-a-company-e3ih3l&quot; id=&quot;iframe-resize&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;I was working for myself at the time as a freelance IT guy, which was a lot of fun for a while. I went to lots of peoples homes and helped them with their computer issues. Still, I was getting tired of driving all over the place as well as all the other hassles of freelance life. I wanted to find something more consistent and local. So a part-time IT job seemed like a nice way to receive some consistent income without having to run around all over the map.&lt;/p&gt;
-
-&lt;p&gt;They liked my resume and called me in for an interview. I interviewed with the owner of the company. It was a business that did a lot of work in the area. Their company logo was all over the region because of the type of industry they were in. I remember thinking “oh cool, I’ve seen this company before. This should be fun”. As fun as missing the head of a nail and wacking yourself with a hammer, as it turned out.&lt;/p&gt;
-
-&lt;p&gt;The same day of the interview I got another call about the job. They’d like me to start next week. Awesome!&lt;/p&gt;
-
-&lt;p&gt;The following week arrives and I show up. It’s a fairly small office with about ten other people working there. The owner brought me around to meet everyone and immediately something felt off. Besides a couple of key people close to the owner, everyone felt very… cold. Not in a rude way, but no one seemed excited or happy. At all. There was a sense of looming death in the air and I couldn’t figure it out. But hey it’s Monday so whatever. Who is happy on a Monday?  I’m sure things will get better. Wrong again bucko!&lt;/p&gt;
-
-&lt;p&gt;After I met everyone I was taken to my desk and shown my computer. It didn’t work. I was told once I get it working I can start using it. Well, that’s what I’m here for so okay. Someone crimped the ethernet cable wrong. They had the materials and tools to make a new cable so I went ahead and made one. A few minutes later and I finally had internet access to get my emails. Everyone had like Hotmail accounts or something using POP3 with outlook express.&lt;/p&gt;
-
-&lt;p&gt;I had never seen an office in such technical disarray. The owner’s office had a really nice brand new looking PC. Everyone else in the office had what looked like recycled machines of various brands and operating systems. Some with Windows XP (professional &amp;amp; home),  Windows 2000. and Windows Vista (professional &amp;amp; home). If that alone doesn’t hurt you to read then consider yourself fortunate. I almost cried. They had a single “server” which acted as a file store. People accessed files through manually mapped drives from their client machines to shares on the “server”, as well as manually mapped drives to each other’s computers. There was no central management whatsoever. The server didn’t even run server software. It was a bunch of terminals jerry-rigged together. Oh no…&lt;/p&gt;
-
-&lt;p&gt;As the IT guy, part of my job there was to go around and help everyone with issues they had with their computers. I would come in that day and see what problems people had in my inbox then go around and help them. This is where I realized how bad things were, and why everyone was so cold from the onset. It wasn’t that they weren’t excited to see me. They all hated the owner and his presence killed any emotion in the room. He was a psychopath and they all feared him. That’s exactly how he liked it.&lt;/p&gt;
-
-&lt;p&gt;It was really interesting because the owner trusted me much more so than other employees. We spent a lot of time together while I was helping him with tasks. I was his personal technology assistant. He would take me to BestBuy to help him look at TVs. Not for the office of course. This was for his home. He had no clue whatsoever about tech, and so any opportunity he could leverage my experience he did. During these moments he would try to share little “life lessons” with me that started to reveal how horrible of a person he really was. More on that later.&lt;/p&gt;
-
-&lt;p&gt;As time went on and I got to know individuals they began opening up with me about different office happenings. Do you know how weird it is to work with people and they’re all telling you various things about each other? “Don’t trust this person”. Then that persons tells you to watch out for another person. Holy crap the people there were really on edge. I’m just here to get your file share working again yo. I’m nodding my head and people are getting deep into their beefs. I’m trying to figure out why a Windows XP machine keeps losing the connection to a Vista machine. Short answer - Windows Vista was a huge piece of shit. Here’s a heavy helping of drama to go along with the technical issues. Lucky me. It was obviously not a healthy place for anyone there. I felt really bad.&lt;/p&gt;
-
-&lt;p&gt;The one person they all talked about though was the owner, and how terrible he was. The workers were assets, not people. They were treated as such. If people were caught socializing for even a moment they were admonished with boorish remarks lobbed from across the office.  Everyone was to be at their desks working at all times. I think that’s partially why people opened up and chatted with me so much. I was their only opportunity for basic human contact through much of the day. There was no concept of “team” in this place. Everyone seemed to fend for themselves in one way or another.&lt;/p&gt;
-
-&lt;p&gt;He had some employees whose job was clearly to bully others and act as “the muscle” to enforce these parameters while he was away. One of these enforcers was your typical knucklehead. Big guy. Liked to chew tobacco and spit it right into his trash for everyone else to enjoy the aroma. Would not shut the fuck up about how popular he was in high school. Everyone feared him as much as he feared the owner himself. Everything around this place was structured around fear. Ugh…&lt;/p&gt;
-
-&lt;p&gt;So many moments that are comically moviesque I still can’t even believe it sometimes.&lt;/p&gt;
-
-&lt;p&gt;There was a day when I was down on the floor working on someone’s computer in her office. We were talking about her and where she’s from. Light stuff. Unprovoked she started making some comments about how not to trust certain people. I’m not even going to repeat exactly what she was saying because it was pretty bad. Once again, I’m just trying to figure out why your phone doesn’t have a dial tone and this discussion is starting to turn dark. But as she continues to talk I realized that “people” was really a description of the owner. It was wild how many people tried to clue me into this stuff. Really. It was like they were all prisoners trying to tell me to get out as soon as possible. I tried to steer things in a more positive direction and we continued to chat. A few moments later I turn around and the owner is looming over us in the doorway of her office. I have no clue how long he was standing there, but he was definitely taking advantage of us being unaware. “What are you doing?”…  he asked. “I’m fixing the phone…”, I replied. “Sounds like a lot of talking and not working”. We didn’t say anything as he walked away.&lt;/p&gt;
-
-&lt;p&gt;Their chief accountant was a typical sleazy money guy. I remember one day he started yelling on the phone at someone loud enough for everyone to hear. “Well, he’s not my business partner any more because he stole $10,000 from me!” before slamming the phone down. This, apparently an issue related to his own personal business.  Good to see the kind of company these people keep. And the kind of people the company keeps. He and the owner seemed like best buddies. Obviously, you gotta treat the guy who manages all your money well. One day the CA tasked me with going to McDonald’s and told me to get some free food. He wanted to test my negotiating skills. I was given $20 and tasked to negotiate. At McDonald’s. I did not do that. Ugh…&lt;/p&gt;
-
-&lt;p&gt;There was a time that the owner wanted to buy a projector so he could do presentations in one of the rooms. We had a big debate on what impacts the size of the projection. The available distance from the wall is important, and I wasn’t sure the room was big enough. He disagreed that distance had any relevance to the size of the projection. It was the first time we really butted heads on something. I had to call up a retail store and put them on speakerphone and pretend I didn’t know anything about projectors so they would explain all the important details to me. Eventually, I asserted his opinion on the subject and the retail employee was quick to correct me. The debate stopped immediately after I hung up and he asked me to buy whatever projector I thought would work best.&lt;/p&gt;
-
-&lt;p&gt;One event really bothered me. I came to his office to help him with something. He had a stack of checks on his desk that he was signing. Out of nowhere, he began ranting about how it makes him physically sick that he has to give all this money away. These were for employees and contractors that did very difficult laborious work for him. He considered paying people for their efforts giving money away. That made me physically sick.&lt;/p&gt;
-
-&lt;p&gt;I should have left by this point. Unfortunately, my car broke down during my employment there. I had to stop servicing my personal clients and now I REALLY needed the money if I ever wanted that car to work again. I wasn’t exactly livin’ it up at this point so this was a huge blower for me. Now I’m stuck here. Thankfully the walk to work was only about twenty-five minutes and It was summer time. So at least I could continue this until I got my car situation figured out.&lt;/p&gt;
-
-&lt;p&gt;The tipping point arrived not too long after all this though. He had a buddy who owned another company in the area. I’m guessing his buddy was talking about all of his cool tech equipment and offered to give the owner some extra stuff he had. We both went to visit his buddies company to pick up the equipment. It was like night and day. This guy obviously spent boatloads on his IT infrastructure. They had a proper server room with a rack. Everything was wired up clean around the building. It was amazing. Really. The whole setup was impressive. The type of business environment I was used to working in.&lt;/p&gt;
-
-&lt;p&gt;His buddy gave him a hardware internet filter. It didn’t work for some reason, but the owner was okay with that. “It’s okay if it doesn’t work. As long as people THINK I know what they’re doing they’ll be scared. Can you wire it so it looks connected?”. Ugh….. At one point his buddy mentioned something that they do there, and the owner asked me to set that up as well. I don’t remember what it was. I told him we can’t do it because we don’t have an Exchange Server. His buddy jumps in with “What? You don’t have an Exchange Server? You’re missing out!”. The owner had no idea what an Exchange Server was, but now he had to have one. I figured this was finally a chance to get the guy to spend some money revamping his IT infrastructure. If only I could still be so young an optimistic.&lt;/p&gt;
-
-&lt;p&gt;At the time Microsoft had an offering called Small Business Server. It was a bundle with Microsoft Server 2003 that had Active Directory, Exchange, and some other cool things in a pricing model targeted for smaller companies. It was perfect. He could host everything using his existing “server” hardware. Though most of the terminals would have to be wiped and reinstalled with a professional license for windows.&lt;/p&gt;
-
-&lt;p&gt;I did all the due diligence for pricing of the software and terminals that would need to be updated to work with the new system. I put it all in a document and shared it with him.&lt;/p&gt;
-
-&lt;p&gt;He almost had a heart attack.&lt;/p&gt;
-
-&lt;p&gt;To be fair, it was not chump change but that was the cost of the setup. He wanted everything his buddy had without spending any of the money. This is where things turned even worse.&lt;/p&gt;
-
-&lt;p&gt;He found out through a friend that by being an authorized Microsoft software distributor you can buy all the software we needed at a huge discount. He excitedly told me to go sign us up to the program online. “uhh that program is for companies that provide IT and software services. We don’t do any of that here”, I said. That wasn’t a problem. “If you tell them we sell software then we’re a software seller”. I told him that I didn’t think that’s how the program worked. Then he sent his CA to further convince me it would fine. There wasn’t any problem at all and I was being ridiculous. This is where they became really pushy. They wanted me to sign up as the contact to register the company as a software distributor so we could buy the software we needed at a huge discount and use it. They weren’t giving up.&lt;/p&gt;
-
-&lt;p&gt;I really needed this job. I wasn’t having success finding anything else I could walk to.&lt;/p&gt;
-
-&lt;p&gt;I went into his office and quit the next day.&lt;/p&gt;
-
-&lt;p&gt;I told them I would finish out the week, but I wouldn’t be able to continue after that. They were floored, and couldn’t understand why I wanted to go. Maybe it’s because I don’t want to commit fraud on your behalf and then have y’all throw me under the bus when you inevitably get caught? I just told them the position wasn’t for me.&lt;/p&gt;
-
-&lt;p&gt;The final days there were really strange. I did my best to tie off some loose ends and advise some of the more technical employees how to fix common issues that came up. Many of them knew and understood why I was leaving. It was a small office and everyone talked when the bullies weren’t parading around squashing morale.  A couple people even asked for my contact info so they could recommend me to places their friends or significant others worked. They even called me back a few weeks later to come back.&lt;/p&gt;
-
-&lt;p&gt;No thanks.&lt;/p&gt;
-</description>
-				<pubDate>Mon, 18 Feb 2019 00:00:00 +0000</pubDate>
-				<link>https://mrpowerscripts.com/worst-company-ever/</link>
-				<guid isPermaLink="true">https://mrpowerscripts.com/worst-company-ever/</guid>
-			</item>
-		
-			<item>
-				<title>Nobody gives a damn about your idea</title>
-				<description>&lt;p&gt;Really. They’ll pretend they do if they like you, but that’s the best you’re gonna get. Everyone has ideas. If a snowflake fell every time someone had a great idea we’d all be buried up to our necks in snow. And ya know what? That snow would be way more useful than the ideas that produced it. A snowperson, snow angels, snowballs - there’s a lot of fun to be had in the snow. Your ideas, however, aren’t worth a damn. And nobody cares about them.&lt;/p&gt;
-
-&lt;p&gt;You know what people care about? Actions. Motion. Shiny things they can look at and go “oooooooooooo, pretty”. Ideas carry weight when we can see them in living color. Well, at that juncture they’re no longer ideas, and that’s really the point. If you truly want people to care you need to bring your ideas to real life. Anyone can have an idea.&lt;/p&gt;
-
-&lt;p&gt;That’s precisely why ideas without actions are so useless. People love to sit around and wax poetic about things they would love to do or want to do. It’s not a skill, and you’re not going to sell anyone on the idea that you’re a great ideas person. Unless of course, you have a history of turning your ideas into actions and delivering. Even people with such a reputation still have refuters and detractors. Delivering on ideas is the hard part, and if you want people to respect your ideas you need to start delivering something.&lt;/p&gt;
-
-&lt;p&gt;I’m entirely guilty of this myself. I’ve had a lot of “amazing ideas” that I never even tried to bring to life. But I wanted people to respect them because they were great! Hell, I’m blameworthy as I write this after announcing this great idea &lt;a href=&quot;/automate-youtube-channel/&quot;&gt;to automate my YouTube channel&lt;/a&gt;. Spoiler alert: It didn’t work out the way I thought it would. It’s a lot harder than I thought. Surprise surprise. Have I made progress? Sure. Is it even close to the idea I envisioned? Not even a little bit. I should have shut the hell up and built something that works first. I’m not sure if it’ll ever get finished at this point.&lt;/p&gt;
-
-&lt;p&gt;Now I’m not saying you shouldn’t have ideas. Ideas are great. It’s fun to think up things you want to make or goals you want to reach. It feels good to bring them up in conversation and have other people validate your thoughts. But that’s the key issue with falling in love with the idea and sharing them with everyone. People tend to grow content with that validation and lose motivation in delivering. This isn’t even just my option. There are &lt;a href=&quot;https://sivers.org/zipit&quot;&gt;studies that have shown&lt;/a&gt; when you profess your ideas you’re less motivated to achieve them. Well, shit. I fell into that trap again.&lt;/p&gt;
-
-&lt;p&gt;It doesn’t always end up like that though. Sometimes you can find the motivation in other ways to break past patting yourself on the back for thinking something up and then calling it a day. I remember a long time ago in a company far, far away I had an idea that would totally improve one of the systems.&lt;/p&gt;
-
-&lt;p&gt;I was working on a project that provided a service which assuredly you’ve used at least once in your life (if you live in the USA at least). Part of my role was managing the operating system images that were used to provision machines before they were sent out into the field. “The field” was a network of more than 50,000 computer terminals across the entire United States. It was big, and terminals had to be replaced all the time for various reasons. It was critical that systems are deployed as fast as possible without any errors. Our imaging process was a computer replacement pipeline to keep this heavily used network up and running.&lt;/p&gt;
-
-&lt;p&gt;We used Norton Ghost as the solution to deploy the images to terminals. There wasn’t really any better option at the time. Norton Ghost was the best imaging solution, and it wasn’t cheap because of that. There was a lot of aspects to the system that made it cumbersome to manage. Ghost images were sector-based, and so images ended up being the same size as the hard drive you pulled the image from because of that. If the hard drive was 20GB then that was the size of your image. Even if the data only took up 4GB.  So we had around six different terminal images which each had either 20GB or 40GB hard drives. Even calculating the low end, this meant we had 120GB of image data to manage.  This was 2011 &lt;a href=&quot;https://www.statista.com/statistics/751847/worldwide-seagate-western-digital-average-hard-drive-capacity/&quot;&gt;when hard drives were still slow and Gigabytes were still expensive&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Oh, but it gets better. There wasn’t a single image for each machine. The final image was built up after creating seven different layers of images. The first layer contained the basic vanilla operating system. Then the second layer contained all of the latest operating system updates. Then the third layer would contain all of the custom hardware drivers and software. This continued on until you had a final image which was ready to deploy to the terminal. Now each machine had seven images, so let’s redo our math.  20GB * 7 layers * 6 machines resulted in 840GB worth of images. Mind you, this is our hypothetical low end, which was not the reality. If you had to update one of the layers it meant you had to re-create all of the successive layers after that, and it was a regular practice to maintain the images this way.&lt;/p&gt;
-
-&lt;p&gt;It was a slow laborious process using expensive software and the whole setup itself was expensive to store and slow manage.  I hated it. Because I was the one that had to manage it.&lt;/p&gt;
-
-&lt;p&gt;Through a bit of research, I found out about a new tool created and distributed for free by Microsoft to manage deployments of their operating system better.  It was called WIM images. This was a very new tool, and nobody seemed to know much about it at the time. It was difficult for me to understand as well since I was just learning how to automate things with batch scripts. Oh, batch scripts. I don’t miss you at all. It had the possibility to solve so many problems we faced.&lt;/p&gt;
-
-&lt;p&gt;WIM images only took up the amount of space equal to the amount of data on the drive. So if you created a WIM image from a 20GB hard drive and there was only 4GB of data on the drive then your resulting image was only 4GB. Also, you could append images to each other and it would only increase the image size by the size of the new data. It would not duplicate file data between appended images. So with our layering process, we could combine all seven layers into a single image that was able to fit on a DVD. A single set of machine images that took at minimum 120GB of data could now be the size of a DVD. That also made them FAST to provision. A process which previously took up 15-20 minutes to deploy could now be completed in a few minutes. Also, did I mention it was free? FREE. NO LICENSING TO DEAL WITH.&lt;/p&gt;
-
-&lt;p&gt;After all the research I  was confident this is something we could hack together with scripts to replace our existing expensive cumbersome system. I remember the day I excitedly went to my team lead and shared my idea to update the system with this new solution. I explained all of the benefits as best I could and shared my desire for us to build this.&lt;/p&gt;
-
-&lt;p&gt;“No.”&lt;/p&gt;
-
-&lt;p&gt;Wait? What!? But this is amazing! This is going to save us so much time, money, headaches. It might even cure baldness it’s so good! Steve Balmer will come and thank me personally. I didn’t let it go that day. I shared it with other colleagues in front of him. He had to listen to me ramble on about this idea all day since our team shared a small common area. That did not go over well. “We are NOT going to do this. Stop wasting time with it.”, was the last statement he made about it before leaving the room. That was the end of our discussion about it that week. That infuriated me. Here I was spending my own time outside work hours figuring out how we could make things better, faster, stronger and I was told off in front of my peers for doing so.&lt;/p&gt;
-
-&lt;p&gt;Fuck. That.&lt;/p&gt;
-
-&lt;p&gt;The timing couldn’t have been better. He went on vacation the following week which left our team to manage ourselves. Every single day I worked feverishly to learn more about WIM images enough to put together a proof of concept. I would blaze through finishing my daily tasks before lunchtime and spent the afternoon hacking away with batch scripts and the WIM tools to produce a client/server deployment setup similar to our existing system. And it was certainly similar to our existing system, except better in every single way possible. I could have an entire machine image saved to a single DVD. That image could be deployed to any system within a few minutes by having the machine boot to a USB that automatically identified the system type and pulled the correct image. It worked, and it worked amazingly well.&lt;/p&gt;
-
-&lt;p&gt;It was no longer merely an idea. I had something to show off. When he returned from vacation I asked him to come see something. I gave a demonstration of the process which took all of a few minutes. I wish I could explain the 180 degrees turn his attitude took this time around. He now realized the magnitude of implementing this within our business process. This was huge. The gears started turning in his head and HE was convincing ME of other benefits that I hadn’t even thought of.&lt;/p&gt;
-
-&lt;p&gt;Immediately, that day, he encouraged me to continue building out the rest of the images and system while also tasking another colleague to help with this process.  “How fast do you think you could finish this?”. It was basically already finished. We just needed to create the images for the other systems.&lt;/p&gt;
-
-&lt;p&gt;It did everything I said it could do, but he absolutely did not care until he saw it in action. This is not unique to him, and I never held the scenario against him. He was acting in the best interests of the team at the time. Ideas without action don’t hold value, and I spent a whole day rambling on about this one. In his eyes, I produced no value that day. I was, effectively, wasting the companies time.&lt;/p&gt;
-
-&lt;p&gt;There still stands the caveat that some people have a reputation for delivering, and so their ideas hold far more weight. I was probably the youngest person within the entire wing of the building in my early 20’s and the least experienced person on the team. I could barely read a batch script when I joined. A year later I think I can replace an entire system that existed for 5+ years developed by multiple talented engineers? Yeah right. Go back to your desk and shut up, kid.&lt;/p&gt;
-
-&lt;p&gt;Had I stayed at that position I’m sure my thoughts would have carried further weight in future discussions, but I moved on to new challenges shortly after. Though I did stay long enough to see through having my proof of concept developed further and deployed into production.&lt;/p&gt;
-
-&lt;p&gt;Had I not been admonished by my team lead in front of my colleagues I might have sat content with everyone telling me how cool the idea was. “Wouldn’t this be cool?” “It sure would!”. Book closes. End of story.&lt;/p&gt;
-
-&lt;p&gt;I swear tho I’m going to automate that youtube channel. It’s such a great idea.&lt;/p&gt;
-</description>
-				<pubDate>Sat, 16 Feb 2019 00:00:00 +0000</pubDate>
-				<link>https://mrpowerscripts.com/build-first/</link>
-				<guid isPermaLink="true">https://mrpowerscripts.com/build-first/</guid>
-			</item>
-		
-			<item>
-				<title>How I hacked my Uber rating</title>
-				<description>&lt;p&gt;Uber ratings are a weird concept. You spend a short period of time with someone who is whisking you around the city. You might have a chat with them, or maybe you prefer to have a quiet ride. Sometimes they’ll even offer you treats, or refreshments if you’re lucky! Then, in the end, you judge each other based on a 5-star rating. No pressure. Your Uber rating is intended to give drivers some vague insight into the person they’ll be picking up, but it also has some advantages as well.&lt;/p&gt;
-
-&lt;p&gt;Uber has a program called Uber Star. It might not be available everywhere, but it is where I am. This is a program where if you take at least 10 rides every month, and maintain a high uber rating (4.8 or higher) you’ll have access to Uber Star cars. They’re the same as the regular economy option, but the difference being only drivers with a rating of 4.8 or higher will be able to see your ride request. The best for the best!&lt;/p&gt;
-
-&lt;p&gt;Uber Star drivers are more likely to have comforts like free wifi, candy, or bottled water. Why should I settle for less? I mean, I am an Uber Star, after all.&lt;/p&gt;
-
-&lt;p&gt;I’ve had a fairly good Uber rating. Hovering around 4.85. Not the best, but it qualified me for the program each month. But I noticed I had a period where it started to slip. I saw it went down to 4.84 one day. I didn’t worry. I’m still well within range. Then it hit 4.83, and panic set in.&lt;/p&gt;
-
-&lt;p&gt;What is going on? How did I start falling so far? I couldn’t pinpoint it. I couldn’t think of any behaviors that changed to warrant such a dramatic decline putting my Uber Star status at risk. It was time to do something, and I set out to hack my Uber rating.&lt;/p&gt;
-
-&lt;p&gt;First I thought maybe I could hack Uber’s servers. I would manually change the ratings that drivers gave to me, so they would all say five stars. My Uber Star status would be safe from the whims of drivers judgments upon me. I could continue to enjoy my candies and water with peace of mind. Then, I realized that’s probably really difficult, a lot of work, and fairly illegal. I had to think of a different vector for this attack&lt;/p&gt;
-
-&lt;p&gt;Social Engineering &lt;a href=&quot;https://digitalguardian.com/blog/social-engineering-attacks-common-techniques-how-prevent-attack&quot;&gt;is by far the most common form of a security threat for companies&lt;/a&gt;. If that’s what many professional hackers are using, why wouldn’t it work here? I figured my best bet was to hack the drivers instead.&lt;/p&gt;
-
-&lt;p&gt;The key to success here is that after the ride is finished the driver will select 5-stars when they are given the choice to rate me. This relies on their memory of the trip which just occurred. That’s the key bit here. It doesn’t matter what actually happened on the trip. Only what they remember in the moment of judgment. Their memory is what I need to exploit.&lt;/p&gt;
-
-&lt;p&gt;Memory in people isn’t a very straightforward subject. How we perceive events of the past can become distorted in many different ways. There are [various well-studied memory biases[(https://en.wikipedia.org/wiki/List_of_memory_biases) that illustrate how your memory of an event can be quite subjective. Memory biases are not the only ones that could impact how the driver chooses to rate me, whether they’re conscious of them or not.&lt;/p&gt;
-
-&lt;p&gt;Bias against race, religions, genders, or other elements of our identity are very common. Since I have no control over those biases I excluded them as a concern in my approach here. If a driver gives me a poor rating because they don’t like my face there’s not much I can do about that. Instead, I chose to focus on the elements that I could control.&lt;/p&gt;
-
-&lt;p&gt;Another bias that people may succumb to is &lt;a href=&quot;https://en.wikipedia.org/wiki/Negativity_bias&quot;&gt;the negativity bias&lt;/a&gt;. Essentially, negative events have a larger impact on one’s psychological state than positive ones of equal intensity. Let’s use receiving or losing an ice cream as an example. If I give you ice cream it might make you a bit happier, but if you drop that ice cream you’ll feel way worse than any happiness generated by receiving it. The loss has far more impact on you than the gain.&lt;/p&gt;
-
-&lt;p&gt;I still have a memory of when I was around six years old at the zoo. We stopped on a footbridge to admire some birds swimming around below us. My ice cream slipped and fell into the water where all the animals made a dash to devour it in front of me. I cried. A lot. I don’t remember anything else about that trip. I’ve been given countless ice creams since then, and I couldn’t recall a single one of them. Negative events tend to leave a deeper lasting impact than good ones.&lt;/p&gt;
-
-&lt;p&gt;By understanding various biases of memory and mood I believed I could use those factors to influence the driver’s decision. I broke down the various elements of a trip to then think about the most effective actions for each portion in maximizing a potential 5-star rating. These are the elements of a trip I felt could have an impact on their final decision.&lt;/p&gt;
+&lt;p&gt;Two requirements:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;the waiting&lt;/li&gt;
-  &lt;li&gt;the greeting&lt;/li&gt;
-  &lt;li&gt;the ride&lt;/li&gt;
-  &lt;li&gt;the farewell&lt;/li&gt;
+  &lt;li&gt;A domain name&lt;/li&gt;
+  &lt;li&gt;A server&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;The waiting. Few people like to wait. Especially when waiting costs you money. Uber drivers are providing their time as a service, and the more people they can serve within a given period of time the more money they make. If you make them wait you’re costing them money and they might carry a negative view of you through the entire trip. Regardless of how nice you seem. I made sure to avoid this. I was ready to flag down the driver and hop in immediately every single trip. This was the easy part.&lt;/p&gt;
+&lt;p&gt;The server is simple. I used at $10 Ubuntu 18.10 droplet on Digital Ocean configured with SSH access. Though it should work for 18.04 as well. When you can SSH into your server you’re ready for the next step&lt;/p&gt;
 
-&lt;p&gt;The next two can be grouped together under some basic ideas we learned from the various stated biases. Some people might think it’s a good idea to be friendly to the driver by being very communicative. But given how conversations can take weird turns, or you can say something that the other party dislikes without realizing it, the best strategy is to talk as little as possible. Reducing the potential for negative interactions can far outweigh the benefit of many positive interactions. One negative interaction can outweigh any earned goodwill, and you may not even realize what you’ve done.&lt;/p&gt;
+&lt;p&gt;I’m sure you want to login to your docker registry using the docker client locally - as you do with DockerHub. In order for that to happen, there must be a secured connection between you and the registry (your server). Else docker will throw a fit and require all kinds of hacks to get things working.&lt;/p&gt;
 
-&lt;p&gt;My greetings from the point of starting this practice were always polite and brief. I verified my name with the driver, gave a friendly hello, and then shut up. During the ride itself, I would not engage the drivers in conversation. I’m not the most talkative person, to begin with, but I would get into fairly detailed discussions with drivers regularly.  Though now if they engaged with me I would kindly answer questions directly without much of a follow-up. If they made some comment with the expectation of a response I would provide some neutral response affirming I recognized whatever observation they had made. It was important to find a soft balance between brief and curt. The idea is to come across like a vanilla passenger.  Boring, uninteresting, and not worth engaging or casting any judgment upon - yet. By limiting these interactions I  reduced the chance of saying something that could leave a negative impression on the driver.&lt;/p&gt;
+&lt;p&gt;So, you’re going to need an SSL certificate from a trusted certifitate authority. We’re going to use &lt;a href=&quot;https://letsencrypt.org&quot;&gt;LetsEncrypt&lt;/a&gt; because it’s free and can be automated. I used &lt;a href=&quot;https://www.humankode.com/ssl/how-to-set-up-free-ssl-certificates-from-lets-encrypt-using-docker-and-nginx&quot;&gt;this blog post&lt;/a&gt; to get my SSL cert on the server.  It explains everything you’ll need to make sure your domain is configured properly for secured connections.&lt;/p&gt;
 
-&lt;p&gt;Some of you chatty Cathys might think it comes across as rude to not engage in discussion, and in some ways you’re right. But I’m sure you’ve heard the famous quote &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;It's better to keep your mouth shut and appear stupid than open it and remove all doubt&lt;/code&gt;. By remaining friendly yet neutral it removes the opportunity for the driver to be sure about any negative inclination they might ascribe to a reserved personality. Are you being rude, or are you just a completely boring nitwit? Tough call, and there’s room for doubt. That doubt is easier to mend in our final stage than would be from inciting a negative response, intentionally or not, through increased interactions. You have to cross this minefield either way, and your best bet is to limit the number of footsteps it takes. Positioning for a neutral experience in the greeting and ride sets the stage for the grand finale.&lt;/p&gt;
+&lt;p&gt;Once you have your domain configured properly and the SSL certificate is on the server you can start configuring the registry. Docker themselves maintains and releases &lt;a href=&quot;https://hub.docker.com/_/registry/&quot;&gt;a docker image&lt;/a&gt; that is a Docker registry. Yea, they put a docker container registry in a docker container. But there’s one problem. There’s no GUI. There’s no access control. It’s not that exciting by itself. If only there was some open source project built off this registry container that had all the cool bells and whistles included. Oh, right, there is. &lt;a href=&quot;https://github.com/SUSE/Portus&quot;&gt;Portus&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;If you haven’t managed to put your foot in your mouth the ride should have been pleasant. Nothing noteworthy. A normal, everyday ride. Now, we can focus on the farewell. This was the key change that I believe had the most impact on scoring. I was overly polite, engaging, and communicative during the farewell portion. Oh, I laid it on THICK with politeness and friendliness. This is where the memory hacks start to take place. I wanted the farewell to be &lt;a href=&quot;https://en.wikipedia.org/wiki/Peak%E2%80%93end_rule&quot;&gt;the most prominent and pleasant interaction of the trip&lt;/a&gt;. Being overt and talkative right at the end will have a lasting impact on the personal memory of you and their view of the trip. Their muddled doubts should melt away with the sheer force of your polite posturing.&lt;/p&gt;
+&lt;p&gt;Portus is amazing. I’ll go over the Portus UI in the video, but it does basically everything you could want it to do. You can create accounts, teams, and namespaces. You can add access controls to make images private, private to logged in users, or public for anyone on the internet to use. The UI is very clean and well organized.&lt;/p&gt;
 
-&lt;p&gt;To continue in that vein the &lt;a href=&quot;https://en.wikipedia.org/wiki/Serial-position_effect#Recency_effect&quot;&gt;recency effect&lt;/a&gt; explains that given a list of items a person will have the easiest time remembering the last items, then the first items, and finally the items in the middle.  Consider all of the interactions with the driver as items in a list. Those are what they use to decide their score. In our scenario with the driver, they will remember the farewell the most, the greeting second, and finally the drive. But these interactions are not basic items such as from a shopping list. Each interaction can carry a psychological weight. Meaning there’s a threshold where the negativity bias can override the memory biases. We only want them to think about the last interaction where they were met with a blast of good vibes. Not any negative events that could have happened during the drive. That’s why it’s better to seem boring and neutral during the trip. Increased interactions increase the chances of making a mistake when your best move at this point is to make no mistakes at all. Then hit them with all of your positive energy right at the end.&lt;/p&gt;
+&lt;p&gt;This &lt;a href=&quot;https://www.objectif-libre.com/en/blog/2018/06/11/self-hosting-a-secure-docker-registry-with-portus/&quot;&gt;blog post&lt;/a&gt; put me in the right direction to configure Portus and get it running. Thankfully they have a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker-compose.yml&lt;/code&gt; file that can be used which spins up all the services.&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;Thank you so much. Have a fantastic day. It was a pleasure. Thank you.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;After modifying the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker-compose.yml&lt;/code&gt; from the blog article to use my own SSL certificate, and extra little config changes here and there to improve the experience, the Portus server is live!&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;Thank you so much for the candy! Have a wonderful day! See you, bye bye!&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Now I’m able to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker login&lt;/code&gt; into my own secure private Docker registry where I can manage and share access to images.&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;This was so great. Thank you so much for the ride. I like your shirt by the way. Have a great day!&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
 
-&lt;p&gt;Pour. it. on. thick. This is the only time that matters. They have a few moments to make a decision on how to rate you before they zoom off to the next client. That brief but potent injection of positivity at the end is most likely to be the thing they remember when deciding how to rate the entirely of the trip. At least if you didn’t cause any lingering negative interactions that outweigh it.&lt;/p&gt;
+&lt;span class=&quot;c&quot;&gt;###                                                                                     ##&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;### This script will turn an Ubuntu 18.04/10 server into a docker registry with a GUI   ##&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;###                                                                                     ##&lt;/span&gt;
 
-&lt;p&gt;I practiced these concepts for several weeks (maybe even a bit more than a month) making sure to be consistent with the approach. Treating every ride as an operation. Eventually, my Uber Rating was raised to 4.88. Which is .2 points higher than my previous peak.&lt;/p&gt;
+&lt;span class=&quot;c&quot;&gt;## MrPowerScripts ##&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Website: https://MrPowerScripts.com&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Discord: https://bit.ly/mrps-discord&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Patreon: https://bit.ly/mrps-patreon&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Sign up: https://bit.ly/mrps-mail-list&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Twitter: https://bit.ly/mrps-twitter&lt;/span&gt;
 
-&lt;p&gt;“you hacked your Uber rating by being really nice?” is something you might be asking. Yep, that’s basically it.&lt;/p&gt;
-</description>
-				<pubDate>Sun, 03 Feb 2019 00:00:00 +0000</pubDate>
-				<link>https://mrpowerscripts.com/how-I-hacked-my-uber-rating/</link>
-				<guid isPermaLink="true">https://mrpowerscripts.com/how-I-hacked-my-uber-rating/</guid>
-			</item>
-		
-			<item>
-				<title>Farm karma on Reddit with bots 2019 update</title>
-				<description>&lt;p&gt;Back in July of 2017, I noticed Reddit became much more - political. Lots of very specific political subreddits with various leanings and few subscribers were getting posts pushed up pretty high on Reddit. It seemed a bit strange, but it wasn’t all that much different from the previous election cycle. The difference though was in the four years since Obama won his second term Reddit’s user base exploded. The number &lt;a href=&quot;https://www.statista.com/chart/11882/number-of-subreddits-on-reddit/&quot;&gt;of subreddits doubled&lt;/a&gt;. There was more communities, more people, and more discussions. So it’s not surprising that many new political subreddits would pop up as well. &lt;!-- (1) video wrapper --&gt;&lt;/p&gt;
-&lt;div class=&quot;youtube-video&quot; data-embed=&quot;CCMGHepPBso&quot;&gt; 
- 
-    &lt;!-- (2) the &quot;play&quot; button --&gt;
-    &lt;div class=&quot;play-button&quot;&gt;&lt;/div&gt; 
-     
-&lt;/div&gt;
-&lt;p&gt;Which is awesome. It’s good that more people are involved and aware of how politics work, and that we have the internet to share that information. Can you imagine trying to understand all the nuances to an election a hundred years ago? You cast your vote, and then things happen, and you wake up one day to a newspaper telling you who is running the country. How did that even happen? How were people capable of making informed decisions?&lt;/p&gt;
+&lt;span class=&quot;c&quot;&gt;# This script was created thanks to a number of guides and other peoples efforts. Please check them out!&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# https://www.objectif-libre.com/en/blog/2018/06/11/self-hosting-a-secure-docker-registry-with-portus/&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# https://www.humankode.com/ssl/how-to-set-up-free-ssl-certificates-from-lets-encrypt-using-docker-and-nginx&lt;/span&gt;
 
-&lt;p&gt;Well, they didn’t.  People were lied to regularly. A bit more than one-hundred years ago we have an event called the Spanish-American war. You don’t hear about this too much because it was a completely fucked up event where journalists made up tons of shit to encourage the American government and people to attack a country. Why would they do that? Money and power. Let’s take a cut from &lt;a href=&quot;https://en.wikipedia.org/wiki/Propaganda_of_the_Spanish%E2%80%93American_War&quot;&gt;this Wikipedia entry&lt;/a&gt;.&lt;/p&gt;
+&lt;span class=&quot;c&quot;&gt;# THis script is intended to be run on ubuntu 18.04 or 18.10. You must run it from the home directory (~).&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# I was able to run the box fine on a $10 droplet from digital ocean.&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# It will provision the enviroment, install an ssl cert from letsencrypt, and start the Portus registry service.&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# You can login to your new docker registry at https://${your_domain}:3000.&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# You WILL NOT be able to connect through http. You must prefix your URL with HTTPS.&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# You will be asked to create an admin account on first visit. If you have any issues join my Discord server.&lt;/span&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;The Spanish–American War (April–August 1898) is considered to be both a turning point in the history of propaganda and the beginning of the practice of yellow journalism.&lt;/p&gt;
+&lt;span class=&quot;c&quot;&gt;# After you have the server set up you can create other user account, or use the admin account.&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# You will be able to login to your private registry using the docker client by pointing it to your domain.&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# ex. docker login forestfiles.com&lt;/span&gt;
 
-  &lt;p&gt;It was the first conflict in which military action was precipitated by media involvement. The war grew out of U.S. interest in a fight for revolution between the Spanish military and citizens of their Cuban colony. American newspapers fanned the flames of interest in the war by fabricating atrocities which justified intervention in a number of Spanish colonies worldwide.&lt;/p&gt;
+&lt;span class=&quot;c&quot;&gt;# From here you can interact with your private registry to push and pull images as you would on DockerHub.&lt;/span&gt;
 
-  &lt;p&gt;Several forces within the United States were pushing for a war with Spain. Their tactics were wide-ranging and their goal was to engage the opinion of the American people in any way possible. Men such as William Randolph Hearst, the owner of The New York Journal was involved in a circulation war with Joseph Pulitzer of the New York World and saw the conflict as a way to sell papers. Many newspapers ran articles of a sensationalist nature and sent correspondents to Cuba to cover the war. Correspondents had to evade Spanish authorities; usually, they were unable to get reliable news and relied heavily on informants for their stories. Many stories were derived from second or third-hand accounts and were either elaborated, misrepresented or completely fabricated by journalists to enhance their dramatic effect. Theodore Roosevelt, who was the Assistant Secretary of the Navy at this time, wanted to use the conflict both to help heal the wounds still fresh from the American Civil War, and to increase the strength of the US Navy, while simultaneously establishing America as a presence on the world stage. Roosevelt put pressure on the United States Congress to come to the aid of the Cuban people. He emphasized Cuban weakness and femininity to justify America’s military intervention.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;span class=&quot;c&quot;&gt;# =====!!!!!!! IMPORTANT !!!!!!!=====&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Make sure to set these values.&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# If your server is on a subdomain (sub.forestfiles.com) that's fine&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# The domain must be set up with a properly configured A Record that points to the server IP.&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# You cannot use an IP address with this configuration. You must have a domain name.&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;DOMAIN&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;forestfiles.com&quot;&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;EMAIL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;email@gmail.com&quot;&lt;/span&gt;
 
-&lt;p&gt;You know the Pulitzer prize right? An award named after Joseph Pulitzer awarding people for excellence in journalism. It’s named after a guy who got into a circulation war launching &lt;a href=&quot;https://en.wikipedia.org/wiki/Yellow_journalism&quot;&gt;yellow journalism into existence&lt;/a&gt;. You cannot make this shit up.  Next, you’re going to tell me the &lt;a href=&quot;https://www.theregister.co.uk/2019/01/25/fcc_accused_of_colluding/&quot;&gt;FCC is colluding with the companies it was intented to regulate&lt;/a&gt;. Or that the &lt;a href=&quot;https://www.lifeextension.com/Magazine/2018/1/As-We-See-It/Page-01&quot;&gt;FDA is involved in facilitating policies&lt;/a&gt; that are knowingly harmful to the American public. Where is our Ministry of Truth when we need it?&lt;/p&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$DOMAIN&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;forestfiles.com&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then
+  &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;you forgot to change the domain&quot;&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;exit
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;elif&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$EMAIL&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;email@gmail.com&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then
+  &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;you forgot to change the email&quot;&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;exit
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;fi&lt;/span&gt;
 
-&lt;p&gt;Did you read those articles I linked to? I didn’t. The titles supported my argument and that was good enough for me. No clue what they say.&lt;/p&gt;
+&lt;span class=&quot;c&quot;&gt;# We'll use this later&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;UBUNTU&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt; lsb_release &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;awk&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'{ print $2 }'&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;sed&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'s/[.]//'&lt;/span&gt; &lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get update &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;jq &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt;
 
-&lt;p&gt;How are we supposed to make meaningful decisions? History so clearly shows that everyone is lying to everyone about everything when there are two things on the line: Money &amp;amp; Power. Rules are for losers, and that’s what you’ll be if you follow the rules.&lt;/p&gt;
 
-&lt;p&gt;That sounds harsh, doesn’t it? It’s painful to go through life thinking you can’t trust anyone or anything. Having a system and believing in that system are two very different things. You can have an amazing system that nobody believes in or a completely corrupted one that everyone believes in.  Many Americans believed in their system. They believed newspapers were there to inform them. I mean, why would they lie? They’re an American newspaper. They have a flag outside their building. That should be good enough. Newspapers are there to inform and would never ever ever have any hidden agendas. At least that’s what enough people thought. Of course not all, but you don’t need to cast a ruse over everyone. All you need is enough - to win.&lt;/p&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$UBUNTU&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; 1804 &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;# Install Docker Normally&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+      apt-transport-https &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+      ca-certificates &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+      curl &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+      software-properties-common &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt;
+  curl &lt;span class=&quot;nt&quot;&gt;-fsSL&lt;/span&gt; https://download.docker.com/linux/ubuntu/gpg | &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-key add -
+  &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;add-apt-repository &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&quot;deb [arch=amd64] https://download.docker.com/linux/ubuntu &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;lsb_release &lt;span class=&quot;nt&quot;&gt;-cs&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;
+    stable&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get update &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;docker-ce &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;elif&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$UBUNTU&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; 1810 &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;# Install docker 18.10 - this is before they had a release for this version. hack required&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;apt-transport-https ca-certificates curl software-properties-common &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt;
+  curl &lt;span class=&quot;nt&quot;&gt;-fsSL&lt;/span&gt; https://download.docker.com/linux/ubuntu/gpg | &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-key add -
+  &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;add-apt-repository &lt;span class=&quot;s2&quot;&gt;&quot;deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic test&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;docker-ce &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;else
+ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;This script was meant to be run on at least Ubuntu 18.04&quot;&lt;/span&gt;
+ &lt;span class=&quot;nb&quot;&gt;exit
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;fi&lt;/span&gt;
 
-&lt;p&gt;Can we really expect people to go around questioning the veracity of every claim and assertion offered to them on paper, television, or the internet? Of course not, and we all accept that. And the cycle continues.&lt;/p&gt;
+&lt;span class=&quot;c&quot;&gt;# Install docker compose&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;curl &lt;span class=&quot;nt&quot;&gt;-L&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;https://github.com/docker/compose/releases/download/1.21.2/docker-compose-&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;uname&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;uname&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; /usr/local/bin/docker-compose
+&lt;span class=&quot;nb&quot;&gt;sudo chmod&lt;/span&gt; +x /usr/local/bin/docker-compose
 
-&lt;p&gt;Things haven’t changed that much since the events that lead up to the Spanish-American war. In fact, it’s even harder now for the everyday individual to keep up with a constantly changing global political landscape. Many people are struggling to put a roof over their head much less worrying about verifying all of the information coming at them non-stop through the day. And even better, why pay attention at all? TV, movies, and plenty of other hobbies are there to fill the void.&lt;/p&gt;
+&lt;span class=&quot;c&quot;&gt;# Install Portus&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;rm&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-rf&lt;/span&gt; /tmp/portus
+git clone https://github.com/SUSE/Portus.git /tmp/portus
+&lt;span class=&quot;nb&quot;&gt;mv&lt;/span&gt; /tmp/portus/examples/compose ./portus
 
-&lt;p&gt;Essentially, we’re kinda fucked. Every day a new generation of useful idiots are born. “I’m not a useful idiot” is something you’ll hear a lot of useful idiots say. All of those Americans chomping at the bit to invade Cuba were sure they weren’t useful idiots. They were well-informed individuals because they read the newspaper. That’s what well-informed individuals do.&lt;/p&gt;
+&lt;span class=&quot;c&quot;&gt;# Edit the portus files for our domain and SSL&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;portus &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;exit
+&lt;/span&gt;docker-compose down &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sed&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;s/172.17.0.1/&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;DOMAIN&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;/g&quot;&lt;/span&gt; .env
+&lt;span class=&quot;nb&quot;&gt;sed&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;s/172.17.0.1/&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;DOMAIN&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;/g&quot;&lt;/span&gt; nginx/nginx.conf
+&lt;span class=&quot;nb&quot;&gt;sed&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;s/portus.crt/fullchain.pem/g&quot;&lt;/span&gt; nginx/nginx.conf
+&lt;span class=&quot;nb&quot;&gt;sed&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;s/portus.key/privkey.pem/g&quot;&lt;/span&gt; nginx/nginx.conf
+&lt;span class=&quot;nb&quot;&gt;sed&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;s/portus.crt/fullchain.pem/g&quot;&lt;/span&gt; registry/init
+&lt;span class=&quot;nb&quot;&gt;rm &lt;/span&gt;docker-compose.&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;“If you don’t read the newspaper, you’re uninformed. If you read the newspaper, you’re mis-informed.”
-― Mark Twain&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;span class=&quot;c&quot;&gt;# We're getting all the config files into the right place&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sudo mkdir&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; /docker/letsencrypt-docker-nginx/src/letsencrypt/letsencrypt-site
+&lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;sh&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;EOF&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;' &amp;gt; ./portus/docker-compose.yml
+version: &quot;2&quot;
 
-&lt;p&gt;This quote is commonly attributed to Mark Twain, but of course, it can’t really be verified. By this point in the article, misattributing quotes should be the least of our concerns anyway.&lt;/p&gt;
+services:
+  portus:
+    image: opensuse/portus:head
+    environment:
+      - PORTUS_MACHINE_FQDN_VALUE=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;MACHINE_FQDN&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;
+      - PORTUS_SECURITY_CLAIR_SERVER=http://clair:6060
 
-&lt;p&gt;Yellow Journalism hasn’t died, but now it has too many syllables for the current standard of American political discourse. Fake news is the new term. It was popularized by Republicans during Donald Trumps 2018 campaign for the presidency. Though now it’s a term you’ll hear everyone use for things that they think are, well, fake news. It’s far more succinct than yellow journalism I’ll have to admit. I can see why it’s something people love to throw around.&lt;/p&gt;
+      # DB. The password for the database should definitely not be here. You are
+      # probably better off with Docker Swarm secrets.
+      - PORTUS_DB_HOST=db
+      - PORTUS_DB_DATABASE=PORTUS_production
+      - PORTUS_DB_PASSWORD=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;DATABASE_PASSWORD&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;
+      - PORTUS_DB_POOL=5
 
-&lt;p&gt;Personally, I feel people are much more skeptical in this day and age. But perversely, that hasn’t resulted in people being more well informed. It has degraded to people seeking sources of information that affirm bias they find comforting. Whatever that bias might be. Whatever you believe, there’s someone willing to reaffirm that belief - if they can profit or benefit from it. And there’s absolutely no way to tell if it’s for your benefit or theirs unless you have access to all the facts and data yourself. And how often does that happen? How often are you a first party to the information you need to say, elect people who make the laws that govern you? Who they really are, and what they’re really involved in? Almost never. Yet we still carry on believing this is a working system because it’s all we have and it’s all we’ve ever known.&lt;/p&gt;
+      # Secrets. It can possibly be handled better with Swarm's secrets.
+      - PORTUS_SECRET_KEY_BASE=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;SECRET_KEY_BASE&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;
+      - PORTUS_KEY_PATH=/certificates/privkey.pem
+      - PORTUS_PASSWORD=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;PORTUS_PASSWORD&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;
 
-&lt;p&gt;The internet at this stage has made me feel less well informed. I used to follow every news site that I could and read every article available. Even international sites. I wanted to be in the know, and be aware so that I could make informed decisions. Now, it’s hard for me to find the interest. There’s no way to know if another Pulitzer is running the show behind the scenes. The system is broken, or at least it really seems that way.&lt;/p&gt;
+      # SSL
+      - PORTUS_PUMA_TLS_KEY=/certificates/privkey.pem
+      - PORTUS_PUMA_TLS_CERT=/certificates/fullchain.pem
 
-&lt;p&gt;We’re living in an amazing time. The information age. We’ve solved some astounding problems to get us here. But the biggest hurdles to overcome now are not with technology. Overcoming the human conditions that lead us to fight for our own bias rather than the truth is the biggest challenge ahead. But in a time when so many people are divided and at each other’s throats it doesn’t leave much room for hope in solving these major problems. Only recycling the damaging events of the past. Truth is the first casualty of war, and lies are happy to load the pistol for us.&lt;/p&gt;
+      # NGinx is serving the assets instead of Puma. If you want to change this,
+      # uncomment this line.
+      - RAILS_SERVE_STATIC_FILES=true
 
-&lt;p&gt;Anyway, enough of the pessimism. We can still have fun while the world is falling apart around us.&lt;/p&gt;
+      # Other Config
+      #- PORTUS_SIGNUP_ENABLED=false
+      - PORTUS_ANONYMOUS_BROWSING_ENABLED=false
+      - PORTUS_DELETE_ENABLED=true
+    ports:
+      - 3000:3000
+    links:
+      - db
+    volumes:
+      - ./secrets:/certificates:ro
+      #- ./static:/srv/Portus/public
 
-&lt;p&gt;To kick off this new year I’ve updated the karma farming bot to be even easier and smarter than it was before. Now you can farm karma like a pro. It even includes the ability to use a proxy server, which helps to hide the location your bot is running from. It also uses a tool called docker, which runs the bot inside a container, which is like a mini operating system running on your computer. Everything happening inside the container is, uh, contained. That way it won’t interact or mess up your host operating system. This also means that you can run multiple bots at once very easily. You can find the &lt;a href=&quot;https://github.com/MrPowerScripts/reddit-karma-farming-bot&quot;&gt;latest code for the bot on GitHub&lt;/a&gt; with some instructions on how to run it.  Get out there and farm that karma. Nobody will know it’s a bot, and they won’t care if it tells them what they want to hear. Then just sit back and watch the upvotes roll in.&lt;/p&gt;
-</description>
-				<pubDate>Sun, 27 Jan 2019 00:00:00 +0000</pubDate>
-				<link>https://mrpowerscripts.com/farm-karma-on-reddit-with-bots-2019-update/</link>
-				<guid isPermaLink="true">https://mrpowerscripts.com/farm-karma-on-reddit-with-bots-2019-update/</guid>
-			</item>
-		
-			<item>
-				<title>Google is going mobile first - is your website ready?</title>
-				<description>&lt;p&gt;If you use the Google search console you may have started receiving emails that go something like this:&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;Subject: Mobile-first indexing enabled&lt;/p&gt;
+  background:
+    image: opensuse/portus:head
+    depends_on:
+      - portus
+      - db
+    environment:
+      # Theoretically not needed, but cconfig's been buggy on this...
+      - CCONFIG_PREFIX=portus
+      - PORTUS_MACHINE_FQDN_VALUE=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;MACHINE_FQDN&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;
+      - PORTUS_SECURITY_CLAIR_SERVER=http://clair:6060
 
-  &lt;p&gt;Dear Search Console user,&lt;/p&gt;
+      # DB. The password for the database should definitely not be here. You are
+      # probably better off with Docker Swarm secrets.
+      - PORTUS_DB_HOST=db
+      - PORTUS_DB_DATABASE=PORTUS_production
+      - PORTUS_DB_PASSWORD=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;DATABASE_PASSWORD&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;
+      - PORTUS_DB_POOL=5
 
-  &lt;p&gt;We are updating one or more of your properties as part of the mobile-first initiative. This means that you may see more traffic in your logs for those properties from Googlebot Smartphone. You may also see that snippets in Google Search results are now generated from the mobile version of your content.&lt;/p&gt;
+      # Secrets. It can possibly be handled better with Swarm's secrets.
+      - PORTUS_SECRET_KEY_BASE=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;SECRET_KEY_BASE&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;
+      - PORTUS_KEY_PATH=/certificates/privkey.pem
+      - PORTUS_PASSWORD=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;PORTUS_PASSWORD&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;
 
-  &lt;p&gt;The following properties are being updated (list limited to 20 properties):&lt;/p&gt;
-&lt;/blockquote&gt;
+      - PORTUS_BACKGROUND=true
+      - PORTUS_SYNC_ENABLED=true
+      - PORTUS_SYNC_STRATEGY=update-delete
+    links:
+      - db
+    volumes:
+      #- ./secrets:/certificates:ro
+      - /etc/letsencrypt/live/dr.mrpowerscripts.com:/certificates
 
-&lt;p&gt;Google’s &lt;a href=&quot;https://webmasters.googleblog.com/2018/03/rolling-out-mobile-first-indexing.html&quot;&gt;mobile-first initiative announced March 26, 2018&lt;/a&gt; has a few key initiatives summed up at the end of their blog post:&lt;/p&gt;
+  db:
+    image: library/mariadb:10.0.23
+    command: mysqld --character-set-server=utf8 --collation-server=utf8_unicode_ci --init-connect='SET NAMES UTF8;' --innodb-flush-log-at-trx-commit=0
+    environment:
+      - MYSQL_DATABASE=PORTUS_production
 
-&lt;blockquote&gt;
-  &lt;p&gt;To recap:&lt;/p&gt;
+      # Again, the password shouldn't be handled like this.
+      - MYSQL_ROOT_PASSWORD=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;DATABASE_PASSWORD&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;
+    volumes:
+      - ./mariadb:/var/lib/mysql
 
-  &lt;ol&gt;
-    &lt;li&gt;
-      &lt;p&gt;Mobile-indexing is rolling out more broadly. Being indexed this way has &amp;gt;no ranking advantage and operates independently from our mobile-&amp;gt;friendly assessment.&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;p&gt;Having mobile-friendly content is still helpful for those looking at ways &amp;gt;to perform better in mobile search results.&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;p&gt;Having fast-loading content is still helpful for those looking at ways to &amp;gt;perform better for mobile and desktop users.&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;p&gt;As always, ranking uses many factors. We may show content to users &amp;gt;that’s not mobile-friendly or that is slow loading if our many other signals &amp;gt;determine it is the most relevant content to show.&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/blockquote&gt;
+  registry:
+    image: library/registry:2.6
+    command: [&quot;/bin/sh&quot;, &quot;/etc/docker/registry/init&quot;]
+    environment:
+      # Authentication
+      REGISTRY_AUTH_TOKEN_REALM: https://&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;MACHINE_FQDN&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;/v2/token
+      REGISTRY_AUTH_TOKEN_SERVICE: &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;MACHINE_FQDN&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;:5000
+      REGISTRY_AUTH_TOKEN_ISSUER: &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;MACHINE_FQDN&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;
+      REGISTRY_AUTH_TOKEN_ROOTCERTBUNDLE: /secrets/fullchain.pem
 
-&lt;p&gt;When you see the e-mail subject arrive in your inbox it sounds like Google is ditching the desktop and you’re screwed SEO-wise if you don’t have a mobile site. That’s not the case - yet. But Google is hinting throughout the article a reality that many people might be failing to realize. Most people are finding stuff they need through mobile first. Here’s the key sentence:&lt;/p&gt;
+      # SSL
+      REGISTRY_HTTP_TLS_CERTIFICATE: /secrets/fullchain.pem
+      REGISTRY_HTTP_TLS_KEY: /secrets/privkey.pem
 
-&lt;blockquote&gt;
-  &lt;p&gt;Mobile-first indexing means that we’ll use the mobile version of the page &amp;gt; for indexing and ranking, to better help our – primarily mobile – users find &amp;gt; what they’re looking for.&lt;/p&gt;
-&lt;/blockquote&gt;
+      # portus endpoint
+      REGISTRY_NOTIFICATIONS_ENDPOINTS: &amp;gt;
+        - name: portus
+          url: https://&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;MACHINE_FQDN&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;/v2/webhooks/events
+          timeout: 2000ms
+          threshold: 5
+          backoff: 1s
+    volumes:
+      - ./secrets:/usr/local/share/ca-certificates:ro
+      - ./registry/data:/var/lib/registry
+      - ./secrets:/secrets:ro
+      - ./registry/config.yml:/etc/docker/registry/config.yml:ro
+      - ./registry/init:/etc/docker/registry/init:ro
+    ports:
+      - 5000:5000
+      - 5001:5001 # required to access debug service
+    links:
+      - portus:portus
 
-&lt;p&gt;Let us &lt;strong&gt;ENHANCE&lt;/strong&gt;&lt;/p&gt;
+  postgres:
+    image: library/postgres:10-alpine
+    environment:
+      POSTGRES_PASSWORD: portus
 
-&lt;blockquote&gt;
-  &lt;p&gt;primarily mobile&lt;/p&gt;
-&lt;/blockquote&gt;
+  clair:
+    image: quay.io/coreos/clair
+    restart: unless-stopped
+    depends_on:
+      - postgres
+    links:
+      - postgres
+      - portus
+    ports:
+      - &quot;6060-6061:6060-6061&quot;
+    volumes:
+      - /tmp:/tmp
+      - ./clair/clair.yml:/clair.yml
+    command: [-config, /clair.yml]
 
-&lt;p&gt;While they say in the blog post that indexing your site as a mobile view won’t impact its page rank, they do make it very clear &lt;a href=&quot;https://webmasters.googleblog.com/2015/04/rolling-out-mobile-friendly-update.html&quot;&gt;that mobile-friendly sites do have PageRank preference&lt;/a&gt; when it comes to mobile search, and it has been like that since 2015.&lt;/p&gt;
 
-&lt;p&gt;Google’s search userbase is primarily mobile, and mobile-friendly websites receive preference in mobile search results. You probably should consider making your website mobile friendly - like three years ago. It’s never too late to get started!&lt;/p&gt;
+  nginx:
+    image: library/nginx:alpine
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./secrets:/secrets:ro
+      - static:/srv/Portus/public:ro
+    ports:
+      - 80:80
+      - 443:443
+    links:
+      - registry:registry
+      - portus:portus
 
-&lt;p&gt;Thankfully google also provides many tools for you to see how mobile-friendly Google thinks your website is. If you’re familiar with the Google search console this won’t be news to you. If not, and you have a website that you want people to find in the future now it the time to get acquainted.&lt;/p&gt;
 
-&lt;p&gt;After the whole song and dance of getting access to your search console profile, you can find a “Mobile Usability” button in the “Enhancements” dropdown on the left.&lt;/p&gt;
+volumes:
+  static:
+&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;EOF
 
-&lt;div&gt;
-  &lt;img style=&quot;object-fit: contain&quot; src=&quot;/images/mobile-friendly-button-google-search-console.png&quot; alt=&quot;image&quot; /&gt;
-&lt;/div&gt;
+&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;EOF&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt; &amp;gt; /docker/letsencrypt-docker-nginx/src/letsencrypt/docker-compose.yml
+version: '3.1'
 
-&lt;p&gt;This is your portal to learning more about how Google “sees” your website from the view of a mobile user. Pages deemed having too many errors or not &lt;a href=&quot;https://webmasters.googleblog.com/2015/04/rolling-out-mobile-friendly-update.html&quot;&gt;mobile friendly enough&lt;/a&gt; will be unapologetically left to float off into the great internet abyss where nobody will ever see your link again.&lt;/p&gt;
+services:
 
-&lt;p&gt;The more mobile-friendly pages in this list the better off you’ll be in this new mobile-first future. Not because Google is making any significant changes but because people’s habits are changing. You can see in the chart below as mobile-friendly pages are added to my website the impression count began to increase. I hope to continue that trend, and so most of my website is designed around the mobile user’s experience.&lt;/p&gt;
+  letsencrypt-nginx-container:
+    container_name: 'letsencrypt-nginx-container'
+    image: nginx:latest
+    ports:
+      - &quot;80:80&quot;
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+      - ./letsencrypt-site:/usr/share/nginx/html
+    networks:
+      - docker-network
 
-&lt;div&gt;
-  &lt;img style=&quot;object-fit: contain&quot; src=&quot;/images/google-search-console-impressions-mobile.png&quot; alt=&quot;image&quot; /&gt;
-&lt;/div&gt;
+networks:
+  docker-network:
+    driver: bridge
+&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;EOF
 
-&lt;p&gt;Clicking on any of the detail items will show you a list of valid links, links that contain errors, or any other link status types.&lt;/p&gt;
+&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;EOF&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt; &amp;gt; /docker/letsencrypt-docker-nginx/src/letsencrypt/nginx.conf
+server {
+    listen 80;
+    listen [::]:80;
+    server_name &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;DOMAIN&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;.com www.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;DOMAIN&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;.com;
 
-&lt;div&gt;
-  &lt;img style=&quot;object-fit: contain&quot; src=&quot;/images/google-search-console-mobile-friendly-page-examples.png&quot; alt=&quot;image&quot; /&gt;
-&lt;/div&gt;
+    location ~ /.well-known/acme-challenge {
+        allow all;
+        root /usr/share/nginx/html;
+    }
 
-&lt;p&gt;Clicking on any of your links will allow you to see a mobile test report that even previews how your website looks to Google’s mobile index bot.&lt;/p&gt;
+    root /usr/share/nginx/html;
+    index index.html;
+}
+&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;EOF
 
-&lt;div&gt;
-  &lt;img style=&quot;object-fit: contain&quot; src=&quot;/images/google-search-console-mobile-test-page.png&quot; alt=&quot;image&quot; /&gt;
-&lt;/div&gt;
+&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;# Bring up the nginx webserver to get the letsencrypt certs&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /docker/letsencrypt-docker-nginx/src/letsencrypt &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;exit
+sudo &lt;/span&gt;docker-compose up &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;exit
 
-&lt;p&gt;While Google’s “mobile-first initiative” seems scary at first it doesn’t involve any major impending changes to search index ranking. Just how Google “reads” the pages of your site for their index. But these changes are indicatives of how people are using mobile primarily as the way to find things they need. And if they can’t see you on mobile then you may never be seen! Thankfully the tools to find out if you’re ready are freely available. Check out the Google search console with your own website.&lt;/p&gt;
-</description>
-				<pubDate>Mon, 14 Jan 2019 00:00:00 +0000</pubDate>
-				<link>https://mrpowerscripts.com/google.mobile-first/</link>
-				<guid isPermaLink="true">https://mrpowerscripts.com/google.mobile-first/</guid>
-			</item>
-		
-			<item>
-				<title>Jekyll Front Matter Template</title>
-				<description>&lt;p&gt;This is a Jekyll front matter template free for anyone to use&lt;/p&gt;
-&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
-&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+sleep &lt;/span&gt;5
+
+&lt;span class=&quot;c&quot;&gt;# Now we're getting the real cert here&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker run &lt;span class=&quot;nt&quot;&gt;--rm&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; /docker-volumes/etc/letsencrypt:/etc/letsencrypt &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; /docker-volumes/var/lib/letsencrypt:/var/lib/letsencrypt &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; /docker/letsencrypt-docker-nginx/src/letsencrypt/letsencrypt-site:/data/letsencrypt &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;/docker-volumes/var/log/letsencrypt:/var/log/letsencrypt&quot;&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+  certbot/certbot &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+  certonly &lt;span class=&quot;nt&quot;&gt;--webroot&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;--email&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;EMAIL&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--agree-tos&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--no-eff-email&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;--webroot-path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/data/letsencrypt &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;DOMAIN&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Copy our new cert to the portus secrets folder&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;cp&lt;/span&gt; /docker-volumes/etc/letsencrypt/live/&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;DOMAIN&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;/&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; ~/portus/secrets
+
+
+&lt;span class=&quot;c&quot;&gt;# Shutdown the letsencrypt webserver&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /docker/letsencrypt-docker-nginx/src/letsencrypt &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;exit
+sudo &lt;/span&gt;docker-compose down
+
+&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~/portus &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;exit
+
+&lt;/span&gt;docker-compose up &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--force-recreate&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# ----------- this is all stuff to do a self signed cert&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Yuu have to do all kinda of weird client side stuff to connect to self signed certs tho&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# echo &quot;subjectAltName = URI:${DOMAIN}&quot; &amp;gt; extfile.cnf&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# echo &quot;basicConstraints=CA:FALSE&quot; &amp;gt;&amp;gt; extfile.cnf || exit&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# echo &quot;subjectAltName=@my_subject_alt_names&quot; &amp;gt;&amp;gt; extfile.cnf || exit&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# echo &quot;subjectKeyIdentifier = hash&quot; &amp;gt;&amp;gt; extfile.cnf || exit&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# echo &quot;[ my_subject_alt_names ]&quot; &amp;gt;&amp;gt; extfile.cnf || exit&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# echo &quot;DNS.1 = *.${DOMAIN}&quot; &amp;gt;&amp;gt; extfile.cnf || exit&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# openssl genrsa -out secrets/rootca.key 2048&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# dd if=/dev/urandom of=~/.rnd bs=256 count=1&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# openssl req -x509 -new -nodes -key secrets/rootca.key \&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#  -subj &quot;/C=US/ST=CA/O=Acme, Inc.&quot; \&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#  -sha256 -days 1024 -out secrets/rootca.crt&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# openssl genrsa -out secrets/portus.key 2048&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# openssl req -new -key secrets/portus.key -out secrets/portus.csr \&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#  -subj &quot;/C=US/ST=CA/O=Acme, Inc./CN=${DOMAIN}&quot;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# openssl x509 -req -in secrets/portus.csr -CA secrets/rootca.crt -extfile \&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#  extfile.cnf -CAkey secrets/rootca.key -CAcreateserial \&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#  -out secrets/portus.crt -days 500 -sha256&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
-				<pubDate>Sun, 13 Jan 2019 00:00:00 +0000</pubDate>
-				<link>https://mrpowerscripts.com/jekyll-front-matter-template/</link>
-				<guid isPermaLink="true">https://mrpowerscripts.com/jekyll-front-matter-template/</guid>
+				<pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+				<link>https://mrpowerscripts.com/docker-private-registry-portus/</link>
+				<guid isPermaLink="true">https://mrpowerscripts.com/docker-private-registry-portus/</guid>
 			</item>
 		
 			<item>
-				<title>Cleandows-10: Remove unwanted apps and services from Windows 10 with Powershell</title>
-				<description>&lt;p&gt;Well, this is really cool to see! I had a fellow scripter drop into the &lt;a href=&quot;https://bit.ly/mrps-discord&quot;&gt;Discord channel&lt;/a&gt; asking some questions about one of my videos. Windows restore points with Powershell - super exciting content. I wasn’t very helpful, but they did show me what they were working on. Some really cool Powershell scripts for windows 10 to remove apps and services. &lt;!-- (1) video wrapper --&gt;&lt;/p&gt;
-&lt;div class=&quot;youtube-video&quot; data-embed=&quot;XMK3ZAazprM&quot;&gt; 
+				<title>How to build a monetizable web app in 60 days</title>
+				<description>&lt;p&gt;Well, 63 days if we’re going by the latest commit in the repo. But that’s close enough! Do you have any side projects? I have tons of them. I have side projects that are waiting on side-side projects for the side project that will (fingers crossed) make them even more awesome (when they’re finished (if ever)). Do you have any side projects that make money? Ah, now THAT is a much rarer sighting. I’ve personally never had a side project that was capable of generating money on its own. &lt;!-- (1) video wrapper --&gt;&lt;/p&gt;
+&lt;div class=&quot;youtube-video&quot; data-embed=&quot;zAWGcx4aNZE&quot;&gt; 
+ 
+    &lt;!-- (2) the &quot;play&quot; button --&gt;
+    &lt;div class=&quot;play-button&quot;&gt;&lt;/div&gt; 
+     
+&lt;/div&gt;
+&lt;p&gt;I suppose the Youtube channel does, but it’s nothing to write home about. Every once in a while we’re sitting at our desk thinking we could be doing something better with our time, and changing the world with code! And I’ve had that moment many times myself. I have an idea. I get started on it. It turns out to be way harder than I thought. It doesn’t just happen to individuals. It happens to companies as well.&lt;/p&gt;
+
+&lt;p&gt;Many of the companies I’ve worked for ended up failing within two years of working there. I don’t know if that says more about my luck or my impact, but I’ve learned a lot through all of those failures. Even when peoples livelihoods depend on shit working sometimes it’s hard to get shit to work.&lt;/p&gt;
+
+&lt;p&gt;I’ve worked on a few of these failures with my buddy in the quote below. One of them was a startup where we worked on a remote team together. It crashed and burned. Then we had our own idea that was going to change everything. It only changed our net worths. Negatively. That’s part of the process though. You learn from your experiences and your mistakes and you keep trying. So on Oct 8th, 2018 while working at home I get this message from my buddy:&lt;/p&gt;
+
+&lt;p&gt;(all spelling and grammatical errors included)&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;10:00 AM
+I’m wracking my brain (and yours) to assemble a list of interesting and instantly monetizable problems which haven’t been worked on.&lt;/p&gt;
+
+  &lt;p&gt;I’ve come to recognize the type of products and services I enjoy working on the most are centered around making peoples’ “daily grinds” (individually or as a community) less crappy. For example, some of the items I’ve put on my list:&lt;/p&gt;
+
+  &lt;p&gt;{ his list }&lt;/p&gt;
+
+  &lt;p&gt;I want to devote my time, energy, and creativity to a problem that can make modern life more manageable for people, even if it’s only in a small way. The idea doesn’t have to be world-changing, but it does need to be something people was consistently throw money at without a second thought if it did a great job doing what it said it would do I loved working on Daology, and want to get back to the same feeling of having a purpose…but this time I want to ensure we have a clear path to revenue and a huge pool of potential customers, first. No reason to do anything overly ambitious. I don’t care if the idea is boring-sounding, if it has an immediate and quantifiable reason to exist. Hell, I’d build a company around (literal) garbage collection and processing if I could reliably make money and improve lives while doing it.When I look at the most successful people and companies I know, the vast majority took some seemingly mundane, but prevalent pain people all over suffer through and incrementally improved it.They didn’t build the next social network, “redefined AI”, or a rocket ship…they made it easier for people like us to drop off clothes for cleaning, simplified keeping track of household finances, or designed and produced a small little elastic strap to keep your damn hair out of your eyes while working out or a ponytail neatly in place.Wow…that was a dump of early morning thoughts on you. Apologies for the actual wall of text&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Now, that was a dump of thoughts on me at 10 am. And it took me a while to respond because initially, my answer was no. I’m burnt out from all this. I can’t deal with another unfinished or failed side project. But a lot of things have changed since the last time we worked on something together. I started to think about the whole approach differently. And eventually I replied with:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;10:22 AM
+yeah I don’t really have a path forward on this, but I’ve come to the conclusion that the only managble way for me to build side income in tech would be some kind of pay once service that does some specific thing. It lives on AWS lambda and only runs when someone pays for it to run. it does that one specific thing, and sends the result to the person (or does the thing). This is infinitely scalable infrastructure wise, doesn’t require ongoing support, and doesn’t require ongoing monitoring or maintenance. That’s the only thing I can think of that would work for people with limited time to commit. I don’t know what that service looks like unfortunately&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Well, maybe not exactly infinitely scalable. Unfortunately, hyperbole is a superpower of mine. After this day we eventually figured out what that service looks like. What we eventually landed on isn’t going to change the world. But it is a working, complete, scalable web app that was built by two people on their spare time in 60 days. Let’s take a look at what it is, and how it works.&lt;/p&gt;
+
+&lt;p&gt;SendPostMoji.com lets you send personalized emoji postcards in the mail using a simple online card creator.&lt;/p&gt;
+
+&lt;p&gt;The app consists of two git repositories. One is a GitHub Pages repo which hosts the front-end. Everything you see on SendPostMoji.com is being served directly from GitHub for free. Whenever we push a change up to the repo GitHub automatically rebuilds the Jekyll based website. So, effectively we don’t have to worry about our website going down other than the periodic GitHub Pages maintenance periods. But for a small project like this those are acceptable inconveniences to trade for having someone else deal with hosting for free. My buddy handled the vast majority of the frontend work. I helped mock content, fix some crossed wires, and finish up some features. But even for an MVP how beautiful does it look?&lt;/p&gt;
+
+&lt;p&gt;That’s the impact of working with an experienced UX designer. If I find a screenshot of what I originally mocked up I’ll share it here so we can all laugh at how bad I am at design. Being able to collaborate with people that complement your strengths and weaknesses is huuuuge. I can’t emphasize enough how important it is to network and find people who like to build and tinker with things on the side. I would have never been able to produce such a result in the time span on my own. It would have probably ended up abandoned. Thankfully I didn’t have to. Collaboration is such a rewarding experience with great people. Get out there and mingle ya’ll. My deal in this arrangement was to work primarily on the backend.&lt;/p&gt;
+
+&lt;p&gt;Remember we’re two people with full-time jobs. My buddy has the whole house, wife, kids, blah blah blah deal and I’m generally very lazy. So time is extremely limited for us both in somewhat different but equally valid ways. Whatever we build needs to be able to survive on its own for the most part without costing us too much. We don’t have time to be putting out fires in the middle of the night on top of our existing lives. Infrastructure is hard to manage and maintain even when you’re paid to do it. But we don’t have to worry about infrastructure where we’re going, kids! Because we’re going Serverless! With Serverless Computing! (Superman pose) I &lt;a href=&quot;https://www.youtube.com/watch?v=kp1SFflR2A0&quot;&gt;made a video&lt;/a&gt; not too long ago about AWS Lambda functions with the Serverless framework. Showing how to create a simple HTTP endpoint.&lt;/p&gt;
+
+&lt;p&gt;As the video states, there’s a number of advantages to building around the compute function architecture. For one, you don’t have a server constantly running all day when in reality it only needs about 6 seconds for X to happen. X of course, can be anything. That’s your function. Like any old programming function. So what’s my function? Send a PostMoji.&lt;/p&gt;
+
+&lt;p&gt;After you choose your PostMoji, enter the message and address, and finally pay for the postcard it fires off all that information to an AWS Lambda function. It’s a NodeJS based function using various libraries for the services we’re relying on. The function relies on several external services that handle the entire process of creating and mailing the PostMoji, charging the customer’s credit card, and mailing a notification to the user.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Lob.com - API to create a send various types of mailing. Including letters and postcards.&lt;/li&gt;
+  &lt;li&gt;Stripe.com - API that handles credit card transactions securely.&lt;/li&gt;
+  &lt;li&gt;SparkPost.com - API to send emails&lt;/li&gt;
+  &lt;li&gt;MailChimp.com - Mailing List manager with API&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Once the Lambda function spins up the first thing we do is check to see if they want to be bothered by us through email sometimes. If the user ticked yes we send their email address to a mailing list on MailChimp so we can poke them later.&lt;/p&gt;
+
+&lt;p&gt;Then we take the recipient address and send it through Lob’s address validation service. This lets us know if we can send a PostMoji to that address. From there we’ll create a test postcard with Lobs test API to make sure there are no issues with the postcard data entered. If there are no issues with the test postcard we finally send the real postcard - which obviously should pass by this point. When that returns successfully we attempt to charge the users credit card.&lt;/p&gt;
+
+&lt;p&gt;Can I just say for a second I love stripe? Basically, the way it works is they provide you with this awesome credit card form code that gives you an amazing credit card input. Does all of the validation and looks super jazzy. It sends the credit card info directly to stripe and then returns a transaction payload. Now you send this transaction payload to your backend for processing. The transaction payload doesn’t contain any personal information of the user or their credit card. So there’s no chance of accidentally leaking user credit card info in logs and what not. So cool. Anywho.&lt;/p&gt;
+
+&lt;p&gt;Now finally if the payment is successful we send the user a confirmation e-mail that the PostMoji is on its way. Any exceptions met along the way are attempted to be handled gracefully. Such as if the credit card charge fails for any reason we immediately cancel the postcard order. Neato! Now you know what it is, and how it works. Why is this so fundamentally different from how we’ve approached projects and side projects before? We focused our stack and goals to work within our defined limitations. Here’s some of the key things that we identified in our final setup.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;No active running costs. GitHub Pages is hosting our frontend for free. We have no hosting costs or servers to monitor. Nor do we need to worry about scalability in the future. The one con is we’re subject to GitHub pages maintenance downtimes. The AWS Lambda is not constantly running. It only spins up to perform its function when someone makes a purchase.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Predictable costs. Every action within our Lambda has a predictable cost. The number of emails we send, Stripe’s cut from charging the user, and the cost of postcards are all wrapped within the cost of running the lambda. We’re still using the free tier for many of the services, but we should be able to predict costs fairly accurately with our configuration.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;No infrastructure ownership. With GitHub handling the frontend and AWS handling the servers, we don’t have any alarms to monitor or resources to manage. We can sleep at night and worry about our day jobs when the sun is up.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Security through isolation. Every user’s order is managed in its own isolated environment.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;(Almost) limitless scalability. Our Lambda relies on other APIs. So really they’re our only bottleneck. I wouldn’t be surprised if AWS was hosting the APIs for all the services in the Lambda. They do big things yo. Right now the Lambda isn’t aware of rate limits, so that would need to be considered in the future. But we would need to start receiving dozens of orders per second before that becomes a cause for concern. I don’t see that happening soon.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Manageable codebase. Our lambda function is only about 130 lines of code. The serverless framework adds quite a few files to the repo and you have to configure the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;serverless.yml&lt;/code&gt;. Once you have it set up it’s a breeze to manage a Serverless function. The frontend is a simple Jekyll app mostly powered by jquery. In a word of React and Vue - I know. There are only a few main files to mess around with in that repo. We also have a nice clean distinction between our backend and our frontend in two separate folders.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Flexibility. We’ve branded this site around emoji images after we scaled back on many ideas and iterations of what this project would be. But we can quickly substitute any other kind of branded cards in our card creator system. We could consider licensing sports team logos and set up a totally new site layout fairly fast. The lambda and frontend were built with this type of flexibility in mind, so they can quickly adapt to support other iterations without changing much code.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The projects that we tackled before had us spending so much time focusing on what hard problems we were going to solve. We would get far enough into the process to end up tangled by the tech we were using or our own limitations. This time around we started with identifying our own problems and limitations. In our case mostly having time and money to invest. Then we designed our passion project around the understanding of those limitations. So we could arrive at not only something that would be completed within a reasonable timespan but also continue to exist and potentially thrive without requiring us to helicopter over it.&lt;/p&gt;
+
+&lt;p&gt;Is this set up sustainable? I have no idea in all honesty. I’ve never built anything like this before. But it SOUNDS like it should be. How hard can the postcard business be? We’re going to become the Apple of emoji based postcards. Who’s in our way right now? Nobody! (I think?) I suppose with enough time and luck we’ll see. For a long time, I felt like monetizable projects needed to be game-changers. Which often left me tangled in the weeds deep in the woods. But there’s a lot of opportunities to set realistic goals within your means now more than ever. With some consideration of your architecture, goals, limitations, and collaboration it’s possible to develop a monetizable web app on a budget in 60 days.&lt;/p&gt;
+
+&lt;p&gt;We aren’t going to change the world by making it super easy for people to send emoji postcards. But we might help someone put a smile on someone else’s face. That’s pretty cool too. We have a great foundation, so from here we can continue to improve and learn from this experience over time. I would absolutely love if you could help us test this new service by sending someone you know a PostMoji, and telling us how the experience was for you. PostMoji is only available to send to USA addresses at the moment.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://SendPostMoji.com&quot;&gt;https://SendPostMoji.com&lt;/a&gt;&lt;/p&gt;
+</description>
+				<pubDate>Thu, 13 Dec 2018 00:00:00 +0000</pubDate>
+				<link>https://mrpowerscripts.com/monetize-site-60-days/</link>
+				<guid isPermaLink="true">https://mrpowerscripts.com/monetize-site-60-days/</guid>
+			</item>
+		
+			<item>
+				<title>Help me automate my youtube channel</title>
+				<description>&lt;p&gt;I made the MrPowerScripts YouTube channel on Jan 5, 2012. Very close to seven years old! How wild is that? After making over one hundred videos my channel has 373,803+ views. It feels really great knowing I’ve helped so many people save time by scripting, programming, and developing. I’ve had so much fun with it, and I want to see it continue to grow. And this is always the challenge with growing up, right? I’m finding I have less to spend on hours and hours cutting up video. Doing in-depth research about a subject so I don’t get called out for being inaccurate in the comments. Reviewing, making the thumbnails, doing conversions and more reviews after reviews after reviews. &lt;!-- (1) video wrapper --&gt;&lt;/p&gt;
+&lt;div class=&quot;youtube-video&quot; data-embed=&quot;Q7tLhrnMZVs&quot;&gt; 
+ 
+    &lt;!-- (2) the &quot;play&quot; button --&gt;
+    &lt;div class=&quot;play-button&quot;&gt;&lt;/div&gt; 
+     
+&lt;/div&gt;
+&lt;p&gt;I’m exhausted just thinking about all of it. I started blogging and it’s great. I love writing, and this has given me an opportunity to write more and share thoughts in a different way. But videos have always been my thing.&lt;/p&gt;
+
+&lt;p&gt;I began making tech videos because I love learning from videos. Sometimes hearing someone explain something is really the key to making it click. To combine that with visuals that help illustrate the spoken ideas is an amazing opportunity for learning.&lt;/p&gt;
+
+&lt;p&gt;Powershell wasn’t as very well known or popular of a tool back in 2012. I thought it was my opportunity to share how I was saving time at work and automating various tasks with scripts. I made the channel and started uploading videos about it.&lt;/p&gt;
+
+&lt;p&gt;You can see through the history of the channel I learned some new things over time. Switched into different kinds of subjects about tech. Started to focus a bit more on general development. Where could I possibly go next? What is my goal here? What is the end game for this channel? I’ve been asking myself that quite a bit, and I think I have an amazing answer. I want to automate the entire youtube channel.&lt;/p&gt;
+
+&lt;p&gt;Wait, what? Automate? How? Videos don’t just fall out of the sky! You can’t just set up some sort of video collection system that catches videos from the sky and puts them through some processing facility that purifies these sky videos and bottles them to be sold at the purified sky videos mart down the street. it’s not possible! And you would be right if we were talking about sky videos. Because that’s not a thing. But we’re not. I feel like I can do this.&lt;/p&gt;
+
+&lt;p&gt;The whole point of the channel is to teach people how to automate things so they can get more done in less time. This is the perfect solution to my conundrum. I can continue to work on the channel but streamline the production process so that it can continue to grow in new ways. Maybe ways I don’t even expect. More on that in a bit.&lt;/p&gt;
+
+&lt;p&gt;This is definitely not one of those overnight things, but I think the channel is in a good place for me to try something like this. I’ve been thinking about different ways to approach this. I feel like I have a fairly rough idea of what I need and where this can go. It will take baby steps and learning over time. The key thing to remember is that I won’t be able to do this on my own.&lt;/p&gt;
+
+&lt;p&gt;Obviously, first off, this is going to cost money. The channel does earn a bit of money. Around 33 dollars a month at the moment. Though I don’t think that’s going to be enough to get a video production pipeline moving. Want to help me? The laziest option is to support me &lt;a href=&quot;https://www.patreon.com/MrPowerScripts&quot;&gt;on my new Patreon page&lt;/a&gt;. From there you can subscribe and support me with as little as $1 a month. You’ll also get the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Supporter&lt;/code&gt; role on my new &lt;a href=&quot;https://discord.gg/uEBWZKq&quot;&gt;Discord server&lt;/a&gt; automatically. More on why that’s important later.&lt;/p&gt;
+
+&lt;p&gt;Looking for more interesting ways to help me automate my YouTube channel? That’s great! Money isn’t everything. Coming to the &lt;a href=&quot;https://discord.gg/uEBWZKq&quot;&gt;Discord server&lt;/a&gt; with ideas, or helping to create content for videos is amazingly helpful. I really think people should be paid for their work though. I know if I want to automate a channel that makes videos it’s going to come at a cost. This might be where I have to start with this process. Become a budget Youtube production channel. I’ll be the RyanAir of youtube tech videos.&lt;/p&gt;
+
+&lt;p&gt;I’ll have to start by spending money out of my own pocket to work with video editors, writers, and voice over artists to help put the production together. I have literally produced all of the work for the past seven years. I’ve never outsourced any of the efforts. So it would be interesting to see how working with others changes the channels feel. And I don’t mean professionals haha. No no, no way I can afford professionals right now. I mean literally anyone who will work at bargain prices.&lt;/p&gt;
+
+&lt;p&gt;Maybe someone who is learning how to do video editing and can accomplish simple work. Maybe someone who wants to get into doing voice overs. Maybe other people like me who started by learning from youtube videos. If you have an interest in any of those things stop by the &lt;a href=&quot;https://discord.gg/uEBWZKq&quot;&gt;Discord server&lt;/a&gt;. At one point I aspired to learn how to do all those things myself. That would be an interesting way to get this process going. If others learned the same way I learned but were able to earn some money for their efforts as well. We’ll see if anyone manages to find this with interest.&lt;/p&gt;
+
+&lt;p&gt;Money, community, or both. Those are key to driving this idea forward. Now, remember I did say automate the channel. Meaning that the whole process starting from generation of a video idea to storyboarding to creating scenes to putting it all together for a final product that uploads itself to youtube is the goal. Really. Like full on automating everything. Now I don’t have the means to create the artificial intelligence necessary that could do all of that work for me. So I’ll still need help from other peoples brains. How sad is that? Where’s my Rosie the robot? Actually, maybe I would prefer to have a Bender around.&lt;/p&gt;
+
+&lt;p&gt;My initial thought is to democratize decisions through votes. How can I possibly do that? Do you remember earlier when I said that donating to &lt;a href=&quot;https://www.patreon.com/MrPowerScripts&quot;&gt;my Patreon&lt;/a&gt; gives you the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Supporter&lt;/code&gt; role in my &lt;a href=&quot;https://discord.gg/uEBWZKq&quot;&gt;Discord server&lt;/a&gt;? People with the supporter role will be able to vote on events in the video creation process. A while ago I wrote a &lt;a href=&quot;https://github.com/MrPowerScripts/battle-nation-live-discord-bot&quot;&gt;Discord bot&lt;/a&gt; that manages a Discord server as a karaoke competition. You can vote on who is performing using emoji. It’s a neat idea that never really gained traction, so I’m not exactly sure if it totally works! You can see it in action if you go to [https://BattleNationLive.com](https://battlenationlive.com].&lt;/p&gt;
+
+&lt;p&gt;I’d like to take this bot and modify the voting system to work for people with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Supporter&lt;/code&gt; role, so they can vote on different parts of the video creation process. Maybe on which idea for the next video. Or which voice-over artist to use. Eventually, if I find some great people to work with they can be added to submit content to be voted on as well. Imagine a script has been submitted and voted on. Now someone creates a voice-over for the scene and a separate visual for the scene. Those two elements are both voted on and approved. They can be automatically combined for everyone to preview. A process flow for building out videos can develop. It will all be very manual to start out, but once the bot and voting are in place things can become very interesting from there.&lt;/p&gt;
+
+&lt;p&gt;Now people who are supporting the channel through [Patreon][https://www.patreon.com/MrPowerScripts) have a voice! Democracy is alive! There is a relationship between those supporting the channel and the direction that the channel takes. Which, means, once the pipeline is complete the channel may not even be about tech anymore. It could be about anything really. I wouldn’t have much of a say. If this idea is successful there will be enough money and decision makers available &lt;a href=&quot;https://www.patreon.com/MrPowerScripts&quot;&gt;through Patreon&lt;/a&gt;  and &lt;a href=&quot;https://discord.gg/uEBWZKq&quot;&gt;Discord&lt;/a&gt; driving the content creation process. There could be a new video every week for me to sit back and enjoy. After seven years of making them myself I think it would be nice!&lt;/p&gt;
+</description>
+				<pubDate>Wed, 12 Dec 2018 00:00:00 +0000</pubDate>
+				<link>https://mrpowerscripts.com/automate-youtube-channel/</link>
+				<guid isPermaLink="true">https://mrpowerscripts.com/automate-youtube-channel/</guid>
+			</item>
+		
+			<item>
+				<title>That time I created a broadband law for an entire country</title>
+				<description>&lt;p&gt;When I was in my early 20’s I somehow ended up as the “IT Guy” at this company headquarters. This was a long time ago but I still think about it sometimes. While most of the company was out in the west coast they had a headquarters on the east where all the executives worked. Though, their IT support was entirely based on the west coast. Which left a gap in the morning for available IT support. Well, that is not the kind of service these money makers are used to! They want support, and they want it NOW. So through a series of odd events that person ended up being me. That’s where the story really starts.&lt;/p&gt;
+
+&lt;p&gt;Everyone in the office was so. freaking. happy. to have a techy in the building. Remember, this was an office of senior executives. There were very few people under 40 there. I was definitely the only person in their 20’s. I wasn’t just the go-to guy for technical issues within the company. I became everyone’s personal tech dude. I hate that shit and avoid it at all costs now. But at the time, I didn’t mind it. I was so excited to be able to work with many talented people and it was a great opportunity for me to learn more about them and how they got where they’re at. I really relished those opportunities. This allowed me to get to know a lot of people in the office as well. They really liked me and valued my opinions on technology and that felt really good.&lt;/p&gt;
+
+&lt;p&gt;One morning I’m sitting in my office and the phone rings. It’s someone from the legal team and they asked me a very strange question: “How fast is broadband?”.&lt;/p&gt;
+
+&lt;p&gt;Let me explain some things about this person. They’re from South America and spent half of their time bouncing back and forth from there. They were ridiculously qualified from what I can tell. The office had a wall covered in degrees. Seriously sharp person and didn’t like bullshit. They were known for being really tough. Thankfully, I didn’t have to deal with that side of them.&lt;/p&gt;
+
+&lt;p&gt;And they really trusted my advice on technical questions. I was just some random IT kid that was lucky to be there. I know that doesn’t sound like it should matter but I REALLY did not feel qualified to be working there. It was so long ago but I still think about how lucky I was to get pulled in for that project. Lot’s of people in that office made me feel really respected and it was so cool, so I didn’t want to disappoint them.&lt;/p&gt;
+
+&lt;p&gt;Which brings us back to that early morning call I received: “How fast is broadband?”.  I wasn’t really sure why the point of the question was at the time. I remember trying to think of a suitable answer. I’m getting hit early in the morning with these philosophical questions. Yeah, how fast IS broadband? Well back then it definitely wasn’t what it would be considered now. The answer I gave at the time was “I would consider broadband to be at least 1Mbps up and down”. They were satisfied with that and said “Thanks! You just made a law!”, before letting me know they had to run and hung up.&lt;/p&gt;
+
+&lt;p&gt;Wait, I just what? That moment was burned into my mind for weeks and weeks until they arrived back to the office in the USA. Where I finally inquired further about the one minute call that ended with me making a law. As it turns out they were helping to craft some tech laws for a country. I can’t remember which one it was, but I think it was one of the countries in the southern region. They were deciding what the legal definition of broadband would be for the entire country. A law that would impact companies, users, and all kinds of services between for years to come.&lt;/p&gt;
+
+&lt;p&gt;I, apparently, defined that law. You’re welcome, random South American country.&lt;/p&gt;
+</description>
+				<pubDate>Sat, 24 Nov 2018 00:00:00 +0000</pubDate>
+				<link>https://mrpowerscripts.com/south-america-law/</link>
+				<guid isPermaLink="true">https://mrpowerscripts.com/south-america-law/</guid>
+			</item>
+		
+			<item>
+				<title>Mindfulness meditation can help you get in the flow</title>
+				<description>&lt;p&gt;Having trouble concentrating? You don’t feel as productive as you once did? Are small things getting to you? If you answered yes to any of those questions I really wish I had a pill to sell you. Really. I could be like a millionaire by now. Almost everyone I know has these problems. I’m not here to offer any medical advice though. If you have a severe ailment you should really see a doctor. If not, here’s a giant helping of opinion for ya.&lt;/p&gt;
+
+&lt;p&gt;I notice many friends and colleagues always suffering from similar battles. Concentration, focus, drive, or even peace of mind. We live in a time where someone can press a few buttons and you’re witnessing graphic images from a disaster happening on the other side of the planet. THERE IS SO MUCH TO WORRY ABOUT! AHHHHHHHHHHHHHHHHH!&lt;/p&gt;
+
+&lt;p&gt;That’s pretty much how it feels in this age of information. Yet you still have to wake up, do your job, and deal with all of the craziness that impacts you directly in your life. Heavy times yo. I still remember when I didn’t carry around a device that allows me to directly inject all the worlds problems right into my veins anywhere I have a data signal. It doesn’t have to be bad things. We interrupt moments of our lives all the time to be distracted by notifications from friends or through advertisements as we walk through the street.&lt;/p&gt;
+
+&lt;p&gt;When we get used to these patterns of consumption on a daily basis, or the society we live in normalizes those behaviors it becomes really hard to detach.  Detaching from streams of information that don’t help us in the current moment allow us to focus and find our flow. We’re just fancy fleshy computers and we can only process so much at one time. If your head is running at 100% all the time you’re going to burn out eventually. You have to find a good flow in life.&lt;/p&gt;
+
+&lt;p&gt;I don’t mean flow as some wishy-washy term. &lt;a href=&quot;https://en.wikipedia.org/wiki/Flow_(psychology)&quot;&gt;Flow is actually a studied term&lt;/a&gt; that describes a mental state where you’re at your best doing something. Let’s take a moment to enjoy some of the Wikipedia article:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;In any given moment, there is a great deal of information made available to each individual. Psychologists have found that one’s mind can attend to only a certain amount of information at a time. According to Csikszentmihályi’s 2004 TED talk, that number is about “110 bits of information per second”.[5] That may seem like a lot of information, but simple daily tasks take quite a lot of information. Just decoding speech takes about 60 bits of information per second.[5] That is why when having a conversation one cannot focus as much attention on other things.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;For the most part (except for basic bodily feelings like hunger and pain, which are innate), people are able to decide what they want to focus their attention on. However, when one is in the flow state, they are completely engrossed with the one task at hand and, without making the conscious decision to do so, lose awareness of all other things: time, people, distractions, and even basic bodily needs. This occurs because all of the attention of the person in the flow state is on the task at hand; there is no more attention to be allocated.[6]&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The flow state has been described by Csikszentmihályi as the “optimal experience” in that one gets to a level of high gratification from the experience.[7] Achieving this experience is considered to be personal and “depends on the ability” of the individual.[7] One’s capacity and desire to overcome challenges in order to achieve their ultimate goals not only leads to the optimal experience, but also to a sense of life satisfaction overall.[7]&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;You are processing only what you need to process in order to do the things you need to get done. This is where greatness comes from. That is where you want to be. How do you reach new heights with this imagery focus muscle that allows you to do great things? It’s the same as every other muscle. You have to exercise it.&lt;/p&gt;
+
+&lt;p&gt;Now getting into the flow for a basketball player is certainly different from getting into the flow for a programmer. But the common denominator for any type of flow is having the ability to control your thoughts and thus allow your mind to indulge itself in the current moment. If you’re baking a cake while thinking about the cake you messed up last week you’re probably going to mess up this weeks cake as well. The current ticking moment is always the most important time in a state of flow. Don’t waste it on things that you can’t control right now.&lt;/p&gt;
+
+&lt;p&gt;I do find myself in this flow state very often with certain activities. When I’m playing videos games. When I’m on the court playing basketball. At work when I’m troubleshooting problems and helping people. I’m able to take everything else and set it aside so that I can really appreciate what is happening in front of me. I feel the primary driver of achieving this for me has been practicing Mindfulness Meditation for several years now.&lt;/p&gt;
+
+&lt;p&gt;You’ll have an endless amount of information to read on google about mindfulness meditation, so I’m not going to dig into it much here. I’d rather just share my thoughts on it. I hear a few of these phrases whenever I mention any kind of meditation: “I can’t do it.”, or “I tried and it doesn’t work”.&lt;/p&gt;
+
+&lt;p&gt;I consider meditation a practice similar to exercise. Unless you have some confounding medical issue, then eating less and exercising more will get you in better shape. That’s how it works.  Your mind really needs the same treatment. Don’t overload it with stuff and train it to keep it in good shape as well. What I find is that “I can’t do it” usually means “I don’t want to do it”. Which is fine. You do you. And “I tried and it doesn’t work” is often more like “I did it for a week and didn’t see any results so I gave up”. Like you’re just going to walk into the gym and come out a week later looking like The Terminator. Focusing your mind is like flexing a muscle. You have to exercise it for results and it takes time to notice big changes. If you don’t find a way to exercise it you will never find your flow.&lt;/p&gt;
+
+&lt;p&gt;Mindfulness meditation isn’t the only way to exercise this muscle. But it’s the only one that I’ve found to be free and available anywhere I can sit or lay down. When I practiced this long enough I started to notice many benefits throughout my days. I’m far more patient than I’ve ever been in my life. I don’t let external factors take the wheel of my emotions as often. I don’t have as many “bad days”. I have days that are more challenging than others. As someone who’s had and is still going through a rather tumultuous life, it’s a pretty big statement for me. I really believe it though. As challenging as it has been to develop this muscle I feel mindfulness meditation has taught me to better understand myself.  Through that understanding, I’ve been able to make changes that help me operate more efficiently in my daily life. This greater perception of self and strength of focus can maybe help you find your flow too.&lt;/p&gt;
+</description>
+				<pubDate>Sat, 24 Nov 2018 00:00:00 +0000</pubDate>
+				<link>https://mrpowerscripts.com/mindfulness-meditation-flow/</link>
+				<guid isPermaLink="true">https://mrpowerscripts.com/mindfulness-meditation-flow/</guid>
+			</item>
+		
+			<item>
+				<title>Faster ReactJS development with Create-React-App and Heroku</title>
+				<description>&lt;p&gt;I always loved working on React projects. There was a lot of overhead getting started early on for me. I don’t even want to get into how many hours I spent learning how webpack work. Oh, there’s a new version of webpack? EVERYTHING IS DIFFERENT NOW. React isn’t that much better with breaking changes. When you combine all these various software “solutions” it can be hard to even get started with what you originally wanted to do. Code the freaking idea up. &lt;!-- (1) video wrapper --&gt;&lt;/p&gt;
+&lt;div class=&quot;youtube-video&quot; data-embed=&quot;xckpWg-Kpss&quot;&gt; 
+ 
+    &lt;!-- (2) the &quot;play&quot; button --&gt;
+    &lt;div class=&quot;play-button&quot;&gt;&lt;/div&gt; 
+     
+&lt;/div&gt;
+&lt;p&gt;It took me a long time to figure out a setup that allowed me to jump right into developing the react app and thinking less about the setup. This is what I’ve finally settled on.&lt;/p&gt;
+
+&lt;p&gt;First off Create-React-App is an amazing project that basically takes a lot of best practices of React configuration and packs it all together into a framework for building simple React apps. Is it perfect for everything? No, but for most of my projects starting with a Creat-React-App was enough to get me started. Running &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;create-react-app project-name&lt;/code&gt; would create and configure a full React development environment folder structure. It even comes bundled with a hot reloading web server so you can watch things change as you develop. I find it especially wonderful for getting new people into and learning React. Without having to worry about all the React configuration up front.&lt;/p&gt;
+
+&lt;p&gt;Building and working on apps locally is fun, but ultimately you’re going to want to show off what you’ve made. That’s where Heroku and their buildpacks come into play here. Buildpacks are Heroku libraries that automate building and deploying tasks on Heroku. There are many buildpacks for many kinds of projects. One of those kinds is create-react-app buildpacks. I used &lt;a href=&quot;https://github.com/nhutphuongit/create-react-app-buildpack&quot;&gt;this one in the video&lt;/a&gt; but you might find others that you like.&lt;/p&gt;
+
+&lt;p&gt;With a Heroku account and their &lt;a href=&quot;https://devcenter.heroku.com/articles/heroku-cli&quot;&gt;sweet CLI tool installed&lt;/a&gt; you can configure a buildpack on your local Create-React-App project. This will add a new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git remote&lt;/code&gt; called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;heroku&lt;/code&gt; to your project. Want to deploy your Create-React-App to a live domain that you can share with anyone? All you have to do is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git push heroku master&lt;/code&gt; and your code will be pushed up to Heroku where the buildpack will build and optimize your Create-React-App for production.&lt;/p&gt;
+
+&lt;p&gt;How freaking cool is that? No need to manage a server. No need to get all wrapped up in webpack. You can get a React project started up and live within ten minutes and start coding out your new idea to share with everyone. At least that has been the case for me. If you like to prototype React projects quickly I highly suggest checking out Heroku and Create-React-App.&lt;/p&gt;
+</description>
+				<pubDate>Sun, 18 Nov 2018 00:00:00 +0000</pubDate>
+				<link>https://mrpowerscripts.com/react-app-heroku/</link>
+				<guid isPermaLink="true">https://mrpowerscripts.com/react-app-heroku/</guid>
+			</item>
+		
+			<item>
+				<title>How to make a discord bot</title>
+				<description>&lt;p&gt;Discord is probably one of my favorite apps ever. They started off with a simple idea and worked really hard to add features over time. Though the software hasn’t suffered from its rapid development and release cycles. &lt;!-- (1) video wrapper --&gt;&lt;/p&gt;
+&lt;div class=&quot;youtube-video&quot; data-embed=&quot;kieSx_pzpCU&quot;&gt; 
+ 
+    &lt;!-- (2) the &quot;play&quot; button --&gt;
+    &lt;div class=&quot;play-button&quot;&gt;&lt;/div&gt; 
+     
+&lt;/div&gt;
+&lt;p&gt;A lot of times you’ll see apps with the growth of Discord become bloated. Discord has managed to remain simple, but still has lots of power available to the user.&lt;/p&gt;
+
+&lt;p&gt;One of the places where Discord really shines is their API. Allowing people to interface with the Discord app programmatically. With helpful libraries like &lt;a href=&quot;https://github.com/discordjs/discord.js/&quot;&gt;DiscordJS&lt;/a&gt; it’s possible to help automate many tasks that are helpful during the chatting experience.&lt;/p&gt;
+
+&lt;p&gt;It’s not that difficult to get started with making a discord bot. I’ve created a template based on various other bot ideas I’ve seen. You can find the full example &lt;a href=&quot;https://github.com/MrPowerScripts/simple-discord-chat-bot&quot;&gt;here on GitHub&lt;/a&gt;. Here’s the main code that powers the bot.&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Discord&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;discord.js&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;config&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;./config.json&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;
+
+
+&lt;span class=&quot;c1&quot;&gt;// choose the enviroment variables as config if they exist&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
+      &lt;span class=&quot;nx&quot;&gt;DISCORD_TOKEN&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;process&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;env&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;DISCORD_TOKEN&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;discordToken&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;DISCORD_TOKEN&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;process&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;NODE_ENV&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// THIS IS THE MAGIC RIGHT HERE YA'LL&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;bot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// Initialize Discord Bot&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;bot&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Discord&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Client&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;bot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;msg&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;// don't talk to other bots&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;author&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;bot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  
+      &lt;span class=&quot;c1&quot;&gt;// Also good practice to ignore any message that does not start with our prefix, &lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;// which is set in the configuration file.&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;indexOf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+      &lt;span class=&quot;c1&quot;&gt;// parse the chat message to get the command that was run&lt;/span&gt;
+      &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;args&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;substring&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;cmd&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;args&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;splice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+      &lt;span class=&quot;k&quot;&gt;switch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;cmd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// check to see if the bot is alive&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;ping&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+          &lt;span class=&quot;nx&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;reply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;pong&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;bot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;login&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;discordToken&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;process&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;SIGINT&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;process&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;exit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;bot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;It’s really not that much. The video goes into detail explaining all of the working parts. It also shows in real time that with the template repo you can get your bot running in less than 5 minutes. How awesome is that? Pretty awesome I would say.&lt;/p&gt;
+
+</description>
+				<pubDate>Sun, 11 Nov 2018 00:00:00 +0000</pubDate>
+				<link>https://mrpowerscripts.com/how-to-make-a-discord-bot/</link>
+				<guid isPermaLink="true">https://mrpowerscripts.com/how-to-make-a-discord-bot/</guid>
+			</item>
+		
+			<item>
+				<title>How to use git version control</title>
+				<description>&lt;p&gt;When I first started scripting, my development flow went something like this: Create a script and save it as a file. Make some adjustments I want to test and save it in a new file. Make more adjustments and save it as a new file. Rinse, repeat. I would end up with a folder full of different file versions with different names that all were effectively the same script. &lt;!-- (1) video wrapper --&gt;&lt;/p&gt;
+&lt;div class=&quot;youtube-video&quot; data-embed=&quot;NwQ0M-pyeHQ&quot;&gt; 
+ 
+    &lt;!-- (2) the &quot;play&quot; button --&gt;
+    &lt;div class=&quot;play-button&quot;&gt;&lt;/div&gt; 
+     
+&lt;/div&gt;
+&lt;p&gt;If you’re doing things this way then STOP. Watch the video above and save yourself. After learning to use git I was vastly more effective in terms of speed and organization of my code.&lt;/p&gt;
+
+&lt;p&gt;I first encountered git when I join a remote development team. Many people were working on the same code base and my existing practices definitely weren’t viable. They taught me how to use git in my first few weeks. It was a huge challenge. There are so many commands and weird words I’d never used in the process of developing. What is a branch? What the heck does master mean? What’s the point of a SHA? It all seemed really daunting for me.&lt;/p&gt;
+
+&lt;p&gt;I realized after some time that git is one of those tools where 99% of the time you’ll use 1% of the features it offers. Even that small portion is enough to completely revamp the way you manage your code. Once you have the basics down you can really appreciate some of the more advanced toolings that are available.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git bisect&lt;/code&gt; is a great example of this. By breaking all of your code changes into individual orderly commits it helps maintain a clear stream of changes to your code. If many people are working on the same codebase and making lots of changes it can be difficult to figure out when a change was introduced that broke something. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git bisect&lt;/code&gt; is a command that helps you traverse all of the changes to the code very efficiently to identify the precise commit that introduced the change. Even if you’re not familiar with the code or someone else introduced the breaking change.&lt;/p&gt;
+
+&lt;p&gt;Modern development is possible because of version control systems, and I think git is a really great place to start for anyone who wants to become a modern developer.&lt;/p&gt;
+</description>
+				<pubDate>Sun, 28 Oct 2018 00:00:00 +0000</pubDate>
+				<link>https://mrpowerscripts.com/learn-git/</link>
+				<guid isPermaLink="true">https://mrpowerscripts.com/learn-git/</guid>
+			</item>
+		
+			<item>
+				<title>Send GET requests to API with Powershell</title>
+				<description>&lt;p&gt;When I started learning Powershell web technologies were mostly a mystery for me. I was a simple systems admin trying to make my life easier by automating things. Sure, I knew how to create a basic HTML site with some CSS, but even javascript was well beyond my understanding. Though over time I developed an interest in developing for the web, which spurred me to learn how Powershell can interact with things beyond my computer or local network. &lt;!-- (1) video wrapper --&gt;&lt;/p&gt;
+&lt;div class=&quot;youtube-video&quot; data-embed=&quot;7mEmQgGowMY&quot;&gt; 
+ 
+    &lt;!-- (2) the &quot;play&quot; button --&gt;
+    &lt;div class=&quot;play-button&quot;&gt;&lt;/div&gt; 
+     
+&lt;/div&gt;
+&lt;p&gt;How can I scrape a website with Powershell? How can I access an API? How can I send data from my computer to services on the web? I had so many questions for a long time.&lt;/p&gt;
+
+&lt;!-- (1) video wrapper --&gt;
+&lt;div class=&quot;youtube-video&quot; data-embed=&quot;9piyM38it_8&quot;&gt; 
  
     &lt;!-- (2) the &quot;play&quot; button --&gt;
     &lt;div class=&quot;play-button&quot;&gt;&lt;/div&gt; 
      
 &lt;/div&gt;
 
-&lt;p&gt;It was actually interesting to peek into the world of PowerShell on Windows 10 looking at the code. Oh Windows, you bloated monstrosity. I was just praising Microsoft &lt;a href=&quot;https://bit.ly/mrps-twitter&quot;&gt;on twitter&lt;/a&gt; for all of the recent good karma they’ve earned. All of my development work is done with an open source Microsoft IDE. How crazy is that? VSCode is amazing! Of course, I also push all my code up to GitHub. Now owned by Microsoft.&lt;/p&gt;
+&lt;p&gt;I discovered the concept of an API and found it absolutely amazing. Having a standard way for different computers with different operating systems running different programs build with different code sounded so cool. I don’t need a browser to interact with this website? That’s amazing! Think of all the automation possibilities!&lt;/p&gt;
 
-&lt;p&gt;Microsoft killed Atom browser and then bought out GitHub. So they embraced and extinguished. They’re almost back up to their old tricks! Oh, wait, Windows Subsystem for Linux. There’s your extend right there. We better keep an eye on this. It all sounds too good to be true…&lt;/p&gt;
+&lt;p&gt;Eventually, I found out about RESTful or a REST API design. Through the process of learning about REST APIs, I discovered the JSON data format. As someone who had to work a lot with verbose XML files for configuration data and data transfer, it looked like an amazing alternative.  Once I learned a bit more about what a REST API is and how to format data as JSON it opened up this new world of communicating with other systems through the web.&lt;/p&gt;
 
-&lt;p&gt;Still, I do all of my development on Linux/macOS so they haven’t quite pulled me back in yet. I’m still using Windows 8.1 on a six-year-old laptop. But it’s mostly for games and uhh because it’s there. Works great. No complaints. Thankfully though I’ve been provided a fancy maxed out MacBook Pro through work. That’s where all of the development magic happens. Microsoft and the Windows team are going to have to pull some real magic to make that change.&lt;/p&gt;
+&lt;p&gt;I was able to use Invoke-WebRequest in Powershell to GET or POST data from various API resources. I looked around for all kinds of APIs on the internet to see what I could do with them. That encouraged me to learn how to make my own API interfaces. Which I eventually managed to do using tools like Flask with Python and ExpressJS with NodeJS.&lt;/p&gt;
 
-&lt;p&gt;Glad to see Powershell is alive and thriving though. Helping to remove all the bloat for users on Windows 10.&lt;/p&gt;
+&lt;p&gt;The Powershell cmdlet Invoke-WebRequest automatically turned JSON objects from GET requests into Powershell Objects which made it super easy to inspect and play around with the data from the command line. Making it super easy to test and play around with the data I was passing through the APIs I made.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/Ignaciox/Cleandows-10&quot;&gt;Checkout cleandows 10&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Eventually, request tools like Postman and Insomnia became popular, and I generally steered away from using Windows while developing. When all of my web work started though Powershell was there to help me along, and I still think it’s a really great tool for quickly scripting and working with data at the command line. Objects are awesome.&lt;/p&gt;
+
+&lt;p&gt;I’ve linked above the two videos I made about using Invoke-WebRequest to make Get and Post requests. Those two are all you need to get started with the fun world of APIs and web automation with Powershell. Happy scripting!&lt;/p&gt;
 </description>
-				<pubDate>Sat, 12 Jan 2019 00:00:00 +0000</pubDate>
-				<link>https://mrpowerscripts.com/remove-unwanted-apps-services-windows-10/</link>
-				<guid isPermaLink="true">https://mrpowerscripts.com/remove-unwanted-apps-services-windows-10/</guid>
+				<pubDate>Wed, 24 Oct 2018 00:00:00 +0000</pubDate>
+				<link>https://mrpowerscripts.com/rest-api-powershell/</link>
+				<guid isPermaLink="true">https://mrpowerscripts.com/rest-api-powershell/</guid>
 			</item>
 		
 			<item>
-				<title>YAML Ain't Markup Language Sing Along Song</title>
-				<description>&lt;p&gt;I’m really happy I was able to stop laughing long enough to upload this. Check out the new hit sing along song YAML Ain’t Markup Language. &lt;!-- (1) video wrapper --&gt;&lt;/p&gt;
-&lt;div class=&quot;youtube-video&quot; data-embed=&quot;0GnWd4jiyH4&quot;&gt; 
+				<title>Automate Installing IP Printers With Powershell</title>
+				<description>&lt;p&gt;One of my favorite ways of saving time as a systems administrator was automating the installation of printers. You don’t need Powershell for it. I often times did with simple batch scripts. PowerShell is all the rage in the world of Windows these days, so that’s why the video examples use it. &lt;!-- (1) video wrapper --&gt;&lt;/p&gt;
+&lt;div class=&quot;youtube-video&quot; data-embed=&quot;E2x6NG72tn4&quot;&gt; 
  
     &lt;!-- (2) the &quot;play&quot; button --&gt;
     &lt;div class=&quot;play-button&quot;&gt;&lt;/div&gt; 
      
 &lt;/div&gt;
+&lt;p&gt;Learning how to automate printer installations really saved me a lot of time in previous jobs, but it wasn’t always easy changing a culture of manual effort. Sometimes you have to wait for the right opportunity.&lt;/p&gt;
+
+&lt;p&gt;I was working at a commercial bank as a customer support slash junior systems admin for the company. Their support team didn’t automate anything. I had previously come from work cultures where we did our very best to automate ourselves out of a job. It was frustrating, but I saw an awesome opportunity to make the lives of my team easier and improve the support experience. There was one problem with my plan. Nobody wanted to change their ways. Wait, what? This is CLEARLY a better way of doing things? How could they not embrace this?&lt;/p&gt;
+
+&lt;p&gt;I had to let it go for a long time. We continued to manually VNC into peoples computers if they needed a printer to be (re)installed. I hated it. so. much. The tides turned when a big office project came into focus. We needed to rename all of the network printer names and IP addresse for all the printers in the office. Two giant floors of people needed all the printers on their computers updated to use the new naming conventions. We were instructed to do this by hand for each user in the office as the printer names and IP addresses were updated. There were so many frustrating questions that ran through my head which had no great answer.&lt;/p&gt;
+
+&lt;p&gt;How the hell are we supposed to know which users will be impacted by the change? There was no way to tell who had what installed on their machines. We were supposed to make assumptions. How long is it going to take to update each person’s machine? Some people had four or five printers installed. I would have to go back and forth referencing a document to install the printers for every single person. That is a significant disruption in the users workday, and collectively, a huge pain in the ass for me and my team.&lt;/p&gt;
+
+&lt;p&gt;We spent the first-day interrupting people before I decided to write up a script that would do all this work for us. I initially received a lot of pushback against it. A senior colleague on the team instructed me not to use it when I showed him because it hadn’t been approved by management. So, I went to our manager. He was also initially against the idea. He said no when I showed him what it does.&lt;/p&gt;
+
+&lt;p&gt;I was so upset. I went back to my desk dejected getting ready to interrupt more peoples day. “uh, how long is this going to take?”. “Can you do it after I leave?”. No, I want to get out of here at 5 pm as well Brad. I guess our manager saw the light in the end. I’m not sure what changed his mind but he later came to me and asked if I thought it was ready to be used in live action. Hell yeah, it’s automation time!&lt;/p&gt;
+
+&lt;p&gt;The script was simple. We had an excel document that had the old computer names and their new name/IP combo. I took that data and embedded it within a PowerShell script. When you ran the script it would check to see if you had any of the old names on your computer. If it found an old name it would uninstall it and then install the corresponding new name/IP. Combined with a batch script sitting on a file server it was possible to click a link in an email to run the script and update all of the computers on that computer. It generated a little report on the computer so we could inspect what happened if someone reported issues.&lt;/p&gt;
+
+&lt;p&gt;This changed the whole game. This was a project that was expected to take over a week. It would have taken many hours of productivity away from our team and others in the company. In the end, we were able to send out an email with a link to click and users could attempt the conversion at their convenience. How beautiful is that?&lt;/p&gt;
+
+&lt;p&gt;It wasn’t the first time I tried to change “how we do things here”, but it was one of the most satisfying. I was given significant freedom to script solutions to daily problems after that. People would come to me asking if scripting some problem was possible. It encouraged others on the team to take some classes on PowerShell, and think differently about how we solve problems in the office. Watching the culture change was wonderful. I enjoyed working there a lot more after that. It might not always be the right time to change things, but you can always keep your eyes open for those opportunities.&lt;/p&gt;
 </description>
-				<pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate>
-				<link>https://mrpowerscripts.com/yaml-song/</link>
-				<guid isPermaLink="true">https://mrpowerscripts.com/yaml-song/</guid>
+				<pubDate>Sun, 14 Oct 2018 00:00:00 +0000</pubDate>
+				<link>https://mrpowerscripts.com/automate-install-ip-printer-with-powershell/</link>
+				<guid isPermaLink="true">https://mrpowerscripts.com/automate-install-ip-printer-with-powershell/</guid>
 			</item>
 		
 	</channel>
