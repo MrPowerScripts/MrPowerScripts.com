@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>MrPowerScripts</title>
+		<description>Learn. Code. Grow.</description>		
+		<link>https://mrpowerscripts.com</link>
+		<atom:link href="https://mrpowerscripts.com/feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>This is the best blog post ever</title>
+				<description>&lt;p&gt;Do you disagree? Okay, I know you haven’t read it yet, but you probably had some preconceived idea that it wasn’t - didn’t you? A small bit of bias? None? You didn’t even weigh the possibility a bit? Well, if you don’t think it is - Why not? What doesn’t it have?&lt;/p&gt;
+
+&lt;p&gt;See, here’s the thing about this blog post. It isn’t afraid of change. It’s a living document. It &lt;a href=&quot;https://github.com/MrPowerScripts/MrPowerScripts.com/blob/master/_posts/2020-03-22-best-blog-post-ever.md&quot;&gt;lives here in GitHub&lt;/a&gt;, where it is committed to being the best blog post ever. So if it isn’t, tell me why. You can do it here on &lt;a href=&quot;http://bit.ly/mrps-discord&quot;&gt;Discord&lt;/a&gt;, &lt;a href=&quot;https://github.com/MrPowerScripts/MrPowerScripts.com/issues&quot;&gt;GitHub&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/MrPowerScripts&quot;&gt;Twitter&lt;/a&gt;, or even by &lt;a href=&quot;mailto:playingwithpowershell@gmail.com&quot;&gt;e-mail&lt;/a&gt;. This blog post can take on the challenge. This blog post isn’t afraid to be the best. This blog post IS the best.&lt;/p&gt;
+
+&lt;p&gt;Thanks for reading!&lt;/p&gt;
+</description>
+				<pubDate>Sun, 22 Mar 2020 00:00:00 +0000</pubDate>
+				<link>https://mrpowerscripts.com/best-blog-post-ever/</link>
+				<guid isPermaLink="true">https://mrpowerscripts.com/best-blog-post-ever/</guid>
+			</item>
+		
+			<item>
+				<title>Automate Simple Static Website Testing</title>
+				<description>&lt;p&gt;I like using Jekyll to build static websites when I can. A static website is a site built with simple HTML, CSS, and Javascript. Ready to be served up by webservers. Jekyll is one of the many frameworks that help create static websites by using nifty features like templating, and an embedded development server.&lt;/p&gt;
+
+&lt;p&gt;These static site generators can’t prevent you from writing bad structure to your HTML other potential problems. You can have borked syntax or bad links throughout the generated website source code that may go undeteceted. Even JSON files can also be generated with invalid syntax very easily. And there’s plenty of tools to help you avoid shipping that crappy code live. Plus…&lt;/p&gt;
+
+&lt;p&gt;ALL. OF. THIS. CAN. BE. AUTOMATED.&lt;/p&gt;
+
+&lt;p&gt;YAY&lt;/p&gt;
+
+&lt;p&gt;We’re going to use a few tools that other people have written, and that’s the easiest part about this whole thing. First thing is test all of the JSON files that my site generates using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jsonlint&lt;/code&gt; combined with a command that finds all of the JSON files in the site directory tree.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;FILES&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;find ./_site &lt;span class=&quot;nt&quot;&gt;-type&lt;/span&gt; f &lt;span class=&quot;nt&quot;&gt;-name&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'*.json'&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$FILES&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; jsonlint &lt;span class=&quot;nv&quot;&gt;$FILES&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The code above uses the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;find&lt;/code&gt; command to locate all the JSON files in the directory, and displays them on the screen, and then passes them to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jsonlint&lt;/code&gt;, which will validate that all of the files are good whomesome JSON like Mom used to make.&lt;/p&gt;
+
+&lt;p&gt;Great. So now we know our JSON isn’t screwed up. We can make sure that all of the site HTML is well-formed as well. We’ll use a tool called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;htmlproofer&lt;/code&gt; which can check the integrity of the produced site. You can see everything it tests &lt;a href=&quot;https://github.com/gjtorikian/html-proofer&quot;&gt;here on their repo&lt;/a&gt;. I run the command:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;htmlproofer ./_site &lt;span class=&quot;nt&quot;&gt;--check-html&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--disable-external&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--check-opengraph&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--check-favicon&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The first time I tried &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;htmlproofer&lt;/code&gt; on one of my Jekyll sites, it found over 300 errors. It took me a while to fix all of the broken issues with my HTML, but &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;htmlproofer&lt;/code&gt; helped me test it very quickly as I was updating the code.&lt;/p&gt;
+
+&lt;p&gt;Next, this isn’t really testing, but sometimes allowing the wrong sizes of images to get through can provide a poor user experience. So why not automate preventing that? We can do that with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mogrify&lt;/code&gt; command from the &lt;a href=&quot;https://imagemagick.org/script/download.php&quot;&gt;ImageMagick toolset&lt;/a&gt;. I use the command below on one of my sites to make sure images are no larger than 500px on either side, and this will resize them if they are, which helps make sure image file sizes are smaller.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;find ./_site/assets/img/ &lt;span class=&quot;nt&quot;&gt;-name&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'*.jpg'&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-execdir&lt;/span&gt; mogrify &lt;span class=&quot;nt&quot;&gt;-resize&lt;/span&gt; 500x &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;But sometimes that isn’t enough to get the file sizes down to a reasonable level. We can use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jpegoptim&lt;/code&gt; command to enforce that image files are under a specific file size, and automatically optimize the image to fit within that limit. The command below grabs all image files in a folder and reduces their sizes to below 70k.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;find ./_site/assets/img &lt;span class=&quot;nt&quot;&gt;-type&lt;/span&gt; d &lt;span class=&quot;nt&quot;&gt;-exec&lt;/span&gt; sh &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'ls &quot;$0&quot;/*.jpg 2&amp;gt;/dev/null &amp;amp;&amp;amp; jpegoptim --size=70k --max=90 --all-progressive --strip-all -t &quot;$0&quot;/*.jpg'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Then you can automate all of that using devops tools like CircleCI for testing and trimming your source before it gets deployed somewhere, like GitHub pages, which is where this blog lives. Every commit I push to update the website automatically gets validated through CircleCI using the tools above. The CircleCI config with test and deploy jobs make sure the site is validated every single time I make a change before it gets deployed live — no more shipping sites with tons of broken code that can hurt SEO or the user’s experience.&lt;/p&gt;
+
+&lt;script src=&quot;http://gist-it.appspot.com/http://github.com/MrPowerScripts/MrPowerScripts.com/blob/master/.circleci/config.yml&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;When I pushed the change that contained this blog post &lt;a href=&quot;https://circleci.com/gh/MrPowerScripts/MrPowerScripts.com/298&quot;&gt;it actually hit an error&lt;/a&gt; because I added a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;&lt;/code&gt; where it can break site formatting. The CircleCI job failed and the site was not deployed. I was able to fix the site code and &lt;a href=&quot;https://circleci.com/workflow-run/852b83a1-84ec-425a-823b-c5032b288265&quot;&gt;push a new commit&lt;/a&gt; where it was validated as successful and the site was deployed successfully.&lt;/p&gt;
+
+&lt;p&gt;We could take the website optimization a few steps further by using tools that help minimize the site source code or run SEO checks. But using these simple tools drastically improved the confidence of the code I was shipping out.&lt;/p&gt;
+</description>
+				<pubDate>Sat, 14 Mar 2020 00:00:00 +0000</pubDate>
+				<link>https://mrpowerscripts.com/automate-static-site-testing/</link>
+				<guid isPermaLink="true">https://mrpowerscripts.com/automate-static-site-testing/</guid>
+			</item>
+		
+			<item>
+				<title>How I orgaize my life with apps</title>
+				<description>&lt;p&gt;I do a lot of stuff. Like, I should probably chill out a bit, but I can’t. I have a lot of passions, and they keep me super busy. I work an (almost) full-time job at a tech startup for the moment. Anyone that has worked for a startup knows that there’s an endless amount of work that needs to be done and usually not enough people to do it.&lt;/p&gt;
+
+&lt;p&gt;Thankfully, I’ve been there for a couple of years. I know how to do my job reasonably efficiently. But I also have my side projects. This blog, the youtube channel that goes with it, (okay I haven’t updated either of them in a long time - but I think about them! does that count?). I have some other websites that I work on, which i’m trying to grow, and I have people helping with them. I manage and run a bunch of performance related events in the city where I live, which takes quite a bit of time coordinating with venues and performers. Plus other hobbies like playing basketball, video games, working on short films, helping friends with their projects. On top of all the essentials - laundry, making meals.&lt;/p&gt;
+
+&lt;p&gt;I’m always so. fuckin. busy. The honest solution is that I should chill out a bit and drop some of these things. But I’m way too stubborn to do that. So, I have to use simple tricks that help me keep o top of everything. And that’s the key for me. The methods I use are SIMPLE. A complicated system of organization only adds to the chaos for me. So everything I’m about to list most likely won’t blow anyone away, but they truly help me out a lot in keeping track of what I need to be doing.&lt;/p&gt;
+
+&lt;p&gt;HERE IS THE (short) LIST OF SIMPLE TRICKS&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Calendar. I use Google calendar. If it’s not on the calendar - it doesn’t matter. I don’t put frivolous things on my calendar. I don’t need a reminder to feed the cat every day. The cat does that just fine. When I wake up, I look at the calendar widget on the home screen of my phone. It tells me everything I NEED to be concerned with that day. But I also look at the coming days to help decide how I should spend currently available free time, and having few items as possible makes it easier to do that. Some people might feel the need to “block off that time for everything”. No thanks. I don’t want a cluttered calendar with my entire day planned out to the minute. I want as few things on the schedule as possible. My key to success here is to be aware of what is coming up and utilize the free spaces effectively in the moments they become available. When my calendar is lean, it’s easier to see what is coming up today, tomorrow, and the next day. And it allows me the flexibility to manage my free time in the moment, which includes preparing for things coming up in the near term. Some people enjoy micromanaging their time, but I prefer to spend as little time in the calendar app as possible. With a quick swipe, I can see a couple of days of things that are important for me to be aware of, and I decide when/how to prepare for those events in the gaps between them.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Whatsapp. I use WhatsApp as my primary means of communication. As pretty much everyone else does in Europe. But I use it more or less as a task list for things related to other people. You can very easily archive conversations, so I use that feature often. If I’m done communicating with someone, and there’s no follow up needed - the conversation gets archived. So my conversation list is very often empty when I open the app. I often see people with a gigantic list of conversations, and because of my system, it drives me bonkers. If I need to reply to a person about something, if I need to follow up with them in any way - the conversation stays open. Otherwise, everyone gets archived.  So I treat Whatsapp as a task list for other people primarily. Sometimes I’ll have a name there for a couple of days if there’s a long-running follow-up. It happens. But making this a habit allows me to focus better and not drop the ball on doing things for other people. Again, it also keeps reminders and events off my calendar. That’s a place for things that most concern me. Whatsapp is a task list for matters related to other people.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;An actual “to-do list”. I use an app with a widget on my phone’s home screen that’s called “to-do list”. Amazing - I know. The to-do list is where I put things that aren’t time-sensitive like small side projects I would like to create or ideas I should look into when I have some free time. Something that I can follow up on in those moments between calendar items. And when they get done - I check quickly knock them off the list. It could be a blog post idea or a video idea.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Those are a few basic techniques I use to stay on top of things for myself and others. I may have other things I’m not thinking of at the moment. But if I think of anything else I’ll add it to my to-do list and be sure to update this blog post in the future when I have some free time :)&lt;/p&gt;
+</description>
+				<pubDate>Tue, 18 Feb 2020 00:00:00 +0000</pubDate>
+				<link>https://mrpowerscripts.com/calendar-contacts-tasks/</link>
+				<guid isPermaLink="true">https://mrpowerscripts.com/calendar-contacts-tasks/</guid>
+			</item>
+		
+			<item>
+				<title>Advanced function parameters in Powershell</title>
+				<description>&lt;p&gt;If you’re not making use of functions in your Powershell code then you need to stop what you’re doing right now and learn about them! But where?!? Oh, click the video below and watch. That will get you started. &lt;!-- (1) video wrapper --&gt;&lt;/p&gt;
+&lt;div class=&quot;youtube-video&quot; data-embed=&quot;qz0x_WL8ueo&quot;&gt; 
+ 
+    &lt;!-- (2) the &quot;play&quot; button --&gt;
+    &lt;div class=&quot;play-button&quot;&gt;&lt;/div&gt; 
+     
+&lt;/div&gt;
+&lt;p&gt;That’s awesome! Now you know what functions are! Exciting! But after you’ve made a function you’ll probably want to adapt it a bit. Reusability of code without some customization is super limiting. Next you’ll want to learn how to add parameters to your functions. By adding parameters to your functions you’ll unlock the true power of functions in Powershell! Thankfully the video below will get you up to speed on function parameters in powershell. Then you’re ready for the advanced stuff!&lt;/p&gt;
+
+&lt;!-- (1) video wrapper --&gt;
+&lt;div class=&quot;youtube-video&quot; data-embed=&quot;RW2tRebxqzQ&quot;&gt; 
+ 
+    &lt;!-- (2) the &quot;play&quot; button --&gt;
+    &lt;div class=&quot;play-button&quot;&gt;&lt;/div&gt; 
+     
+&lt;/div&gt;
+
+&lt;p&gt;So now you know what functions are in Powershell, and you’ve learned a few ways to add parameters to them. But if you create your Powershell functions without some of the advanced Powershell function parameter techniques you might be setting yourself up for future disaster! Leading you or others using your code to end up in an endless pit of darkness and dispair.&lt;/p&gt;
+
+&lt;p&gt;Here are a few reasons why you would want to use advanced powershell function parameters:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Control the types of arguments passed into functions. If someone puts an string into a function when it should be an integer Powershell will automatically warn them.&lt;/li&gt;
+  &lt;li&gt;Flags allow you to modify a powershell functions behavior without users needing to supply a parameter.&lt;/li&gt;
+  &lt;li&gt;Create help messages for your parameters so that users will know how to use them appropriately&lt;/li&gt;
+  &lt;li&gt;Configure some parameters to be mandatory and prevent the function from running if it is unused&lt;/li&gt;
+  &lt;li&gt;Add validation to the arguments passed into the function. Only want the user to enter a number between 1 and 100? You can enforce that. Do you want to control whether they can pass in a null value, or empty string? You can validate for that as well. You can even validate the argument using a regex string.&lt;/li&gt;
+  &lt;li&gt;Control whether or not an argument can be passed into the function through the powershell Pipleline.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;These are a few of the benefits, and there are even more! Adding some of these advanced powershell function parameter techniques can seriously improve the reliablity and reusability of your functions. Check out the video below to see some of the benefits in action!&lt;/p&gt;
+
+&lt;!-- (1) video wrapper --&gt;
+&lt;div class=&quot;youtube-video&quot; data-embed=&quot;6ySxsnOGnCU&quot;&gt; 
+ 
+    &lt;!-- (2) the &quot;play&quot; button --&gt;
+    &lt;div class=&quot;play-button&quot;&gt;&lt;/div&gt; 
+     
+&lt;/div&gt;
+</description>
+				<pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
+				<link>https://mrpowerscripts.com/advanced-function-parameters-in-powershell/</link>
+				<guid isPermaLink="true">https://mrpowerscripts.com/advanced-function-parameters-in-powershell/</guid>
+			</item>
+		
+			<item>
+				<title>How to get around the jekyll-pagination-v2 limitation of GitHub pages with CircleCI</title>
+				<description>&lt;p&gt;Github pages is a damn modern marvel. You can put together a basic website hosted for free from a jazillion templates available on the internet. Buy a domain name. You’re set. Push up changes to the source on GitHub and they regenerate the site. AMAZING. Almost as good as geocities was. But using GitHub pages the way GitHub suggests has some limitations. Jekyll has soooo many helpful plugins that you can use outside of the oens offered on GitHub pages. Such as the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll-paginate-v2&lt;/code&gt; plugin. And if you want to use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll-paginate-v2&lt;/code&gt; plugin with GitHub pages you’re out of luck! They don’t support it. Which means you can’t do pagniation of collections - a very useful feature when you want to build more complex websites or blogs using jekyll. But we can work around this with a bit of scripting and CircleCI.&lt;/p&gt;
+
+&lt;p&gt;If you want to know all of the technical details of the script then check out the &lt;a href=&quot;http://sangsoonam.github.io/2019/02/08/using-git-worktree-to-deploy-github-pages.html&quot;&gt;blog post by Sangsoo Nam&lt;/a&gt; which inspired me to automate this. It’s really well written and explains the mechanics better than I could. But to catch you up we basically configure our GitHub pages site to use two separate branches. One branch will contain the source code of our jekyll site. Typically the branch would be the defaul &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;master&lt;/code&gt; branch, and we push our site changes to this branch. This will kick off a job on CircleCI which uses the latest version of jekyll and all of it’s available plugins to generate the site source code. Then it automagically pushes that generated source code back up to our GitHub pages branch which is typically &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh-pages&lt;/code&gt;. Then the GitHub repo is configured to serve up the freshly baked source code right from the CircleCI oven to your users. So now we’re not limited to using the hosted version of jekyll and limited set of allowed plugins. WE CAN USE ANYTHING. FREEDOM.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist-it.appspot.com/http://github.com/MrPowerScripts/MrPowerScripts.com/blob/master/.circleci/config.yml&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;And since we can use anything I decided to add some testing to the site. Before I had the testing I didn’t realize how many things were broken. A ruby gem called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;html-proofer&lt;/code&gt; found over 250 errors with my site! Yikes. Even some very broken stuff that broke the site for search engines which hurts the SEO on the pages. Now that we’re running on CircleCI we can add simple checks to the generated site before we deploy it. So first I used &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;html-proofer&lt;/code&gt; which lints all of sites html structure. Finding broken html structure and bad practices. It even has an option to lint your opengraph structure. Another thing I wanted to check was some generated json files that I use as an API. I use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;find&lt;/code&gt; to create a list of all the json files in the site source. Then I pass them into another ruby gem called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jsonlint&lt;/code&gt; which makes sure the json structure is corect before the site gets deployed. At the end you can see that it makes an API call to CloudFlare to purge the cache. You don’t need to add this but CLoudFlare is really good and can help speed up the site. They have a free tier that will work for pretty much any GitHub pages site.&lt;/p&gt;
+
+&lt;p&gt;So all the magic here is thanks to CircleCI. Basically when we push a commit it spins up a CI job that performs the deployment steps outlined win Sansoo’s blog post. Which you know about now since you went to read it. But to give the tl;dr of the whole process again: When we push a commit to GitHub it triggers a job on CircleCI. Using the config above in the site repo CircleCI will checkout the code from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;master&lt;/code&gt;. Then compile our fresh jekyll website using the latest version of jekyll and whatever plugins we need. In my case it was the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll-paginate-v2&lt;/code&gt; plugin. Then it runs tests to make sure the site structure and json APIs aren’t broken. Finally, that freshly compiled site gets pushed back up to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh-pages&lt;/code&gt; branch where GitHub will serve it up on GitHub pages. Cool.&lt;/p&gt;
+
+&lt;p&gt;Other than all that it’s still pretty close to the original script. Except now the whole process is automated, so no need to manually push code twice.&lt;/p&gt;
+</description>
+				<pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
+				<link>https://mrpowerscripts.com/github-pages-circleci-jekyll-paginate-v2/</link>
+				<guid isPermaLink="true">https://mrpowerscripts.com/github-pages-circleci-jekyll-paginate-v2/</guid>
+			</item>
+		
+			<item>
+				<title>How I made the MrPowerScripts.com website FAST on GitHub pages with Cloudflare and CircleCI</title>
+				<description>&lt;p&gt;The performance of my website recently tanked. On Google PageSpeed Insights I had a ~99 rating. I looked at it recently and it TANKED down to 44. 44! The whole point of this blog was to &lt;a href=&quot;https://www.youtube.com/watch?v=5YsFoEY7Ulo&amp;amp;list=PLqpaLALjc1lwz6nHCgsP98xYX_Ykawh3J&quot;&gt;journey into learning more about SEO&lt;/a&gt;. One of the most important metrics for Google Page rank and general SEO ranking is the speed of your website. 44 was unacceptable. I needed to change some things FAST to make the website FAST. I even have the charts to show how much faster it is. Wait until you see the results!&lt;/p&gt;
+
+&lt;p&gt;Since the site &lt;a href=&quot;https://github.com/MrPowerScripts/MrPowerScripts.com&quot;&gt;is an open source repo hosted via GitHub Pages&lt;/a&gt; I have no control over server-side hosting decisions. Such as cache settings, and various other techniques that could help improve the performance to my website. Ya know what is really great for improving delivery of web assets? CDNs. Content Delivery Networks.&lt;/p&gt;
+
+&lt;p&gt;In comes Cloudflare, one of the biggest CDNs on the web.  I didn’t do all the work to figure this out, to be honest. They posted their own &lt;a href=&quot;https://blog.cloudflare.com/secure-and-fast-github-pages-with-cloudflare/&quot;&gt;great blog post&lt;/a&gt; on how to set up their service in front of GitHub pages to cache ALL THE THINGS.  Once I configured MrPowerScripts.com on their service using the free plan all I had to do was update my name servers in NameCheap to use the ones they provided me. From there Cloudflare handled all of the caching and requests to the site. Dramatically reducing the page size and loading time.  Check the results for yourself:&lt;/p&gt;
+
+&lt;div&gt;
+  &lt;img style=&quot;object-fit: contain&quot; src=&quot;/images/mrps-fast/page-size.png&quot; alt=&quot;image&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;First off, the size of the page download is MUCH smaller. It went from ~1.5MB to ~205KB. That’s HUGE. The entire website size was reduced by over 1MB. Also, check out the number of requests needed to render the site. It went from around 38 requests to about 15. Yeah, it cut the number of requests by more than half. Amazing! All of that lead to the following chart.&lt;/p&gt;
+
+&lt;div&gt;
+  &lt;img style=&quot;object-fit: contain&quot; src=&quot;/images/mrps-fast/page-timings.png&quot; alt=&quot;image&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Previously, the entire site took more than 4 seconds to load. Now, that doesn’t mean 4 seconds to see things on the page. It just means for the entire site to finish loading. Including various background requests. Now, the entire site loads in less than a second. These are amazing results! Cloudflare has allowed me to cache all site assets, and to keep them cached for up to 8 days. Then, the caches will be purged.&lt;/p&gt;
+
+&lt;p&gt;This creates a problem though. What if I update the website? Cloudflare will deliver the cached website they have stored rather than the latest updates i’ve pushed to GitHub Pages. Cloudflare has a nice API though, so i’ve connected CircleCI to my GitHub repository to run a job every time a push a commit. That job sends an API request to Cloudflare telling it to clear out the cache. The next person that visits the site will see the latest version of it, and Cloudflare will rebuild the cache. You can see &lt;a href=&quot;https://github.com/MrPowerScripts/MrPowerScripts.com/blob/f41b5b2a8d51b5f80f4d7da9bab33368d3b602c3/.circleci/config.yml&quot;&gt;the CircleCI config file here&lt;/a&gt; with the api call that perfoms the cache clearing. CircleCI has a generous open source plan (it’s free. that’s pretty generous). Now this isn’t perfect. It could be optimized to only purge the cache of certain pages, but it works for my simple little blog.&lt;/p&gt;
+
+&lt;p&gt;None of this costs me any money since i’m using the free tier of each application, and now my website is SUPER FAST once again.&lt;/p&gt;
+
+&lt;p&gt;If you want to see some more stats on the site improvements you can &lt;a href=&quot;https://gtmetrix.com/reports/mrpowerscripts.com/S4kSarB8&quot;&gt;check out the live results I pulled the graphs from&lt;/a&gt;.&lt;/p&gt;
+</description>
+				<pubDate>Sat, 06 Apr 2019 00:00:00 +0000</pubDate>
+				<link>https://mrpowerscripts.com/faster-github-pages-with-cloudflare-circleci/</link>
+				<guid isPermaLink="true">https://mrpowerscripts.com/faster-github-pages-with-cloudflare-circleci/</guid>
+			</item>
+		
+			<item>
+				<title>CircleCI Nick Young meme for your overconfident developers</title>
+				<description>&lt;p&gt;Do you have overconfident devs on your team pushing up code and calling it a day? Only to find out their jobs failed on CircleCI? Now you have something to send them to let them know it isn’t time to celebrate until the job is green! Check out the full post for the video with sound and the giphy.&lt;/p&gt;
+
+&lt;div style=&quot;width:100%;height:0;padding-bottom:56%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/vxr7x3PYRSSGdXfTTA&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameborder=&quot;0&quot; class=&quot;giphy-embed&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;If you want to get the full experience with sound you can check it out on youtube below.&lt;/p&gt;
+
+&lt;!-- (1) video wrapper --&gt;
+&lt;div class=&quot;youtube-video&quot; data-embed=&quot;RNtFTLV2Fog&quot;&gt; 
+ 
+    &lt;!-- (2) the &quot;play&quot; button --&gt;
+    &lt;div class=&quot;play-button&quot;&gt;&lt;/div&gt; 
+     
+&lt;/div&gt;
+
+&lt;p&gt;You can also share the gif easy with this link: &lt;a href=&quot;https://gph.is/g/4z9AGwZ&quot;&gt;https://gph.is/g/4z9AGwZ&lt;/a&gt;&lt;/p&gt;
+</description>
+				<pubDate>Sat, 30 Mar 2019 00:00:00 +0000</pubDate>
+				<link>https://mrpowerscripts.com/CircleCI-nick-young-meme/</link>
+				<guid isPermaLink="true">https://mrpowerscripts.com/CircleCI-nick-young-meme/</guid>
+			</item>
+		
+			<item>
+				<title>Microsoft Excel Automation with Powershell</title>
+				<description>&lt;p&gt;Do you want to take your Excel skills to the next level? Did you know that you don’t need Excel to work with Excel files? Sometimes doing things programmatically is a bit easier than pointing and clicking. Or maybe you need to process a lot of files really fast, over and over again. Powershell automation with Microsoft Excel is possible! &lt;!-- (1) video wrapper --&gt;&lt;/p&gt;
+&lt;div class=&quot;youtube-video&quot; data-embed=&quot;3blgg3QfJP8&quot;&gt; 
+ 
+    &lt;!-- (2) the &quot;play&quot; button --&gt;
+    &lt;div class=&quot;play-button&quot;&gt;&lt;/div&gt; 
+     
+&lt;/div&gt;
+&lt;p&gt;In this video you’ll see how you can update Excel workbooks and worksheets with a Powershell script.&lt;/p&gt;
+
+&lt;p&gt;Excel has a COM interface which is a technology developed by Microsoft  (of course). I’ve never read an amazing explanation of COM but basically, it allows communication between programming languages and Windows applications. Even if the application was not built with the programming language. Powershell is more of a scripting language, but we can connect to the Excel COM interface all the same.&lt;/p&gt;
+
+&lt;p&gt;Through this COM interface Excel exposes &lt;a href=&quot;https://docs.microsoft.com/en-us/office/vba/api/overview/excel/object-model&quot;&gt;the Excel Object Model&lt;/a&gt;. I’ve linked you to the current docs, but that link will probably be dead in six months - because Microsoft. Also, the examples shown  for the Excel Object Model use something called Visual Basic for Applications. Which is something I learned about 5 minutes ago when I was trying to find the old generic Excel Object Model reference. Apparently it doesn’t exist anymore. Once again, because Microsoft. I wish I could offer more help and insights but - Microsoft. Still, you can use the script below to play around with creating and updating workbooks and worksheets. You can also explore the properties of the excel object with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Get-Member&lt;/code&gt; to learn more about the available options.&lt;/p&gt;
+
+&lt;p&gt;You can &lt;a href=&quot;https://github.com/MrPowerScripts/PowerScripts/blob/16740162b415b9d91f9d4bbd930b2a6d33de1788/Excel/WorkbooksAndWorksheetsExcel.ps1&quot;&gt;find the file here on GitHub&lt;/a&gt; or check out the source below.&lt;/p&gt;
+
+&lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;#None of this will work through an already open excel application&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;#You must open Excel and workbooks you want to manipulate via the COMobject&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;####################################################&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;############### Starting Excel #####################&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;####################################################&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;New-Object&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-ComObject&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Excel.Application&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Visible&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;$true&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;DisplayAlerts&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;$false&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;####################################################&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;############## Working with Workbooks ##############&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;####################################################&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;#Add a workbook to your current excel file&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;#You can add multiple workbooks with this method&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Workbooks&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;#Find all the workbooks in your excel file by name&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Workbooks&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Select-Object&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-ExpandProperty&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;#Activate a specifc workbook in your excel file&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Workbooks&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;activate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Workbooks&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;book1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;activate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;#Acivate Random Workbook in Excel file&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Workbooks&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Get-Random&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-min&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-Max&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Workbooks&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Count&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;activate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;#Open an existing workbook on your hardrive&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Workbooks&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;userprofile&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;\desktop\mrpowerscripts.xlsx&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;#close workbooks from an excel file&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Workbooks&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Workbooks&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;MrPowerScripts.xlsx&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;#Save workbooks to the hard drive&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Workbooks&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;SaveAs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;userprofile&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;\Desktop\asdf.xlsx&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+
+&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;####################################################&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;########### Working with Worksheets ################&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;####################################################&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;#These bits of code will affect the active Workbook.&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;#Add a worksheet to your active workbook&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Worksheets&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;#Find all worksheets in your active workbook&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Worksheets&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Select-Object&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-ExpandProperty&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;#Change name of worksheet in workbook&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Worksheets&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;potato&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Worksheets&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;potato&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;spud&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;#Activate specific worksheet in workbook&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Worksheets&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;activate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Worksheets&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;sheet3&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;activate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;#Acivate Random Worksheet in Excel file&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Worksheets&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Get-Random&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-min&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-Max&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Worksheets&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Count&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;activate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;#Delete worksheets from workbook&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Worksheets&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;delete&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Worksheets&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Sheet3&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;delete&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+
+&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;####################################################&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;########## Cleaning up the environment #############&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;####################################################&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Workbooks&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Quit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;#Check and you will see an excel process still exists after quitting&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;#Remove the excel process by piping it to stop-process&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Get-Process&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;excel&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Stop-Process&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-Force&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;#Now we must release the $excel com object to ready it for garbage collection&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;System.Runtime.Interopservices.&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Marshal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]::&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;ReleaseComObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$Excel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+				<pubDate>Sun, 24 Mar 2019 00:00:00 +0000</pubDate>
+				<link>https://mrpowerscripts.com/microsoft-excel-automation-powershell/</link>
+				<guid isPermaLink="true">https://mrpowerscripts.com/microsoft-excel-automation-powershell/</guid>
+			</item>
+		
+			<item>
+				<title>Automated Reality Channel Episode One Released!</title>
+				<description>&lt;p&gt;IT WORKS. IT. FREAKING. WORKS. &lt;a href=&quot;/automate-youtube-channel/&quot;&gt;I wrote a few months ago about this idea to automate my youtube channel&lt;/a&gt;. Now, at the time the idea wasn’t really well defined. I decided I wanted to do something and then I had to figure out how I was going to do it. I should have &lt;a href=&quot;/build-first/&quot;&gt;shut up and built it first&lt;/a&gt;, but I was too excited and prematurely let the idea out. It happens to everyone. Over time though I crafted a more well-defined concept. You can see the whole evolution in this playlist in fact.
+&lt;!-- (1) video wrapper --&gt;&lt;/p&gt;
+&lt;div class=&quot;youtube-video&quot; data-embed=&quot;videoseries?list=PLqpaLALjc1lyekGkzAltr50RD3RD3kA4d&amp;amp;modestbranding=1&amp;amp;enablejsapi=1&quot;&gt; 
+ 
+    &lt;!-- (2) the &quot;play&quot; button --&gt;
+    &lt;div class=&quot;play-button&quot;&gt;&lt;/div&gt; 
+     
+&lt;/div&gt;
+&lt;p&gt;Well, I finally put together something I would consider a prototype. Despite many hiccups, lingering issues, and generally losing faith in the idea I managed to put together the scaffolding for a working project. This is how it all works.&lt;/p&gt;
+
+&lt;p&gt;It all starts with a yaml file to describe the video that should be created. Here’s the file for the first episode.
+&lt;script src=&quot;https://gist-it.appspot.com/github/mrpowerscripts/automated-reality-channel/blob/master/scripts/arc-ep-1.yml?slice=0:30&quot;&gt;&lt;/script&gt;
+The yaml file has an array which describes each scene of the video. Each scene describes what should be shown on the screen. To start off simple I chose to stick with providing an image and using text-to-speech to generate some dialogue, which is also described in the yaml file. In the future, it should recognize if the content is a video or if the audio is from a file as well. It will pull all of the assets accordingly and then builds each scene as described in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;scenes&lt;/code&gt; array.&lt;/p&gt;
+
+&lt;p&gt;The script file is ingested through the PowerBot Discord bot that runs in &lt;a href=&quot;https:/bit.ly/mrps-discord&quot;&gt;my discord channel&lt;/a&gt;. I can run commands in Discord that tell the bot what to do. Such as building the video by passing it the script file above. Here’s a bit of the Discord bot code. You can click the footer to see the rest.
+&lt;script src=&quot;https://gist-it.appspot.com/github/MrPowerScripts/mrps-discord-powerbot/blob/master/veditor.js?slice=0:30&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;For the record, I’m completely ashamed of this code. I have no idea how to code in nodejs and a lot of this was done at 3 am when I should have been well asleep. Instead, I produced the monstrosity you see above. Anyway, the build function is what generates the video files from the script yaml. First, it downloads all of the assets which are images in this case. It uses &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FFmpeg&lt;/code&gt; to turn the images and audio of each scene into an individual video file. The audio at the moment is generated using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;espeak&lt;/code&gt; text-to-speak application. Once each scene is generated &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FFmpeg&lt;/code&gt; once again combines all of the individual video files into a single video. How cool is that?&lt;/p&gt;
+
+&lt;p&gt;After the build is created I can preview the generated video. If I like what I see I can run a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;publish&lt;/code&gt; command that will automatically upload the video to the &lt;a href=&quot;https://bit.ly/mrps-arc&quot;&gt;Automated Reality Channel&lt;/a&gt; on YouTube. So, here I am to present the very first episode for your viewing pleasure.&lt;/p&gt;
+
+&lt;!-- (1) video wrapper --&gt;
+&lt;div class=&quot;youtube-video&quot; data-embed=&quot;h8esG-ZwwY4&quot;&gt; 
+ 
+    &lt;!-- (2) the &quot;play&quot; button --&gt;
+    &lt;div class=&quot;play-button&quot;&gt;&lt;/div&gt; 
+     
+&lt;/div&gt;
+
+&lt;p&gt;Okay. That wasn’t very impressive. It’s a start though! Next, I would like to polish up a lot of the code. There’s a bunch of bugs. Sometimes it crashes. Nothing is really optimized. So, time to learn how to properly code in an async environment. Well, learn as best as I can. Also, remove a lot of the code duplication. A lot of the functions could be composed better. Also, adding some of the other elements that I talked about. Such as publishing drafts of individual scenes for people to vote on with emojis. SHowing draft previews that also allow voting. Allowing people to submit scene suggestions through discord commands. Such as text-to-speech scripts, or scene images.&lt;/p&gt;
+
+&lt;p&gt;Lots of work to do. But the idea has reached a much more concrete position, and it works. Time for more iteration when I can find some more time&lt;/p&gt;
+</description>
+				<pubDate>Thu, 14 Mar 2019 00:00:00 +0000</pubDate>
+				<link>https://mrpowerscripts.com/arc-episode-one/</link>
+				<guid isPermaLink="true">https://mrpowerscripts.com/arc-episode-one/</guid>
+			</item>
+		
+			<item>
+				<title>Reduce memory usage of Gradle and Kotlin for Android development DevOps</title>
+				<description>&lt;p&gt;When you’re building your android project locally your machines probably have a lot of horsepower. When you’re running in a DevOps workflow such as continuous integration and delivery you may not have as many resources. This can cause your builds to run out of memory. Here are some quick tips to help reduce the memory usage of your Gradle and Kotlin builds for Android development.&lt;/p&gt;
+
+&lt;h2 id=&quot;tell-java-to-chill-out-with-the-memory-usage&quot;&gt;Tell Java to chill out with the memory usage&lt;/h2&gt;
+
+&lt;p&gt;Since android build tools are Java-based, and Java is a memory hog, you can first tell Java to limit its memory usage. You might see people put these same options in a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GRADLE_OPTS&lt;/code&gt; variable but if the process gets forked those options won’t always get passed down into the forked process. It’s better to set an environment variable consumed direction by Java. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_JAVA_OPTIONS&lt;/code&gt; environment variable is widely supported in Oracle based Java environments. Combined with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-Xmx&lt;/code&gt; configuration you can set the max heap size for use by Java, which is where it stores things like class objects into memory. Setting this value to 75% of the available memory will give Java enough room to store what it needs without choking the rest of the system resources. If you have 4GB available, then try setting it to  3GB. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_JAVA_OPTIONS=-Xmx3g&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;shut-down-the-daemons&quot;&gt;Shut down the daemons&lt;/h2&gt;
+
+&lt;p&gt;This is a tip for both Gradle and Kotlin as they each have their own daemons. The daemons run in the background and help speed up re-compilation times by storing generated project information from previous compilation times. Typically when running in a CI workflow you won’t be recompiling anything as environments are reset each time. In this case, the daemon will take up extra memory without providing any benefits.&lt;/p&gt;
+
+&lt;p&gt;Using these methods to control memory use in your Android DevOps lifecycle can reduce out of memory failures within environments that don’t have limited resources.&lt;/p&gt;
+</description>
+				<pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+				<link>https://mrpowerscripts.com/reduce-memory-use-gradle-kotlin/</link>
+				<guid isPermaLink="true">https://mrpowerscripts.com/reduce-memory-use-gradle-kotlin/</guid>
+			</item>
+		
+	</channel>
+</rss>
