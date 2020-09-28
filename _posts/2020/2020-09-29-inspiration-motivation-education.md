@@ -1,0 +1,58 @@
+---
+layout: post
+title: Inspiration, motivation, education
+categories: ["inspiration"]
+tags: [mrpowerscripts]
+---
+
+I don't talk a whole lot about my personal life because it's not that amazing. But it's far better than it started, and that didn't change overnight. It's the result of learning from many great people I've met over the years. And pushing myself to achieve goals that I would never have thought possible, of course, with many failures along the way.
+
+The past couple of years have been a whirlwind of achieving goals that have improved my life, and I attribute them to having a better understanding of how to the knowledge I've picked up over the years. Little by little. Brick by brick. You can make a stable foundation for yourself, no matter where you started. I've found the best place to start is from within yourself.
+
+I didn't get here on my own, and I've never met a great person who did. Surrounding yourself with great people and learning from them is key to becoming a great person yourself. But knowing what to do isn't as crucial as actually applying what you know. Many people have access to knowledge without ever attempting to use it. Taking information and turning it into steps that lead you to positive results is a skill, and nobody can do that or you. Okay, I suppose they can. That's what life coaches do. But not everyone can afford those services. 
+
+However, t's possible to learn those skills on your own if you're willing to try and fail until you find what works for you. Meaning, it's an active process that you have to develop. And anyone can do this with the right mindset. It takes time and effort to develop the mentality for self-improvement. And our past experiences can undoubtedly impact the ease of adapting to the right attitude.
+
+If I were to describe how dysfunctional my household was growing up, most people would not believe it. And like most rough starts, it didn't prepare me for my teenage years, when you're supposed to grow in autonomy and find your path in life. I had some outstanding teachers that helped nudge me in the right direction, but exposure to their efforts was limited to when I was at school. And I didn't always make the best efforts to show up. It was difficult for me to take the knowledge they shared and find ways to apply it to my life.
+
+Your behaviors, all of them, build upon each other. Every little thing you do adds up year after year. Are you even thinking about how you invest your time? If not, you should start.
+
+It wasn't until I got my foot in the door working in offices with educated people with stable backgrounds where I could pick up the knowledge AND see it applied.
+
+Before that, I was working jobs like Domino's pizza, surrounded by many people like myself. People were meandering through life without any intention to improve it. It was like seeing my friends at the time fast forward to their adult lives. There was nothing inspirational about that environment. It was mostly a sad deflating experience. It didn't take long before I realized I needed to get the fuck out of there. 
+
+But I had no good grades, no real accomplishments to show, no money, no family/friend connections. How was I supposed to get out of this place and surround myself with great people? I was about to turn eighteen when I started to get in a lot of trouble, and I realized I NEEDED to do something. The path I was headed on with the people I was hanging out with only lead me to do bad things that had terrible outcomes. How can I get out of this mess? How can I find myself around people who had the attitudes for success?
+
+I wanted to work in offices. That's where all the talented people were, in those tall buildings with big shiny entrances. Full of well-dressed characters carrying their fancy briefcases headed to their nice cars. It seems silly to describe it that way, but I was very much on the outside of that life. I came up with immigrant parents who had tough, blue-collar jobs, and dysfunctional behaviors that prevented them from improving themselves. They had no way to advise me on how to rise out of their troubles as they couldn't even do it themselves.
+
+How the fuck was I going to get into one of these places? I had nothing to offer besides a shitty attitude and a poor outlook on life. I had taken a couple of programming classes in school, and I enjoyed trying to fix my computer after all the times I broke it. I liked technology, and that's the field I wanted to find myself in. How was I supposed to do that from scratch with no one to help me? I walked in the door and asked.
+
+I searched the internet for every single technology-related office near my house. I spent hours building a list of places with their names and addresses. Remember, this isn't a time when everything was on the internet. Internet searching wasn't what it is today. It wasn't easy, and I think I only managed to find around five to seven suitable options. I printed out multiple copies of my "resume," which I believe was barely a half-page document. It listed some tech classes I took in high school and my experience making pizzas. I even wore some dress clothes that didn't quite fit right, the ones I wore to court for all the trouble I found myself in.
+
+I went to the first place on the list, the one closest to my house. It wasn't one of the big shiny offices. It was a mom & pop computer repair store that also sold refurbished laptops and computers. A gentleman greeted me moments after walking in the door, to which I asked him if I could speak with the manager. And guess who he happened to be? I explained that I was looking for an internship. I was willing to work for free, and I wanted to learn more about computers. I gave him my resume, which he looked over and asked a couple more questions. "Come in tomorrow after school.", he told me. And so I did. 
+
+The next day he taught me how to install Windows 98 from scratch on a system with no operating system. I was elated to learn that. I couldn't wait to go back and learn more. And that knowledge significantly changed my life in the first week. We had an extra broken computer at home, and I could never get it fixed. And I told the manager about it. He let me borrow their Windows 98 CD, and I performed a clean install using the Windows key sticker on the broken computer. IT WORKED, and now I had my very own computer. No more waiting hours for other family members to finish using the sole computer in the house. It happened when those "free" internet services popped up that showed advertisements while you browse.  One day with this guy helped me improve my situation at home and enabled me unfettered access to one of the most useful tools on the planet—my very own computer connected to the internet.
+
+It's hard to express how life-changing that opportunity was. He and other amazingly talented people who worked there continued to mentor me over the following years. I went from installing software to refurbishing machines. Learning how to diagnose issues and search for solutions on the internet. To building servers, networking systems together. But he didn't just give me the knowledge. He helped give me the mindset. As the company progressed, it moved into providing on-site technical services.
+
+I was no longer stuck at the office performing duties. Remember those big fancy offices, with all the well-dressed people and their nice cars? They were now our customers. And I had the opportunity to see what happens on the inside of a lot of these places. I was only there to help, but I had the chance to listen in on discussions with business owners, managers, and workers about all parts of their business. Remember, Information Technology touches every aspect of a business. So as we were designing systems or performing updates, people would have to explain HOW they do everything to implement strategies that supported their processes.
+
+Every day was an opportunity to be around great successful people and learn how they grew and made their businesses successful. I was able to identify and pick up values that I would never know otherwise. I cherish all of those memories and the opportunities to be around so many great people. I was able to see what it took to be successful. And it took enormous effort to work against the wrongs ways I had learned before. 
+
+I'll never forget one defining moment when my manager and I had finished installing a brand new complete network rack full of servers I had to build from scratch. It was beautiful. But some of the services weren't communicating with each other, and we were struggling for some time. I started to get nervous that I screwed something up, and we weren't going to fix it. There was a lot of money invested in this setup, and they would not be able to run their business the next day unless we got this working. It was a huge client. My manager heard the desperation in my voice, turned to me and said, "MrPowerScripts, it doesn't matter if we have to re-install all the systems, change out all the hardware, re-cable everything. We will replace everything if we have to, and we will make it work." And we did make it work. It took a bit longer than expected, but we made it work, and it felt amazing.
+
+I don't think he realized it, but that day he planted a seed in me that grew over the years. I learned to develop that attitude further. And we went on to complete many more jobs together. And we both understood that no matter what challenges we face - we will overcome them. And that's a powerful idea to carry with you.
+
+I worked incredibly hard from that point on. I had so much ground to cover in changing the way I think and moved through life. He set me on a path to encounter many more great people as I grew and took on more technology jobs. Eventually making it into and working for many of those companies with the big shiny buildings. And this lead to learning many more significant bits of wisdom and recognizing traits and attitudes of success. 
+
+I don't usually compare myself to other people, but I always try to compare who I am today against who I was yesterday, a week ago, a month ago, a year ago. And despite all my faults, I can say for sure I've improved year after year. And I will continue to do so. It doesn't matter if I have to change all of my habits, change the people around me, change jobs, or anything else. I will do whatever it takes to improve, and I won't give up.
+
+And my favorite part of all of this is becoming that person that inspires others to do the same. I didn't try to do that, but I noticed it when weird things started happening. I remember when I was sharing some thoughts out loud at work many years ago when a colleague I didn't know that well stopped me mid-sentence to ask - "were you a teacher in the past?" um... no, why? "I think you should be," he replied. Then more colleagues and friends started reaching out to ME for advice. About work and life.
+
+The kid who always made all the wrong decisions evolved into the guy many people relied on to make the right ones.
+
+Woah.
+
+Am I a perfect person? Fuck no. Far from it. I still have to drag my past with me in many ways. But I've become stronger, and I'm able to handle the load better. And I will continue to improve myself and hopefully inspire others to do the same. 
+
+Every day is an opportunity to be a better you. Please don't waste it. You can do this. 
