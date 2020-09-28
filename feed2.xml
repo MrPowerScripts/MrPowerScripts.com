@@ -7,6 +7,42 @@
 		<atom:link href="https://mrpowerscripts.com/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Send GET requests to API with Powershell</title>
+				<description>&lt;p&gt;When I started learning Powershell web technologies were mostly a mystery for me. I was a simple systems admin trying to make my life easier by automating things. Sure, I knew how to create a basic HTML site with some CSS, but even javascript was well beyond my understanding. Though over time I developed an interest in developing for the web, which spurred me to learn how Powershell can interact with things beyond my computer or local network. &lt;!-- (1) video wrapper --&gt;&lt;/p&gt;
+&lt;div class=&quot;youtube-video&quot; data-embed=&quot;7mEmQgGowMY&quot;&gt; 
+ 
+    &lt;!-- (2) the &quot;play&quot; button --&gt;
+    &lt;div class=&quot;play-button&quot;&gt;&lt;/div&gt; 
+     
+&lt;/div&gt;
+&lt;p&gt;How can I scrape a website with Powershell? How can I access an API? How can I send data from my computer to services on the web? I had so many questions for a long time.&lt;/p&gt;
+
+&lt;!-- (1) video wrapper --&gt;
+&lt;div class=&quot;youtube-video&quot; data-embed=&quot;9piyM38it_8&quot;&gt; 
+ 
+    &lt;!-- (2) the &quot;play&quot; button --&gt;
+    &lt;div class=&quot;play-button&quot;&gt;&lt;/div&gt; 
+     
+&lt;/div&gt;
+
+&lt;p&gt;I discovered the concept of an API and found it absolutely amazing. Having a standard way for different computers with different operating systems running different programs build with different code sounded so cool. I don’t need a browser to interact with this website? That’s amazing! Think of all the automation possibilities!&lt;/p&gt;
+
+&lt;p&gt;Eventually, I found out about RESTful or a REST API design. Through the process of learning about REST APIs, I discovered the JSON data format. As someone who had to work a lot with verbose XML files for configuration data and data transfer, it looked like an amazing alternative.  Once I learned a bit more about what a REST API is and how to format data as JSON it opened up this new world of communicating with other systems through the web.&lt;/p&gt;
+
+&lt;p&gt;I was able to use Invoke-WebRequest in Powershell to GET or POST data from various API resources. I looked around for all kinds of APIs on the internet to see what I could do with them. That encouraged me to learn how to make my own API interfaces. Which I eventually managed to do using tools like Flask with Python and ExpressJS with NodeJS.&lt;/p&gt;
+
+&lt;p&gt;The Powershell cmdlet Invoke-WebRequest automatically turned JSON objects from GET requests into Powershell Objects which made it super easy to inspect and play around with the data from the command line. Making it super easy to test and play around with the data I was passing through the APIs I made.&lt;/p&gt;
+
+&lt;p&gt;Eventually, request tools like Postman and Insomnia became popular, and I generally steered away from using Windows while developing. When all of my web work started though Powershell was there to help me along, and I still think it’s a really great tool for quickly scripting and working with data at the command line. Objects are awesome.&lt;/p&gt;
+
+&lt;p&gt;I’ve linked above the two videos I made about using Invoke-WebRequest to make Get and Post requests. Those two are all you need to get started with the fun world of APIs and web automation with Powershell. Happy scripting!&lt;/p&gt;
+</description>
+				<pubDate>Wed, 24 Oct 2018 00:00:00 +0000</pubDate>
+				<link>https://mrpowerscripts.com/rest-api-powershell/</link>
+				<guid isPermaLink="true">https://mrpowerscripts.com/rest-api-powershell/</guid>
+			</item>
+		
+			<item>
 				<title>Automate Installing IP Printers With Powershell</title>
 				<description>&lt;p&gt;One of my favorite ways of saving time as a systems administrator was automating the installation of printers. You don’t need Powershell for it. I often times did with simple batch scripts. PowerShell is all the rage in the world of Windows these days, so that’s why the video examples use it. &lt;!-- (1) video wrapper --&gt;&lt;/p&gt;
 &lt;div class=&quot;youtube-video&quot; data-embed=&quot;E2x6NG72tn4&quot;&gt; 
