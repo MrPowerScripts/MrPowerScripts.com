@@ -1,4 +1,36 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://mrpowerscripts.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mrpowerscripts.com/" rel="alternate" type="text/html" /><updated>2020-10-10T18:59:41+00:00</updated><id>https://mrpowerscripts.com/feed.xml</id><title type="html">MrPowerScripts</title><subtitle>Learn. Code. Grow.</subtitle><entry><title type="html">Inspiration, motivation, education</title><link href="https://mrpowerscripts.com/inspiration-motivation-education/" rel="alternate" type="text/html" title="Inspiration, motivation, education" /><published>2020-09-28T00:00:00+00:00</published><updated>2020-09-28T21:39:17+00:00</updated><id>https://mrpowerscripts.com/inspiration-motivation-education</id><content type="html" xml:base="https://mrpowerscripts.com/inspiration-motivation-education/">&lt;p&gt;I don’t talk a whole lot about my personal life because it’s not that amazing. But it’s far better than it started, and that didn’t change overnight. It’s the result of learning from many great people I’ve met over the years. And pushing myself to achieve goals that I would never have thought possible, of course, with many failures along the way.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://mrpowerscripts.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mrpowerscripts.com/" rel="alternate" type="text/html" /><updated>2020-10-10T19:26:57+00:00</updated><id>https://mrpowerscripts.com/feed.xml</id><title type="html">MrPowerScripts</title><subtitle>Learn. Code. Grow.</subtitle><entry><title type="html">Shout out to the community</title><link href="https://mrpowerscripts.com/shout-out-community/" rel="alternate" type="text/html" title="Shout out to the community" /><published>2020-10-10T00:00:00+00:00</published><updated>2020-10-10T19:24:20+00:00</updated><id>https://mrpowerscripts.com/shout-out-community</id><content type="html" xml:base="https://mrpowerscripts.com/shout-out-community/">&lt;p&gt;So this MrPowerScripts thing is still rolling. Longer than I ever thought it would. There were large gaps in time between uploading videos when I was only making content on youtube. Then trying to blog to be a better writer, and learn more about SEO. Again, large gaps in content creation there. Then I made a freaking podcast - and I’m the least talkative person ever. So, per usual, large gaps in content. I’ll admit I can run my mouth on and on about subjects I’m fond of, but I can’t have a podcast entirely based around cheese, basketball, and Python. Or can I?&lt;/p&gt;
+
+&lt;p&gt;Despite the gaps, eventually, I always fall back to creating something. And the biggest reason for this is all of the comments, e-mails, and most importantly - &lt;a href=&quot;https://bit.ly/mrps-discord&quot;&gt;the Discord community&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;When I first started the discord server, I wasn’t quite sure why I was making it, but it was easy. You click the + sign, enter in some information, and boom - you have a Discord server. And I’ve always admired Discord as a company that knows how to develop fantastic software, even when I was only using it to chat with friends during games. I wanted to know more about the app and creating a server fulfilled the natural curiosity to learn what else it can do. Tons. So much stuff. Roles, Bots, Permissions, Channels, Categories, AHHHHHHHHHHHH. It was a bit too much for me to learn at the time. Many buttons. Very scary.&lt;/p&gt;
+
+&lt;p&gt;Still, despite not going all out customizing the server, I did manage to get it working enough to create some channels and invite links. I added the invite link to everything: all the youtube videos, the blog, and wherever else I could place it. And then, I pretty much forgot about it because that place was empty.&lt;/p&gt;
+
+&lt;p&gt;After some time, random people would trickle in here and there. Mostly silent, but some people were far more engaging. And they banded together and hung out to chat in the server, which is weird because it’s the Seinfeld of Discord Servers. It’s not really about anything. It’s people just hanging around. And the server existed for a long time as a small community of people sharing their technical achievements, and memes, and of course, the occasional troll.&lt;/p&gt;
+
+&lt;p&gt;Until a few of the early members told me the server sucks and I should make it better. I wasn’t using the server to its potential. All those things that scared me: The Roles, bots, and other settings were just too much for me to deal with, but they all knew how to set that stuff up. And they not only inspired me to clean up the place - but they also wanted to help. From that point on, the server had its first (and currennt) mods, and they’re why the server has grown to 800 users from the few we had chillen there for so long.&lt;/p&gt;
+
+&lt;p&gt;We organized channels, made info easier to find, added roles, added a bunch of bots. I learned more about making Discord bots myself. If it weren’t for their support, I would have never taken the initiative to build out the server we have today. With bots that let you run code right in the discord chat, and tons of roles to let people identify their skills, and channels with fun/educational/odd purposes. They’ve also helped maintain a respectful culture for everyone to hang out, with the use of fancy moderation tools.&lt;/p&gt;
+
+&lt;p&gt;I didn’t build the community. The community built itself. All I did was make the server and share the link. Watching that happen is the most memorable part for me. As the community grew, more people helped work on projects like the &lt;a href=&quot;https://github.com/MrPowerScripts/reddit-karma-farming-bot&quot;&gt;Reddit Karma Farming bot&lt;/a&gt;. There was more exciting stuff to talk about when people had great results from it. Seriously, &lt;a href=&quot;https://discord.gg/d8JkpNM&quot;&gt;check the pins in this channel&lt;/a&gt;. All the discussions and things people shared inspired me to code more and create new kinds of content. I remember a couple of weeks where everyone was making blogs. One person made a blog, and then everyone wanted blogs. So, naturally, everyone made blogs :D. People started making and sharing other things like bots, apps and Discord Servers themselves.&lt;/p&gt;
+
+&lt;p&gt;The server has it’s ups and downs with activity, and that’s okay. The important thing for me is the culture of knowledge sharing, creating things, and inspiring each other. So I wanna shout out to everyone who helped make the server what it is today and share some of the projects created and shared there.&lt;/p&gt;
+
+&lt;p&gt;IF I FORGOT ANYONE’S PROJECTS OR LINKS, TELL ME, AND I’LL ADD IT. It was kinda tough searching through lots of old discord chats.&lt;/p&gt;
+
+&lt;p&gt;An exciting project from one of the first members is &lt;a href=&quot;https://disease.sh&quot;&gt;disease.sh&lt;/a&gt;, which may be the most widely used COVID-19 API for statistics about the disease. You can learn more about it &lt;a href=&quot;https://elitedamyth.xyz/2020-06-30-How-I-started-disease-sh/&quot;&gt;on his blog post&lt;/a&gt;. It’s kinda wild to watch what a simple Node app that was shared in the server has turned into. I hope more peoples projects grow into awesome creations, and that’s why it’s so important to encourage people to create.&lt;/p&gt;
+
+&lt;p&gt;A bunch of blogs have been made:
+https://elitedamyth.xyz/
+https://zegs.site/
+https://cosmicice.xyz/
+https://taiten.de/&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;energy_sync&lt;/code&gt; &lt;a href=&quot;https://discordapp.com/channels/510821302773219331/535242083385212948/752701553269407815&quot;&gt;made a LED strip&lt;/a&gt; that syncs to the overall color display of his monitor.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hallowed&lt;/code&gt; &lt;a href=&quot;https://discordapp.com/channels/510821302773219331/535242083385212948/754441530705707069&quot;&gt;made a oneliner strawpoll bot&lt;/a&gt; in Python&lt;/p&gt;
+
+&lt;p&gt;I’m probably forgetting a lot more stuff, but I’ll treat this as a living blog post and keep adding more later. Huge thank you to everyone for inspiring me to do more!&lt;/p&gt;</content><author><name>MrPowerScripts</name></author><category term="mrpowerscripts" /><summary type="html">So this MrPowerScripts thing is still rolling. Longer than I ever thought it would. There were large gaps in time between uploading videos when I was only making content on youtube. Then trying to blog to be a better writer, and learn more about SEO. Again, large gaps in content creation there. Then I made a freaking podcast - and I’m the least talkative person ever. So, per usual, large gaps in content. I’ll admit I can run my mouth on and on about subjects I’m fond of, but I can’t have a podcast entirely based around cheese, basketball, and Python. Or can I?</summary></entry><entry><title type="html">Inspiration, motivation, education</title><link href="https://mrpowerscripts.com/inspiration-motivation-education/" rel="alternate" type="text/html" title="Inspiration, motivation, education" /><published>2020-09-28T00:00:00+00:00</published><updated>2020-09-28T21:39:17+00:00</updated><id>https://mrpowerscripts.com/inspiration-motivation-education</id><content type="html" xml:base="https://mrpowerscripts.com/inspiration-motivation-education/">&lt;p&gt;I don’t talk a whole lot about my personal life because it’s not that amazing. But it’s far better than it started, and that didn’t change overnight. It’s the result of learning from many great people I’ve met over the years. And pushing myself to achieve goals that I would never have thought possible, of course, with many failures along the way.&lt;/p&gt;
 
 &lt;p&gt;The past couple of years have been a whirlwind of achieving goals that have improved my life, and I attribute them to having a better understanding of how to the knowledge I’ve picked up over the years. Little by little. Brick by brick. You can make a stable foundation for yourself, no matter where you started. I’ve found the best place to start is from within yourself.&lt;/p&gt;
 
@@ -254,78 +286,4 @@
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;I’ll keep adding to this list as I remember more details I’ve found helpful over the years. It’s essential to go back and critique our own works if we want to continue improving. Am I the best video creator on the planet? Not even close. But the time spent on this hobby has helped me in many ways. Every new video I created was an opportunity to analyze my own efforts and established a new baseline for me to improve upon. And the proof is there. It took me eight years to go from bad to OK, and I’m sure I’ll learn about more I can improve upon in the next eight years.&lt;/p&gt;</content><author><name>MrPowerScripts</name></author><category term="mrpowerscripts" /><summary type="html">So I’ve had my youtube channel for over eight years now. Am I a “YouTuber”? Not really. The channel is pretty small, and I don’t post content as often as I used to. Have I improved in those eight years? You’re damn right, and that’s what I really love most about the channel. My hard work is on display. I figured it was a good time to critique my first video and share some of the things I learned about creating tutorial videos on youtube.</summary></entry><entry><title type="html">Feng Shui Bracelet - The greatest youtube commercial ever</title><link href="https://mrpowerscripts.com/feng-shui-bracelet/" rel="alternate" type="text/html" title="Feng Shui Bracelet - The greatest youtube commercial ever" /><published>2020-06-01T00:00:00+00:00</published><updated>2020-07-14T00:25:05+00:00</updated><id>https://mrpowerscripts.com/feng-shui-bracelet</id><content type="html" xml:base="https://mrpowerscripts.com/feng-shui-bracelet/">&lt;p&gt;Do you want to learn more about Feng Shui and how to use it to shake $20 from people’s pockets? Well, I have the deal of a lifetime for you. Reading this blog post is going to unlock real wealth and happiness in your life. Not that fake knock of wealth and happiness. So let’s learn more about Feng Shui and how you can attain everything you’ve ever wanted.&lt;/p&gt;
-
-&lt;h2 id=&quot;this-youtube-commercial-is-going-to-change-your-life&quot;&gt;This youtube commercial is going to change your life&lt;/h2&gt;
-
-&lt;p&gt;I came across this life-changing commercial while trying to watch something else. I forget what it was, but it wasn’t going to change my life like this commercial did. The ad starts off with a man asking me if I’ve heard about Feng Shui and how it can affect my energy flow. I have, but the exhilarating background music makes me feel like I’m about to learn more than I could imagine. Noel here seems pretty confident he’s about to change my life. Let’s do this, Noel. Lay some Feng Shui game down on me.&lt;/p&gt;
-
-&lt;!-- (1) video wrapper --&gt;
-&lt;div class=&quot;youtube-video&quot; data-embed=&quot;to5llr46LhA&quot;&gt; 
- 
-    &lt;!-- (2) the &quot;play&quot; button --&gt;
-    &lt;div class=&quot;play-button&quot;&gt;&lt;/div&gt; 
-     
-&lt;/div&gt;
-
-&lt;h1 id=&quot;keep-your-eye-on-the-bar&quot;&gt;Keep your eye on the bar&lt;/h1&gt;
-
-&lt;p&gt;Thankfully this Feng Shui commercial included a flashing bar above narration text displayed on the screen. My eyes kept wandering, but the bar helped keep me focused on the explanatory captions. It also included helpful choices for words and phrases highlighted in yellow that really emphasized the positive aspects of Feng Shui. But don’t let it totally distract you from the beautiful, relevant b-rolls.&lt;/p&gt;
-
-&lt;h1 id=&quot;free-feng-shui-home-office-tips&quot;&gt;Free Feng Shui home office tips&lt;/h1&gt;
-
-&lt;p&gt;The video, released Nov 3, 2019, lets us know that Feng Shui originated in China. Then two months later, the coronavirus, which also came from China, spread to the world. Having people trapped at home would make them more likely to see these Feng Shui adverts and be susceptible to messages of increasing wealth and prosperity. Am I saying this company deliberately spread coronavirus so people will care more about Feng Shui? Yes, it’s entirely possible given how 2020 has played out so far. It would be the least surprising thing at this point. But can you really be mad at them? They’re about to give away Feng Shui tips FOR FREE. We’re getting a great deal here, people. So here are your 5 free Feng Shui home office tips.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Always sit so there is a solid wall behind your back. This ensures that you have support in your life. Never sit with your back towards the window.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Always place fax machines, telephone, computers, and cash registers in the southeast wealth sector to attract more prospective businesses.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Arrange your desk so you always have a clear view of the door, preferably facing the door. If it is impossible to arrange, then hang a small mirror so you can clearly see the reflection of the door.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Never put a shelf over your desk. The shelf symbolizes the burdens of the world coming down upon you.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Try to keep sharp items such as paper cutters, scissors, or any sharp corners of a machine away from the desk. Make sure they are not pointing at the desk. Keep all the sharp objects hidden away from view in a drawer or closet. The sharp edges symbolize the cutting of a knife, which is a disapproving finger pointing at you.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;AMAZING. Five free Feng Shui tips for your home office. You’re probably thinking all that sounds like a load of horse shit, but that’s exactly what someone with an empty southeast wealth sector would think. Loser. I even sawed off all the corners of my desk to be extra safe. But what can we do outside of our home office? I need to take this magical energy with me EVERYWHERE I go. Is it possible? Can it be? You’re damn right it’s possible, and the advertisement doesn’t waste time to jump right into the alternatives, like the Feng Shui Black Obsidian Bracelet.&lt;/p&gt;
-
-&lt;h2 id=&quot;feng-shui-black-obsidian-bracelet&quot;&gt;Feng Shui Black Obsidian Bracelet&lt;/h2&gt;
-
-&lt;p&gt;Holy shit, you can literally carry Feng Shui around on your wrist with the Feng Shui Black Obsidian Bracelet. The bracelet is made of two POWERFUL talismans. First, the Pixiu talisman, which is also known as Pi Yao. The other element is black Obsidian. Wait, that’s not two talismans. You just called it an element, where is the other talisman? WHO CARES let’s go over some benefits of Pixiu and black Obsidian.&lt;/p&gt;
-
-&lt;h2 id=&quot;attract-fortune-and-wealth-with-pixiu-talisman&quot;&gt;Attract fortune and wealth with Pixiu talisman&lt;/h2&gt;
-
-&lt;p&gt;The video tells us Pixiu is known to bring fortune and attract wealth. I mean those are kinda the same thing, right? I’m not sure why you said the same thing in two different ways, but I like the sound of both of them. This is a combo deal talisman. Incredible two for one talisman value. Then there’s the black Obsidian, which is known to give protection and shield against negativity. Which is so important in this day and age where haters are everywhere. Like haters in the video youtube comments who bought the bracelet and found it didn’t do anything at all.&lt;/p&gt;
-
-&lt;div&gt;
-  &lt;img style=&quot;object-fit: contain&quot; src=&quot;/images/feng-shui-comments.jpg&quot; alt=&quot;image&quot; /&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;block-out-your-haters&quot;&gt;Block out your haters&lt;/h2&gt;
-
-&lt;p&gt;This negative energy needs to be blocked out, and thankfully the bracelet has that critical Obsidian element. The video also goes on to state that Black Obsidian is known to increase self-control and makes one embrace their true self. Which might be why those people bought this bracelet in the first place, they simply didn’t have the self-control they needed. And now, with this bracelet, they definitely won’t make any further impulsive decisions. Truly amazing.&lt;/p&gt;
-
-&lt;p&gt;But the most amazing part of all this is that Noel discovered the bracelet when he met Master Xi. See, Noel was a garbage collector before Master Xi put him onto the Feng Shui Black Obsidian bracelet. Noel found a wallet on the ground with more money than he could earn. Did that wallet have more money than he could make in a day? A week? A year? WE DON’T KNOW AND WHO CARES. Stop asking so many questions.&lt;/p&gt;
-
-&lt;h2 id=&quot;master-xi-is-a-really-dope-name-to-be-honest&quot;&gt;Master Xi is a really dope name, to be honest&lt;/h2&gt;
-
-&lt;p&gt;What’s important here is that Noel was honest and gave the wallet back to the owner, who happened to be Master Xi. That’s when Master Xi rewarded Noel by giving him the Feng Shui Black Obsidian bracelet. Immediately from here on out, Noel’s life totally changed. And even many other people told Noel that the bracelet changed their life too. It also healed their illness. What illness? Again, WHO CARES, this thing is covered in gold and Obsidian. Keep your eye on the blinking bar and read the text. This isn’t a Q&amp;amp;A session. Noel is here to teach you how to cure whatever the fuck you got. It even provided more work opportunities for some and generally made people feel more confident.&lt;/p&gt;
-
-&lt;p&gt;I don’t know if you’ve realized yet, but this bracelet is fucking amazing.&lt;/p&gt;
-
-&lt;h2 id=&quot;einstein-would-totally-wear-the-feng-shui-bracelet&quot;&gt;Einstein would totally wear the Feng Shui bracelet&lt;/h2&gt;
-
-&lt;p&gt;Still skeptical? Noel goes on to implore you to recognize the importance of the energy in and around us. He quotes Einstein’s famous equation E = mc&lt;sup&gt;2&lt;/sup&gt; to remind us that matter is tightly related to energy. Energy shapes matter, so if we can shape our energy, we can begin to shape our future. That’s right, the bracelet is backed up by SCIENCE. Einstein said it himself. You gonna sit there with your broke ass calling Einstein stupid? Why shape your energy with a healthy diet and exercise when all you really need is to carry around some Feng Shui on your wrist?&lt;/p&gt;
-
-&lt;p&gt;Noel isn’t a lowly garbage collector anymore. Now he works closely with Master Xi to bring these bracelets to the world. Which may sound like he got roped into a multi-level marketing scheme if you’re the type of hater that keeps pointy things on their desk. Thankfully the Obsidian blocks out all that hater energy.&lt;/p&gt;
-
-&lt;h2 id=&quot;i-feel-richer-simply-by-looking-at-the-bracelet&quot;&gt;I feel richer simply by looking at the bracelet&lt;/h2&gt;
-
-&lt;p&gt;At this point, we reach the end of the video, and all you have to do is click the link and wait for your Feng Shui black Obsidian bracelet. What a fantastic journey of transformation we were able to make in three minutes and thirty-eight seconds. For only $20 you, and everyone else, can have access to all the wealth, health, and prosperity you dreamed of.&lt;/p&gt;</content><author><name>MrPowerScripts</name></author><category term="mrpowerscripts" /><summary type="html">Do you want to learn more about Feng Shui and how to use it to shake $20 from people’s pockets? Well, I have the deal of a lifetime for you. Reading this blog post is going to unlock real wealth and happiness in your life. Not that fake knock of wealth and happiness. So let’s learn more about Feng Shui and how you can attain everything you’ve ever wanted.</summary></entry></feed>
+&lt;p&gt;I’ll keep adding to this list as I remember more details I’ve found helpful over the years. It’s essential to go back and critique our own works if we want to continue improving. Am I the best video creator on the planet? Not even close. But the time spent on this hobby has helped me in many ways. Every new video I created was an opportunity to analyze my own efforts and established a new baseline for me to improve upon. And the proof is there. It took me eight years to go from bad to OK, and I’m sure I’ll learn about more I can improve upon in the next eight years.&lt;/p&gt;</content><author><name>MrPowerScripts</name></author><category term="mrpowerscripts" /><summary type="html">So I’ve had my youtube channel for over eight years now. Am I a “YouTuber”? Not really. The channel is pretty small, and I don’t post content as often as I used to. Have I improved in those eight years? You’re damn right, and that’s what I really love most about the channel. My hard work is on display. I figured it was a good time to critique my first video and share some of the things I learned about creating tutorial videos on youtube.</summary></entry></feed>
