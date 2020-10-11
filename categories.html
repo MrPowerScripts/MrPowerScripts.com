@@ -2,7 +2,7 @@
 layout: default
 ---
 <!-- https://gist.github.com/Phlow/a0e3fa686eb259fe7f76 noice -->
-<h2>Categories</h2>
+<!-- <h2>Categories</h2>
 <ul>
 {% assign categories_list = site.categories %}
   {% if categories_list.first[0] == null %}
@@ -15,7 +15,7 @@ layout: default
     {% endfor %}
   {% endif %}
 {% assign categories_list = nil %}
-</ul>
+</ul> -->
 
 {% for category in site.categories %}
   <h3 id="{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }}</h3>
