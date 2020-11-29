@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>JSON command line tools – MrPowerScripts – Learn. Code. Grow.</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+    <link rel="canonical" href="https://mrpowerscripts.com/json-shell-tools/">
+
+    
+    <meta name="description" content="So you want to manipulate JSON from the command line? Well, you’re in luck! It’s 2020, and there are several ways to do this. Also, you’re super unlucky. It’s 2020, and the entire world is falling apart. But we can still learn about JSON at the command line! What is JSON JSON stands for Javascript Object Notation. It has nothing to do with javascript, even though the name makes it sound related. It’s a standard way for formatting data using key-value pairs with various value types. Such as strings, integers, arrays, and objects. JSON has become the defacto format for..." />
+    <meta property="og:description" content="So you want to manipulate JSON from the command line? Well, you’re in luck! It’s 2020, and there are several ways to do this. Also, you’re super unlucky. It’s 2020, and the entire world is falling apart. But we can still learn about JSON at the command line! What is JSON JSON stands for Javascript Object Notation. It has nothing to do with javascript, even though the name makes it sound related. It’s a standard way for formatting data using key-value pairs with various value types. Such as strings, integers, arrays, and objects. JSON has become the defacto format for..." />
+    
+    <meta name="author" content="MrPowerScripts" />
+
+    
+    <meta property="og:title" content="JSON command line tools" />
+    <meta property="twitter:title" content="JSON command line tools" />
+    
+
+    
+    <meta content="/images/mpslogo.png" property="og:image">
+    
+
+    
+        
+    <meta content="mrpowerscripts" property="article:tag">
+        
+    
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/images/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/images/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/images/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/images/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/images/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/images/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/images/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/images/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/images/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="MrPowerScripts - Learn. Code. Grow." href="/feed.xml" />
+    <link rel="manifest" href="/manifest.json">
+
+    <meta name="google-site-verification" content="prYTc9sgHOxJOubz6hLVkkfpea2I82I0UfoePeJ_FEg" />
+    <meta name="msvalidate.01" content="5518FAB6C86578E1F5002CD56C1B5F24" />
+    <meta name="yandex-verification" content="4539896b000a5ed9" />
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "JSON command line tools",
+        "description": "So you want to manipulate JSON from the command line? Well, you’re in luck! It’s 2020, and there are several ways to do this. Also, you’re super unlucky. It’s 2020, and the entire world is falling apart. But we can still learn about JSON at the command line! What is JSON JSON stands for Javascript Object Notation. It has nothing to do with javascript, even though the name makes it sound related. It’s a standard way for formatting data using key-value pairs with various value types. Such as strings, integers, arrays, and objects. JSON has become the defacto format for...",
+        "image": [
+            
+                "https://mrpowerscripts.com/images/twilightyellow.png"
+            
+        ],
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://mrpowerscripts.com/json-shell-tools/"
+        },
+        "datePublished": "2020-11-29 00:00:00 +0000",
+        "dateModified": "2020-11-29 09:57:15 +0000",
+        "isAccessibleForFree": "True",
+        "isPartOf": {
+            "@type": ["CreativeWork", "Product", "Blog"],
+            "name": "MrPowerScripts",
+            "productID": ""
+        },
+        "license": "http://creativecommons.org/licenses/by-sa/4.0/",
+        "author": {
+            "@type": "Person",
+            "name": "MrPowerScripts",
+            "description": "MrPowerScripts is here to help you automate your life so you have more time for automating your life. 
+My youtube channel started as a way for me to share stuff I was learning about Powershell. That was in 2012, and 
+since then the channel and grown in many different ways as my career and skills have envolved. My new goal with the channel
+is to try and automate it entirely. I'll be sharing a lot about that journey of automation while continuing 
+other porjects and sharing them here on my blog as well as youtube. Join my on Discord if you have any questions.
+",
+            "sameAs": "https://mrpowerscripts.com/about",
+            "image": {
+                "@type": "ImageObject",
+                "url": "https://mrpowerscripts.com/images/twilightyellow.png"
+            },
+            "givenName": "",
+            "familyName": "",
+            "alternateName": "MrPowerScripts",
+            "publishingPrinciples": "https://mrpowerscripts.com/about/"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "MrPowerScripts",
+            "description": "MrPowerScripts is here to help you automate your life so you have more time for automating your life. 
+My youtube channel started as a way for me to share stuff I was learning about Powershell. That was in 2012, and 
+since then the channel and grown in many different ways as my career and skills have envolved. My new goal with the channel
+is to try and automate it entirely. I'll be sharing a lot about that journey of automation while continuing 
+other porjects and sharing them here on my blog as well as youtube. Join my on Discord if you have any questions.
+",
+            "sameAs": "https://mrpowerscripts.com",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://mrpowerscripts.com/images/twilightyellow.png"
+            },
+            "publishingPrinciples": "https://mrpowerscripts.com/about/"
+        }
+    }
+</script>
+    <script>
+      if ("serviceWorker" in navigator) {
+      if (navigator.serviceWorker.controller) {
+        console.log("An active service worker found, no need to register");
+      } else {
+        // Register the service worker
+      navigator.serviceWorker
+          .register("/serviceworker.js", {
+            scope: "/"
+          })
+          .then(function (reg) {
+            console.log("Service worker has been registered for scope: " + reg.scope);
+          })
+          .catch(function(err){console.log(err)})    
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead">
+          <div class="mh-txt-wrap">
+            <a href="/" class="site-avatar"><img src="https://mrpowerscripts.com/images/twilightyellow.png" alt="site avatar" /></a>
+            <div class="site-info">
+              <h2 class="site-name"><a href="/">MrPowerScripts</a></h2>
+              <p class="site-description">Learn. Code. Grow.</p>
+            </div>
+          </div>
+
+          <nav>
+            <a href="/categories">Categories</a>
+            <!-- <a onclick="selectRandom()">Random</a> -->
+            <!-- <a href="/podcast">Podcast</a> -->
+            <a href="http://bit.ly/mrps-discord">Discord</a>
+            <!-- <a href="/about">About</a> -->
+            <a href="/power-up" class="power-up">Power Up</a>
+          </nav>
+
+        </header>
+        <!-- <div class="meta-links">
+            
+<a href="mailto:playingwithpowershell@gmail.com">e-mail</a> |
+
+
+<a href="https://github.com/mrpowerscripts">github</a> |
+
+
+
+<a href="/feed.xml">rss</a> |
+<a href="https://www.twitter.com/mrpowerscripts">twitter</a> |
+
+<a href="https://youtube.com/user/mrpowerscripts">youtube</a> |
+
+<a href="https://discord.gg/uEBWZKq">discord</a> |
+<a href="https://patreon.com/mrpowerscripts">patreon</a>
+
+<style>
+.meta-links {
+    display: flex;
+    color: white;
+    justify-content: space-around;
+}
+
+.meta-links a {
+  color: white;
+  padding: 0px 0px;
+}
+
+.meta-links a:hover {
+  color:purple;
+}
+</style>
+        </div> -->
+        <!-- 
+<div id="share-bar">
+
+  <h4>Share this:</h4>
+
+  <div class="share-buttons">
+      <a  href="https://www.facebook.com/sharer/sharer.php?u=https://mrpowerscripts.com/json-shell-tools/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Facebook" >
+          <i class="fa fa-facebook-official share-button"> facebook</i>
+      </a>
+
+      <a  href="https://twitter.com/intent/tweet?text=JSON command line tools&url=https://mrpowerscripts.com/json-shell-tools/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Twitter" >
+          <i class="fa fa-twitter share-button"> twitter</i>
+      </a>
+
+      <a  href="http://www.tumblr.com/share/link?url=https://mrpowerscripts.com/json-shell-tools/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Tumblr" >
+          <i class="fa fa-tumblr share-button"> tumblr</i>
+      </a>
+
+      <a  href="http://www.reddit.com/submit?url=https://mrpowerscripts.com/json-shell-tools/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Reddit" >
+          <i class="fa fa-reddit-alien share-button"> reddit</i>
+      </a>
+
+      <a  href="https://www.linkedin.com/shareArticle?mini=true&url=https://mrpowerscripts.com/json-shell-tools/&title=JSON command line tools&summary=&source="
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on LinkedIn" >
+          <i class="fa fa-linkedin share-button"> linkedin</i>
+      </a>
+
+      <a  href="mailto:?subject=JSON command line tools&amp;body=Check out this site https://mrpowerscripts.com/json-shell-tools/"
+          title="Share via Email" >
+          <i class="fa fa-envelope share-button"> email</i>
+      </a>
+  </div>
+
+</div> let's hide this until it looks pretty-->
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <!-- <div id="active-motions" class="active-motions">
+  <h3>Active Discord Votes</h3>
+  <div class="active-motion-list" id="active-motion-list"></div>
+</div>
+
+<script>
+function isMRPS(messageID) {
+  if (parseInt(messageID) === 510819339411390474) {
+    // console.log('motion is mine')
+    return true
+  } else {
+    // console.log('motion is not mine')
+    return false
+  }
+}
+
+window.addEventListener('load', function() {
+  fetch("http://dr.mrpowerscripts.com:8888/motionsData.json")
+  .then(res => res.json())
+  .then(out => {
+    window.motions = out.motions
+    var motions = out.motions.filter(i => isMRPS(i.author)).slice(0, 3)
+    // console.log(motions)
+    
+    var activeMotionList = document.getElementById("active-motion-list")
+
+    for (var i = 0; i < motions.length; i++) {
+      var motion = document.createElement('a')
+
+      motion.href = `https://discordapp.com/channels/510821302773219331/534510417448402965/${motions[i].msg}`
+      motion.target = '_blank'
+      motion.innerHTML = `⚈ ${motions[i].text}`
+      activeMotionList.appendChild(motion);
+    }
+
+    if (motions.length) {
+      document.getElementById("active-motions").style.height = "100%"
+      document.getElementById("active-motions").style.opacity = "1"
+    }
+  })
+}, false);
+</script> -->
+<article class="post">
+  <script> 
+var reviewHTML = '<div class="reviews">'+
+            '  <div id="suggested-reviews" class="suggested-reviews">'+
+            '    <h4>Suggested reviews for you</h4>'+
+            '    <ul class="suggested-reviews-list">'+
+            '      <li><a href="" class="suggested-reviews-1" id="suggested-reviews-1"></a></li>'+
+            '      <li><a href="" class="suggested-reviews-2" id="suggested-reviews-2"></a></li>'+
+            '      <li><a href="" class="suggested-reviews-3" id="suggested-reviews-3"></a></li>'+
+            '      <li><a href="" class="suggested-reviews-4" id="suggested-reviews-4"></a></li>'+
+            '      <li><a href="" class="suggested-reviews-5" id="suggested-reviews-5"></a></li>'+
+            '    </ul>'+
+            '  </div>'+
+            '</div>';
+
+    window.addEventListener('load', function() {
+      fetch("/api-reviews.json")
+      .then(res => res.json())
+      .then(out => {
+
+        let entry = document.getElementsByClassName("entry")[0]
+        let reviews = document.createElement('div')
+        reviews.innerHTML = reviewHTML
+
+        let afterMe = entry.children[Math.ceil(entry.childElementCount / 2)] 
+
+        entry.insertBefore(reviews, afterMe)
+
+        var posts = out.sort(() => .5 - Math.random()).slice(0,5)
+        let i
+        for (i=0; i < posts.length; i++) {
+          document.getElementById(`suggested-reviews-${i + 1}`).text = posts[i].title
+          document.getElementById(`suggested-reviews-${i + 1}`).href = posts[i].url
+        }
+    
+        let content = document.getElementById('suggested-reviews')
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+
+
+
+      })
+      .catch(error => console.error(error))
+    }, false);
+    </script>
+  
+<h2><a href="">JSON command line tools</a></h2>
+<div class="post-menu-bar">
+  <span>November 29, 2020</span> 
+  <a class="edit-button" href="https://github.com/MrPowerScripts/MrPowerScripts.com/tree/master/">Edit</a>
+</div>
+
+  <!-- <div id="amzn-assoc-ad-08b4ca1c-2647-4b60-9e4a-704ef215179e"></div> -->
+  <div class="entry">
+    <p>So you want to manipulate JSON from the command line? Well, you’re in luck! It’s 2020, and there are several ways to do this. Also, you’re super unlucky. It’s 2020, and the entire world is falling apart. But we can still learn about JSON at the command line!</p>
+
+<h2 id="what-is-json">What is JSON</h2>
+
+<p>JSON stands for Javascript Object Notation. It has nothing to do with javascript, even though the name makes it sound related. It’s a standard way for formatting data using key-value pairs with various value types. Such as strings, integers, arrays, and objects. JSON has become the defacto format for transmitting structured data between web services. You will likely encounter it when using any web API on the internet.</p>
+
+<h2 id="why-would-you-use-json-from-the-command-line">Why would you use JSON from the command line</h2>
+
+<p>JSON is a general-purpose data format. While predominantly used for communication between web services, it has many other use cases. If you’ve ever created a nodejs project, you’ve likely configured your package.json file, which is JSON. Many programming languages like Python and Javascript can parse JSON into native objects of the respective language, but it’s not convenient to write a script to work with JSON all the time. There are times where you may want to curl data from a web service and inspect or manipulate it from the command line. It’s much more convenient this way. Also, maybe you’re writing a bash script where native command-line tools are preferable to calling additional scripts. There are probably many other examples of reasons to work with JSON from the command line - but the biggest question is: What is the best way to do it?</p>
+
+<h2 id="how-to-work-with-json-at-the-command-line-with-powershell">How to work with JSON at the command line with Powershell</h2>
+
+<p>If you have Powershell installed on Windows or Linux, this is the easiest way to work with JSON at the command line. Powershell has a cmdlet called <code class="language-plaintext highlighter-rouge">ConvertFrom-Json</code> to turn JSON data into a Powershell object, which you can then interact with from the command line like any other Powershell object. Here’s a oneliner to try it yourself <code class="language-plaintext highlighter-rouge">$json = Invoke-WebRequest https://reddit.com/.json | select -ExpandProperty content | ConvertFrom-Json</code>. In this example, we’re downloading the Reddit front page data as JSON, which then converts to a Powershell object and stored in the $json variable. Now you can inspect the data in the variable quickly like this: <code class="language-plaintext highlighter-rouge">$json.data.children[0].data</code>, which will output the first post on the front page.</p>
+
+<h2 id="how-to-work-with-json-at-the-command-in-linux">How to work with JSON at the command in Linux</h2>
+
+<p>The Linux shell handles data as strings, making it awkward to work with structured data like JSON. All sorts of command-line tools are needed to interact with string data like sed, awk, and cut. But even with these tools, it’s still tricky to efficiently interact with JSON on the Linux shell. A downloadable command called <code class="language-plaintext highlighter-rouge">jq</code> comes to the rescue for working with JSON at Linux’s command line.</p>
+
+<h2 id="the-jq-tool-helps-you-work-with-json-data-on-a-linux-command-line">The jq tool helps you work with JSON data on a Linux command line</h2>
+
+<p>The <code class="language-plaintext highlighter-rouge">jq</code> command is like a function. You give it a JSON input, and based on a string filter, it converts that JSON to the desired output. Let’s look at the same example above but using the Linux command line. <code class="language-plaintext highlighter-rouge">json=$(curl -s -L https://reddit.com/.json -H "Accept: application/json" -H "User-Agent: avoid-rate-limit")</code>. If you <code class="language-plaintext highlighter-rouge">echo</code> the <code class="language-plaintext highlighter-rouge">$json</code> variable, you’ll see a large string output of the JSON data. Scary! How will we get the same post output as easily as we could with the Powershell object? We can do it with a <code class="language-plaintext highlighter-rouge">jq</code> filter that looks very much like the Powershell object’s notation. <code class="language-plaintext highlighter-rouge">printf '%s' "$json" | jq '.data.children[0].data'</code>. Rather than echo the contents to the pipeline, we use `printf ‘%s’ “$json” which will not accidentally interpret any newlines in the JSON because it breaks the structure.</p>
+
+<p>After running this <code class="language-plaintext highlighter-rouge">jq</code> command, you’ll see the same output as we did when we accessed the Powershell object properties. But it’s important to remember the Powershell example is an actual object which can be combined with other cmdlets to loop through values, perform arithmetic, or anything else we can do with Powershell objects. In <code class="language-plaintext highlighter-rouge">jq</code>, the string filter we provide has incredible flexibility far beyond the simple example.</p>
+
+<p>For instance, you can use a <code class="language-plaintext highlighter-rouge">,</code> to combine filters within the filter string. Consider this filter <code class="language-plaintext highlighter-rouge">printf '%s' "$json" | jq '.data.children[0].data,.data.children[4].data.stickied'</code>. This will output our original top post value as well as one property from the 5th post. <code class="language-plaintext highlighter-rouge">jq</code> also supports basic arithmetic operators. <code class="language-plaintext highlighter-rouge">printf '%s' "$json" | jq '.data.children[4].data.num_comments+1'</code>. In this example, we’re telling <code class="language-plaintext highlighter-rouge">jq</code> to access a single property and add one to the outputted value. <code class="language-plaintext highlighter-rouge">jq</code> also has built-in functions to help with many tasks. For instance let’s say we want to get all of the keys for a certain object in a list. <code class="language-plaintext highlighter-rouge">printf '%s' "$json" | jq '.data.children[4].data | keys'</code>. Like most shells, you can pipeline values using the <code class="language-plaintext highlighter-rouge">|</code> character. In this example, we’re pipelining the 5th post object to the <code class="language-plaintext highlighter-rouge">jq</code> function called <code class="language-plaintext highlighter-rouge">keys</code>, which will output a list of the object’s keys.</p>
+
+<h2 id="which-tools-should-you-use-to-work-with-json-at-the-command-line">Which tools should you use to work with JSON at the command line</h2>
+
+<p><code class="language-plaintext highlighter-rouge">jq</code> is an incredible tool for working with JSON data at the command line. While Powershell might be more comfortable, it’s not as readily available as a simple command-line tool, which you can install pretty much anywhere like <code class="language-plaintext highlighter-rouge">jq</code>. Check out the <a href="https://stedolan.github.io/jq/manual">jq documentation</a> for all the goodies.</p>
+
+  </div>
+  <hr>
+  <div>
+  Do you have some thoughts on this content? Come chat about it on <a href="http://bit.ly/mrps-discord">Discord</a>.
+  If you enjoy the content <a href="/power-up">check out ways you can support the site</a>.
+</div>
+  <div id="amzn-assoc-ad-4157821c-83ef-4e23-a734-d3f7e07f2fa2"></div>
+  <div id="suggested" class="suggested" hidden>
+  <h4>Suggested posts for you</h4>
+  <div class="suggested-posts">
+    <a href="" class="suggested-post" id="suggested-1"></a>
+    <a href="" class="suggested-post" id="suggested-2"></a>
+    <a href="" class="suggested-post" id="suggested-3"></a>
+    <a href="" class="suggested-post" id="suggested-4"></a>
+    <a href="" class="suggested-post" id="suggested-5"></a>
+  </div>
+</div>
+
+<script>
+    window.addEventListener('load', function() {
+      fetch(window.location.origin+"/api.json")
+      .then(res => res.json())
+      .then(out => {
+        var posts = out.sort(() => .5 - Math.random()).slice(0,5)
+        let i
+        for (i=0; i < posts.length; i++) {
+          document.getElementById(`suggested-${i + 1}`).text = posts[i].title
+          document.getElementById(`suggested-${i + 1}`).href = posts[i].url
+        }
+    
+        document.getElementById("suggested").hidden = false
+      })
+      .catch(error => console.error(error))
+    }, false);
+    </script>
+</article>
+
+<!-- <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=08b4ca1c-2647-4b60-9e4a-704ef215179e"></script> -->
+<script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=4157821c-83ef-4e23-a734-d3f7e07f2fa2"></script>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <!-- 
+<div id="share-bar">
+
+  <h4>Share this:</h4>
+
+  <div class="share-buttons">
+      <a  href="https://www.facebook.com/sharer/sharer.php?u=https://mrpowerscripts.com/json-shell-tools/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Facebook" >
+          <i class="fa fa-facebook-official share-button"> facebook</i>
+      </a>
+
+      <a  href="https://twitter.com/intent/tweet?text=JSON command line tools&url=https://mrpowerscripts.com/json-shell-tools/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Twitter" >
+          <i class="fa fa-twitter share-button"> twitter</i>
+      </a>
+
+      <a  href="http://www.tumblr.com/share/link?url=https://mrpowerscripts.com/json-shell-tools/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Tumblr" >
+          <i class="fa fa-tumblr share-button"> tumblr</i>
+      </a>
+
+      <a  href="http://www.reddit.com/submit?url=https://mrpowerscripts.com/json-shell-tools/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Reddit" >
+          <i class="fa fa-reddit-alien share-button"> reddit</i>
+      </a>
+
+      <a  href="https://www.linkedin.com/shareArticle?mini=true&url=https://mrpowerscripts.com/json-shell-tools/&title=JSON command line tools&summary=&source="
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on LinkedIn" >
+          <i class="fa fa-linkedin share-button"> linkedin</i>
+      </a>
+
+      <a  href="mailto:?subject=JSON command line tools&amp;body=Check out this site https://mrpowerscripts.com/json-shell-tools/"
+          title="Share via Email" >
+          <i class="fa fa-envelope share-button"> email</i>
+      </a>
+  </div>
+
+</div> -->
+        <footer class="footer">
+          
+<a href="mailto:playingwithpowershell@gmail.com">e-mail</a> |
+
+
+<a href="https://github.com/mrpowerscripts">github</a> |
+
+
+
+<a href="/feed.xml">rss</a> |
+<a href="https://www.twitter.com/mrpowerscripts">twitter</a> |
+
+<a href="https://youtube.com/user/mrpowerscripts">youtube</a> |
+
+<a href="https://discord.gg/uEBWZKq">discord</a> |
+<a href="https://patreon.com/mrpowerscripts">patreon</a>
+
+<style>
+.meta-links {
+    display: flex;
+    color: white;
+    justify-content: space-around;
+}
+
+.meta-links a {
+  color: white;
+  padding: 0px 0px;
+}
+
+.meta-links a:hover {
+  color:purple;
+}
+</style>
+        </footer>
+      </div>
+    </div>
+
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121890486-1"></script>
+<script>
+  if (document.location.hostname.search("mrpowerscripts.com") !== -1) {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-121890486-1');
+}
+</script>
+
+
+
+
+
+
+    <script src="/scripts.js" ></script>
+  </body>
+</html>
