@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>MrPowerScripts – Learn. Code. Grow.</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+    <link rel="canonical" href="https://mrpowerscripts.com/everything/">
+
+    
+    <meta name="description" content="Learn. Code. Grow.">
+    <meta property="og:description" content="Learn. Code. Grow." />
+    
+    <meta name="author" content="MrPowerScripts" />
+
+    
+
+    
+    <meta content="/images/mpslogo.png" property="og:image">
+    
+
+    
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/images/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/images/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/images/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/images/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/images/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/images/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/images/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/images/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/images/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="MrPowerScripts - Learn. Code. Grow." href="/feed.xml" />
+    <link rel="manifest" href="/manifest.json">
+
+    <meta name="google-site-verification" content="prYTc9sgHOxJOubz6hLVkkfpea2I82I0UfoePeJ_FEg" />
+    <meta name="msvalidate.01" content="5518FAB6C86578E1F5002CD56C1B5F24" />
+    <meta name="yandex-verification" content="4539896b000a5ed9" />
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+
+    
+    <script>
+      if ("serviceWorker" in navigator) {
+      if (navigator.serviceWorker.controller) {
+        console.log("An active service worker found, no need to register");
+      } else {
+        // Register the service worker
+      navigator.serviceWorker
+          .register("/serviceworker.js", {
+            scope: "/"
+          })
+          .then(function (reg) {
+            console.log("Service worker has been registered for scope: " + reg.scope);
+          })
+          .catch(function(err){console.log(err)})    
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead">
+          <div class="mh-txt-wrap">
+            <a href="/" class="site-avatar"><img src="https://mrpowerscripts.com/images/twilightyellow.png" alt="site avatar" /></a>
+            <div class="site-info">
+              <h2 class="site-name"><a href="/">MrPowerScripts</a></h2>
+              <p class="site-description">Learn. Code. Grow.</p>
+            </div>
+          </div>
+
+          <nav>
+            <a href="/everything">Everything</a>
+            <!-- <a onclick="selectRandom()">Random</a> -->
+            <!-- <a href="/podcast">Podcast</a> -->
+            <a href="http://bit.ly/mrps-discord">Discord</a>
+            <!-- <a href="/about">About</a> -->
+            <a href="/power-up" class="power-up">Power Up</a>
+          </nav>
+
+        </header>
+        <!-- <div class="meta-links">
+            
+<a href="mailto:playingwithpowershell@gmail.com">e-mail</a> |
+
+
+<a href="https://github.com/mrpowerscripts">github</a> |
+
+
+
+<a href="/feed.xml">rss</a> |
+<a href="https://www.twitter.com/mrpowerscripts">twitter</a> |
+
+<a href="https://youtube.com/user/mrpowerscripts">youtube</a> |
+
+<a href="https://discord.gg/uEBWZKq">discord</a> |
+<a href="https://patreon.com/mrpowerscripts">patreon</a>
+
+<style>
+.meta-links {
+    display: flex;
+    color: white;
+    justify-content: space-around;
+}
+
+.meta-links a {
+  color: white;
+  padding: 0px 0px;
+}
+
+.meta-links a:hover {
+  color:purple;
+}
+</style>
+        </div> -->
+        <!-- 
+<div id="share-bar">
+
+  <h4>Share this:</h4>
+
+  <div class="share-buttons">
+      <a  href="https://www.facebook.com/sharer/sharer.php?u=https://mrpowerscripts.com/everything/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Facebook" >
+          <i class="fa fa-facebook-official share-button"> facebook</i>
+      </a>
+
+      <a  href="https://twitter.com/intent/tweet?text=&url=https://mrpowerscripts.com/everything/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Twitter" >
+          <i class="fa fa-twitter share-button"> twitter</i>
+      </a>
+
+      <a  href="http://www.tumblr.com/share/link?url=https://mrpowerscripts.com/everything/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Tumblr" >
+          <i class="fa fa-tumblr share-button"> tumblr</i>
+      </a>
+
+      <a  href="http://www.reddit.com/submit?url=https://mrpowerscripts.com/everything/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Reddit" >
+          <i class="fa fa-reddit-alien share-button"> reddit</i>
+      </a>
+
+      <a  href="https://www.linkedin.com/shareArticle?mini=true&url=https://mrpowerscripts.com/everything/&title=&summary=&source="
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on LinkedIn" >
+          <i class="fa fa-linkedin share-button"> linkedin</i>
+      </a>
+
+      <a  href="mailto:?subject=&amp;body=Check out this site https://mrpowerscripts.com/everything/"
+          title="Share via Email" >
+          <i class="fa fa-envelope share-button"> email</i>
+      </a>
+  </div>
+
+</div> let's hide this until it looks pretty-->
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      
+<article>
+    <a href="/json-shell-tools/">
+      JSON command line tools
+    </a>
+  <time datetime="2020-11-29">29 November 2020</time>
+</article>
+<br>
+
+<article>
+    <a href="/3d-printed-cars/">
+      Damn it, he was right about 3d printing cars
+    </a>
+  <time datetime="2020-10-17">17 October 2020</time>
+</article>
+<br>
+
+<article>
+    <a href="/shout-out-community/">
+      Shout out to the community
+    </a>
+  <time datetime="2020-10-10">10 October 2020</time>
+</article>
+<br>
+
+<article>
+    <a href="/inspiration-motivation-education/">
+      Inspiration, motivation, education
+    </a>
+  <time datetime="2020-09-28">28 September 2020</time>
+</article>
+<br>
+
+<article>
+    <a href="/broken-bed/">
+      I fell through my bed the other day
+    </a>
+  <time datetime="2020-09-22">22 September 2020</time>
+</article>
+<br>
+
+<article>
+    <a href="/battle-nation-live/">
+      Battle Nation Live
+    </a>
+  <time datetime="2020-09-06">06 September 2020</time>
+</article>
+<br>
+
+<article>
+    <a href="/why-mrpowerscripts/">
+      Why the name MrPowerScripts?
+    </a>
+  <time datetime="2020-08-15">15 August 2020</time>
+</article>
+<br>
+
+<article>
+    <a href="/home-office-overrated/">
+      Working from home is overrated and you need to know why
+    </a>
+  <time datetime="2020-08-01">01 August 2020</time>
+</article>
+<br>
+
+<article>
+    <a href="/github-arctic-code-vault/">
+      My code is in the GitHub Arctic Code Vault
+    </a>
+  <time datetime="2020-07-17">17 July 2020</time>
+</article>
+<br>
+
+<article>
+    <a href="/arc-episode-two/">
+      Automated Reality Channel Ep2 Planning
+    </a>
+  <time datetime="2020-06-20">20 June 2020</time>
+</article>
+<br>
+
+<article>
+    <a href="/my-pwa-website/">
+      MrPowerScripts.com is a Progressive Web App (PWA)
+    </a>
+  <time datetime="2020-06-13">13 June 2020</time>
+</article>
+<br>
+
+<article>
+    <a href="/tutorial-video-tips/">
+      Simple tips for great tutorial videos
+    </a>
+  <time datetime="2020-06-09">09 June 2020</time>
+</article>
+<br>
+
+<article>
+    <a href="/feng-shui-bracelet/">
+      Feng Shui Bracelet - The greatest youtube commercial ever
+    </a>
+  <time datetime="2020-06-01">01 June 2020</time>
+</article>
+<br>
+
+<article>
+    <a href="/pwa-to-apk-with-twa/">
+      Oh My Gosh turn your PWA into an Android app in the Google play store
+    </a>
+  <time datetime="2020-04-26">26 April 2020</time>
+</article>
+<br>
+
+<article>
+    <a href="/iteration/">
+      U need 2 Iterate. You need to iterate. Iteration is necessary.
+    </a>
+  <time datetime="2020-04-25">25 April 2020</time>
+</article>
+<br>
+
+<article>
+    <a href="/best-blog-post-ever/">
+      This is the best blog post ever
+    </a>
+  <time datetime="2020-03-22">22 March 2020</time>
+</article>
+<br>
+
+<article>
+    <a href="/automate-static-site-testing/">
+      Automate Simple Static Website Testing
+    </a>
+  <time datetime="2020-03-14">14 March 2020</time>
+</article>
+<br>
+
+<article>
+    <a href="/calendar-contacts-tasks/">
+      How I orgaize my life with apps
+    </a>
+  <time datetime="2020-02-18">18 February 2020</time>
+</article>
+<br>
+
+<article>
+    <a href="/advanced-function-parameters-in-powershell/">
+      Advanced function parameters in Powershell
+    </a>
+  <time datetime="2019-08-02">02 August 2019</time>
+</article>
+<br>
+
+<article>
+    <a href="/github-pages-circleci-jekyll-paginate-v2/">
+      How to get around the jekyll-pagination-v2 limitation of GitHub pages with CircleCI
+    </a>
+  <time datetime="2019-07-28">28 July 2019</time>
+</article>
+<br>
+
+<article>
+    <a href="/faster-github-pages-with-cloudflare-circleci/">
+      How I made the MrPowerScripts.com website FAST on GitHub pages with Cloudflare and CircleCI
+    </a>
+  <time datetime="2019-04-06">06 April 2019</time>
+</article>
+<br>
+
+<article>
+    <a href="/CircleCI-nick-young-meme/">
+      CircleCI Nick Young meme for your overconfident developers
+    </a>
+  <time datetime="2019-03-30">30 March 2019</time>
+</article>
+<br>
+
+<article>
+    <a href="/microsoft-excel-automation-powershell/">
+      Microsoft Excel Automation with Powershell
+    </a>
+  <time datetime="2019-03-24">24 March 2019</time>
+</article>
+<br>
+
+<article>
+    <a href="/arc-episode-one/">
+      Automated Reality Channel Episode One Released!
+    </a>
+  <time datetime="2019-03-14">14 March 2019</time>
+</article>
+<br>
+
+<article>
+    <a href="/reduce-memory-use-gradle-kotlin/">
+      Reduce memory usage of Gradle and Kotlin for Android development DevOps
+    </a>
+  <time datetime="2019-03-10">10 March 2019</time>
+</article>
+<br>
+
+<article>
+    <a href="/cc0-pexels/">
+      Every Content Creator Should Know This - Creative Commons CC0 License & Pexels.com
+    </a>
+  <time datetime="2019-03-03">03 March 2019</time>
+</article>
+<br>
+
+<article>
+    <a href="/making-mrpowerscripts-website-pretty/">
+      Making MrPowerScripts.com pretty
+    </a>
+  <time datetime="2019-02-27">27 February 2019</time>
+</article>
+<br>
+
+<article>
+    <a href="/worst-company-ever/">
+      My worst experience working for a company
+    </a>
+  <time datetime="2019-02-18">18 February 2019</time>
+</article>
+<br>
+
+<article>
+    <a href="/build-first/">
+      Nobody gives a damn about your idea
+    </a>
+  <time datetime="2019-02-16">16 February 2019</time>
+</article>
+<br>
+
+<article>
+    <a href="/how-I-hacked-my-uber-rating/">
+      How I hacked my Uber rating
+    </a>
+  <time datetime="2019-02-03">03 February 2019</time>
+</article>
+<br>
+
+<article>
+    <a href="/farm-karma-on-reddit-with-bots-2019-update/">
+      Farm karma on Reddit with bots 2019 update
+    </a>
+  <time datetime="2019-01-27">27 January 2019</time>
+</article>
+<br>
+
+<article>
+    <a href="/google.mobile-first/">
+      Google is going mobile first - is your website ready?
+    </a>
+  <time datetime="2019-01-14">14 January 2019</time>
+</article>
+<br>
+
+<article>
+    <a href="/jekyll-front-matter-template/">
+      Jekyll Front Matter Template
+    </a>
+  <time datetime="2019-01-13">13 January 2019</time>
+</article>
+<br>
+
+<article>
+    <a href="/remove-unwanted-apps-services-windows-10/">
+      Cleandows-10: Remove unwanted apps and services from Windows 10 with Powershell
+    </a>
+  <time datetime="2019-01-12">12 January 2019</time>
+</article>
+<br>
+
+<article>
+    <a href="/yaml-song/">
+      YAML Ain't Markup Language Sing Along Song
+    </a>
+  <time datetime="2019-01-07">07 January 2019</time>
+</article>
+<br>
+
+<article>
+    <a href="/docker-private-registry-portus/">
+      Host your own private docker registry with Portus
+    </a>
+  <time datetime="2019-01-01">01 January 2019</time>
+</article>
+<br>
+
+<article>
+    <a href="/monetize-site-60-days/">
+      How to build a monetizable web app in 60 days
+    </a>
+  <time datetime="2018-12-13">13 December 2018</time>
+</article>
+<br>
+
+<article>
+    <a href="/automate-youtube-channel/">
+      Help me automate my youtube channel
+    </a>
+  <time datetime="2018-12-12">12 December 2018</time>
+</article>
+<br>
+
+<article>
+    <a href="/south-america-law/">
+      That time I created a broadband law for an entire country
+    </a>
+  <time datetime="2018-11-24">24 November 2018</time>
+</article>
+<br>
+
+<article>
+    <a href="/mindfulness-meditation-flow/">
+      Mindfulness meditation can help you get in the flow
+    </a>
+  <time datetime="2018-11-24">24 November 2018</time>
+</article>
+<br>
+
+<article>
+    <a href="/react-app-heroku/">
+      Faster ReactJS development with Create-React-App and Heroku
+    </a>
+  <time datetime="2018-11-18">18 November 2018</time>
+</article>
+<br>
+
+<article>
+    <a href="/how-to-make-a-discord-bot/">
+      How to make a discord bot
+    </a>
+  <time datetime="2018-11-11">11 November 2018</time>
+</article>
+<br>
+
+<article>
+    <a href="/learn-git/">
+      How to use git version control
+    </a>
+  <time datetime="2018-10-28">28 October 2018</time>
+</article>
+<br>
+
+<article>
+    <a href="/rest-api-powershell/">
+      Send GET requests to API with Powershell
+    </a>
+  <time datetime="2018-10-24">24 October 2018</time>
+</article>
+<br>
+
+<article>
+    <a href="/automate-install-ip-printer-with-powershell/">
+      Automate Installing IP Printers With Powershell
+    </a>
+  <time datetime="2018-10-14">14 October 2018</time>
+</article>
+<br>
+
+<article>
+    <a href="/continuous-meme-delivery/">
+      Continuous Integration Meme Delivery With CircleCI
+    </a>
+  <time datetime="2018-10-13">13 October 2018</time>
+</article>
+<br>
+
+<article>
+    <a href="/sending-an-email-from-powershell/">
+      Sending an email from Powershell using send-mailmessage and Gmail
+    </a>
+  <time datetime="2018-10-04">04 October 2018</time>
+</article>
+<br>
+
+<article>
+    <a href="/whoops-sorry-customer/">
+      That time I destroyed a customer's computer
+    </a>
+  <time datetime="2018-09-30">30 September 2018</time>
+</article>
+<br>
+
+<article>
+    <a href="/best-nodejs-manager/">
+      The best nodejs version manager - n
+    </a>
+  <time datetime="2018-09-26">26 September 2018</time>
+</article>
+<br>
+
+<article>
+    <a href="/funny-resume-story/">
+      How I got a job with a ridiculous opening email.
+    </a>
+  <time datetime="2018-09-07">07 September 2018</time>
+</article>
+<br>
+
+<article>
+    <a href="/create-a-reddit-bot-to-farm-karma/">
+      Create a Reddit bot that gets you all the karma. It's easy as py(thon)
+    </a>
+  <time datetime="2018-09-04">04 September 2018</time>
+</article>
+<br>
+
+<article>
+    <a href="/Hello-World/">
+      Blog blog blog blog
+    </a>
+  <time datetime="2018-09-03">03 September 2018</time>
+</article>
+<br>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <!-- 
+<div id="share-bar">
+
+  <h4>Share this:</h4>
+
+  <div class="share-buttons">
+      <a  href="https://www.facebook.com/sharer/sharer.php?u=https://mrpowerscripts.com/everything/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Facebook" >
+          <i class="fa fa-facebook-official share-button"> facebook</i>
+      </a>
+
+      <a  href="https://twitter.com/intent/tweet?text=&url=https://mrpowerscripts.com/everything/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Twitter" >
+          <i class="fa fa-twitter share-button"> twitter</i>
+      </a>
+
+      <a  href="http://www.tumblr.com/share/link?url=https://mrpowerscripts.com/everything/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Tumblr" >
+          <i class="fa fa-tumblr share-button"> tumblr</i>
+      </a>
+
+      <a  href="http://www.reddit.com/submit?url=https://mrpowerscripts.com/everything/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Reddit" >
+          <i class="fa fa-reddit-alien share-button"> reddit</i>
+      </a>
+
+      <a  href="https://www.linkedin.com/shareArticle?mini=true&url=https://mrpowerscripts.com/everything/&title=&summary=&source="
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on LinkedIn" >
+          <i class="fa fa-linkedin share-button"> linkedin</i>
+      </a>
+
+      <a  href="mailto:?subject=&amp;body=Check out this site https://mrpowerscripts.com/everything/"
+          title="Share via Email" >
+          <i class="fa fa-envelope share-button"> email</i>
+      </a>
+  </div>
+
+</div> -->
+        <footer class="footer">
+          
+<a href="mailto:playingwithpowershell@gmail.com">e-mail</a> |
+
+
+<a href="https://github.com/mrpowerscripts">github</a> |
+
+
+
+<a href="/feed.xml">rss</a> |
+<a href="https://www.twitter.com/mrpowerscripts">twitter</a> |
+
+<a href="https://youtube.com/user/mrpowerscripts">youtube</a> |
+
+<a href="https://discord.gg/uEBWZKq">discord</a> |
+<a href="https://patreon.com/mrpowerscripts">patreon</a>
+
+<style>
+.meta-links {
+    display: flex;
+    color: white;
+    justify-content: space-around;
+}
+
+.meta-links a {
+  color: white;
+  padding: 0px 0px;
+}
+
+.meta-links a:hover {
+  color:purple;
+}
+</style>
+        </footer>
+      </div>
+    </div>
+
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121890486-1"></script>
+<script>
+  if (document.location.hostname.search("mrpowerscripts.com") !== -1) {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-121890486-1');
+}
+</script>
+
+
+
+
+
+
+    <script src="/scripts.js" ></script>
+  </body>
+</html>
