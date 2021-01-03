@@ -2,36 +2,14 @@
 layout: default
 ---
 
-### Power Up with MrPowerScripts
+## Power Up with MrPowerScripts
 
-You may see links to products available through Amazon around my site. As a partner of the Amazon affiliate program, clicking those links and purchasing any porudcts from Amazon will help support me and this site. Such as clicking on any of the links or using the search box below, for example.
+Hey I'm MrPowerScripts. You might be wondering, [why the name](https://mrpowerscripts.com/why-mrpowerscripts/)? Ideas matter, and that's what I've been sharing on my [blog](https://mrpowerscripts.com), [youtube channel](https://youtube.com/MrPowerScripts), and [plenty of other places](https://linktr.ee/mrpowerscripts) for over seven years.
 
-<script type="text/javascript">
-amzn_assoc_placement = "adunit0";
-amzn_assoc_search_bar = "true";
-amzn_assoc_tracking_id = "mrpowerscript-20";
-amzn_assoc_search_bar_position = "bottom";
-amzn_assoc_ad_mode = "search";
-amzn_assoc_ad_type = "smart";
-amzn_assoc_marketplace = "amazon";
-amzn_assoc_region = "US";
-amzn_assoc_title = "Shop Related Products";
-amzn_assoc_default_search_phrase = "electronics";
-amzn_assoc_default_category = "All";
-amzn_assoc_linkid = "1b97d49c9362b3226c6d6929d609fd71";
-</script>
-<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+I've worked in the tech industry for almost two decades. As a support agent, systems administrator, QA engineers, Developer, and many other roles.
 
-### I don't know why I made a Patreon
+ I specialize automation, and devising scalable solutions to difficult problems. Driven by years of expereince working with small Mom & Pop operations to leading technical initatives for multinational corporations. I have the skills and expereince to help guide diverse teams and organizations through technical challenges.
 
-Any donation on **[Patreon](https://bit.ly/mrps-patreon)** gives you the **Powered Up** role on **[Discord](https://bit.ly/mrps-discord)**. That's literally it. It doesn't do anything at all. But you can wear it as you chat. So like I guess that's cool. Ok fine it isn't. But it would make ME happy to see someone wear it. So you should do it. For my happiness.
+ My most recent work focuses on contemporary DevOps solutions. Enabling developers and teams to improve their success through improved culture, practices, and tools.
 
-### Youtube Channel
-
-- [Subscribe to my YouTube channel](https://bit.ly/mrps-yt-sub)
-
-### Who doesn't have a podcast these days
-
-I've made like almost none of them. I just wanted to try out the anchor service. It's a really good service and I highly recommend it. If you're into talking. I have no clue what to talk about. How do people talk endlessly for hours every day? Yhat is hard yo. I should just recite slam poetry or something at this point.
-
-<iframe src="https://anchor.fm/mrpowerscripts/embed" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
+If you want to have a chat you can contact be via e-mail [mailto:playingwithpowershell@gmail.com] or pop into the [community Discord server](https://bit.ly/mrps-discord).
