@@ -12,4 +12,4 @@ I've worked in the tech industry for almost two decades. As a support agent, sys
 
  My most recent work focuses on contemporary DevOps solutions. Enabling developers and teams to improve their success through improved culture, practices, and tools.
 
-If you want to have a chat you can contact be via e-mail [mailto:playingwithpowershell@gmail.com] or pop into the [community Discord server](https://bit.ly/mrps-discord).
+If you want to have a chat you can contact be via e-mail [playingwithpowershell@gmail.com](mailto:playingwithpowershell@gmail.com) or pop into the [community Discord server](https://bit.ly/mrps-discord).
