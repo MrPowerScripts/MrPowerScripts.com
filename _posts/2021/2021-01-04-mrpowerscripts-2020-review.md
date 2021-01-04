@@ -9,7 +9,7 @@ Well, 2020 was... interesting — what a challenging year for personal developme
 
 But many people suffered, and that was probably the most challenging part for me. Watching people around me struggle, lose their jobs, business, or have to make other significant lifestyle changes. It wasn't a cakewalk for me either. There were some terrifying moments and times where things could have shifted in the wrong direction. But I have to recognize how fortunate I was overall. I spent as much time and energy as I could supporting friends and family in need. There isn't really much else to do with the current situation. Sometimes just being there for someone to chat with is the best way to help.
 
-Sometimes being annoying positive works out. Like when the entire world is falling apart. Might as well play that violin while the ship is sinking.
+This is a time where being annoying positive can be a benefit. Like, ya know, when the entire world is falling apart. Might as well play that violin while the ship is sinking.
 
 I wanted to create a lot more content in 2020, and I would say I did a fair job compared to 2019. LET"S LOOK AT THE RUNDOWN.
 
