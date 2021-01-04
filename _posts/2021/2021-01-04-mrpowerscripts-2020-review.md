@@ -45,9 +45,9 @@ The blog, however, had its moments of growth. I spent a lot more time learning a
 
 I'm going to keep on writing, podcasting, and hopefully make some more youtube videos.  
 
-I did also spend a tremendous effort on some other personal side projects. They're a bit outside the scope of MrPowerScripts stuff, so I'll save the details.
+I also spent a tremendous effort on some other personal side projects. They're a bit outside the scope of MrPowerScripts stuff, so I'll save the details.
 
-I did manage to push out version 3 of the Reddit Karma Farming bot. Then right before the year ended, I completed an entire re-write of the app and shared version 4 with the community.
+And I manage to push out version 3 of the Reddit Karma Farming bot. Then right before the year ended, I completed an entire re-write of the app and shared version 4 with the community.
 
 Speaking of community.
 
