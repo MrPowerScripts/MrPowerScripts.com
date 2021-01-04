@@ -1,4 +1,66 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://mrpowerscripts.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mrpowerscripts.com/" rel="alternate" type="text/html" /><updated>2021-01-03T20:22:58+00:00</updated><id>https://mrpowerscripts.com/feed.xml</id><title type="html">MrPowerScripts</title><subtitle>Learn. Code. Grow.</subtitle><entry><title type="html">JSON command line tools</title><link href="https://mrpowerscripts.com/json-shell-tools/" rel="alternate" type="text/html" title="JSON command line tools" /><published>2020-11-29T00:00:00+00:00</published><updated>2020-11-29T09:57:15+00:00</updated><id>https://mrpowerscripts.com/json-shell-tools</id><content type="html" xml:base="https://mrpowerscripts.com/json-shell-tools/">&lt;p&gt;So you want to manipulate JSON from the command line? Well, you’re in luck! It’s 2020, and there are several ways to do this. Also, you’re super unlucky. It’s 2020, and the entire world is falling apart. But we can still learn about JSON at the command line!&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://mrpowerscripts.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mrpowerscripts.com/" rel="alternate" type="text/html" /><updated>2021-01-04T20:37:28+00:00</updated><id>https://mrpowerscripts.com/feed.xml</id><title type="html">MrPowerScripts</title><subtitle>Learn. Code. Grow.</subtitle><entry><title type="html">MrPowerScripts 2020 Review</title><link href="https://mrpowerscripts.com/mrpowerscripts-2020-review/" rel="alternate" type="text/html" title="MrPowerScripts 2020 Review" /><published>2021-01-04T00:00:00+00:00</published><updated>2021-01-04T20:35:11+00:00</updated><id>https://mrpowerscripts.com/mrpowerscripts-2020-review</id><content type="html" xml:base="https://mrpowerscripts.com/mrpowerscripts-2020-review/">&lt;p&gt;Well, 2020 was… interesting — what a challenging year for personal development and growth for everyone. Many people were forced into habit changes. Many had to learn how to be productive working remotely. Fortunately, I have been working remotely for around eight years, so it wasn’t much of a change for me. I do enjoy spending time inside, so even the quarantines we’re THAT unusual. Okay, my life didn’t change much in 2020, as it turns out. I spent a lot of time stuck inside working from home.&lt;/p&gt;
+
+&lt;p&gt;But many people suffered, and that was probably the most challenging part for me. Watching people around me struggle, lose their jobs, business, or have to make other significant lifestyle changes. It wasn’t a cakewalk for me either. There were some terrifying moments and times where things could have shifted in the wrong direction. But I have to recognize how fortunate I was overall. I spent as much time and energy as I could supporting friends and family in need. There isn’t really much else to do with the current situation. Sometimes just being there for someone to chat with is the best way to help.&lt;/p&gt;
+
+&lt;p&gt;Sometimes being annoying positive works out. Like when the entire world is falling apart. Might as well play that violin while the ship is sinking.&lt;/p&gt;
+
+&lt;p&gt;I wanted to create a lot more content in 2020, and I would say I did a fair job compared to 2019. LET”S LOOK AT THE RUNDOWN.&lt;/p&gt;
+
+&lt;h3 id=&quot;2019&quot;&gt;2019&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;19 blog posts&lt;/li&gt;
+  &lt;li&gt;3 podcasts&lt;/li&gt;
+  &lt;li&gt;15 youtube videos&lt;/li&gt;
+  &lt;li&gt;0 twitch streams&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;2020&quot;&gt;2020&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;18 blog posts&lt;/li&gt;
+  &lt;li&gt;11 podcasts&lt;/li&gt;
+  &lt;li&gt;8 youtube videos&lt;/li&gt;
+  &lt;li&gt;2 twitch streams&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So 2020 was the introduction of more new kinds of content. Spending a bit more time trying to podcast and less time YouTubing. I started a twitch channel so all the kids on my discord could heckle me as I struggle to learn things I worked to learn over 15 years ago. Math, Math never changes.&lt;/p&gt;
+
+&lt;p&gt;The youtube channel didn’t grow all that much—almost the same views and growth of 2019. But from what you can see above, the channel didn’t get a whole lot of love. Only eight youtube videos. Two of which were twitch stream exports. Ah well.&lt;/p&gt;
+
+&lt;div&gt;
+  &lt;img style=&quot;object-fit: contain&quot; src=&quot;/images/2020-youtube-stats.jpg&quot; alt=&quot;image&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The blog, however, had its moments of growth. I spent a lot more time learning about SEO in 2019 and improving my writing around those bits of knowledge in 2020. This led me to write a few fun articles that quickly ranked on google searches leading to more site traffic. They weren’t exactly tech, but I definitely found some niche things I thought were interesting to write about. And it seems other people were searching for it. So I got a bit of a boost in the middle of the year a few weeks after writing them. Overall the site improved and rebounded from an early-year slump.&lt;/p&gt;
+
+&lt;h3 id=&quot;google-analytics&quot;&gt;Google Analytics&lt;/h3&gt;
+
+&lt;div&gt;
+  &lt;img style=&quot;object-fit: contain&quot; src=&quot;/images/2020-website-stats.jpg&quot; alt=&quot;image&quot; /&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;google-search-console&quot;&gt;Google Search Console&lt;/h3&gt;
+
+&lt;div&gt;
+  &lt;img style=&quot;object-fit: contain&quot; src=&quot;/images/2020-google-stats.jpg&quot; alt=&quot;image&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I’m going to keep on writing, podcasting, and hopefully make some more youtube videos.&lt;/p&gt;
+
+&lt;p&gt;I did also spend a tremendous effort on some other personal side projects. They’re a bit outside the scope of MrPowerScripts stuff, so I’ll save the details.&lt;/p&gt;
+
+&lt;p&gt;I did manage to push out version 3 of the Reddit Karma Farming bot. Then right before the year ended, I completed an entire re-write of the app and shared version 4 with the community.&lt;/p&gt;
+
+&lt;p&gt;Speaking of community.&lt;/p&gt;
+
+&lt;p&gt;A massive thank you to everyone on the Discord server who helped out and motivated me to keep producing content. The server stats only started to show in September, so I only have four months of data to display. But in that time, the server grew from 643 to 896 members.&lt;/p&gt;
+
+&lt;div&gt;
+  &lt;img style=&quot;object-fit: contain&quot; src=&quot;/images/2020-discord-stats.jpg&quot; alt=&quot;image&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;2021 is here. 2020 was full of challenges. It looks like many of them will continue to exist this year, but I’m going to give it my best shot to deal-with-it and improve where I can. I might have to put the annoying positive attitude on steroids and turn it into rabid optimism. Everything is going to be okay.&lt;/p&gt;</content><author><name>MrPowerScripts</name></author><category term="mrpowerscripts" /><summary type="html">Well, 2020 was… interesting — what a challenging year for personal development and growth for everyone. Many people were forced into habit changes. Many had to learn how to be productive working remotely. Fortunately, I have been working remotely for around eight years, so it wasn’t much of a change for me. I do enjoy spending time inside, so even the quarantines we’re THAT unusual. Okay, my life didn’t change much in 2020, as it turns out. I spent a lot of time stuck inside working from home.</summary></entry><entry><title type="html">JSON command line tools</title><link href="https://mrpowerscripts.com/json-shell-tools/" rel="alternate" type="text/html" title="JSON command line tools" /><published>2020-11-29T00:00:00+00:00</published><updated>2020-11-29T09:57:15+00:00</updated><id>https://mrpowerscripts.com/json-shell-tools</id><content type="html" xml:base="https://mrpowerscripts.com/json-shell-tools/">&lt;p&gt;So you want to manipulate JSON from the command line? Well, you’re in luck! It’s 2020, and there are several ways to do this. Also, you’re super unlucky. It’s 2020, and the entire world is falling apart. But we can still learn about JSON at the command line!&lt;/p&gt;
 
 &lt;h2 id=&quot;what-is-json&quot;&gt;What is JSON&lt;/h2&gt;
 
@@ -274,12 +336,4 @@ https://taiten.de/&lt;/p&gt;
   &lt;img style=&quot;object-fit: contain&quot; src=&quot;/images/code-vault-review-7.jpg&quot; alt=&quot;image&quot; /&gt;
 &lt;/div&gt;
 
-&lt;p&gt;You know what? Fuck it. Do the elites have a Patreon I can support to speed this all up?&lt;/p&gt;</content><author><name>MrPowerScripts</name></author><category term="mrpowerscripts" /><summary type="html">I opened up GitHub the other day to find I had a new badge called Artic Code Vault Contributor. Excuse me? Wat? Some of you might be thinking, “of course! The Artic Code Vault”. But I had no fucking clue what that meant in the slightest. So I did what most people do when they’re trying to shake the dumb from their brain. I Googled, “What is the Artic Code Vault?”. And this is what I saw.</summary></entry><entry><title type="html">Automated Reality Channel Ep2 Planning</title><link href="https://mrpowerscripts.com/arc-episode-two/" rel="alternate" type="text/html" title="Automated Reality Channel Ep2 Planning" /><published>2020-06-20T00:00:00+00:00</published><updated>2020-06-20T08:19:56+00:00</updated><id>https://mrpowerscripts.com/arc-episode-two</id><content type="html" xml:base="https://mrpowerscripts.com/arc-episode-two/">&lt;p&gt;I was pretty happy to get &lt;a href=&quot;https://mrpowerscripts.com/arc-episode-one/&quot;&gt;a single episode of the automated reality channel&lt;/a&gt; processed and published live. It put waaaaay too much effort into something that probably isn’t going to go anywhere. It worked through! I did get episode 1 out the door, but it didn’t reach the project’s real goal.&lt;/p&gt;
-
-&lt;p&gt;I was hoping to collaborate with content creators to create the content assets that the episodes used. Instead, I had it sing mary had a little lamb, and I showed off my atrocious paint.net skills. For episode two, I would like to accomplish the actual goal. It’s collaborating time!&lt;/p&gt;
-
-&lt;p&gt;The most significant part of the “actual goal” was that paying content creators would happen through the Patreon donations. I even &lt;a href=&quot;https://github.com/MrPowerScripts/mrps-discord-powerbot&quot;&gt;set up a bot&lt;/a&gt; so that people who were Patreon supporters could vote on ideas for the videos. Allowing people who were funding the content creation to have a say in how that content was created. But there’s not enough community or project interest to make that work. And I had no Patreon supports to help fund the content creations or vote.&lt;/p&gt;
-
-&lt;p&gt;But I got my first &lt;a href=&quot;https://www.patreon.com/MrPowerScripts&quot;&gt;Patreon supporter&lt;/a&gt;!!! Shout out to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Asgaroth 😼&lt;/code&gt; on Discord. So, we have a budget now. Of $5 lol. It’s not much, but maybe it can help us reach the goal! Even if it’s as simple as &lt;a href=&quot;https://mrpowerscripts.com/arc-episode-one/&quot;&gt;episode one was&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;As usual, I’m going to try &lt;a href=&quot;https://mrpowerscripts.com/iteration&quot;&gt;starting small and iterating&lt;/a&gt;. I would like to find an artist to create two images of - well, they can be anything. As long as those things can talk. And find someone to write a short narrative between the two characters. Are you a writer or an artist who thinks it would be cool to be part of episode 2 even though we obviously have a tiny budget? Join us on discord and have a chat with us! https://bit.ly/mrps-discord&lt;/p&gt;</content><author><name>MrPowerScripts</name></author><category term="mrpowerscripts" /><summary type="html">I was pretty happy to get a single episode of the automated reality channel processed and published live. It put waaaaay too much effort into something that probably isn’t going to go anywhere. It worked through! I did get episode 1 out the door, but it didn’t reach the project’s real goal.</summary></entry></feed>
+&lt;p&gt;You know what? Fuck it. Do the elites have a Patreon I can support to speed this all up?&lt;/p&gt;</content><author><name>MrPowerScripts</name></author><category term="mrpowerscripts" /><summary type="html">I opened up GitHub the other day to find I had a new badge called Artic Code Vault Contributor. Excuse me? Wat? Some of you might be thinking, “of course! The Artic Code Vault”. But I had no fucking clue what that meant in the slightest. So I did what most people do when they’re trying to shake the dumb from their brain. I Googled, “What is the Artic Code Vault?”. And this is what I saw.</summary></entry></feed>
