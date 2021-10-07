@@ -371,7 +371,7 @@ var reviewHTML = '<div class="reviews">'+
 </span><span class="c">############### Starting Excel #####################</span><span class="w">
 </span><span class="c">####################################################</span><span class="w">
 
-</span><span class="nv">$Excel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">New-Object</span><span class="w"> </span><span class="nt">-ComObject</span><span class="w"> </span><span class="nx">Excel.Application</span><span class="w">
+</span><span class="nv">$Excel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">New-Object</span><span class="w"> </span><span class="nt">-ComObject</span><span class="w"> </span><span class="nx">Excel.Application</span><span class="w">
 
 </span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Visible</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="bp">$true</span><span class="w">
 </span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">DisplayAlerts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="bp">$false</span><span class="w">
@@ -385,14 +385,14 @@ var reviewHTML = '<div class="reviews">'+
 </span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Workbooks</span><span class="o">.</span><span class="nf">Add</span><span class="p">()</span><span class="w">
 
 </span><span class="c">#Find all the workbooks in your excel file by name</span><span class="w">
-</span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Workbooks</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nf">Select-Object</span><span class="w"> </span><span class="nt">-ExpandProperty</span><span class="w"> </span><span class="nx">name</span><span class="w">
+</span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Workbooks</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Select-Object</span><span class="w"> </span><span class="nt">-ExpandProperty</span><span class="w"> </span><span class="nx">name</span><span class="w">
 
 </span><span class="c">#Activate a specifc workbook in your excel file</span><span class="w">
 </span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Workbooks</span><span class="o">.</span><span class="nf">Item</span><span class="p">(</span><span class="nx">2</span><span class="p">)</span><span class="o">.</span><span class="nf">activate</span><span class="p">()</span><span class="w">
 </span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Workbooks</span><span class="o">.</span><span class="nf">Item</span><span class="p">(</span><span class="s2">"book1"</span><span class="p">)</span><span class="o">.</span><span class="nf">activate</span><span class="p">()</span><span class="w">
 
 </span><span class="c">#Acivate Random Workbook in Excel file</span><span class="w">
-</span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Workbooks</span><span class="o">.</span><span class="nf">Item</span><span class="p">((</span><span class="nf">Get-Random</span><span class="w"> </span><span class="nt">-min</span><span class="w"> </span><span class="nx">1</span><span class="w"> </span><span class="nt">-Max</span><span class="w"> </span><span class="p">(</span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Workbooks</span><span class="o">.</span><span class="nf">Count</span><span class="o">+</span><span class="mi">1</span><span class="p">)))</span><span class="o">.</span><span class="nf">activate</span><span class="p">()</span><span class="w">
+</span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Workbooks</span><span class="o">.</span><span class="nf">Item</span><span class="p">((</span><span class="n">Get-Random</span><span class="w"> </span><span class="nt">-min</span><span class="w"> </span><span class="nx">1</span><span class="w"> </span><span class="nt">-Max</span><span class="w"> </span><span class="p">(</span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Workbooks</span><span class="o">.</span><span class="nf">Count</span><span class="o">+</span><span class="mi">1</span><span class="p">)))</span><span class="o">.</span><span class="nf">activate</span><span class="p">()</span><span class="w">
 
 </span><span class="c">#Open an existing workbook on your hardrive</span><span class="w">
 </span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Workbooks</span><span class="o">.</span><span class="nf">Open</span><span class="p">(</span><span class="s2">"</span><span class="nv">$</span><span class="nn">env</span><span class="p">:</span><span class="nv">userprofile</span><span class="s2">\desktop\mrpowerscripts.xlsx"</span><span class="p">)</span><span class="w">
@@ -415,7 +415,7 @@ var reviewHTML = '<div class="reviews">'+
 </span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Worksheets</span><span class="o">.</span><span class="nf">Add</span><span class="p">()</span><span class="w">
 
 </span><span class="c">#Find all worksheets in your active workbook</span><span class="w">
-</span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Worksheets</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nf">Select-Object</span><span class="w"> </span><span class="nt">-ExpandProperty</span><span class="w"> </span><span class="nx">name</span><span class="w">
+</span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Worksheets</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Select-Object</span><span class="w"> </span><span class="nt">-ExpandProperty</span><span class="w"> </span><span class="nx">name</span><span class="w">
 
 </span><span class="c">#Change name of worksheet in workbook</span><span class="w">
 </span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Worksheets</span><span class="o">.</span><span class="nf">Item</span><span class="p">(</span><span class="nx">1</span><span class="p">)</span><span class="o">.</span><span class="nf">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"potato"</span><span class="w">
@@ -426,7 +426,7 @@ var reviewHTML = '<div class="reviews">'+
 </span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Worksheets</span><span class="o">.</span><span class="nf">Item</span><span class="p">(</span><span class="s2">"sheet3"</span><span class="p">)</span><span class="o">.</span><span class="nf">activate</span><span class="p">()</span><span class="w">
 
 </span><span class="c">#Acivate Random Worksheet in Excel file</span><span class="w">
-</span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Worksheets</span><span class="o">.</span><span class="nf">Item</span><span class="p">((</span><span class="nf">Get-Random</span><span class="w"> </span><span class="nt">-min</span><span class="w"> </span><span class="nx">1</span><span class="w"> </span><span class="nt">-Max</span><span class="w"> </span><span class="p">(</span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Worksheets</span><span class="o">.</span><span class="nf">Count</span><span class="o">+</span><span class="mi">1</span><span class="p">)))</span><span class="o">.</span><span class="nf">activate</span><span class="p">()</span><span class="w">
+</span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Worksheets</span><span class="o">.</span><span class="nf">Item</span><span class="p">((</span><span class="n">Get-Random</span><span class="w"> </span><span class="nt">-min</span><span class="w"> </span><span class="nx">1</span><span class="w"> </span><span class="nt">-Max</span><span class="w"> </span><span class="p">(</span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Worksheets</span><span class="o">.</span><span class="nf">Count</span><span class="o">+</span><span class="mi">1</span><span class="p">)))</span><span class="o">.</span><span class="nf">activate</span><span class="p">()</span><span class="w">
 
 </span><span class="c">#Delete worksheets from workbook</span><span class="w">
 </span><span class="nv">$Excel</span><span class="o">.</span><span class="nf">Worksheets</span><span class="o">.</span><span class="nf">Item</span><span class="p">(</span><span class="nx">1</span><span class="p">)</span><span class="o">.</span><span class="nf">delete</span><span class="p">()</span><span class="w">
@@ -442,10 +442,10 @@ var reviewHTML = '<div class="reviews">'+
 
 </span><span class="c">#Check and you will see an excel process still exists after quitting</span><span class="w">
 </span><span class="c">#Remove the excel process by piping it to stop-process</span><span class="w">
-</span><span class="nf">Get-Process</span><span class="w"> </span><span class="nx">excel</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nf">Stop-Process</span><span class="w"> </span><span class="nt">-Force</span><span class="w">
+</span><span class="n">Get-Process</span><span class="w"> </span><span class="nx">excel</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Stop-Process</span><span class="w"> </span><span class="nt">-Force</span><span class="w">
 
 </span><span class="c">#Now we must release the $excel com object to ready it for garbage collection</span><span class="w">
-</span><span class="p">[</span><span class="no">System.Runtime.Interopservices.</span><span class="kt">Marshal</span><span class="p">]::</span><span class="nf">ReleaseComObject</span><span class="p">(</span><span class="nv">$Excel</span><span class="p">)</span><span class="w">
+</span><span class="p">[</span><span class="n">System.Runtime.Interopservices.Marshal</span><span class="p">]::</span><span class="n">ReleaseComObject</span><span class="p">(</span><span class="nv">$Excel</span><span class="p">)</span><span class="w">
 </span></code></pre></div></div>
 
   </div>
