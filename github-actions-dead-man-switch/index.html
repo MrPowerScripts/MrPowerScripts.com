@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Github Actions Deadman's switch to publish your final GitHub Pages post – MrPowerScripts – Learn. Code. Grow.</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+    <link rel="canonical" href="https://mrpowerscripts.com/github-actions-dead-man-switch/">
+
+    
+    <meta name="description" content="Well, in our ever-inclusive world, this would probably be better titled as dead persons switch. It’s for anyone who wants to make an eerie final blog post after some point in the future. It doesn’t only have to be because you’re dead! Many things could happen that prevent your blogging activities. Comas, life sentence in jail, leaving society to live in the woods. I’m sure there’s more that I’m not thinking of… hmmm, alien abduction, maybe? Whatever the reason, here’s a cute little script I threw together that can make a post to your GitHub pages after some date. This..." />
+    <meta property="og:description" content="Well, in our ever-inclusive world, this would probably be better titled as dead persons switch. It’s for anyone who wants to make an eerie final blog post after some point in the future. It doesn’t only have to be because you’re dead! Many things could happen that prevent your blogging activities. Comas, life sentence in jail, leaving society to live in the woods. I’m sure there’s more that I’m not thinking of… hmmm, alien abduction, maybe? Whatever the reason, here’s a cute little script I threw together that can make a post to your GitHub pages after some date. This..." />
+    
+    <meta name="author" content="MrPowerScripts" />
+
+    
+    <meta property="og:title" content="Github Actions Deadman's switch to publish your final GitHub Pages post" />
+    <meta property="twitter:title" content="Github Actions Deadman's switch to publish your final GitHub Pages post" />
+    
+
+    
+    <meta content="/images/mpslogo.png" property="og:image">
+    
+
+    
+        
+    <meta content="mrpowerscripts" property="article:tag">
+        
+    
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/images/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/images/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/images/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/images/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/images/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/images/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/images/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/images/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/images/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="MrPowerScripts - Learn. Code. Grow." href="/feed.xml" />
+    <link rel="manifest" href="/manifest.json">
+
+    <meta name="google-site-verification" content="prYTc9sgHOxJOubz6hLVkkfpea2I82I0UfoePeJ_FEg" />
+    <meta name="msvalidate.01" content="5518FAB6C86578E1F5002CD56C1B5F24" />
+    <meta name="yandex-verification" content="4539896b000a5ed9" />
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Github Actions Deadman's switch to publish your final GitHub Pages post",
+        "description": "Well, in our ever-inclusive world, this would probably be better titled as dead persons switch. It’s for anyone who wants to make an eerie final blog post after some point in the future. It doesn’t only have to be because you’re dead! Many things could happen that prevent your blogging activities. Comas, life sentence in jail, leaving society to live in the woods. I’m sure there’s more that I’m not thinking of… hmmm, alien abduction, maybe? Whatever the reason, here’s a cute little script I threw together that can make a post to your GitHub pages after some date. This...",
+        "image": [
+            
+                "https://mrpowerscripts.com/images/twilightyellow.png"
+            
+        ],
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://mrpowerscripts.com/github-actions-dead-man-switch/"
+        },
+        "datePublished": "2021-10-26 00:00:00 +0000",
+        "dateModified": "2021-10-26 19:58:45 +0000",
+        "isAccessibleForFree": "True",
+        "isPartOf": {
+            "@type": ["CreativeWork", "Product", "Blog"],
+            "name": "MrPowerScripts",
+            "productID": ""
+        },
+        "license": "http://creativecommons.org/licenses/by-sa/4.0/",
+        "author": {
+            "@type": "Person",
+            "name": "MrPowerScripts",
+            "description": "MrPowerScripts is here to help you automate your life so you have more time for automating your life. 
+My youtube channel started as a way for me to share stuff I was learning about Powershell. That was in 2012, and 
+since then the channel and grown in many different ways as my career and skills have envolved. My new goal with the channel
+is to try and automate it entirely. I'll be sharing a lot about that journey of automation while continuing 
+other porjects and sharing them here on my blog as well as youtube. Join my on Discord if you have any questions.
+",
+            "sameAs": "https://mrpowerscripts.com/about",
+            "image": {
+                "@type": "ImageObject",
+                "url": "https://mrpowerscripts.com/images/twilightyellow.png"
+            },
+            "givenName": "",
+            "familyName": "",
+            "alternateName": "MrPowerScripts",
+            "publishingPrinciples": "https://mrpowerscripts.com/about/"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "MrPowerScripts",
+            "description": "MrPowerScripts is here to help you automate your life so you have more time for automating your life. 
+My youtube channel started as a way for me to share stuff I was learning about Powershell. That was in 2012, and 
+since then the channel and grown in many different ways as my career and skills have envolved. My new goal with the channel
+is to try and automate it entirely. I'll be sharing a lot about that journey of automation while continuing 
+other porjects and sharing them here on my blog as well as youtube. Join my on Discord if you have any questions.
+",
+            "sameAs": "https://mrpowerscripts.com",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://mrpowerscripts.com/images/twilightyellow.png"
+            },
+            "publishingPrinciples": "https://mrpowerscripts.com/about/"
+        }
+    }
+</script>
+    <script>
+      if ("serviceWorker" in navigator) {
+      if (navigator.serviceWorker.controller) {
+        console.log("An active service worker found, no need to register");
+      } else {
+        // Register the service worker
+      navigator.serviceWorker
+          .register("/serviceworker.js", {
+            scope: "/"
+          })
+          .then(function (reg) {
+            console.log("Service worker has been registered for scope: " + reg.scope);
+          })
+          .catch(function(err){console.log(err)})    
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead">
+          <div class="mh-txt-wrap">
+            <a href="/" class="site-avatar"><img src="https://mrpowerscripts.com/images/twilightyellow.png" alt="site avatar" /></a>
+            <div class="site-info">
+              <h2 class="site-name"><a href="/">MrPowerScripts</a></h2>
+              <p class="site-description">Learn. Code. Grow.</p>
+            </div>
+          </div>
+
+          <nav>
+            <a href="/everything">Everything</a>
+            <!-- <a onclick="selectRandom()">Random</a> -->
+            <!-- <a href="/podcast">Podcast</a> -->
+            <a href="http://bit.ly/mrps-discord">Discord</a>
+            <!-- <a href="/about">About</a> -->
+            <a href="/power-up" class="power-up">Power Up</a>
+          </nav>
+
+        </header>
+        <!-- <div class="meta-links">
+            
+<a href="mailto:playingwithpowershell@gmail.com">e-mail</a> |
+
+
+<a href="https://github.com/mrpowerscripts">github</a> |
+
+
+
+<a href="/feed.xml">rss</a> |
+<a href="https://www.twitter.com/mrpowerscripts">twitter</a> |
+
+<a href="https://youtube.com/user/mrpowerscripts">youtube</a> |
+
+<a href="https://discord.gg/uEBWZKq">discord</a> |
+<a href="https://patreon.com/mrpowerscripts">patreon</a>
+
+<style>
+.meta-links {
+    display: flex;
+    color: white;
+    justify-content: space-around;
+}
+
+.meta-links a {
+  color: white;
+  padding: 0px 0px;
+}
+
+.meta-links a:hover {
+  color:purple;
+}
+</style>
+        </div> -->
+        <!-- 
+<div id="share-bar">
+
+  <h4>Share this:</h4>
+
+  <div class="share-buttons">
+      <a  href="https://www.facebook.com/sharer/sharer.php?u=https://mrpowerscripts.com/github-actions-dead-man-switch/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Facebook" >
+          <i class="fa fa-facebook-official share-button"> facebook</i>
+      </a>
+
+      <a  href="https://twitter.com/intent/tweet?text=Github Actions Deadman's switch to publish your final GitHub Pages post&url=https://mrpowerscripts.com/github-actions-dead-man-switch/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Twitter" >
+          <i class="fa fa-twitter share-button"> twitter</i>
+      </a>
+
+      <a  href="http://www.tumblr.com/share/link?url=https://mrpowerscripts.com/github-actions-dead-man-switch/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Tumblr" >
+          <i class="fa fa-tumblr share-button"> tumblr</i>
+      </a>
+
+      <a  href="http://www.reddit.com/submit?url=https://mrpowerscripts.com/github-actions-dead-man-switch/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Reddit" >
+          <i class="fa fa-reddit-alien share-button"> reddit</i>
+      </a>
+
+      <a  href="https://www.linkedin.com/shareArticle?mini=true&url=https://mrpowerscripts.com/github-actions-dead-man-switch/&title=Github Actions Deadman's switch to publish your final GitHub Pages post&summary=&source="
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on LinkedIn" >
+          <i class="fa fa-linkedin share-button"> linkedin</i>
+      </a>
+
+      <a  href="mailto:?subject=Github Actions Deadman's switch to publish your final GitHub Pages post&amp;body=Check out this site https://mrpowerscripts.com/github-actions-dead-man-switch/"
+          title="Share via Email" >
+          <i class="fa fa-envelope share-button"> email</i>
+      </a>
+  </div>
+
+</div> let's hide this until it looks pretty-->
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <!-- <div id="active-motions" class="active-motions">
+  <h3>Active Discord Votes</h3>
+  <div class="active-motion-list" id="active-motion-list"></div>
+</div>
+
+<script>
+function isMRPS(messageID) {
+  if (parseInt(messageID) === 510819339411390474) {
+    // console.log('motion is mine')
+    return true
+  } else {
+    // console.log('motion is not mine')
+    return false
+  }
+}
+
+window.addEventListener('load', function() {
+  fetch("http://dr.mrpowerscripts.com:8888/motionsData.json")
+  .then(res => res.json())
+  .then(out => {
+    window.motions = out.motions
+    var motions = out.motions.filter(i => isMRPS(i.author)).slice(0, 3)
+    // console.log(motions)
+    
+    var activeMotionList = document.getElementById("active-motion-list")
+
+    for (var i = 0; i < motions.length; i++) {
+      var motion = document.createElement('a')
+
+      motion.href = `https://discordapp.com/channels/510821302773219331/534510417448402965/${motions[i].msg}`
+      motion.target = '_blank'
+      motion.innerHTML = `⚈ ${motions[i].text}`
+      activeMotionList.appendChild(motion);
+    }
+
+    if (motions.length) {
+      document.getElementById("active-motions").style.height = "100%"
+      document.getElementById("active-motions").style.opacity = "1"
+    }
+  })
+}, false);
+</script> -->
+<article class="post">
+  <script> 
+var reviewHTML = '<div class="reviews">'+
+            '  <div id="suggested-reviews" class="suggested-reviews">'+
+            '    <h4>Suggested reviews for you</h4>'+
+            '    <ul class="suggested-reviews-list">'+
+            '      <li><a href="" class="suggested-reviews-1" id="suggested-reviews-1"></a></li>'+
+            '      <li><a href="" class="suggested-reviews-2" id="suggested-reviews-2"></a></li>'+
+            '      <li><a href="" class="suggested-reviews-3" id="suggested-reviews-3"></a></li>'+
+            '      <li><a href="" class="suggested-reviews-4" id="suggested-reviews-4"></a></li>'+
+            '      <li><a href="" class="suggested-reviews-5" id="suggested-reviews-5"></a></li>'+
+            '    </ul>'+
+            '  </div>'+
+            '</div>';
+
+    window.addEventListener('load', function() {
+      fetch("/api-reviews.json")
+      .then(res => res.json())
+      .then(out => {
+
+        let entry = document.getElementsByClassName("entry")[0]
+        let reviews = document.createElement('div')
+        reviews.innerHTML = reviewHTML
+
+        let afterMe = entry.children[Math.ceil(entry.childElementCount / 2)] 
+
+        entry.insertBefore(reviews, afterMe)
+
+        var posts = out.sort(() => .5 - Math.random()).slice(0,5)
+        let i
+        for (i=0; i < posts.length; i++) {
+          document.getElementById(`suggested-reviews-${i + 1}`).text = posts[i].title
+          document.getElementById(`suggested-reviews-${i + 1}`).href = posts[i].url
+        }
+    
+        let content = document.getElementById('suggested-reviews')
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+
+
+
+      })
+      .catch(error => console.error(error))
+    }, false);
+    </script>
+  
+<h1><a href="">Github Actions Deadman's switch to publish your final GitHub Pages post</a></h1>
+<div class="post-menu-bar">
+  <span>October 26, 2021</span> 
+  <a class="edit-button" href="https://github.com/MrPowerScripts/MrPowerScripts.com/tree/master/">Edit</a>
+</div>
+
+  <!-- <div id="amzn-assoc-ad-08b4ca1c-2647-4b60-9e4a-704ef215179e"></div> -->
+  <div class="entry">
+    <p>Well, in our ever-inclusive world, this would probably be better titled as dead persons switch. It’s for anyone who wants to make an eerie final blog post after some point in the future. It doesn’t only have to be because you’re dead! Many things could happen that prevent your blogging activities. Comas, life sentence in jail, leaving society to live in the woods. I’m sure there’s more that I’m not thinking of… hmmm, alien abduction, maybe?</p>
+
+<p>Whatever the reason, here’s a cute little script I threw together that can make a post to your GitHub pages after some date. This mechanism is an active process in that you must continually update a date value in your repo. There may be some passive means to do it, but this felt like a good place to start.</p>
+
+<p>First off, this only works if you’re letting GitHub itself generate your page. It works using a GitHub action to create the new post and then commits it back to the GitHub repo. But it only makes that new post if the current date is after a date value set in a file called <code class="language-plaintext highlighter-rouge">canary.sh</code> in the repo’s root.</p>
+
+<p>In the <code class="language-plaintext highlighter-rouge">canary.sh</code> file, I have the sole value <code class="language-plaintext highlighter-rouge">KILLCANARY=2021-10-23</code>. Simple variable assignment with a <code class="language-plaintext highlighter-rouge">yyy-mm-dd</code> date value. You’ll see where this comes into play within the script. With that file in the repo’s root, all you need to do is create a GitHub action yml file. I named my file <code class="language-plaintext highlighter-rouge">.github/workflows/canary-workflow.yml</code> and you can find the full script at the bottom of the page. Most of the bilerplace GitHub Action code is from another Action that makes it easier to push changes back to your repo and you can <a href="https://github.com/ad-m/github-push-action">see that action on their repo here</a>.</p>
+
+<p>So let’s just break down the actual bash that makes this action work:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="nb">.</span> canary.sh <span class="c"># Source all the envars from our canary.sh file for access</span>
+
+<span class="nv">currentdate</span><span class="o">=</span><span class="si">$(</span><span class="nb">date</span> <span class="s1">'+%Y-%m-%d'</span><span class="si">)</span> <span class="c"># Get current day</span>
+<span class="nv">postdate</span><span class="o">=</span><span class="nb">date</span> <span class="nt">-d</span> <span class="s2">"+</span><span class="k">$((</span><span class="nv">$KILLCANARY</span> <span class="o">-</span><span class="m">2</span><span class="k">))</span><span class="s2"> days"</span> <span class="s1">'+%Y-%m-%d'</span>
+
+<span class="c"># convert dates to seconds for math</span>
+<span class="nv">currentdateseconds</span><span class="o">=</span><span class="si">$(</span><span class="nb">date</span> <span class="nt">-d</span> <span class="nv">$currentdate</span> +%s<span class="si">)</span>
+<span class="nv">deadcanaryseconds</span><span class="o">=</span><span class="si">$(</span><span class="nb">date</span> <span class="nt">-d</span> <span class="nv">$KILLCANARY</span> +%s<span class="si">)</span>
+
+<span class="c"># If the current date is past the kill canary date </span>
+<span class="c"># then create the new github pages post with the release date</span>
+<span class="k">if</span> <span class="o">[</span> <span class="nv">$currentdateseconds</span> <span class="nt">-ge</span> <span class="nv">$deadcanaryseconds</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+    <span class="c"># check if the dead.canary exists - so this doesn't run multiple times</span>
+    <span class="k">if</span> <span class="o">[</span> <span class="o">!</span> <span class="nt">-f</span> dead.canary <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+    <span class="c"># create a dead.canary file, so that we don't run our dead canary code</span>
+    <span class="c"># on any further scheduled github action runs</span>
+    <span class="nb">echo</span> <span class="s2">"CANARY IS DEAD"</span> <span class="o">&gt;</span> dead.canary
+    <span class="c"># create a post with a date from two days ago</span>
+    <span class="c"># this will assure that github pages publishes it</span>
+    <span class="nb">printf</span> <span class="nt">--</span> <span class="s2">"---</span><span class="se">\n</span><span class="s2">layout: post</span><span class="se">\n</span><span class="s2">img: someimage.jpg</span><span class="se">\n</span><span class="s2">title: This is the article title</span><span class="se">\n</span><span class="s2">tags: []</span><span class="se">\n</span><span class="s2">---</span><span class="se">\n\n</span><span class="s2">This is some content for the article"</span> <span class="o">&gt;</span> <span class="s2">"_posts/</span><span class="k">${</span><span class="nv">postdate</span><span class="p">//[</span><span class="s1">$'</span><span class="se">\t\r\n</span><span class="s1">'</span><span class="p">]</span><span class="k">}</span><span class="s2">-last-post.md"</span>
+    <span class="k">fi
+fi</span> 
+</code></pre></div></div>
+
+<p>That’s pretty much the guts of how it works. At the top, we have <code class="language-plaintext highlighter-rouge">. canary.sh</code>. Notice the <code class="language-plaintext highlighter-rouge">.</code> in front of <code class="language-plaintext highlighter-rouge">canary.sh</code>. That’s the same as calling <code class="language-plaintext highlighter-rouge">source canary.sh</code>. All this does is absorb the values into the current shell. Since I defined a variable with <code class="language-plaintext highlighter-rouge">KILLCANARY=2021-10-23</code>, that variable is now available in the bash shell of the GitHub Action.</p>
+
+<p>Next we’re using that variable we absorbed, and defining some other variables to use:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">currentdate</span><span class="o">=</span><span class="si">$(</span><span class="nb">date</span> <span class="s1">'+%Y-%m-%d'</span><span class="si">)</span> <span class="c"># Get current day</span>
+<span class="nv">postdate</span><span class="o">=</span><span class="nb">date</span> <span class="nt">-d</span> <span class="s2">"+</span><span class="k">$((</span><span class="nv">$KILLCANARY</span> <span class="o">-</span><span class="m">2</span><span class="k">))</span><span class="s2"> days"</span> <span class="s1">'+%Y-%m-%d'</span>
+
+<span class="c"># convert dates to seconds for math</span>
+<span class="nv">currentdateseconds</span><span class="o">=</span><span class="si">$(</span><span class="nb">date</span> <span class="nt">-d</span> <span class="nv">$currentdate</span> +%s<span class="si">)</span>
+<span class="nv">deadcanaryseconds</span><span class="o">=</span><span class="si">$(</span><span class="nb">date</span> <span class="nt">-d</span> <span class="nv">$KILLCANARY</span> +%s<span class="si">)</span>
+</code></pre></div></div>
+
+<p>The first two are human-readable dates in the <code class="language-plaintext highlighter-rouge">yyyy-mm-dd</code> format. The first one is simply the current date, which will be when the Action is running. The second date is the date used for naming the post. In my situation, it’s a GitHub Page built with Jekyll, and any new blog posts in the <code class="language-plaintext highlighter-rouge">_posts</code> folder need to start with a date. You’ll notice that I subtract two days from the post date. Setting the date well in the past to make sure Jekyll builds the post when we trigger the site rebuild. Jekyll won’t publish posts in the future, and this helps to avoid any weird timezone issues.  The next set of date variables is simply converting those dates to epoch timestamps to make comparison easier.</p>
+
+<p>Once we have those we can run the checks that decide if the post should be published.</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># If the current date is past the kill canary date </span>
+<span class="c1"># then create the new github pages post with the release date</span>
+<span class="s">if [ $currentdateseconds -ge $deadcanaryseconds ]; then</span>
+    <span class="s"># check if the dead.canary exists - so this doesn't run multiple times</span>
+    <span class="s">if [ ! -f dead.canary ]; then</span>
+    <span class="s"># create a dead.canary file, so that we don't run our dead canary code</span>
+    <span class="s"># on any further scheduled github action runs</span>
+    <span class="s">echo "CANARY IS DEAD" &gt; dead.canary</span>
+    <span class="s"># create a post with a date from two days ago</span>
+    <span class="s"># this will assure that github pages publishes it</span>
+    <span class="s">printf -- "---\nlayout</span><span class="err">:</span> <span class="na">post\nimg</span><span class="pi">:</span> <span class="na">someimage.jpg\ntitle</span><span class="pi">:</span> <span class="na">This is the article title\ntags</span><span class="pi">:</span> <span class="pi">[]</span><span class="s">\n---\n\nThis is some content for the article" &gt; "_posts/${postdate//[$'\t\r\n']}-last-post.md"</span>
+    <span class="s">fi</span>
+<span class="s">fi</span> 
+</code></pre></div></div>
+
+<p>The first thing that happens is checking to see if <code class="language-plaintext highlighter-rouge">$currentdateseconds</code> is greater than <code class="language-plaintext highlighter-rouge">$deadcanaryseconds</code>. If we’ve arrived at the date that the canary dies, then we should try to create the post. We’ll also create a file called <code class="language-plaintext highlighter-rouge">dead.canary</code> in the root of the repo. There’s another <code class="language-plaintext highlighter-rouge">if</code> statement that checks to see if the file exists. If the canary is already dead, then we won’t rerun this. Doing so will prevent the Action from repeating any of this code in the future.</p>
+
+<p>From that point, it’s about doing whatever you want the switch to do once the canary is dead. As a straightforward example, I’m using <code class="language-plaintext highlighter-rouge">printf</code> to generate a new post in the <code class="language-plaintext highlighter-rouge">_posts</code> folder using the date calculated from two days prior.</p>
+
+<p>From there we quickly configure git, add all the files and create a new commit.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config <span class="nt">--local</span> user.email <span class="s2">"41898282+github-actions[bot]@users.noreply.github.com"</span>
+git config <span class="nt">--local</span> user.name <span class="s2">"github-actions[bot]"</span>
+git add <span class="nt">-A</span>
+git commit <span class="nt">-m</span> <span class="s2">"Add changes </span><span class="nv">$KILLCANARY</span><span class="s2">"</span> <span class="nt">-a</span>
+</code></pre></div></div>
+
+<p>There won’t be anything to commit to the repo if we haven’t reached the kill canary date. So the git code is skipped, and nothing is pushed back to the repo. If this runs after the date, the new files will be created and pushed back to the repo triggering GitHub Pages to generate the latest site version with the final post.</p>
+
+<p>You may notice that i’ve triggered this specific workflow to always fail.</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Fail to notify</span>
+  <span class="na">run</span><span class="pi">:</span> <span class="s">exit </span><span class="m">1</span>
+</code></pre></div></div>
+
+<p>By default, GitHub Actions only sends a notification for failures. I didn’t want to turn on notifications for successful workflows in case I added others. Then I start getting spammed with these e-mails for every successful workflow. This way, any time the workflow runs, I’ll get a notification without changing anything.  The push still occurs and the site gets updated regardless.</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">on</span><span class="pi">:</span>
+  <span class="na">schedule</span><span class="pi">:</span>
+   <span class="pi">-</span> <span class="na">cron</span><span class="pi">:</span> <span class="s1">'</span><span class="s">30</span><span class="nv"> </span><span class="s">1</span><span class="nv"> </span><span class="s">1,15</span><span class="nv"> </span><span class="s">*</span><span class="nv"> </span><span class="s">*'</span>
+</code></pre></div></div>
+
+<p>I’ve set the workflow to run every two weeks. It’ll perform that date check, and if the date passes, the content will get posted. The site is updated and published live. If it’s not that date yet, the workflow will fail, and I’ll get a reminder in my e-mail to keep pushing the date forward. All I need to do is edit the date in the <code class="language-plaintext highlighter-rouge">canary.sh</code> file. Pretty simple.</p>
+
+<p>You never know what could happen to you, but at least you can have the final say in it all.</p>
+
+<p>Full GitHub Action code is available below.</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">on</span><span class="pi">:</span>
+  <span class="na">schedule</span><span class="pi">:</span>
+   <span class="pi">-</span> <span class="na">cron</span><span class="pi">:</span> <span class="s1">'</span><span class="s">30</span><span class="nv"> </span><span class="s">1</span><span class="nv"> </span><span class="s">1,15</span><span class="nv"> </span><span class="s">*</span><span class="nv"> </span><span class="s">*'</span>
+<span class="na">jobs</span><span class="pi">:</span>
+  <span class="na">build</span><span class="pi">:</span>
+    <span class="na">runs-on</span><span class="pi">:</span> <span class="s">ubuntu-latest</span>
+    <span class="na">steps</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">uses</span><span class="pi">:</span> <span class="s">actions/checkout@v2</span>
+      <span class="na">with</span><span class="pi">:</span>
+        <span class="na">persist-credentials</span><span class="pi">:</span> <span class="no">false</span> <span class="c1"># otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.</span>
+        <span class="na">fetch-depth</span><span class="pi">:</span> <span class="m">0</span> <span class="c1"># otherwise, there would be errors pushing refs to the destination repository.</span>
+    <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Create local changes</span>
+      <span class="na">run</span><span class="pi">:</span> <span class="pi">|</span>
+
+        <span class="s">. canary.sh # Source all the envars from our canary.sh file for access</span>
+
+        <span class="s">currentdate=$(date '+%Y-%m-%d') # Get current day</span>
+        <span class="s">postdate=date -d "+$(($KILLCANARY -2)) days" '+%Y-%m-%d'</span>
+        
+        <span class="s"># convert dates to seconds for math</span>
+        <span class="s">currentdateseconds=$(date -d $currentdate +%s)</span>
+        <span class="s">deadcanaryseconds=$(date -d $KILLCANARY +%s)</span>
+        
+        <span class="s"># If the current date is past the kill canary date </span>
+        <span class="s"># then create the new github pages post with the release date</span>
+        <span class="s">if [ $currentdateseconds -ge $deadcanaryseconds ]; then</span>
+          <span class="s"># check if the dead.canary exists - so this doesn't run multiple times</span>
+          <span class="s">if [ ! -f dead.canary ]; then</span>
+            <span class="s"># create a dead.canary file, so that we don't run our dead canary code</span>
+            <span class="s"># on any further scheduled github action runs</span>
+            <span class="s">echo "CANARY IS DEAD" &gt; dead.canary</span>
+            <span class="s"># create a post with a date from two days ago</span>
+            <span class="s"># this will assure that github pages publishes it</span>
+            <span class="s">printf -- "---\nlayout: post\nimg: someimage.jpg\ntitle: This is the article title\ntags: []\n---\n\nThis is some content for the article" &gt; "_posts/${postdate//[$'\t\r\n']}-last-post.md"</span>
+          <span class="s">fi</span>
+        <span class="s">fi </span>
+
+    <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Commit files</span>
+      <span class="na">run</span><span class="pi">:</span> <span class="pi">|</span>
+        <span class="s">git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"</span>
+        <span class="s">git config --local user.name "github-actions[bot]"</span>
+        <span class="s">git add -A</span>
+        <span class="s">git commit -m "Add changes $KILLCANARY" -a</span>
+    <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Push changes</span>
+      <span class="na">uses</span><span class="pi">:</span> <span class="s">ad-m/github-push-action@master</span>
+      <span class="na">with</span><span class="pi">:</span>
+        <span class="na">github_token</span><span class="pi">:</span> <span class="s">$</span>
+        <span class="na">branch</span><span class="pi">:</span> <span class="s">$</span>
+    <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Fail to notify</span>
+      <span class="na">run</span><span class="pi">:</span> <span class="s">exit </span><span class="m">1</span>
+</code></pre></div></div>
+
+  </div>
+  <hr>
+  <div>
+  Do you have some thoughts on this content? Come chat about it on <a href="http://bit.ly/mrps-discord">Discord</a>.
+  If you enjoy the content <a href="/power-up">check out ways you can support the site</a>.
+</div>
+  <div id="amzn-assoc-ad-4157821c-83ef-4e23-a734-d3f7e07f2fa2"></div>
+  <div id="suggested" class="suggested" hidden>
+  <h4>Suggested posts for you</h4>
+  <div class="suggested-posts">
+    <a href="" class="suggested-post" id="suggested-1"></a>
+    <a href="" class="suggested-post" id="suggested-2"></a>
+    <a href="" class="suggested-post" id="suggested-3"></a>
+    <a href="" class="suggested-post" id="suggested-4"></a>
+    <a href="" class="suggested-post" id="suggested-5"></a>
+  </div>
+</div>
+
+<script>
+    window.addEventListener('load', function() {
+      fetch(window.location.origin+"/api.json")
+      .then(res => res.json())
+      .then(out => {
+        var posts = out.sort(() => .5 - Math.random()).slice(0,5)
+        let i
+        for (i=0; i < posts.length; i++) {
+          document.getElementById(`suggested-${i + 1}`).text = posts[i].title
+          document.getElementById(`suggested-${i + 1}`).href = posts[i].url
+        }
+    
+        document.getElementById("suggested").hidden = false
+      })
+      .catch(error => console.error(error))
+    }, false);
+    </script>
+</article>
+
+<!-- <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=08b4ca1c-2647-4b60-9e4a-704ef215179e"></script> -->
+<script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=4157821c-83ef-4e23-a734-d3f7e07f2fa2"></script>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <!-- 
+<div id="share-bar">
+
+  <h4>Share this:</h4>
+
+  <div class="share-buttons">
+      <a  href="https://www.facebook.com/sharer/sharer.php?u=https://mrpowerscripts.com/github-actions-dead-man-switch/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Facebook" >
+          <i class="fa fa-facebook-official share-button"> facebook</i>
+      </a>
+
+      <a  href="https://twitter.com/intent/tweet?text=Github Actions Deadman's switch to publish your final GitHub Pages post&url=https://mrpowerscripts.com/github-actions-dead-man-switch/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Twitter" >
+          <i class="fa fa-twitter share-button"> twitter</i>
+      </a>
+
+      <a  href="http://www.tumblr.com/share/link?url=https://mrpowerscripts.com/github-actions-dead-man-switch/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Tumblr" >
+          <i class="fa fa-tumblr share-button"> tumblr</i>
+      </a>
+
+      <a  href="http://www.reddit.com/submit?url=https://mrpowerscripts.com/github-actions-dead-man-switch/"
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on Reddit" >
+          <i class="fa fa-reddit-alien share-button"> reddit</i>
+      </a>
+
+      <a  href="https://www.linkedin.com/shareArticle?mini=true&url=https://mrpowerscripts.com/github-actions-dead-man-switch/&title=Github Actions Deadman's switch to publish your final GitHub Pages post&summary=&source="
+          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+          title="Share on LinkedIn" >
+          <i class="fa fa-linkedin share-button"> linkedin</i>
+      </a>
+
+      <a  href="mailto:?subject=Github Actions Deadman's switch to publish your final GitHub Pages post&amp;body=Check out this site https://mrpowerscripts.com/github-actions-dead-man-switch/"
+          title="Share via Email" >
+          <i class="fa fa-envelope share-button"> email</i>
+      </a>
+  </div>
+
+</div> -->
+        <footer class="footer">
+          
+<a href="mailto:playingwithpowershell@gmail.com">e-mail</a> |
+
+
+<a href="https://github.com/mrpowerscripts">github</a> |
+
+
+
+<a href="/feed.xml">rss</a> |
+<a href="https://www.twitter.com/mrpowerscripts">twitter</a> |
+
+<a href="https://youtube.com/user/mrpowerscripts">youtube</a> |
+
+<a href="https://discord.gg/uEBWZKq">discord</a> |
+<a href="https://patreon.com/mrpowerscripts">patreon</a>
+
+<style>
+.meta-links {
+    display: flex;
+    color: white;
+    justify-content: space-around;
+}
+
+.meta-links a {
+  color: white;
+  padding: 0px 0px;
+}
+
+.meta-links a:hover {
+  color:purple;
+}
+</style>
+        </footer>
+      </div>
+    </div>
+
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121890486-1"></script>
+<script>
+  if (document.location.hostname.search("mrpowerscripts.com") !== -1) {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-121890486-1');
+}
+</script>
+
+
+
+
+
+
+    <script src="/scripts.js" ></script>
+  </body>
+</html>
