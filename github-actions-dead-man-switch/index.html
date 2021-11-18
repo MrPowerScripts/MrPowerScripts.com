@@ -76,7 +76,7 @@
             "@id": "https://mrpowerscripts.com/github-actions-dead-man-switch/"
         },
         "datePublished": "2021-10-26 00:00:00 +0000",
-        "dateModified": "2021-10-26 19:58:45 +0000",
+        "dateModified": "2021-11-18 01:15:44 +0000",
         "isAccessibleForFree": "True",
         "isPartOf": {
             "@type": ["CreativeWork", "Product", "Blog"],
@@ -356,7 +356,7 @@ var reviewHTML = '<div class="reviews">'+
 <span class="nb">.</span> canary.sh <span class="c"># Source all the envars from our canary.sh file for access</span>
 
 <span class="nv">currentdate</span><span class="o">=</span><span class="si">$(</span><span class="nb">date</span> <span class="s1">'+%Y-%m-%d'</span><span class="si">)</span> <span class="c"># Get current day</span>
-<span class="nv">postdate</span><span class="o">=</span><span class="nb">date</span> <span class="nt">-d</span> <span class="s2">"+</span><span class="k">$((</span><span class="nv">$KILLCANARY</span> <span class="o">-</span><span class="m">2</span><span class="k">))</span><span class="s2"> days"</span> <span class="s1">'+%Y-%m-%d'</span>
+<span class="nv">postdate</span><span class="o">=</span><span class="nb">date</span> <span class="nt">-d</span> <span class="s2">"</span><span class="nv">$KILLCANARY</span><span class="s2"> - 2 days"</span> <span class="s1">'+%Y-%m-%d'</span>
 
 <span class="c"># convert dates to seconds for math</span>
 <span class="nv">currentdateseconds</span><span class="o">=</span><span class="si">$(</span><span class="nb">date</span> <span class="nt">-d</span> <span class="nv">$currentdate</span> +%s<span class="si">)</span>
