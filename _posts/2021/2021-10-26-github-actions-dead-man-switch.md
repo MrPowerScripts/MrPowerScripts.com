@@ -20,7 +20,7 @@ So let's just break down the actual bash that makes this action work:
 . canary.sh # Source all the envars from our canary.sh file for access
 
 currentdate=$(date '+%Y-%m-%d') # Get current day
-postdate=date -d "+$(($KILLCANARY -2)) days" '+%Y-%m-%d'
+postdate=date -d "$KILLCANARY - 2 days" '+%Y-%m-%d'
 
 # convert dates to seconds for math
 currentdateseconds=$(date -d $currentdate +%s)
